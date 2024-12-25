@@ -1,2 +1,6 @@
 local.defaults.properties
 secrets.properties
+.externalNativeBuild
+.cxx
+local.properties
+.idea
