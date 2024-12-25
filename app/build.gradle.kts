@@ -52,6 +52,7 @@ android {
 
 dependencies {
 
+    api("com.google.android.libraries.navigation:navigation:5.2.3")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
