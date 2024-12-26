@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="maps_compass_directions">
+        <item>"ଉ."</item>
+        <item>"ଉ.ପୂ."</item>
+        <item>"ପୂ."</item>
+        <item>"ଦ.ପୂ."</item>
+        <item>"ଦ."</item>
+        <item>"ଦ.ପ."</item>
+        <item>"ପ."</item>
+        <item>"ଉ.ପ."</item>
+    </string-array>
+    <string-array name="maps_full_compass_directions">
+        <item>"ଉତ୍ତର"</item>
+        <item>"ଉତ୍ତରପୂର୍ବ"</item>
+        <item>"ପୂର୍ବ"</item>
+        <item>"ଦକ୍ଷିଣପୂର୍ବ"</item>
+        <item>"ଦକ୍ଷିଣ"</item>
+        <item>"ଦକ୍ଷିଣପଶ୍ଚିମ"</item>
+        <item>"ପଶ୍ଚିମ"</item>
+        <item>"ଉତ୍ତରପଶ୍ଚିମ"</item>
+    </string-array>
     <plurals name="mtrl_badge_content_description">
     <item quantity="one">%d new notification</item>
     <item quantity="other">%d new notifications</item>
@@ -53,6 +73,7 @@
     <string msgid="406453423630273620" name="close_drawer">"ନାଭିଗେସନ୍ ମେନୁ ବନ୍ଦ କରନ୍ତୁ"</string>
     <string msgid="7573152094250666567" name="close_sheet">"ସିଟ୍ ବନ୍ଦ କରନ୍ତୁ"</string>
     <string msgid="5389587048670450460" name="collapsed">"ସଙ୍କୁଚିତ କରାଯାଇଛି"</string>
+    <string msgid="6083905920877235314" name="copy">"କପି କରନ୍ତୁ"</string>
     <string msgid="3499643850558715142" name="date_input_headline">"ଲେଖାଯାଇଥିବା ତାରିଖ"</string>
     <string msgid="8562356184193964298" name="date_input_headline_description">"ଲେଖାଯାଇଥିବା ତାରିଖ: %1$s"</string>
     <string msgid="5281836720766682161" name="date_input_invalid_for_pattern">"ଆଶା କରାଯାଉଥିବା ପାଟର୍ନ ସହ ତାରିଖ ମେଳ ହେଉନାହିଁ: %1$s"</string>
@@ -90,12 +111,25 @@
     <string msgid="1890207353314751437" name="dropdown_menu">"ଡ୍ରପଡାଉନ ମେନୁ"</string>
     <string name="error_a11y_label">Error: invalid</string>
     <string name="error_icon_content_description">Error</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"ଅଧିକ ଉନ୍ନତ"</string>
     <string msgid="5974471714631304645" name="expanded">"ବିସ୍ତାର କରାଯାଇଛି"</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="icon_content_description">Dialog Icon</string>
     <string msgid="6827826412747255547" name="in_progress">"ଚାଲିଛି"</string>
     <string msgid="7933458017204019916" name="indeterminate">"ଆଶିଂକ ଭାବେ ଯାଞ୍ଚ କରାଯାଇଛି"</string>
     <string name="item_view_role_description">Tab</string>
+    <string msgid="9210820207514660247" name="maps_API_OUTDATED_WARNING">"ଏହି ଆପ୍ Mapsର ଏକ ପୁରୁଣା ସଂସ୍କରଣ ବ୍ୟବହାର କରୁଛି। ଏହା ହୁଏତ ସଠିକ୍ ରୂପେ କାମ କରିନପାରେ।"</string>
+    <string msgid="6807007598222074916" name="maps_COMPASS_ALT_TEXT">"କମ୍ପାସ୍"</string>
+    <string msgid="3371108618085690173" name="maps_DIRECTIONS_ALT_TEXT">"ଦିଗନିର୍ଦ୍ଦେଶଗୁଡ଼ିକ ପାଆନ୍ତୁ"</string>
+    <string msgid="1189955191774927738" name="maps_GOOGLE_MAP">"Google Map"</string>
+    <string msgid="2264878565827236979" name="maps_LEVEL_ALT_TEXT">"ସ୍ତର {0}"</string>
+    <string msgid="6875584096776566703" name="maps_MY_LOCATION_ALT_TEXT">"ମୋ ଲୋକେସନ୍"</string>
+    <string msgid="7383272971595812419" name="maps_NO_GMM">"Google Maps ଇନ୍‌ଷ୍ଟଲ୍ ହୋଇନାହିଁ କିମ୍ବା ଅକ୍ଷମ ହୋଇଯାଇଛି"</string>
+    <string msgid="1460559660387626258" name="maps_OPEN_GMM_ALT_TEXT">"Google Mapsରେ ଖୋଲନ୍ତୁ"</string>
+    <string msgid="175515198141357876" name="maps_YOUR_LOCATION">"ଆପଣଙ୍କର ସାମ୍ପ୍ରତିକ ଲୋକେସନ୍"</string>
+    <string msgid="8499414555829263194" name="maps_ZOOM_IN_ALT_TEXT">"ଜୁମ୍ ବଢ଼ାନ୍ତୁ"</string>
+    <string msgid="8347872495490681122" name="maps_ZOOM_OUT_ALT_TEXT">"ଜୁମ୍ କମାନ୍ତୁ"</string>
+    <string msgid="2220756820707696446" name="maps_invalid_panorama_data">"ଅବୈଧ ପାନୋରାମା"</string>
     <string name="material_clock_toggle_content_description">Select AM or PM</string>
     <string name="material_hour_24h_suffix">%1$s hours</string>
     <string name="material_hour_selection">Select hour</string>
@@ -109,6 +143,31 @@
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Select time</string>
     <string name="material_timepicker_text_input_mode_description">ସମୟ ଇନପୁଟ୍‍ ପାଇଁ ଟେକ୍ସଟ୍‍ ଇନପୁଟ୍‌କୁ ବଦଳାନ୍ତୁ।</string>
+    <string msgid="2939063992730535343" name="mr_button_content_description">"କାଷ୍ଟ କରନ୍ତୁ"</string>
+    <string msgid="6073720094880410356" name="mr_cast_button_connected">"କାଷ୍ଟ କରନ୍ତୁ। ସଂଯୋଗ ହୋଇଛି"</string>
+    <string msgid="6629927151350192407" name="mr_cast_button_connecting">"କାଷ୍ଟ କରନ୍ତୁ। ସଂଯୋଗ ହେଉଛି"</string>
+    <string msgid="8071109333469380363" name="mr_cast_button_disconnected">"କାଷ୍ଟ କରନ୍ତୁ। ବିଚ୍ଛିନ୍ନ କରାଯାଇଛି"</string>
+    <string msgid="2175930138959078155" name="mr_cast_dialog_title_view_placeholder">"କୌଣସି ସୂଚନା ଉପଲବ୍ଧ ନାହିଁ"</string>
+    <string msgid="6114250663023140921" name="mr_chooser_searching">"ଡିଭାଇସ୍‍ ଖୋଜାଯାଉଛି"</string>
+    <string msgid="1419936397646839840" name="mr_chooser_title">"ଏଥିରେ କାଷ୍ଟ କରନ୍ତୁ"</string>
+    <string msgid="3330502667672708728" name="mr_controller_album_art">"ଆଲବମ୍ ଆର୍ଟ"</string>
+    <string msgid="9171231064758955152" name="mr_controller_casting_screen">"ସ୍କ୍ରୀନ୍‍ କାଷ୍ଟ କରାଯାଉଛି"</string>
+    <string msgid="5684434439232634509" name="mr_controller_close_description">"ବନ୍ଦ କରନ୍ତୁ"</string>
+    <string msgid="2585048604188129749" name="mr_controller_collapse_group">"ସଂକୁଚିତ କରନ୍ତୁ"</string>
+    <string msgid="7812275474138309497" name="mr_controller_disconnect">"ଡିସ୍‌କନେକ୍ଟ କରନ୍ତୁ"</string>
+    <string msgid="4521419834052044261" name="mr_controller_expand_group">"ବିସ୍ତାର କରନ୍ତୁ"</string>
+    <string msgid="855271725131981086" name="mr_controller_no_info_available">"କୌଣସି ସୂଚନା ଉପଲବ୍ଧ ନାହିଁ"</string>
+    <string msgid="5495452265246139458" name="mr_controller_no_media_selected">"କୌଣସି ମିଡିଆ ଚୟନ କରାଯାଇନାହିଁ"</string>
+    <string msgid="747801650871398383" name="mr_controller_pause">"ପଜ୍‍ କରନ୍ତୁ"</string>
+    <string msgid="1253345086594430054" name="mr_controller_play">"ଚଲାନ୍ତୁ"</string>
+    <string msgid="5497722768305745508" name="mr_controller_stop">"ରୋକନ୍ତୁ"</string>
+    <string msgid="804210341192624074" name="mr_controller_stop_casting">"କାଷ୍ଟ କରିବା ବନ୍ଦ କରନ୍ତୁ"</string>
+    <string msgid="2955862765169128170" name="mr_controller_volume_slider">"ଭଲ୍ୟୁମ୍‍ ସ୍ଲାଇଡର୍‍"</string>
+    <string msgid="4115858704575247342" name="mr_dialog_default_group_name">"ଗୋଷ୍ଠୀ"</string>
+    <string msgid="4307018456678388936" name="mr_dialog_groupable_header">"ଏକ ଡିଭାଇସ୍‍ ଯୋଗ କରନ୍ତୁ"</string>
+    <string msgid="6068257520605505468" name="mr_dialog_transferable_header">"ଏକ ଗ୍ରୁପ୍‌ରେ ପ୍ଲେ କରନ୍ତୁ"</string>
+    <string msgid="7449553026175453403" name="mr_system_route_name">"ସିଷ୍ଟମ"</string>
+    <string msgid="4088331695424166162" name="mr_user_route_category_name">"ଡିଭାଇସ୍‌"</string>
     <string name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_checkbox_state_description_checked">Checked</string>
     <string name="mtrl_checkbox_state_description_indeterminate">Partially checked</string>
@@ -156,9 +215,11 @@
     <string name="mtrl_timepicker_confirm">OK</string>
     <string msgid="542007171693138492" name="navigation_menu">"ନାଭିଗେସନ୍ ମେନୁ"</string>
     <string msgid="6610465462668679431" name="not_selected">"ଚୟନ କରାଯାଇନାହିଁ"</string>
+    <string msgid="6573031135582639649" name="not_set">"ସେଟ୍ ହୋଇନାହିଁ"</string>
     <string msgid="875452955155264703" name="off">"ବନ୍ଦ ଅଛି"</string>
     <string msgid="8655164131929253426" name="on">"ଚାଲୁ ଅଛି"</string>
     <string name="password_toggle_content_description">ପାସ୍‍ୱାର୍ଡ ଦେଖାନ୍ତୁ</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" କ୍ଲିପବୋର୍ଡକୁ କପି ହୋ‍ଇଗଲା।"</string>
     <string msgid="5941395253238309765" name="range_end">"ରେଞ୍ଜ ଶେଷ"</string>
     <string msgid="7097486360902471446" name="range_start">"ରେଞ୍ଜ ଆରମ୍ଭ"</string>
     <string msgid="6420018528474762666" name="search_bar_search">"ସର୍ଚ୍ଚ କରନ୍ତୁ"</string>
@@ -170,6 +231,7 @@
     <string msgid="3962933905051144957" name="snackbar_dismiss">"ଖାରଜ କରନ୍ତୁ"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="7189888345201419934" name="suggestions_available">"ପରାମର୍ଶ ତଳେ ଦିଆଯାଇଛି"</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
     <string msgid="2561197295334830845" name="switch_role">"ସ୍ୱିଚ କରନ୍ତୁ"</string>
     <string msgid="1672349317127674378" name="tab">"ଟାବ୍"</string>
     <string msgid="5946805113151406391" name="template_percent">"ଶତକଡ଼ା <ns1:g id="PERCENTAGE">%1$d</ns1:g>।"</string>
@@ -187,4 +249,6 @@
     <string msgid="2232702812657998674" name="time_picker_pm">"PM"</string>
     <string msgid="2732804537909054941" name="tooltip_long_press_label">"ଟୁଲଟିପ ଦେଖାନ୍ତୁ"</string>
     <string msgid="8191239805703103845" name="tooltip_pane_description">"ଟୁଲଟିପ"</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"ବନ୍ଦ"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"ଚାଲୁ ଅଛି"</string>
 </resources>

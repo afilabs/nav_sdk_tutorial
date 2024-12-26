@@ -1,9 +1,575 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="CALLOUT_ALPHABETIC_LABELS">
+        <item>"A"</item>
+        <item>"B"</item>
+        <item>"C8650"</item>
+        <item>"D"</item>
+        <item>"E"</item>
+        <item>"F"</item>
+        <item>"G"</item>
+        <item>"H"</item>
+    </string-array>
+    <string-array name="SHOW_SCALEBAR_ENTRIES">
+        <item>"जुम इन र जुम आउट गर्दा"</item>
+        <item>"सधैँ"</item>
+    </string-array>
+    <string-array name="maps_compass_directions">
+        <item>"उ"</item>
+        <item>"उ.पू."</item>
+        <item>"पू"</item>
+        <item>"द.पू."</item>
+        <item>"द"</item>
+        <item>"द.प."</item>
+        <item>"प"</item>
+        <item>"उ.प."</item>
+    </string-array>
+    <string-array name="maps_full_compass_directions">
+        <item>"उत्तर"</item>
+        <item>"उत्तर पूर्व"</item>
+        <item>"पूर्व"</item>
+        <item>"दक्षिण पूर्व"</item>
+        <item>"दक्षिण"</item>
+        <item>"दक्षिण पश्चिम"</item>
+        <item>"पश्चिम"</item>
+        <item>"उत्तर पश्चिम"</item>
+    </string-array>
+    <plurals formatted="false" msgid="4326673060750344846" name="BIKESHARING_BIKES_AVAILABLE">
+        <item quantity="other"><ns1:g id="BIKES_AVAILABLE_5">%d</ns1:g> वटा साइकल उपलब्ध छन् </item>
+        <item quantity="one"><ns1:g id="BIKES_AVAILABLE_1">%d</ns1:g> साइकल उपलब्ध छ </item>
+    </plurals>
+    <plurals formatted="false" msgid="2128912764519502183" name="BIKESHARING_DOCKS_AVAILABLE">
+        <item quantity="other"> साइकल भाडामा पाइने <ns1:g id="NUM_DOCKS_5">%d</ns1:g> वटा ठाउँ उपलब्ध छन् </item>
+        <item quantity="one"> साइकल भाडामा पाइने <ns1:g id="NUM_DOCKS_1">%d</ns1:g> ठाउँ उपलब्ध छ </item>
+    </plurals>
+    <plurals formatted="false" msgid="3587957769510236203" name="COMPASS_ACCESSIBILITY_BEARING">
+        <item quantity="other">नक्सा <ns1:g id="MAP_BEARING_5">%d</ns1:g> डिग्रीमा घुमेको छ।</item>
+        <item quantity="one">नक्सा <ns1:g id="MAP_BEARING_1">%d</ns1:g> डिग्रीमा घुमेको छ।</item>
+    </plurals>
+    <plurals formatted="false" msgid="4689781638232061047" name="DA_DAYS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> दिन</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g> दिन</item>
+    </plurals>
+    <plurals formatted="false" msgid="6144185587501044196" name="DA_DAYS_ABBREVIATED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> दिन</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g> दिन</item>
+    </plurals>
+    <plurals formatted="false" msgid="6393943752589702797" name="DA_DAYS_ABBREVIATED_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g>दिन</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g>दिन</item>
+    </plurals>
+    <plurals formatted="false" msgid="2798004425159140146" name="DA_DAYS_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> दिन</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g> दिन</item>
+    </plurals>
+    <plurals formatted="false" msgid="4077931414703271286" name="DA_HOURS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g> घन्टा</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_1">%s</ns1:g> घन्टा</item>
+    </plurals>
+    <plurals formatted="false" msgid="7410132942057247478" name="DA_HOURS_ABBREVIATED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g> घन्टा</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_1">%s</ns1:g> घन्टा</item>
+    </plurals>
+    <plurals formatted="false" msgid="5724380721819842832" name="DA_HOURS_ABBREVIATED_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g>घन्टा</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_1">%s</ns1:g>घन्टा</item>
+    </plurals>
+    <plurals formatted="false" msgid="302465155895970807" name="DA_MINUTES">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g> मिनेट</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g> मिनेट</item>
+    </plurals>
+    <plurals formatted="false" msgid="6854365863287202322" name="DA_MINUTES_ABBREVIATED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g> मिनेट</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g> मिनेट</item>
+    </plurals>
+    <plurals formatted="false" msgid="7896893686804578870" name="DA_MINUTES_ABBREVIATED_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g>मिनेट</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g>मिनेट</item>
+    </plurals>
+    <plurals formatted="false" msgid="2581719964976016874" name="DA_MINUTES_BARE_FOLLOWING_HOURS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g></item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g></item>
+    </plurals>
+    <plurals formatted="false" msgid="6345729166163721080" name="DA_SECONDS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_SECONDS_5">%s</ns1:g> सेकेन्ड</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_SECONDS_1">%s</ns1:g> सेकेन्ड</item>
+    </plurals>
+    <plurals formatted="false" msgid="1032855961281750509" name="DA_SPEECH_CONTINUE_FOR_X_FEET">
+        <item quantity="other"><ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> फिटसम्म यो सडक नछोडी जानुहोस्</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_FEET_1">%1$s</ns1:g> फुटसम्म यो सडक नछोडी जानुहोस्</item>
+    </plurals>
+    <plurals formatted="false" msgid="8557996246843277515" name="DA_SPEECH_CONTINUE_FOR_X_KILOMETERS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> किलोमिटरसम्म यो सडक नछोडी जानुहोस्</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_KILOMETERS_1">%1$s</ns1:g> किलोमिटरसम्म यो सडक नछोडी जानुहोस्</item>
+    </plurals>
+    <plurals formatted="false" msgid="605905875424024433" name="DA_SPEECH_CONTINUE_FOR_X_METERS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> मिटरसम्म यो सडक नछोडी जानुहोस्</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_METERS_1">%1$s</ns1:g> मिटरसम्म यो सडक नछोडी जानुहोस्</item>
+    </plurals>
+    <plurals formatted="false" msgid="5775940963454325209" name="DA_SPEECH_CONTINUE_FOR_X_MILES">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> माइलसम्म यो सडक नछोडी जानुहोस्</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MILES_1">%1$s</ns1:g> माइलसम्म यो सडक नछोडी जानुहोस्</item>
+    </plurals>
+    <plurals formatted="false" msgid="4742053200406294830" name="DA_SPEECH_CONTINUE_FOR_X_YARDS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> गजसम्म यो सडक नछोडी जानुहोस्</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_YARDS_1">%1$s</ns1:g> गजसम्म यो सडक नछोडी जानुहोस्</item>
+    </plurals>
+    <plurals formatted="false" msgid="2823664751659973629" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_FEET">
+        <item quantity="other"><ns1:g id="NUMBER_OF_FEET_11">%1$s</ns1:g> फिटसम्म <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> नछोडी जानुहोस्</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_FEET_3">%1$s</ns1:g> फुटसम्म <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> नछोडी जानुहोस्</item>
+    </plurals>
+    <plurals formatted="false" msgid="4715395619972917121" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_KILOMETERS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_KILOMETERS_11">%1$s</ns1:g> किलोमिटरसम्म <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> नछोडी जानुहोस्</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_KILOMETERS_3">%1$s</ns1:g> किलोमिटरसम्म <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> नछोडी जानुहोस्</item>
+    </plurals>
+    <plurals formatted="false" msgid="3492075494171740042" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_METERS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_METERS_11">%1$s</ns1:g> मिटरसम्म <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> नछोडी जानुहोस्</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_METERS_3">%1$s</ns1:g> मिटरसम्म <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> नछोडी जानुहोस्</item>
+    </plurals>
+    <plurals formatted="false" msgid="6281859705184148951" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_MILES">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MILES_11">%1$s</ns1:g> माइलसम्म <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> नछोडी जानुहोस्</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MILES_3">%1$s</ns1:g> माइलसम्म <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> नछोडी जानुहोस्</item>
+    </plurals>
+    <plurals formatted="false" msgid="1750899323638437779" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_YARDS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_YARDS_11">%1$s</ns1:g> गजसम्म <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> नछोडी जानुहोस्</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_YARDS_3">%1$s</ns1:g> गजसम्म <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> नछोडी जानुहोस्</item>
+    </plurals>
+    <plurals formatted="false" msgid="6824002006206583196" name="DA_SPEECH_IN_X_FEET">
+        <item quantity="other"><ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> फिट अगाडि</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_FEET_1">%1$s</ns1:g> फुट अगाडि</item>
+    </plurals>
+    <plurals formatted="false" msgid="3927150446141308796" name="DA_SPEECH_IN_X_KILOMETERS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> किलोमिटर अगाडि</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_KILOMETERS_1">%1$s</ns1:g> किलोमिटर अगाडि</item>
+    </plurals>
+    <plurals formatted="false" msgid="8424550718788882600" name="DA_SPEECH_IN_X_METERS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> मिटर अगाडि</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_METERS_1">%1$s</ns1:g> मिटर अगाडि</item>
+    </plurals>
+    <plurals formatted="false" msgid="5844894205706436077" name="DA_SPEECH_IN_X_MILES">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> माइल अगाडि</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MILES_1">%1$s</ns1:g> माइल अगाडि</item>
+    </plurals>
+    <plurals formatted="false" msgid="1857544676918506731" name="DA_SPEECH_IN_X_YARDS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> गज अगाडि</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_YARDS_1">%1$s</ns1:g> गज अगाडि</item>
+    </plurals>
+    <plurals formatted="false" msgid="2339336258154180702" name="DA_SPEED_FORMAT_KILOMETERS_PER_HOUR_EXTENDED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_KILOMETERS_5">%s</ns1:g> किलोमिटर प्रति घन्टा</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_KILOMETERS_1">%s</ns1:g> किलोमिटर प्रति घन्टा</item>
+    </plurals>
+    <plurals formatted="false" msgid="6140682604650140709" name="DA_SPEED_FORMAT_MILES_PER_HOUR_EXTENDED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MILES_5">%s</ns1:g> माइल प्रति घन्टा</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MILES_1">%s</ns1:g> माइल प्रति घन्टा</item>
+    </plurals>
+    <plurals formatted="false" msgid="5488601092985524575" name="DA_YOUR_DESTINATION_IS_X_FEET_AHEAD">
+        <item quantity="other">तपाईंको गन्तव्य <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> फिट अगाडि छ</item>
+        <item quantity="one">तपाईंको गन्तव्य <ns1:g id="NUMBER_OF_FEET_1">%1$s</ns1:g> फुट अगाडि छ</item>
+    </plurals>
+    <plurals formatted="false" msgid="3956464927073329258" name="DA_YOUR_DESTINATION_IS_X_KILOMETERS_AHEAD">
+        <item quantity="other">तपाईंको गन्तव्य <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> किलोमिटर अगाडि छ</item>
+        <item quantity="one">तपाईंको गन्तव्य <ns1:g id="NUMBER_OF_KILOMETERS_1">%1$s</ns1:g> किलोमिटर अगाडि छ</item>
+    </plurals>
+    <plurals formatted="false" msgid="1869769789353944376" name="DA_YOUR_DESTINATION_IS_X_METERS_AHEAD">
+        <item quantity="other">तपाईंको गन्तव्य <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> मिटर अगाडि छ</item>
+        <item quantity="one">तपाईंको गन्तव्य <ns1:g id="NUMBER_OF_METERS_1">%1$s</ns1:g> मिटर अगाडि छ</item>
+    </plurals>
+    <plurals formatted="false" msgid="3933752078325316030" name="DA_YOUR_DESTINATION_IS_X_MILES_AHEAD">
+        <item quantity="other">तपाईंको गन्तव्य <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> माइल अगाडि छ</item>
+        <item quantity="one">तपाईंको गन्तव्य <ns1:g id="NUMBER_OF_MILES_1">%1$s</ns1:g> माइल अगाडि छ</item>
+    </plurals>
+    <plurals formatted="false" msgid="3730606906820969126" name="DA_YOUR_DESTINATION_IS_X_YARDS_AHEAD">
+        <item quantity="other">तपाईंको गन्तव्य <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> गज अगाडि छ</item>
+        <item quantity="one">तपाईंको गन्तव्य <ns1:g id="NUMBER_OF_YARDS_1">%1$s</ns1:g> गज अगाडि छ</item>
+    </plurals>
+    <plurals formatted="false" msgid="4613320652217353645" name="TRANSIT_NUM_STOPS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_STOPS_5">%d</ns1:g> बिसौनीहरू</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_STOPS_1">%d</ns1:g> बिसौनी</item>
+    </plurals>
+    <plurals formatted="false" msgid="5579098508661025925" name="TRANSIT_PLUS_NUMBER_OF_ALERTS_TITLE">
+        <item quantity="other">+<ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g> अलर्टहरू</item>
+        <item quantity="one">+<ns1:g id="NUMBER_OF_ALERTS_0">%d</ns1:g> अलर्ट</item>
+    </plurals>
+    <plurals formatted="false" msgid="7409021725106195613" name="TRANSIT_PLUS_NUMBER_OF_ALERTS_TITLE_CONTENT_DESCRIPTION">
+        <item quantity="other">+ <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g> वटा अलर्ट</item>
+        <item quantity="one">+ <ns1:g id="NUMBER_OF_ALERTS_0">%d</ns1:g> अलर्ट</item>
+    </plurals>
+    <plurals formatted="false" msgid="8048195651219433071" name="TRANSIT_PLUS_NUMBER_OF_INFORMATION_ITEMS_TITLE">
+        <item quantity="other">+थप <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g></item>
+        <item quantity="one">+थप <ns1:g id="NUMBER_OF_ALERTS_0">%d</ns1:g></item>
+    </plurals>
+    <plurals formatted="false" msgid="3673235514357385007" name="TRANSIT_PLUS_NUMBER_OF_INFORMATION_ITEMS_TITLE_CONTENT_DESCRIPTION">
+        <item quantity="other">+ अन्य <ns1:g id="NUMBER_OF_INFORMATION_1">%d</ns1:g> वटा</item>
+        <item quantity="one">+ अर्को <ns1:g id="NUMBER_OF_INFORMATION_0">%d</ns1:g> वटा</item>
+    </plurals>
     <plurals name="mtrl_badge_content_description">
     <item quantity="one">%d नयाँ सूचना</item>
     <item quantity="other">%d नयाँ सूचनाहरू</item>
   </plurals>
+    <string msgid="988766512127533844" name="ABOUT">"बारेमा, सर्त तथा गोपनीयता"</string>
+    <string msgid="4382378373633137407" name="ACCESSIBILITY_ACTIVATE_TO_CLOSE_STEP_LIST">"चरण सूची बन्द गर्न अन गर्नुहोस्"</string>
+    <string msgid="8888075998205469082" name="ACCESSIBILITY_ACTIVATE_TO_OPEN_STEP_LIST">"चरण सूची खोल्न अन गर्नुहोस्"</string>
+    <string msgid="7470955658075607809" name="ACCESSIBILITY_ALTERNATE_ROUTE_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g> हुँदै जाने वैकल्पिक मार्ग <ns1:g id="DURATION">%1$s</ns1:g>"</string>
+    <string msgid="1096848458128224503" name="ACCESSIBILITY_ALTERNATE_ROUTE_FUEL_EFFICIENT_DESCRIPTION">"सबैभन्दा कम इन्धन खपत हुने मार्ग"</string>
+    <string msgid="8434539979603521046" name="ACCESSIBILITY_ALTERNATE_ROUTE_HAS_TOLLS_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g> भएर जाने अर्को मार्गमा टोलहरू छन् र यो मार्ग भएर जान <ns1:g id="DURATION">%1$s</ns1:g> लाग्छ"</string>
+    <string msgid="6280010901313672282" name="ACCESSIBILITY_ALTERNATE_ROUTE_HAS_TOLL_PRICE_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g> भएर जाने अर्को मार्गमा टोलको शुल्क <ns1:g id="COST">%3$s</ns1:g> छ र यो मार्ग भएर जाँदा <ns1:g id="DURATION">%1$s</ns1:g> लाग्छ"</string>
+    <string msgid="4147878166568539021" name="ACCESSIBILITY_ALTERNATE_ROUTE_NO_TOLLS_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g> भएर जाने अर्को मार्गमा कुनै टोल छैन र यो मार्ग भएर जान <ns1:g id="DURATION">%1$s</ns1:g> लाग्छ"</string>
+    <string msgid="6020573412357611477" name="ACCESSIBILITY_COMPASS">"उत्तरी दृश्य"</string>
+    <string msgid="8223442679494597781" name="ACCESSIBILITY_DIRECTIONS_PROCEED_TO_METERS_WITH_STEP">"<ns1:g id="STEP_NUMBER">%1$d</ns1:g> औँ पाइला, <ns1:g id="DISTANCE">%2$s</ns1:g> सम्म यो बाटो नछोडी जानुहोस्"</string>
+    <string msgid="7868137419995936422" name="ACCESSIBILITY_DIRECTIONS_STEP_LIST_TO">"<ns1:g id="DESTINATION">%s</ns1:g> सम्म पुग्ने चरणहरूको सूची। विस्तृत गर्न अन गर्नुहोस्।"</string>
+    <string msgid="5761061967444438907" name="ACCESSIBILITY_DIRECTION_STEP_PREFIX">"<ns1:g id="STEP_NUMBER">%1$d</ns1:g> औँ कदम, <ns1:g id="STEP_DESCRIPTION">%2$s</ns1:g>"</string>
+    <string msgid="5429655055049309673" name="ACCESSIBILITY_LABEL_HAZARDOUS_GOODS_RESTRICTED">"यो मार्गमा हानिकारक सामानहरू ढुवानी गर्न पाइँदैन"</string>
+    <string msgid="7244890995607172810" name="ACCESSIBILITY_LABEL_HEIGHT_RESTRICTED">"यो मार्गमा अग्ला सवारी साधन चलाउन पाइँदैन"</string>
+    <string msgid="5720128131726601812" name="ACCESSIBILITY_LABEL_HEIGHT_RESTRICTED_WITH_VALUE">"यो मार्गमा <ns1:g id="HEIGHT">%s</ns1:g> भन्दा अग्ला सवारी साधन चलाउन पाइँदैन"</string>
+    <string msgid="2427955214381665545" name="ACCESSIBILITY_LABEL_TRUCKS_RESTRICTED">"यो मार्गमा ट्रक चलाउन पाइँदैन"</string>
+    <string msgid="1735969374518715138" name="ACCESSIBILITY_LABEL_WEIGHT_RESTRICTED">"यो मार्गमा बढी वजन भएका सवारी साधन चलाउन पाइँदैन"</string>
+    <string msgid="2228263168852010676" name="ACCESSIBILITY_LABEL_WEIGHT_RESTRICTED_WITH_VALUE">"यो मार्गमा <ns1:g id="WEIGHT">%s</ns1:g> भन्दा बढी वजन भएका सवारी साधन चलाउन पाइँदैन"</string>
+    <string msgid="3500168200113756692" name="ACCESSIBILITY_LONG_PAUSE">". "</string>
+    <string msgid="4028351416429434451" name="ACCESSIBILITY_SELECTED_ROUTE_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g> भएर जाने चयन गरिएको मार्गबाट जाँदा <ns1:g id="DURATION">%1$s</ns1:g> लाग्छ"</string>
+    <string msgid="5435510447657254534" name="ACCESSIBILITY_SELECTED_ROUTE_HAS_TOLLS_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g> भएर जाने चयन गरिएको मार्गबाट जाँदा <ns1:g id="DURATION">%1$s</ns1:g> लाग्छ र यो मार्गमा सडक दस्तुर तिर्नु पर्ने हुन्छ"</string>
+    <string msgid="1753061936075193628" name="ACCESSIBILITY_SELECTED_ROUTE_HAS_TOLL_PRICE_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g> भएर जाने चयन गरिएको मार्गबाट जाँदा <ns1:g id="DURATION">%1$s</ns1:g> लाग्छ र यो मार्गमा <ns1:g id="COST">%3$s</ns1:g> सडक दस्तुर तिर्नु पर्ने हुन्छ"</string>
+    <string msgid="7666497790505910181" name="ACCESSIBILITY_SELECTED_ROUTE_NO_TOLLS_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g> भएर जाने चयन गरिएको मार्गबाट जाँदा <ns1:g id="DURATION">%1$s</ns1:g> लाग्छ र यो मार्गमा सडक दस्तुर तिर्नु पर्दैन"</string>
+    <string msgid="9109457196557412064" name="ACCESSIBILITY_SENTENCE_DELIMITER">", "</string>
+    <string msgid="8567406792741571450" name="ACCESSIBILITY_SETTINGS_TITLE">"उपलब्धतासम्बन्धी सेटिङ"</string>
+    <string msgid="8175283740736118872" name="ACCESSIBILITY_SHORT_PAUSE">", "</string>
+    <string msgid="8994692387102653205" name="ACCESSIBILITY_STREET_VIEW_WITH_DESTINATION">"<ns1:g id="DESTINATION">%1$s</ns1:g> मा Street View प्रयोग गर्नुहोस्"</string>
+    <string msgid="6051617480676658328" name="ACCESSIBILITY_STREET_VIEW_WITH_STEP">"<ns1:g id="STEP_NUMBER">%1$d</ns1:g> औँ कदममा Street View प्रयोग गर्नुहोस्"</string>
+    <string msgid="2864917498473472285" name="ACCESSIBILITY_WALK_ROUTE">"पैदल मार्ग"</string>
+    <string msgid="8493757823683214418" name="ALERT_DETAILS_CARD_CLICKABLE_PROMPT">"थप जान्नुहोस्"</string>
+    <string msgid="3989324736757060364" name="ALERT_SEVERITY_CONTENT_DESCRIPTION">"अलर्ट"</string>
+    <string msgid="7887415291228067160" name="APP_LANGUAGE_SETTINGS_TITLE">"एपको भाषा"</string>
+    <string msgid="18182619617560500" name="ARRIVE_AT_TIME">"<ns1:g id="ARRIVAL_TIME">%1$s</ns1:g> मा पुग्नुहोस्"</string>
+    <string msgid="3456517746042480651" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफ्ना प्राथमिकताका आधारमा नयाँ तथा हाल लोकप्रिय ठाउँबारे अपडेटहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="8609071464979199056" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_SETTINGS_SUMMARY">"आफ्ना प्राथमिकताका आधारमा नयाँ तथा ट्रेन्डिङ ठाउँहरूबारे अद्यावधिक प्राप्त गर्नुहोस्"</string>
+    <string msgid="7386889502955593752" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_SETTINGS_TITLE">"नयाँ तथा ट्रेन्डिङ ठाउँहरू"</string>
+    <string msgid="4073140123776083415" name="BIKESHARING_RETURN_BIKE">"साइकल फर्काउनुहोस्"</string>
+    <string msgid="3764472074385554783" name="BIKESHARING_UNLOCK_BIKE">"साइकल अनलक गर्नु…"</string>
+    <string msgid="4321720802782027634" name="BIKESHARING_UNLOCK_IN_X">"<ns1:g id="APP_NAME">%s</ns1:g> मा गई अनलक गर्नु"</string>
+    <string msgid="906252415244469164" name="BUSINESS_MESSAGE_FROM_CUSTOMER_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"तपाईं ग्राहकहरूले Google मा तपाईंका व्यवसायिक प्रतिष्ठानलाई सन्देश पठाउँदा त्यसबारे सूचना प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="2660141319896744644" name="BUSINESS_MESSAGE_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफूले नक्सामा व्यवसायिक प्रतिष्ठानलाई सोधेका प्रश्नहरूको जवाफबारे अपडेटहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="6503029847043791301" name="BUSINESS_MESSAGE_NOTIFICATION_SETTINGS_SUMMARY">"आफूले नक्सामा व्यवसायिक प्रतिष्ठाहरूनलाई सोधेका प्रश्नहरूको जवाफ प्राप्त गर्नुहोस्"</string>
+    <string msgid="717732884052571101" name="BUSINESS_MESSAGE_NOTIFICATION_SETTINGS_TITLE">"Messages"</string>
+    <string msgid="6956338141212937008" name="CANCEL_BUTTON">"रद्द गर्नुहोस्"</string>
+    <string msgid="7385460563057493069" name="CHAT_SETTINGS_ITEM_TITLE">"कुराकानी"</string>
+    <string msgid="3849295477853657853" name="CLIENT_SIDE_RECENT_HISTORY_ENABLED">"हालसालैका खोजहरू यो डिभाइसमा सेभ गर्नुहोस्"</string>
+    <string msgid="4356531394932608249" name="COLLABORATIVE_LISTS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफ्नो स्वामित्वमा भएका तथा आफूले सम्पादन गर्ने सूचीबारे अपडेटहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="8615172296793020463" name="COLLABORATIVE_LISTS_NOTIFICATION_SETTINGS_SUMMARY">"तपाईं आफूले स्वामित्व लिने र सम्पादन गर्ने सूचीहरूबारे अद्यावधिक प्राप्त गर्नुहोस्"</string>
+    <string msgid="6724970202733370522" name="COLLABORATIVE_LISTS_NOTIFICATION_SETTINGS_TITLE">"सूचीहरू"</string>
+    <string msgid="3990714189475821790" name="COMMUTE_PROFILE_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफ्ना यात्रासम्बन्धी प्राथमिकताबारे जानकारी अद्यावधिक गर्न रिमाइन्डरहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="2350458858231203291" name="COMMUTE_PROFILE_SETTINGS_SUMMARY">"आफ्ना यात्रासम्बन्धी प्राथमिकताहरूबारे जानकारी अद्यावधिक गर्न रिमाइन्डरहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="7744486401672603894" name="COMMUTE_PROFILE_SETTINGS_TITLE">"यात्राको प्रोफाइल"</string>
+    <string msgid="7369031720555343766" name="COMPASS_ACCESSIBILITY_FOLLOW">"आफ्नो दिशा पछ्याउनुहोस्"</string>
+    <string msgid="5236771457267031238" name="COMPASS_ACCESSIBILITY_NORTH_UP">"नक्साको उत्तर दिशा माथितिरै रहन दिनुहोस्"</string>
+    <string msgid="7676079846529082801" name="CYCLING_ELEVATION_X_DECLINE">"-<ns1:g id="DISTANCE">%s</ns1:g> ओरालो"</string>
+    <string msgid="8573003133952335858" name="CYCLING_ELEVATION_X_INCLINE">"+<ns1:g id="DISTANCE">%s</ns1:g> उकालो"</string>
+    <string msgid="2150378996327208305" name="CYCLING_ROAD_TYPE_HIGHWAY">"राजमार्ग"</string>
+    <string msgid="3738580863381374955" name="CYCLING_ROAD_TYPE_MAIN_ROAD">"मुख्य सडक"</string>
+    <string msgid="784178227646746623" name="CYCLING_ROAD_TYPE_MARKED_BIKE_LANE">"चिन्ह लगाइएको साइकल लेन"</string>
+    <string msgid="1244790010869914494" name="CYCLING_ROAD_TYPE_MINOR_ROAD">"सहायक सडक"</string>
+    <string msgid="5593259990952540902" name="CYCLING_ROAD_TYPE_PEDESTRIAN_PATH">"पैदलमार्ग"</string>
+    <string msgid="7434121718026354602" name="CYCLING_ROAD_TYPE_SEPARATE_BIKE_LANE">"छुट्टै बाइक लेन"</string>
+    <string msgid="2993992995228313773" name="CYCLING_ROAD_TYPE_SHARED_PATH">"साझा मार्ग"</string>
+    <string msgid="3315402422807617192" name="CYCLING_ROAD_TYPE_STAIRS">"सिँढी"</string>
+    <string msgid="8104447113497885959" name="CYCLING_ROUTE_LABEL_BEST_ROUTE">"सबैभन्दा राम्रो बाटो"</string>
+    <string msgid="595174014278343405" name="CYCLING_ROUTE_LABEL_FASTEST">"सबैभन्दा छोटो"</string>
+    <string msgid="5308557378285449822" name="CYCLING_ROUTE_LABEL_LESS_HIGHWAYS">"राजमार्गहरू कम भएको"</string>
+    <string msgid="5788540842553685198" name="CYCLING_ROUTE_LABEL_LESS_STEEP_HILLS">"कम पहाडहरू"</string>
+    <string msgid="6544580293408762300" name="CYCLING_ROUTE_LABEL_LESS_TRAFFIC">"ट्राफिक कम भएको"</string>
+    <string msgid="771749047614319020" name="CYCLING_ROUTE_LABEL_LESS_TURNS">"अझ थोरै घुम्तीहरू छन्"</string>
+    <string msgid="5514720260010380200" name="CYCLING_ROUTE_LABEL_MORE_BIKE_LANES">"साइकल लेन बढी भएको"</string>
+    <string msgid="6799295909450023751" name="DA_AT">"<ns1:g id="STRING_0">{0}</ns1:g> मा"</string>
+    <string msgid="6204348838228824214" name="DA_DATA_CONNECTION_LOST">"डाटा जडान गम्यो..."</string>
+    <string msgid="9055920400292445132" name="DA_DISTANCE_FORMAT_FEET_ABBREVIATED">"<ns1:g id="NUMBER_OF_FEET">%s</ns1:g> फिट"</string>
+    <string msgid="1596038795147620692" name="DA_DISTANCE_FORMAT_FEET_EXTENDED">"<ns1:g id="NUMBER_OF_FEET">%s</ns1:g> फिट"</string>
+    <string msgid="5955263181315504888" name="DA_DISTANCE_FORMAT_KILOMETERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g> किमी"</string>
+    <string msgid="566231057264804657" name="DA_DISTANCE_FORMAT_KILOMETERS_EXTENDED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g> किलोमिटर"</string>
+    <string msgid="4017347679220015543" name="DA_DISTANCE_FORMAT_METERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_METERS">%s</ns1:g> मिटर"</string>
+    <string msgid="1379464276280242796" name="DA_DISTANCE_FORMAT_METERS_EXTENDED">"<ns1:g id="NUMBER_OF_METERS">%s</ns1:g> मीटर"</string>
+    <string msgid="2515401957955350520" name="DA_DISTANCE_FORMAT_MILES_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g> माइल"</string>
+    <string msgid="4237807912458051628" name="DA_DISTANCE_FORMAT_MILES_EXTENDED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g> माइल"</string>
+    <string msgid="7253880469383384966" name="DA_DISTANCE_FORMAT_MODE">"metric"</string>
+    <string msgid="4169708828913710793" name="DA_DISTANCE_FORMAT_YARDS_ABBREVIATED">"<ns1:g id="NUMBER_OF_YARDS">%s</ns1:g> गज"</string>
+    <string msgid="3150387851356211916" name="DA_DISTANCE_FORMAT_YARDS_EXTENDED">"<ns1:g id="NUMBER_OF_YARDS">%s</ns1:g> गज"</string>
+    <string msgid="4944833818130154379" name="DA_DISTANCE_RELATIVE_EQUIVALENT">"समान<ns1:g id="WHITESPACE">%1$s</ns1:g>दूरी"</string>
+    <string msgid="8140845091471826735" name="DA_DISTANCE_RELATIVE_LONGER">"<ns1:g id="DISTANCE">%1$s</ns1:g><ns1:g id="WHITESPACE">%2$s</ns1:g>लामो"</string>
+    <string msgid="4380111419025048248" name="DA_DISTANCE_RELATIVE_SHORTER">"<ns1:g id="DISTANCE">%1$s</ns1:g><ns1:g id="WHITESPACE">%2$s</ns1:g>छोटो"</string>
+    <string msgid="3065017842969529520" name="DA_EXIT_NAME">"<ns1:g id="EXIT_NAME">{0}</ns1:g> बाट बाहिर निस्कनुहोस्"</string>
+    <string msgid="4966940297863570499" name="DA_EXIT_NUMBER">"<ns1:g id="EXIT_NUMBER">{0}</ns1:g> बाट बाहिर निस्कनुहोस्"</string>
+    <string msgid="8494855683148237403" name="DA_EXPANDED_NOTIFICATION_SUBTEXT">"<ns1:g id="TIME_REMAINING">%1$s</ns1:g> · <ns1:g id="DISTANCE_REMAINING">%2$s</ns1:g> · <ns1:g id="ETA">%3$s</ns1:g>"</string>
+    <string msgid="8878104100559765265" name="DA_LOCKSCREEN_NOTIFICATION_DIRECTIONS">"<ns1:g id="DISTANCE_TO_NEXT_STEP">%1$s</ns1:g> - <ns1:g id="ROAD_NAME">%2$s</ns1:g>"</string>
+    <string msgid="8553864305083974087" name="DA_LOCKSCREEN_NOTIFICATION_SUBTEXT">"<ns1:g id="DESTINATION_NAME">%1$s</ns1:g> - <ns1:g id="ETA">%2$s</ns1:g>"</string>
+    <string msgid="698528250212661998" name="DA_MINUTES_ABBREVIATED_SHORT_UNIT">"मिनेट"</string>
+    <string msgid="7929640078602313092" name="DA_NAME_DELIMITER">" / "</string>
+    <string msgid="3380792810890405138" name="DA_NOTIFICATION_STEP_FORMAT">"<ns1:g id="STRING_0">{0}</ns1:g> - <ns1:g id="STRING_1">{1}</ns1:g>"</string>
+    <string msgid="6662097821719572140" name="DA_OFF_ROUTE">"मार्गदेखि बाहिर…"</string>
+    <string msgid="4249562764540028107" name="DA_ONTO">"<ns1:g id="STRING_0">{0}</ns1:g> मा"</string>
+    <string msgid="5914998525734325362" name="DA_POINT_ON_MAP">"नक्शामा पोइन्ट"</string>
+    <string msgid="1525420669081149187" name="DA_RELATIVE_EQUIVALENT">"समान\nETA"</string>
+    <string msgid="6345879111462833077" name="DA_RELATIVE_FASTER">"<ns1:g id="MINUTES">%1$s</ns1:g>\nथप छिटो"</string>
+    <string msgid="9026835910813824786" name="DA_RELATIVE_SLOWER">"<ns1:g id="MINUTES">%1$s</ns1:g>\nथप ढिलो"</string>
+    <string msgid="1136623639867405953" name="DA_REROUTING">"दिशा परिवर्तन गर्दै..."</string>
+    <string msgid="7438343460352215122" name="DA_ROUTE_PREFIXES">"N,NE,E,SE,S,SW,W,NW"</string>
+    <string msgid="5218446718068301940" name="DA_ROUTE_SUFFIXES">"N,NE,E,SE,S,SW,W,NW,Ave,Blvd,Byp,Cir,Ct,Dr,Expy,Fwy,Hwy,Ln,Pkwy,Pl,Rd,St,Thrwy,Way"</string>
+    <string msgid="4645745718037033230" name="DA_SPEECH_CONTINUE_FOR_A_HALF_MILE">"आधा माइलको लागि जारी राख्नुहोस्"</string>
+    <string msgid="4164172923590406078" name="DA_SPEECH_CONTINUE_FOR_A_QUARTER_MILE">"एक चौथाई माइलको लागि जारी राख्नुहोस्"</string>
+    <string msgid="4639761855126118140" name="DA_SPEECH_CONTINUE_FOR_ONE_AND_A_HALF_KILOMETERS">"एक र आधा किलोमिटरको लागि जारी राख्नुहोस्"</string>
+    <string msgid="7622810818891191525" name="DA_SPEECH_CONTINUE_FOR_ONE_AND_A_HALF_MILES">"साढे एक माइलसम्म जारी राख्नुहोस्"</string>
+    <string msgid="805371831027414281" name="DA_SPEECH_CONTINUE_FOR_THREE_QUARTERS_OF_A_MILE">"तीन चौथाई माइलसम्म जारी राख्नुहोस्"</string>
+    <string msgid="9112904440572551597" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_A_HALF_MILE">"<ns1:g id="ROAD_NAME">%1$s</ns1:g> मा आधा माइलसम्म जारी राख्नुहोस्"</string>
+    <string msgid="1306868173119066430" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_A_QUARTER_MILE">"<ns1:g id="ROAD_NAME">%1$s</ns1:g> मा एक चौथाई माइलसम्म जारी राख्नुहोस्"</string>
+    <string msgid="1481342479470867549" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_ONE_AND_A_HALF_KILOMETERS">"एक र आधा किलोमिटरसम्म <ns1:g id="ROAD_NAME">%1$s</ns1:g> मा जारी रहनुहोस्"</string>
+    <string msgid="6881684665273996002" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_ONE_AND_A_HALF_MILES">"<ns1:g id="ROAD_NAME">%1$s</ns1:g> मा साढे एक माइलसम्म जारी राख्नुहोस्"</string>
+    <string msgid="7098370444643797153" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_THREE_QUARTERS_OF_A_MILE">"एक माइलको तीन चौथाइ सम्म <ns1:g id="ROAD_NAME">%1$s</ns1:g> मा जारी राख्नुहोस्"</string>
+    <string msgid="1622868587212934709" name="DA_SPEECH_IN_A_HALF_MILE">"आधा माइलमा"</string>
+    <string msgid="776151086427605353" name="DA_SPEECH_IN_A_QUARTER_MILE">"एक चौथाई माइलमा"</string>
+    <string msgid="3825333003762141464" name="DA_SPEECH_IN_ONE_AND_A_HALF_KILOMETERS">"साढे एक किलोमिटरमा"</string>
+    <string msgid="6689160907320579504" name="DA_SPEECH_IN_ONE_AND_A_HALF_MILES">"एक र आधा माइलमा"</string>
+    <string msgid="8298844267891398809" name="DA_SPEECH_IN_THREE_QUARTERS_OF_A_MILE">"तीन चौथाइ माइलमा"</string>
+    <string msgid="5536748116879901705" name="DA_SPEECH_LOST_GPS">"GPS सिग्नल गुम्यो"</string>
+    <string msgid="7031013673377029795" name="DA_SPEECH_YOU_SHOULD_GET_THERE_BY">"<ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g> भित्र तपाईं आफ्नो गन्तव्यमा पुग्नुपर्छ"</string>
+    <string msgid="2864490850591934011" name="DA_SPEECH_YOU_WILL_NOW_ARRIVE_AT">"तपाईं अब <ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g> बजे आइपुग्नु हुनेछ"</string>
+    <string msgid="626040107222949163" name="DA_SPEED_FORMAT_KILOMETERS_PER_HOUR_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g> किमी प्रतिघण्टा"</string>
+    <string msgid="5696017829806052324" name="DA_SPEED_FORMAT_MILES_PER_HOUR_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g> माइल प्रतिघण्टा"</string>
+    <string msgid="8717832301235175955" name="DA_STAY_ON_ROAD_PRIMARY">"<ns1:g id="STRING_0">{0}</ns1:g> मा रहनुहोस्"</string>
+    <string msgid="1522051354942059491" name="DA_STAY_ON_ROAD_SECONDARY_MANEUVER">"<ns1:g id="STRING_0">{0}</ns1:g> देखि <ns1:g id="STRING_1">{1}</ns1:g> सम्म"</string>
+    <string msgid="6588954374506898552" name="DA_THEN">"त्यसपछि <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="5783008655276864364" name="DA_TIME_FORMAT_CLOCK">"<ns1:g id="HOURS">%1$d</ns1:g>:<ns1:g id="MINUTES">%2$02d</ns1:g>"</string>
+    <string msgid="7707919387811958765" name="DA_TIME_FORMAT_DAYS_AND_HOURS">"<ns1:g id="NUMBER_OF_DAYS">%1$s</ns1:g> <ns1:g id="NUMBER_OF_HOURS">%2$s</ns1:g>"</string>
+    <string msgid="6892640684881875785" name="DA_TIME_FORMAT_HOURS_AND_MINUTES">"<ns1:g id="NUMBER_OF_HOURS">%1$s</ns1:g> <ns1:g id="NUMBER_OF_MINUTES">%2$s</ns1:g>"</string>
+    <string msgid="7817998043468236136" name="DA_TOWARD">"<ns1:g id="STRING_0">{0}</ns1:g> तर्फ"</string>
+    <string msgid="3123596705054737201" name="DA_YOUR_DESTINATION_IS_A_HALF_MILE_AHEAD">"तपाईंको गन्तव्य आधा माइल अगाडि छ"</string>
+    <string msgid="8661505845314857886" name="DA_YOUR_DESTINATION_IS_A_QUARTER_MILE_AHEAD">"तपाईंको गन्तव्य एक चौथाई माइल अगाडी छ"</string>
+    <string msgid="3905156493194280718" name="DA_YOUR_DESTINATION_IS_ONE_AND_A_HALF_KILOMETERS_AHEAD">"तपाईंको गन्तव्य साढे एक किलोमिटर अगाडी छ"</string>
+    <string msgid="4589187785814099880" name="DA_YOUR_DESTINATION_IS_ONE_AND_A_HALF_MILES_AHEAD">"तपाईंको गन्तव्य डेढ माइल अगाडि छ"</string>
+    <string msgid="4923490260885185878" name="DA_YOUR_DESTINATION_IS_THREE_QUARTERS_OF_A_MILE_AHEAD">"तपाईंको गन्तव्य तीन चौथाई माइल अगाडी छ"</string>
+    <string msgid="1064900343663975467" name="DEBUG_MAPS_FEATURES_SETTINGS_TITLE">"डिबगका विशेषताहरू [डगफुड मात्र]"</string>
+    <string msgid="5698435378918936657" name="DIRECTIONS_PROCEED_TO_METERS">"<ns1:g id="DISTANCE">%1$s</ns1:g> सम्म यो बाटो नछोडी जानुहोस्"</string>
+    <string msgid="4176893357736379300" name="DIRECTIONS_STEP_LIST_TO">"<ns1:g id="DESTINATION">%s</ns1:g> मा"</string>
+    <string msgid="1814428387459568726" name="DIRECTIONS_YOUR_LOCATION">"तपाईंको स्थान"</string>
+    <string msgid="737968998903158015" name="DISCLAIMER">"सडकमा ध्यान दिनुहोस् र लागूयोग्य कानूनहरूको पालना गर्नुहोस्। चालमा हुँदा एपलाई हेरफेर नगर्नुहोस्। निर्देशनहरू बेठीक, अपूर्ण, खतरनाक, अनुपयुक्त, निषेधित, वा प्रशासनिक क्षेत्र पार गर्नुपर्ने खालका हुनु सक्छन्। डाटा वास्तविक-समय होइन, र स्थानको यथार्थताको  ग्यारेन्टी दिन सकिँदैन।"</string>
+    <string msgid="2642186254766054874" name="DISCLAIMER_TITLE">"Google नक्सा नेभिगेसन beta मा छ। सावधानी अपनाउनुहोस्।"</string>
+    <string msgid="2322386471590166279" name="DISTANCE_FEET_ABBREVIATED">"<ns1:g id="NUMBER_OF_FEET"/> फिट"</string>
+    <string msgid="1770611150911759090" name="DISTANCE_FEET_EXTENDED">"<ns1:g id="NUMBER_OF_FEET"/> फिट"</string>
+    <string msgid="8832117946718206516" name="DISTANCE_KILOMETERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS"/> कि.मि."</string>
+    <string msgid="1712822516939066073" name="DISTANCE_KILOMETERS_EXTENDED">"<ns1:g id="NUMBER_OF_KILOMETERS"/> किलोमिटर"</string>
+    <string msgid="5115749175241245588" name="DISTANCE_METERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_METERS"/> मिटर"</string>
+    <string msgid="6786188804325739113" name="DISTANCE_METERS_EXTENDED">"<ns1:g id="NUMBER_OF_METERS"/> मिटर"</string>
+    <string msgid="1663691802801530665" name="DISTANCE_MILES_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES"/> माइल"</string>
+    <string msgid="7535910480336049458" name="DISTANCE_MILES_EXTENDED">"<ns1:g id="NUMBER_OF_MILES"/> माइल"</string>
+    <string msgid="3873406547898134225" name="DISTANCE_TO_TRIP_LEVEL_NOTICE">"<ns1:g id="DISTANCE">%1$s</ns1:g> मा"</string>
+    <string msgid="5782765699559481543" name="DISTANCE_YARDS_ABBREVIATED">"<ns1:g id="NUMBER_OF_YARDS"/> गज"</string>
+    <string msgid="314073790876879964" name="DISTANCE_YARDS_EXTENDED">"<ns1:g id="NUMBER_OF_YARDS"/> गज"</string>
+    <string msgid="738884423108976541" name="DONE">"सम्पन्न भयो"</string>
+    <string msgid="2363263758654372020" name="DRIVING_MODE_NOTIFICATION_DRIVING_WITH_NO_CURRENT_ROAD">"Google नक्सासँग ड्राइभिङ"</string>
+    <string msgid="4220331858318238031" name="DURATION_AND_DISTANCE_TO_DESTINATION">"<ns1:g id="DURATION">%1$s</ns1:g> (<ns1:g id="DISTANCE">%2$s</ns1:g>) देखि गन्तव्यसम्म"</string>
+    <string msgid="6479013822372531284" name="DURATION_AND_DISTANCE_WITH_DESTINATION">"<ns1:g id="DESTINATION">%3$s</ns1:g> पुग्न <ns1:g id="DURATION">%1$s</ns1:g> लाग्छ (<ns1:g id="DISTANCE">%2$s</ns1:g>)"</string>
+    <string msgid="6003991895084447024" name="EDIT_HOME_WORK">"गृह वा कार्य सम्पादन गर्नुहोस्"</string>
+    <string msgid="516081725937928083" name="ENERGY_CONSUMPTION_ENGINE_TYPE_SETTINGS_TITLE">"इन्जिनको प्रकार"</string>
+    <string msgid="3843996814576444609" name="ESTIMATED_TIME_OF_ARRIVAL">"<ns1:g id="ARRIVAL_TIME">%1$s</ns1:g> अनुमानित आगमन"</string>
+    <string msgid="3733379082443710457" name="ESTIMATED_TIME_OF_ARRIVAL_SHORT">"<ns1:g id="ESTIMATED_TIME_OF_ARRIVAL">%1$s</ns1:g> ETA"</string>
+    <string msgid="4474776824279943996" name="ESTIMATED_TIME_OF_ARRIVAL_WITH_TIME_ZONE">"<ns1:g id="ESTIMATED_TIME_OF_ARRIVAL">%1$s</ns1:g> <ns1:g id="SHORT_TIME_ZONE">%2$s</ns1:g>"</string>
+    <string msgid="6999585662399273468" name="EVEN_ONLY_TRAVEL_RESTRICTION_CALLOUT_TEXT">"जोर नम्बर भएका सवारी साधन मात्र"</string>
+    <string msgid="7000439285054278098" name="EV_CONNECTOR_PREFERENCES_SUMMARY">"प्लगहरू चयन गर्नुहोस्"</string>
+    <string msgid="538913145063218200" name="EV_CONNECTOR_PREFERENCES_TITLE">"कम्प्याटिबल प्लग तथा एड्याप्टरहरू"</string>
+    <string msgid="2967277365338415762" name="EV_PROFILE_SETTINGS_TITLE_V2">"विद्युतीय सवारी साधनसम्बन्धी सेटिङ"</string>
+    <string msgid="833120489844392943" name="EXPLORE_PREFERENCES_SETTINGS_LANDING_PAGE_ENTRY_POINT_TEXT">"आफ्ना प्राथमिकताहरू मिलाउनुहोस्"</string>
+    <string msgid="1042961630059727812" name="EYES_FREE_MODE_REROUTE_NOTIFICATION">"तपाईंले यो मार्ग छाड्नुभएको छ जस्तो देखिन्छ, त्यसैले म तपाईंको मार्ग परिवर्तन गर्दै छु।"</string>
+    <string msgid="2695748113301305354" name="FAILED_TO_LAUNCH_APPLICATION">"एप प्रारम्भ गर्न असफल भयो"</string>
+    <string msgid="6461634184436147039" name="GENERIC_DELAY_SUBTITLE">"अपेक्षित विलम्ब"</string>
+    <string msgid="5033029603744943710" name="GETTING_AROUND_CATEGORY_TITLE">"वरिपरि घुम्दै"</string>
+    <string msgid="5232271074030694384" name="GOOGLE_LOCATION_SETTINGS">"Google स्थान सेटिङहरू"</string>
+    <string msgid="5646148448362261180" name="GOOGLE_MAPS_TIMELINE_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफ्नो स्थानसम्बन्धी इतिहासबारे अपडेटहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="2493857178325724377" name="GOOGLE_MAPS_TIMELINE_SETTINGS_SUMMARY">"आफ्नो स्थानको इतिहासम्बन्धी अद्यावधिकहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="196582671347677600" name="GOOGLE_MAPS_TIMELINE_SETTINGS_TITLE">"Google नक्साको टाइमलाइन"</string>
+    <string msgid="4749894635859607507" name="GPS_SIGNAL_LOST_CALLOUT_TEXT">"GPS खोज्दै..."</string>
+    <string msgid="3033976480311745440" name="HAZARDOUS_GOODS_RESTRICTED">"हानिकारक सामानहरूमा प्रतिबन्ध लगाइएको छ"</string>
+    <string msgid="4732345555387659208" name="HEAVY_TRAFFIC">"अत्यधिक ट्राफिक"</string>
+    <string msgid="173409722067999322" name="HEIGHT_FEET_ABBREVIATED">"<ns1:g id="FEET">%d</ns1:g> फिट"</string>
+    <string msgid="8966636302039617408" name="HEIGHT_FEET_INCHES_ABBREVIATED">"<ns1:g id="FEET">%d</ns1:g> फिट <ns1:g id="INCHES">%d</ns1:g> इन्च"</string>
+    <string msgid="8637363475448752754" name="HEIGHT_FEET_INCHES_LONGFORM">"<ns1:g id="FEET">%d</ns1:g> फिट <ns1:g id="INCHES">%d</ns1:g> इन्च"</string>
+    <string msgid="1521089235551336608" name="HEIGHT_FEET_LONGFORM">"<ns1:g id="FEET">%d</ns1:g> फिट"</string>
+    <string msgid="1887668386950703406" name="HEIGHT_RESTRICTED">"ठुला ठुला सवारी साधनमा प्रतिबन्ध लगाइएको छ"</string>
+    <string msgid="784251430855706294" name="HOV_AVAILABLE">"HOV उपलब्ध छ"</string>
+    <string msgid="6529821054904011518" name="IMPROVE_YOUR_LOCATION">"स्थान सहीपना सुझावहरू"</string>
+    <string msgid="2540976662746914375" name="INCIDENT_VOTE_COUNT_BUCKET_LONG">"<ns1:g id="VOTE_COUNT">%1$s</ns1:g>+ रिपोर्ट गरिएको"</string>
+    <string msgid="8281026530646827235" name="INCIDENT_VOTE_COUNT_BUCKET_SHORT">"<ns1:g id="VOTE_COUNT">%1$s</ns1:g>+"</string>
+    <string msgid="1284004591458612182" name="INCIDENT_VOTE_COUNT_LONG">"<ns1:g id="VOTE_COUNT">%1$s</ns1:g> रिपोर्ट गरिएको"</string>
+    <string msgid="7857287556098266775" name="INFORMATION_SEVERITY_CONTENT_DESCRIPTION">"सूचना"</string>
+    <string msgid="6766669801183231447" name="INITIAL_NOTIFICATION_CONTENT_TITLE">"नेभिगेट गर्ने सुविधा अन गरिँदै छ…"</string>
+    <string msgid="3945432022630896702" name="JAMCIDENT_DELAY_TIME">"+<ns1:g id="TIME">%1$s</ns1:g>"</string>
+    <string msgid="6857277423395462126" name="LIGHT_TRAFFIC">"हल्का ट्राफिक"</string>
+    <string msgid="2755809767742409326" name="LOADING">"लोड हुँदै"</string>
+    <string msgid="8072745940066400784" name="LOCAL_PREFERENCES_AREA_MANAGEMENT_ENTRY_POINT_TEXT">"आफ्ना क्षेत्र व्यवस्थित गर्नु…"</string>
+    <string msgid="5423743480617991599" name="LOCATION_AND_PROFILE_CATEGORY_TITLE">"स्थान र प्रोफाइल"</string>
+    <string msgid="2086740505285691302" name="LOCATION_NOT_YET_AVAILABLE">"स्थानको लागि पर्खदै..."</string>
+    <string msgid="8345606348711609944" name="LOCATION_SHARING_FRIENDS_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफ्ना साथी तथा उनीहरूले सेयर गरेका स्थानसम्बन्धी अपडेटहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="584985529279859810" name="LOCATION_SHARING_FRIENDS_SETTINGS_SUMMARY">"आफ्ना साथी र उनीहरूको साझा स्थानका बारेमा अद्यावधिक प्राप्त गर्नुहोस्"</string>
+    <string msgid="1787475954612106105" name="LOCATION_SHARING_FRIENDS_SETTINGS_TITLE">"Google को स्थानको साझेदारी (साथीहरू)"</string>
+    <string msgid="1798157651559312287" name="LOCATION_SHARING_UPDATES_SETTINGS_SUMMARY">"तपाईंको साझा स्थान अद्यावधिक भइरहँदा अद्यावधिकहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="4145708674804313912" name="LOCATION_SHARING_UPDATES_SETTINGS_TITLE">"Google को स्थान साझेदारीसम्बन्धी अद्यावधिकहरू"</string>
+    <string msgid="6974966951431091715" name="LOCATION_SHARING_YOU_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफ्नो स्थानसम्बन्धी जानकारी सेयर गर्नेबारे अपडेटहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="2507248622422659061" name="LOCATION_SHARING_YOU_SETTINGS_SUMMARY">"आफ्नो स्थान आदान प्रदान गर्नेसम्बन्धी अद्यावधिक प्राप्त गर्नुहोस्"</string>
+    <string msgid="3628122068571233362" name="LOCATION_SHARING_YOU_SETTINGS_TITLE">"Google को स्थान सेयर (तपाईं)"</string>
+    <string msgid="5983765003219829883" name="MANILA_TRAVEL_RESTRICTION_CALLOUT_TEXT">"कोडिङ  <ns1:g id="PLATE_1">%1$d</ns1:g> र <ns1:g id="PLATE_2">%2$d</ns1:g>"</string>
+    <string msgid="2282765788770439491" name="MAPS_FEATURES_CATEGORY_TITLE">"नक्साका विशेषताहरू"</string>
+    <string msgid="8758525520286582553" name="MAPS_FEATURES_URGENT_SETTINGS_TITLE">"नक्साका सुविधासम्बन्धी अत्यन्त जरुरी अद्यावधिकहरू"</string>
+    <string msgid="2890999488170047937" name="MAPS_HISTORY">"नक्सा इतिहास"</string>
+    <string msgid="7523320203882314616" name="MAP_COPYRIGHTS_FULL">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - चित्र ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>, नक्सा डाटा ©<ns1:g id="COPYRIGHT_YEAR_2">%4$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%5$s</ns1:g>"</string>
+    <string msgid="3080854072740850768" name="MAP_COPYRIGHTS_GOOGLE_ONLY">"©<ns1:g id="COPYRIGHT_YEAR">%1$s</ns1:g> Google"</string>
+    <string msgid="271754604139169484" name="MAP_COPYRIGHTS_IMAGERY_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - चित्रकारी ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>"</string>
+    <string msgid="6150599764044956009" name="MAP_COPYRIGHTS_MAP_DATA_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - नक्सा डाटा ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%3$s</ns1:g>"</string>
+    <string msgid="1172850333329779755" name="NAVIGATION_CATEGORY_TITLE">"नेभिगेसन"</string>
+    <string msgid="2003321543190473980" name="NAVIGATION_SETTINGS">"नेभिगेसनसम्बन्धी सेटिङ"</string>
+    <string msgid="6362228591814936571" name="NAVIGATION_STEP_LIST_DISTANCE_TO_NEXT_STEP">"<ns1:g id="DISTANCE">%1$s</ns1:g> मा"</string>
+    <string msgid="8513156606874950515" name="NAVIGATION_URGENT_SETTINGS_TITLE">"नेभिगेसन सुविधासम्बन्धी जरुरी अद्यावधिकहरू"</string>
+    <string msgid="8746273910770749866" name="NAV_SDK_DEFAULT_COMPANY_NAME">"उक्त एपको विकासकर्ता"</string>
+    <string msgid="3522779505396739599" name="NAV_SDK_DISCLAIMER">"आफ्नो सेरोफेरोमा ध्यान दिन नबिर्सनुहोस् र सधैँ कानुनको पालना गर्नुहोस्।"</string>
+    <string msgid="2337842297414069478" name="NAV_SDK_GOT_IT">"बुझेँ"</string>
+    <string msgid="6986418512565360329" name="NAV_SDK_I_AM_IN">"हो, म सहमत छु"</string>
+    <string msgid="2296133702373295473" name="NAV_SDK_LEGAL_TEXT">"तपाईंले <ns1:g id="NAV_SDK_COMPANY_NAME_2">%1$s</ns1:g> प्रयोग गर्दा Google ले सबै जनाका लागि Google नक्साको गुणस्तर सुधार्न GPS लोकेसन र तपाईंले यात्रा गर्नुभएको मार्ग जस्ता नेभिगेसन डेटा सङ्कलन गर्छ। यो डेटा अन्य प्रयोगकर्ताहरूलाई ट्राफिकको वास्तविक-समयको स्थिति र अवरोधहरू जस्ता जानकारी देखाउन र उनीहरूलाई सबभन्दा राम्रो मार्ग पत्ता लगाउनमा मद्दत गर्नका लागि प्रयोग गर्न सकिन्छ।\n\nनक्सामा गरिएका यी अपडेटहरू तपाईंको Google खाता वा डिभाइससँग जोडिएका हुने छैनन्। Google का <ns1:g id="NAV_SDK_TERMS">%2$s</ns1:g> र <ns1:g id="NAV_SDK_PRIVACY_POLICY">%3$s</ns1:g> लागू हुन्छन्।\n\n<ns1:g id="NAV_SDK_COMPANY_NAME_3">%4$s</ns1:g> ले पनि यो डेटा सङ्कलन र प्रयोग गर्न सक्छ। कृपया थप जानकारीका लागि <ns1:g id="NAV_SDK_COMPANY_NAME_4">%5$s</ns1:g> एपको गोपनीयता नीति हेर्नुहोस्।"</string>
+    <string msgid="5332923116377998043" name="NAV_SDK_LEGAL_TEXT_LEGACY">"हाम्रा सेवाहरू प्रदान गर्न र तिनीहरूलाई सुधार गर्न Google ले उक्त एप चलिरहेको बेलामा तपाईंको स्थान र ड्राइभिङसम्बन्धी डेटा सङ्कलन गर्न सक्छ। <ns1:g id="NAV_SDK_COMPANY_NAME">%1$s</ns1:g> का कार्यहरूलाई सुधार गर्न यो डेटा तिनीहरूसँग आदान प्रदान गर्न पनि सकिन्छ। Google का <ns1:g id="NAV_SDK_TERMS">%2$s</ns1:g> र <ns1:g id="NAV_SDK_PRIVACY_POLICY">%3$s</ns1:g> लागू हुन्छन्।"</string>
+    <string msgid="6340328118114501085" name="NAV_SDK_PRIVACY_POLICY">"गोपनीयता नीति"</string>
+    <string msgid="2982362725876163352" name="NAV_SDK_PRIVACY_POLICY_CAPITALIZED">"गोपनीयता नीति"</string>
+    <string msgid="4531136199149528407" name="NAV_SDK_TERMS">"सर्तहरू"</string>
+    <string msgid="7707795984529102497" name="NAV_SDK_TERMS_CAPITALIZED">"सर्तहरू"</string>
+    <string msgid="3015266809371007473" name="NAV_SDK_TERMS_CLOSE">"एप बन्द गर्नुहोस्"</string>
+    <string msgid="8901594003619146647" name="NAV_SDK_TERMS_ERROR">"नेभिगेसनसम्बन्धी सेवाका सर्तहरू लोड गर्ने क्रममा कुनै त्रुटि भयो। कृपया एप रिस्टार्ट गर्नुहोस्।"</string>
+    <string msgid="6958049100686788454" name="NAV_SDK_WELCOME_TO_GOOGLE_MAPS_NAVIGATION">"Google नक्सा नेभिगेसनमा स्वागत छ।"</string>
+    <string msgid="6791023658564191335" name="NEARBY_PLACES_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY_V2">"तपाईं वरपरका ठाउँ तथा कार्यक्रमबारे सिफारिसहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="5467978305791925717" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_SUMMARY">"तपाईं आफूले सुरक्षित गरेका ठाउँहरूमध्ये कुनै एक ठाउँको नजिक हुँदा सोको जानकारी प्राप्त गर्नुहोस्"</string>
+    <string msgid="2899316768992820532" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_SUMMARY_V2">"वरपरका स्थान र कार्यक्रमहरूबारे सिफारिसहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="7613155153180186667" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_TITLE">"वरपरका ठाउँ तथा कार्यक्रमहरू"</string>
+    <string msgid="2522056010363733176" name="NETWORK_UNAVAILABLE">"जडान गर्न सकिँदैन"</string>
+    <string msgid="5798081927324715154" name="NEW_ON_MAPS_CATEGORY_TITLE">"नक्सामा नयाँ"</string>
+    <string msgid="1286364333769843890" name="NEW_ON_MAPS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"तपाईं नक्सामा उपलब्ध नयाँ सुविधाबारे अपडेटहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="7425167408473147318" name="NEW_ON_MAPS_NOTIFICATION_SETTINGS_SUMMARY">"आफूले नक्सामा गर्न सक्ने नयाँ कुराहरूबारे समय समयमा अद्यावधिकहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="8563411120076685209" name="NORMAL_TRAFFIC">"सामान्य ट्राफिक"</string>
+    <string msgid="7130046223811209078" name="NOTICE_EFFECTIVE_RANGE">"<ns1:g id="DATE_OR_DATE_RANGE">%s</ns1:g> मा प्रभावकारी"</string>
+    <string msgid="4156394438137475279" name="NOTIFICATIONS_SETTINGS_TITLE">"सूचनाहरू"</string>
+    <string msgid="889779361831341194" name="ODD_ONLY_TRAVEL_RESTRICTION_CALLOUT_TEXT">"बिजोर नम्बर भएका सवारी साधन मात्र"</string>
+    <string msgid="5195182224903466222" name="OFFLINE_MAPS_DOWNLOAD_EMBEDDED_TITLE">"अफलाइन नक्साहरूको डाउनलोड"</string>
+    <string msgid="103070061409767941" name="OFFLINE_MAPS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफ्नो फोन वा ट्याब्लेटमा सुरक्षित गरिएका क्षेत्रबारे अपडेटहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="2065934284598719130" name="OFFLINE_MAPS_NOTIFICATION_SETTINGS_SUMMARY">"आफ्नो फोन वा ट्याब्लेटमा सुरक्षित गरिएका स्थानहरूबारे अद्यावधिक प्राप्त गर्नुहोस्"</string>
+    <string msgid="4278334889579817101" name="OFFLINE_MAPS_TITLE">"अफलाइन नक्सा"</string>
+    <string msgid="5659021817125812935" name="OFFLINE_SETTINGS">"अफलाइन नक्साका सेटिङहरू"</string>
+    <string msgid="2611064167742529426" name="OTHER_NOTIFICATION_CHANNEL">"अन्य सूचनाहरू"</string>
+    <string msgid="653910275023514690" name="PARKING_LOCATION_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफ्नो पार्किङ स्थलबारे अपडेटहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="8831411745546173529" name="PARKING_LOCATION_SETTINGS_SUMMARY">"आफ्नो पार्किङ स्थलसम्बन्धी अद्यावधिकहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="874143968644994017" name="PARKING_LOCATION_SETTINGS_TITLE">"पार्किङ स्थल"</string>
+    <string msgid="4109028911398058028" name="PERSONAL_CONTENT_TITLE">"व्यक्तिगत सामग्री"</string>
+    <string msgid="6309784419540645516" name="PHOTO_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफूले भ्रमण गरेका ठाउँका आधारमा ती ठाउँका फोटो अपलोड गर्ने तथा त्यहाँ पाइने परिकार ट्याग गर्ने रिमाइन्डरहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="2017256142609753488" name="PHOTO_NOTIFICATION_SETTINGS_SUMMARY">"आफूले भ्रमण गरेका ठाउँहरूमा आधारित भई तिनका फोटो अपलोड गर्ने र परिकारहरू ट्याग गर्ने रिमाइन्डरहरू प्राप्त गर्नुहोस्।"</string>
+    <string msgid="7486650467383313327" name="PHOTO_NOTIFICATION_SETTINGS_TITLE">"फोटोहरू आदान प्रदान र ट्याग गर्नुहोस्"</string>
+    <string msgid="2975029997059956743" name="PICKUP_ORDERS_NOTIFICATION_OPT_OUT_SETTING_SUMMARY">"तपाईं नक्सामा आफ्ना पिकअप अर्डरसम्बन्धी अद्यावधिक जानकारी प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="3374210285480569472" name="PICKUP_ORDERS_NOTIFICATION_SETTING_SUMMARY">"अर्डरको स्थितिसम्बन्धी अद्यावधिक जानकारी र आफू स्टोरमा पुग्ने समय तथा चेक इनसम्बन्धी जानकारी सेयर गर्ने रिमाइन्डरहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="668310841030579677" name="PICKUP_ORDERS_NOTIFICATION_SETTING_TITLE">"अर्डर पिकअप गर्ने सुविधा"</string>
+    <string msgid="8127880752570065607" name="PLACES_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफूले भ्रमण गरेका ठाउँहरूबाट अरू मान्छेले के अपेक्षा राख्ने भन्ने जानकारीका लागि सोधिएका प्रश्नहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="5365776433570962189" name="PLACES_NOTIFICATION_SETTINGS_SUMMARY">"आफूले भ्रमण गरेका ठाउँहरूबारे सोधिएका प्रश्नहरूको जवाफ दिई अरू मान्छेलाई ती ठाउँका सम्बन्धमा के अपेक्षा राख्ने भनी जानकारी दिनुहोस्"</string>
+    <string msgid="3724976413506253643" name="PLACES_NOTIFICATION_SETTINGS_TITLE">"तपाईंले भ्रमण गर्नुभएका ठाउँहरू"</string>
+    <string msgid="7471023852308791790" name="POI_PROMPT_ADD_STOP">"बिसौनी थप्नु"</string>
+    <string msgid="7983858942352259551" name="POI_PROMPT_ADD_STOP_ACTION">"मार्गमा थपियो"</string>
+    <string msgid="8778537284281768607" name="POI_PROMPT_NAVIGATE">"नेभिगेट गर्नुहोस्"</string>
+    <string msgid="472834733509383200" name="POI_PROMPT_NAVIGATE_ACTION">"नेभिगेसन गरिँदैछ"</string>
+    <string msgid="298606571303064040" name="PROMPT_CANCEL">"रद्द गर्नुहोस्"</string>
+    <string msgid="4066051640880834866" name="PROMPT_DISMISS">"हटाउनुहोस्"</string>
+    <string msgid="5503515646274126756" name="QA_AND_CHAT_CATEGORY_TITLE">"प्रश्नोत्तर र च्याट"</string>
+    <string msgid="3324329907005959185" name="RECENTER_FOLLOW_MODE">"रिसेन्टर गर्नु"</string>
+    <string msgid="1486707796824890396" name="RECOMMENDATIONS_FOR_YOU_CATEGORY_TITLE">"तपाईंका लागि सिफारिसहरू"</string>
+    <string msgid="8105228677480057073" name="REMOVE">"हटाउनुहोस्"</string>
+    <string msgid="1550982124371473702" name="REPORTED_VIA_WAZE_APP">"Waze अनुप्रयोगद्वारा रिपोर्ट गरिएको"</string>
+    <string msgid="2241569767697676295" name="REROUTE_CALLOUT_CURRENT">"हालको"</string>
+    <string msgid="520999062746509578" name="REROUTE_CALLOUT_NEW">"नयाँ"</string>
+    <string msgid="3344101668786395431" name="REVIEW_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफूले भ्रमण गरेका ठाउँका आधारमा तिनका बारेमा समीक्षा लेख्ने रिमाइन्डरहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="7888846095073550740" name="REVIEW_NOTIFICATION_SETTINGS_SUMMARY">"आफूले भ्रमण गरेका ठाउँहरूमा आधारित भई तिनका बारेमा समीक्षा लेख्ने रिमाइन्डरहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="7916601440448962034" name="REVIEW_NOTIFICATION_SETTINGS_TITLE">"समीक्षा लेख्नेसम्बन्धी सुझावहरू"</string>
+    <string msgid="1541842670412044840" name="RODIZIO_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Rodízio <ns1:g id="PLATE_1">%1$d</ns1:g> र <ns1:g id="PLATE_2">%2$d</ns1:g>"</string>
+    <string msgid="8062022808692087963" name="ROUTE_AROUND_CLOSURE_CALLOUT_CLOSED">"बन्द भयो"</string>
+    <string msgid="623689270367292384" name="ROUTE_AROUND_TRAFFIC_ACTION">"दिशा परिवर्तन हुँदैछ"</string>
+    <string msgid="7859812763744711003" name="ROUTE_AROUND_TRAFFIC_CALLOUT_FASTER">"झन छिटो"</string>
+    <string msgid="2611671618289658133" name="ROUTE_AROUND_TRAFFIC_DECLINE">"पर्दैन, धन्यवाद"</string>
+    <string msgid="1962094888482140214" name="ROUTE_AROUND_TRAFFIC_REROUTE">"स्वीकारर्नुहोस्"</string>
+    <string msgid="5344116890552800007" name="ROUTE_AROUND_TRAFFIC_TAKE_ACTION_CUE_DEFAULT_DECLINE">"द्रुत मार्गबाट जान, <ns1:g id="REROUTE_BUTTON">%1$s</ns1:g> ट्याप गर्नुहोस्।"</string>
+    <string msgid="9048657312424993512" name="ROUTE_AROUND_TRAFFIC_TAKE_ACTION_CUE_DEFAULT_REROUTE">"यदि तपाईं हालको मार्गमा रहन चाहनुहुन्छ भने, <ns1:g id="DECLINE_BUTTON">%1$s</ns1:g> ट्याप गर्नुहोस्।"</string>
+    <string msgid="668738352458665249" name="SATELLITE_KEEP_ON_SETTING_SUMMARY">"यसले बढी डेटा खपत गर्छ"</string>
+    <string msgid="5458955675293713001" name="SATELLITE_KEEP_ON_SETTING_TITLE">"नक्सालाई स्याटेलाइट दृश्यमा खोल्नुहोस्"</string>
+    <string msgid="2513389490217803388" name="SHAKE_TO_SEND_FEEDBACK">"प्रतिक्रिया पठाउन हल्लाउनुहोस्"</string>
+    <string msgid="7927333567450914524" name="SHOW_SCALEBAR">"नक्सामा स्केल देखाउनुहोस्"</string>
+    <string msgid="8853862950824858965" name="SIGN_IN">"साइन इन गर्नुहोस्"</string>
+    <string msgid="6614611063829352216" name="SPEEDOMETER_CONTENT_DESCRIPTION">"हालको गति"</string>
+    <string msgid="2485928112866408949" name="SPEEDOMETER_LABEL_MPH">"mph"</string>
+    <string msgid="714338337064997840" name="SPEED_LIMIT_CONTENT_DESCRIPTION">"गतिको सीमा"</string>
+    <string msgid="8329935752572916663" name="SPEED_LIMIT_LABEL_KPH">"km/h"</string>
+    <string msgid="6049037484128190260" name="SPEED_LIMIT_LABEL_MPH">"MPH"</string>
+    <string msgid="6933103859272522200" name="STATUS_DATA_CONNECTION_LOST">"डेटा कनेक्सन विच्छेद भयो..."</string>
+    <string msgid="3486534637879952316" name="STATUS_LOCATION_NOT_YET_AVAILABLE">"लोकेसनका लागि कुर्दै..."</string>
+    <string msgid="2640731163709778825" name="STATUS_OFF_ROUTE">"निर्धारित मार्गबाट बाहिरिनुभयो"</string>
+    <string msgid="2545735105255092828" name="STATUS_REROUTING">"मार्ग बदल्दै..."</string>
+    <string msgid="2050512013597272527" name="STEP_LIST_INTERACTION_LOCKOUT">"थप चरण पूर्वावलोकन गर्न, सुरक्षित हुँदा रोक्नुहोस्"</string>
+    <string msgid="4380539129160098186" name="TBP_TIME_FORMAT_STRING">"सामान्यतया <ns1:g id="DURATION_RANGE">%1$s</ns1:g>"</string>
+    <string msgid="3969156182655336787" name="TIME_TO_LEAVE_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफ्नो Gmail र पात्रोका कार्यक्रमका आधारमा प्रस्थान गर्ने समय हुँदा रिमाइन्डरहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="5878136911262367593" name="TIME_TO_LEAVE_SETTINGS_SUMMARY">"प्रस्थान गर्ने समय हुँदा तपाईंको Gmail र पात्रोका कार्यक्रममा आधारमा रिमाइन्डरहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="5802789254332120401" name="TIME_TO_LEAVE_SETTINGS_TITLE">"निस्कनु पर्ने समय"</string>
+    <string msgid="279144067639888797" name="TRAFFIC_INCIDENT_CANCEL_BUTTON">"बन्द गर्नुहोस्"</string>
+    <string msgid="2556434376988861569" name="TRAFFIC_INCIDENT_CARD_ACTION_DESCRIPTION">"नक्सामा ट्राफिक घटना देखाउनुहोस्"</string>
+    <string msgid="6842632577325526492" name="TRAFFIC_INCIDENT_CAUSE_LABEL">"बन्द हुनुको कारण"</string>
+    <string msgid="988935259303895134" name="TRAFFIC_INCIDENT_CLEARED_UP">"घटना सुल्झिएको छ"</string>
+    <string msgid="7567994859964694495" name="TRAFFIC_INCIDENT_GET_MORE_INFO_LINK_LABEL">"नवीनतम जानकारी प्राप्त गर्नुहोस्:"</string>
+    <string msgid="3198922267208778988" name="TRAFFIC_IN_YOUR_AREA_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफ्नो हालको स्थानको आधारमा ट्राफिकको स्थितिसम्बन्धी जानकारी प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="1473827289987133797" name="TRAFFIC_IN_YOUR_AREA_SETTINGS_SUMMARY">"आफ्नो हालको स्थानका आधारमा ट्राफिकको अवस्थासम्बन्धी जानकारी प्राप्त गर्नुहोस्"</string>
+    <string msgid="1128033297013450984" name="TRAFFIC_IN_YOUR_AREA_SETTINGS_TITLE">"तपाईंको क्षेत्रको ट्राफिकसम्बन्धी जानकारी"</string>
+    <string msgid="7311918430526640931" name="TRAFFIC_NEARBY_EVENTS_OPT_OUT_SETTINGS_SUMMARY">"तपाईं ट्राफिक अवस्थामा असर गर्न सक्ने योजनाबद्ध सडक बन्द तथा अन्य घटनाबारे चेतावनीहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="7229793065931553473" name="TRAFFIC_NEARBY_EVENTS_SETTINGS_SUMMARY">"ट्राफिकलाई असर गर्न सक्ने योजनाबद्ध सडक बन्द र घटनाहरूका बारेमा चेतावनीहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="7458119512976033960" name="TRAFFIC_NEARBY_EVENTS_SETTINGS_TITLE">"नजिकका घटनाहरूका कारण सिर्जित ट्राफिकको स्थिति"</string>
+    <string msgid="3736157622661020905" name="TRAFFIC_UPDATE_ETA_PROMPT_SUBTITLE">"अनुमानित आगमन समय <ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="6992797437864599238" name="TRANSIT_ENTER_VIA">"<ns1:g id="ENTRANCE">%1$s</ns1:g> मार्फत प्रवेश गर्नुहोस्"</string>
+    <string msgid="5577370445084558613" name="TRANSIT_ENTRANCE_ENTER_TITLE">"स्टेसनमा प्रवेश गर्नुहोस्"</string>
+    <string msgid="6142195623804653271" name="TRANSIT_ENTRANCE_EXIT_TITLE">"स्टेसनबाट बाहिरिनुहोस्"</string>
+    <string msgid="1010084563211368398" name="TRANSIT_EXIT_VIA">"<ns1:g id="EXIT">%1$s</ns1:g> मार्फत बाहिर निस्कनुहोस्"</string>
+    <string msgid="3806065467172569991" name="TRANSIT_INFO_OPT_OUT_SETTINGS_SUMMARY">"तपाईं वरपरका स्टेसनको प्रस्थान समय, बाटोमा हुन सक्ने अवरोध तथा नक्सासम्बन्धी जानकारी प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="1534490659851000732" name="TRANSIT_INFO_SETTINGS_SUMMARY">"वरपरका स्टेसनहरूको प्रस्थान, अवरोधसम्बन्धी जानकारी र नक्साहरू"</string>
+    <string msgid="4220388452166772640" name="TRANSIT_INFO_SETTINGS_TITLE">"यातायातसम्बन्धी जानकारी र नक्साहरू"</string>
+    <string msgid="5472231200918516614" name="TRANSIT_LINE_SEPARATOR">", वा "</string>
+    <string msgid="1781544592846552935" name="TRANSIT_STEPTHROUGH_BOARD_TRANSPORTATION_AT">"<ns1:g id="DEPARTURE_STATION_NAME">%2$s</ns1:g> मा <ns1:g id="TRANSPORTATION_TITLE">%1$s</ns1:g> मा चढ्नुहोस्"</string>
+    <string msgid="4852979524663289910" name="TRANSIT_STEPTHROUGH_GET_OFF_AT">"<ns1:g id="ARRIVAL_STATION_NAME">%1$s</ns1:g> मा ओर्लनुहोस्"</string>
+    <string msgid="100719016293137101" name="TRANSIT_STEPTHROUGH_TRANSFER_TRANSPORTATION_AT">"<ns1:g id="TRANSFER_STATION_NAME">%2$s</ns1:g> मा <ns1:g id="TRANSPORTATION_TITLE">%1$s</ns1:g> मा स्थानान्तरित हुनुहोस्"</string>
+    <string msgid="4075726691937451191" name="TRANSIT_STEP_SEPARATOR">", त्यसपछि "</string>
+    <string msgid="4347114544007413130" name="TRANSIT_TRANSFER_DESCRIPTION">"<ns1:g id="LINE_NAME">%1$s</ns1:g> <ns1:g id="DESTINATION">%2$s</ns1:g>"</string>
+    <string msgid="1067501494466681470" name="TRANSIT_TRANSFER_DESCRIPTION_WITH_EXPRESS_TYPE">"<ns1:g id="LINE_NAME">%1$s</ns1:g> <ns1:g id="EXPRESS_TYPE_NAME">%2$s</ns1:g> <ns1:g id="DESTINATION">%3$s</ns1:g>"</string>
+    <string msgid="2817788206332504699" name="TRANSIT_VIA">"<ns1:g id="ENTRANCE">%1$s</ns1:g> हुँदै"</string>
+    <string msgid="755148195746788198" name="TRUCKS_RESTRICTED">"ट्रकमा प्रतिबन्ध लगाइएको छ"</string>
+    <string msgid="6607947384151787482" name="TURN_CARD_THEN_INSTRUCTION">"त्यसपछि <ns1:g id="NEXT_INSTRUCTION">%1$s</ns1:g>"</string>
+    <string msgid="8308160665835594365" name="UGC_IMPACT_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"तपाईं लाइक तथा टिप्पणीबारे र तपाईंले ब्याज तथा लाभ प्राप्त गर्दा अपडेटहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="5429102650839711069" name="UGC_IMPACT_NOTIFICATION_SETTINGS_SUMMARY">"तपाईंले लाइक र टिप्पणीहरूमा तथा ब्याज र लाभ प्राप्त गर्दा अद्यावधिकहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="2032622348248043611" name="UGC_IMPACT_NOTIFICATION_SETTINGS_TITLE">"लाइक, कोसेढुङ्गा र ब्याजहरू"</string>
+    <string msgid="7013124010125038791" name="UGC_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफ्नो स्थानीय टोल, सडक तथा यात्राहरूबारे सोधिएका प्रश्नहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="3565867092229885716" name="UGC_NOTIFICATION_SETTINGS_SUMMARY">"आफ्नो स्थानीय टोल, सडक तथा यात्राहरूबारे सोधिएका प्रश्नहरूको जवाफ दिई नक्साको गुणस्तर सुधार्न मद्दत गर्नुहोस्‌"</string>
+    <string msgid="9024065710924542964" name="UGC_NOTIFICATION_SETTINGS_TITLE">"तपाईंको क्षेत्र, सडक तथा यात्राहरू"</string>
+    <string msgid="1738086435281091835" name="UNABLE_TO_LOAD_DATA">"डेटा लोड गर्न असमर्थ"</string>
+    <string msgid="2670705425616869617" name="UNITS">"दूरीका एकाइहरू"</string>
+    <string msgid="4893017073865021264" name="UNITS_AUTOMATIC">"स्वचालित"</string>
+    <string msgid="7876257382820058712" name="UNITS_IMPERIAL">"माइल"</string>
+    <string msgid="117093659918958729" name="UNITS_METRIC">"किलोमिटर"</string>
+    <string msgid="6580177403276978686" name="VEHICLE_SETTINGS_TITLE">"सवारी साधनसम्बन्धी सेटिङ"</string>
+    <string msgid="5710449106540223967" name="VIDEO_SETTINGS_TITLE">"भिडियोसम्बन्धी सेटिङ"</string>
+    <string msgid="8573971634735221604" name="WARNING_SEVERITY_CONTENT_DESCRIPTION">"चेतावनी"</string>
+    <string msgid="4161070547943419580" name="WAZE_ATTRIBUTION_DIALOG_CONTENT_ALREADY_INSTALLED">"यी घटनाहरू Waze समुदायद्वारा Waze ट्राफिक र नेभिगेसन एप प्रयोग गरेर रिपोर्ट गरिएको हो।\n\n Waze को माध्यमबाट आफ्नो उपयोगी प्रतिवेदन पेश गर्नुहोस्।"</string>
+    <string msgid="6296131061336170909" name="WAZE_ATTRIBUTION_DIALOG_CONTENT_NOT_INSTALLED">"यी घटनाहरूलाई Waze उपयोगकर्ता समुदायद्वारा Waze ट्राफिक र नेभिगेसन एप प्रयोग गरेर रिपोर्ट गरिएका हुन।\n\nWaze डाउनलोड गर्नुहोस् र तपाईंको आफ्नो सहायक रिपोर्टहरू पठाउनुहोस्।"</string>
+    <string msgid="6423551936568425898" name="WAZE_ATTRIBUTION_DIALOG_DISMISS">"खारेज गर्नुहोस्"</string>
+    <string msgid="3887930200748972622" name="WAZE_ATTRIBUTION_DIALOG_GET_WAZE">"Waze प्राप्त गर्नुहोस्"</string>
+    <string msgid="1221046906467082448" name="WAZE_ATTRIBUTION_DIALOG_OPEN_WAZE">"Waze खोल्नुहोस्"</string>
+    <string msgid="3260434220328093048" name="WAZE_ATTRIBUTION_DIALOG_TITLE">"Waze एप प्रयोगकर्ताहरूद्वारा रिपोर्ट गरिएको"</string>
+    <string msgid="8332911579512824593" name="WAZE_NOT_AVAILABLE">"Waze खोल्न सकेन।"</string>
+    <string msgid="6557028535722391556" name="WEIGHT_RESTRICTED">"बढी वजन भएको सवारी साधनमा प्रतिबन्ध लगाइएको छ"</string>
+    <string msgid="6708487118738049074" name="WEIGHT_SHORT_TONS_ABBREVIATED">"<ns1:g id="SHORT_TONS">%s</ns1:g> टन"</string>
+    <string msgid="6017366300652518735" name="WEIGHT_SHORT_TONS_LONGFORM">"<ns1:g id="SHORT_TONS">%s</ns1:g> टन"</string>
+    <string msgid="444421108406293150" name="WIFI_ONLY_TITLE">"Wi-Fi मात्र"</string>
+    <string msgid="3295691316074264165" name="YOUR_BUSINESS_CATEGORY_TITLE">"तपाईंको व्यवसाय"</string>
+    <string msgid="5038513763080836030" name="YOUR_BUSINESS_OPT_OUT_SETTINGS_SUMMARY">"तपाईं आफ्नो व्यवसायसम्बन्धी रिमाइन्डर तथा अपडेटहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="7935186140284907584" name="YOUR_BUSINESS_SETTINGS_SUMMARY">"आफ्नो व्यवसायका बारेमा रिमाइन्डर र अद्यावधिकहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="2331921429803725767" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_OPT_OUT_SETTING_SUMMARY">"तपाईं आफ्नो प्रोफाइलमा नयाँ फलोअर थपिँदा वा फलो गर्ने अनुरोध प्राप्त हुँदा त्यसबारे अपडेटहरू प्राप्त गर्दै हुनुहुन्छ"</string>
+    <string msgid="6256049818965016724" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_SETTING_SUMMARY">"तपाईंको प्रोफाइलमा नयाँ फलोअर थपिँदा वा फलो गर्ने अनुरोध प्राप्त हुँदा सूचनाहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="5149876045450704766" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_SETTING_TITLE">"तपाईंको नक्साको प्रोफाइल र फलोअरहरू"</string>
+    <string msgid="6302976185347215423" name="YOUR_REVIEWS_CATEGORY_TITLE">"तपाईंका समीक्षाहरू"</string>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"होम पेजमा जानुहोस्"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"माथि नेभिगेट गर्नुहोस्"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"थप विकल्पहरू"</string>
@@ -53,6 +619,7 @@
     <string msgid="406453423630273620" name="close_drawer">"नेभिगेसन मेनु बन्द गर्नुहोस्"</string>
     <string msgid="7573152094250666567" name="close_sheet">"पाना बन्द गर्नुहोस्"</string>
     <string msgid="5389587048670450460" name="collapsed">"कोल्याप्स गरियो"</string>
+    <string msgid="6083905920877235314" name="copy">"प्रतिलिपि गर्नुहोस्"</string>
     <string msgid="3499643850558715142" name="date_input_headline">"हालिएको मिति"</string>
     <string msgid="8562356184193964298" name="date_input_headline_description">"हालिएको मिति: %1$s"</string>
     <string msgid="5281836720766682161" name="date_input_invalid_for_pattern">"हालिएको मितिको ढाँचा अपेक्षित ढाँचासँग मिलेन: %1$s"</string>
@@ -90,12 +657,27 @@
     <string msgid="1890207353314751437" name="dropdown_menu">"ड्रपडाउन मेनु"</string>
     <string name="error_a11y_label">त्रुटि: अवैध छ</string>
     <string name="error_icon_content_description">त्रुटि</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"उन्नत"</string>
     <string msgid="5974471714631304645" name="expanded">"एक्स्पान्ड गरियो"</string>
     <string name="exposed_dropdown_menu_content_description">ड्रपडाउन मेनु देखाउनुहोस्</string>
     <string name="icon_content_description">संवादको आइकन</string>
     <string msgid="6827826412747255547" name="in_progress">"काम हुँदै छ"</string>
     <string msgid="7933458017204019916" name="indeterminate">"आंशिक रूपमा जाँच गरिएको"</string>
     <string name="item_view_role_description">ट्याब</string>
+    <string msgid="9210820207514660247" name="maps_API_OUTDATED_WARNING">"यो एपले पुरानो संस्करणको नक्सा प्रयोग गर्दछ। यसले राम्रोसँग काम नगर्न सक्छ।"</string>
+    <string msgid="6807007598222074916" name="maps_COMPASS_ALT_TEXT">"कम्पास"</string>
+    <string msgid="3371108618085690173" name="maps_DIRECTIONS_ALT_TEXT">"दिशा निर्देशनहरू प्राप्त गर्नुहोस्"</string>
+    <string msgid="1189955191774927738" name="maps_GOOGLE_MAP">"Google नक्सा"</string>
+    <string msgid="2264878565827236979" name="maps_LEVEL_ALT_TEXT">"चरण {0}"</string>
+    <string msgid="6875584096776566703" name="maps_MY_LOCATION_ALT_TEXT">"मेरो स्थान"</string>
+    <string msgid="7383272971595812419" name="maps_NO_GMM">"Google नक्सा स्थापना गरिएको छैन वा यसलाई असक्षम पारिएको छ"</string>
+    <string msgid="1460559660387626258" name="maps_OPEN_GMM_ALT_TEXT">"Google नक्सामा खोल्नुहोस्"</string>
+    <string msgid="175515198141357876" name="maps_YOUR_LOCATION">"तपाईंको हालको स्थान"</string>
+    <string msgid="8499414555829263194" name="maps_ZOOM_IN_ALT_TEXT">"जुम इन गर्नुहोस्"</string>
+    <string msgid="8347872495490681122" name="maps_ZOOM_OUT_ALT_TEXT">"जुम आउट गर्नुहोस्"</string>
+    <string msgid="7422837848992631163" name="maps_default_user_error_message">"हत्तेरिका! कुनै समस्या आयो।"</string>
+    <string msgid="2220756820707696446" name="maps_invalid_panorama_data">"अमान्य परिदृश्य।"</string>
+    <string msgid="2960355978460391458" name="maps_marker_default_on_select_content_description">"नक्सा मार्कर"</string>
     <string name="material_clock_toggle_content_description">पूर्वाह्न वा अपराह्न चयन गर्नुहोस्</string>
     <string name="material_hour_24h_suffix">%1$s घण्टा</string>
     <string name="material_hour_selection">घन्टा चयन गर्नुहोस्</string>
@@ -109,6 +691,31 @@
     <string name="material_timepicker_pm">अपराह्न</string>
     <string name="material_timepicker_select_time">समय चयन गर्नुहोस्</string>
     <string name="material_timepicker_text_input_mode_description">समय इनपुट गर्न पाठ इनपुट मोडमा स्विच गर्नुहोस्।</string>
+    <string msgid="2939063992730535343" name="mr_button_content_description">"कास्ट गर्नुहोस्"</string>
+    <string msgid="6073720094880410356" name="mr_cast_button_connected">"कास्ट गर्नुहोस्। कनेक्ट गरियो"</string>
+    <string msgid="6629927151350192407" name="mr_cast_button_connecting">"कास्ट गर्नुहोस्। कनेक्ट गरिँदै छ"</string>
+    <string msgid="8071109333469380363" name="mr_cast_button_disconnected">"कास्ट गर्नुहोस्। डिस्कनेक्ट गरियो"</string>
+    <string msgid="2175930138959078155" name="mr_cast_dialog_title_view_placeholder">"कुनै पनि जानकारी उपलब्ध छैन"</string>
+    <string msgid="6114250663023140921" name="mr_chooser_searching">"यन्त्रहरू पत्ता लगाइँदै छ"</string>
+    <string msgid="1419936397646839840" name="mr_chooser_title">"यसमा Cast गर्नुहोस्"</string>
+    <string msgid="3330502667672708728" name="mr_controller_album_art">"एल्बम आर्ट"</string>
+    <string msgid="9171231064758955152" name="mr_controller_casting_screen">"स्क्रिन Cast गरिँदै छ"</string>
+    <string msgid="5684434439232634509" name="mr_controller_close_description">"बन्द गर्नुहोस्"</string>
+    <string msgid="2585048604188129749" name="mr_controller_collapse_group">"संक्षिप्त गर्नुहोस्"</string>
+    <string msgid="7812275474138309497" name="mr_controller_disconnect">"विच्छेद गर्नुहोस्"</string>
+    <string msgid="4521419834052044261" name="mr_controller_expand_group">"विस्तृत गर्नुहोस्"</string>
+    <string msgid="855271725131981086" name="mr_controller_no_info_available">"कुनै पनि जानकारी उपलब्ध छैन"</string>
+    <string msgid="5495452265246139458" name="mr_controller_no_media_selected">"कुनै पनि मिडिया चयन गरिएन"</string>
+    <string msgid="747801650871398383" name="mr_controller_pause">"पज गर्नुहोस्‌"</string>
+    <string msgid="1253345086594430054" name="mr_controller_play">"खेल्नुहोस्"</string>
+    <string msgid="5497722768305745508" name="mr_controller_stop">"रोक्नुहोस्"</string>
+    <string msgid="804210341192624074" name="mr_controller_stop_casting">"casting रोक्नुहोस्"</string>
+    <string msgid="2955862765169128170" name="mr_controller_volume_slider">"भोल्युमको स्लाइडर"</string>
+    <string msgid="4115858704575247342" name="mr_dialog_default_group_name">"समूह"</string>
+    <string msgid="4307018456678388936" name="mr_dialog_groupable_header">"डिभाइस थप्नुहोस्"</string>
+    <string msgid="6068257520605505468" name="mr_dialog_transferable_header">"कुनै समूहमा प्ले गर्नुहोस्"</string>
+    <string msgid="7449553026175453403" name="mr_system_route_name">"प्रणाली"</string>
+    <string msgid="4088331695424166162" name="mr_user_route_category_name">"यन्त्रहरू"</string>
     <string name="mtrl_badge_numberless_content_description">नयाँ सूचना</string>
     <string name="mtrl_checkbox_state_description_checked">चिन्ह लगाइएको</string>
     <string name="mtrl_checkbox_state_description_indeterminate">आंशिक रूपमा चिन्ह लगाइएको</string>
@@ -156,11 +763,14 @@
     <string name="mtrl_timepicker_confirm">ठिक छ</string>
     <string msgid="542007171693138492" name="navigation_menu">"नेभिगेसन मेनु"</string>
     <string msgid="6610465462668679431" name="not_selected">"चयन गरिएको छैन"</string>
+    <string msgid="6573031135582639649" name="not_set">"सेट गरिएको छैन"</string>
     <string msgid="875452955155264703" name="off">"अफ छ"</string>
     <string msgid="8655164131929253426" name="on">"अन छ"</string>
     <string name="password_toggle_content_description">पासवर्ड देखाउनुहोस्</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" लाई क्लिपबोर्डमा प्रतिलिपि गरियो।"</string>
     <string msgid="5941395253238309765" name="range_end">"दायराको अन्तिम बिन्दु"</string>
     <string msgid="7097486360902471446" name="range_start">"दायराको सुरुवात बिन्दु"</string>
+    <string msgid="1660595293173844803" name="report_a_problem">"समस्याका बारेमा रिपोर्ट गर्नुहोस्"</string>
     <string msgid="6420018528474762666" name="search_bar_search">"खोज्नुहोस्"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"खोज"</string>
     <string name="searchview_clear_text_content_description">टेक्स्ट हटाउनुहोस्</string>
@@ -170,6 +780,7 @@
     <string msgid="3962933905051144957" name="snackbar_dismiss">"हटाउनुहोस्"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"९९९+"</string>
     <string msgid="7189888345201419934" name="suggestions_available">"सुझावहरू तल दिइएका छन्"</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
     <string msgid="2561197295334830845" name="switch_role">"बदल्नुहोस्"</string>
     <string msgid="1672349317127674378" name="tab">"ट्याब"</string>
     <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> प्रतिशत।"</string>
@@ -187,4 +798,6 @@
     <string msgid="2232702812657998674" name="time_picker_pm">"PM"</string>
     <string msgid="2732804537909054941" name="tooltip_long_press_label">"टुलटिप देखाइयोस्"</string>
     <string msgid="8191239805703103845" name="tooltip_pane_description">"टुलटिप"</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"निष्क्रिय पार्नुहोस्‌"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"सक्रिय"</string>
 </resources>

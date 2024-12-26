@@ -1,9 +1,575 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="CALLOUT_ALPHABETIC_LABELS">
+        <item>"A"</item>
+        <item>"B"</item>
+        <item>"C"</item>
+        <item>"D"</item>
+        <item>"E"</item>
+        <item>"F"</item>
+        <item>"G"</item>
+        <item>"H"</item>
+    </string-array>
+    <string-array name="SHOW_SCALEBAR_ENTRIES">
+        <item>"Saat memperbesar dan memperkecil"</item>
+        <item>"Selalu"</item>
+    </string-array>
+    <string-array name="maps_compass_directions">
+        <item>"U"</item>
+        <item>"TL"</item>
+        <item>"T"</item>
+        <item>"TENG"</item>
+        <item>"S"</item>
+        <item>"BD"</item>
+        <item>"B"</item>
+        <item>"BL"</item>
+    </string-array>
+    <string-array name="maps_full_compass_directions">
+        <item>"utara"</item>
+        <item>"timur laut"</item>
+        <item>"timur"</item>
+        <item>"tenggara"</item>
+        <item>"selatan"</item>
+        <item>"barat daya"</item>
+        <item>"barat"</item>
+        <item>"barat laut"</item>
+    </string-array>
+    <plurals formatted="false" msgid="4326673060750344846" name="BIKESHARING_BIKES_AVAILABLE">
+        <item quantity="other"><ns1:g id="BIKES_AVAILABLE_5">%d</ns1:g> sepeda tersedia </item>
+        <item quantity="one"><ns1:g id="BIKES_AVAILABLE_1">%d</ns1:g> sepeda tersedia </item>
+    </plurals>
+    <plurals formatted="false" msgid="2128912764519502183" name="BIKESHARING_DOCKS_AVAILABLE">
+        <item quantity="other"><ns1:g id="NUM_DOCKS_5">%d</ns1:g> dok sepeda tersedia </item>
+        <item quantity="one"><ns1:g id="NUM_DOCKS_1">%d</ns1:g> dok sepeda tersedia </item>
+    </plurals>
+    <plurals formatted="false" msgid="3587957769510236203" name="COMPASS_ACCESSIBILITY_BEARING">
+        <item quantity="other">Arah peta <ns1:g id="MAP_BEARING_5">%d</ns1:g> derajat.</item>
+        <item quantity="one">Arah peta <ns1:g id="MAP_BEARING_1">%d</ns1:g> derajat.</item>
+    </plurals>
+    <plurals formatted="false" msgid="4689781638232061047" name="DA_DAYS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> hari</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g> hari</item>
+    </plurals>
+    <plurals formatted="false" msgid="6144185587501044196" name="DA_DAYS_ABBREVIATED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> h</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g> h</item>
+    </plurals>
+    <plurals formatted="false" msgid="6393943752589702797" name="DA_DAYS_ABBREVIATED_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g>h</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g>h</item>
+    </plurals>
+    <plurals formatted="false" msgid="2798004425159140146" name="DA_DAYS_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> hari</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g> hari</item>
+    </plurals>
+    <plurals formatted="false" msgid="4077931414703271286" name="DA_HOURS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g> jam</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_1">%s</ns1:g> jam</item>
+    </plurals>
+    <plurals formatted="false" msgid="7410132942057247478" name="DA_HOURS_ABBREVIATED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g> j</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_1">%s</ns1:g> j</item>
+    </plurals>
+    <plurals formatted="false" msgid="5724380721819842832" name="DA_HOURS_ABBREVIATED_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g>j</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_1">%s</ns1:g>j</item>
+    </plurals>
+    <plurals formatted="false" msgid="302465155895970807" name="DA_MINUTES">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g> menit</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g> menit</item>
+    </plurals>
+    <plurals formatted="false" msgid="6854365863287202322" name="DA_MINUTES_ABBREVIATED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g> mnt</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g> mnt</item>
+    </plurals>
+    <plurals formatted="false" msgid="7896893686804578870" name="DA_MINUTES_ABBREVIATED_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g>m</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g>m</item>
+    </plurals>
+    <plurals formatted="false" msgid="2581719964976016874" name="DA_MINUTES_BARE_FOLLOWING_HOURS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g></item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g></item>
+    </plurals>
+    <plurals formatted="false" msgid="6345729166163721080" name="DA_SECONDS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_SECONDS_5">%s</ns1:g> detik</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_SECONDS_1">%s</ns1:g> detik</item>
+    </plurals>
+    <plurals formatted="false" msgid="1032855961281750509" name="DA_SPEECH_CONTINUE_FOR_X_FEET">
+        <item quantity="other">Lanjutkan sejauh <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> kaki</item>
+        <item quantity="one">Lanjutkan sejauh <ns1:g id="NUMBER_OF_FEET_1">%1$s</ns1:g> kaki</item>
+    </plurals>
+    <plurals formatted="false" msgid="8557996246843277515" name="DA_SPEECH_CONTINUE_FOR_X_KILOMETERS">
+        <item quantity="other">Lanjutkan sejauh <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> kilometer</item>
+        <item quantity="one">Lanjutkan sejauh <ns1:g id="NUMBER_OF_KILOMETERS_1">%1$s</ns1:g> kilometer</item>
+    </plurals>
+    <plurals formatted="false" msgid="605905875424024433" name="DA_SPEECH_CONTINUE_FOR_X_METERS">
+        <item quantity="other">Lanjutkan sejauh <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> meter</item>
+        <item quantity="one">Lanjutkan sejauh <ns1:g id="NUMBER_OF_METERS_1">%1$s</ns1:g> meter</item>
+    </plurals>
+    <plurals formatted="false" msgid="5775940963454325209" name="DA_SPEECH_CONTINUE_FOR_X_MILES">
+        <item quantity="other">Lanjutkan sejauh <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> mil</item>
+        <item quantity="one">Lanjutkan sejauh <ns1:g id="NUMBER_OF_MILES_1">%1$s</ns1:g> mil</item>
+    </plurals>
+    <plurals formatted="false" msgid="4742053200406294830" name="DA_SPEECH_CONTINUE_FOR_X_YARDS">
+        <item quantity="other">Lanjutkan sejauh <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> yard</item>
+        <item quantity="one">Lanjutkan sejauh <ns1:g id="NUMBER_OF_YARDS_1">%1$s</ns1:g> yard</item>
+    </plurals>
+    <plurals formatted="false" msgid="2823664751659973629" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_FEET">
+        <item quantity="other">Tetap di <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> sejauh <ns1:g id="NUMBER_OF_FEET_11">%1$s</ns1:g> kaki</item>
+        <item quantity="one">Tetap di <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> sejauh <ns1:g id="NUMBER_OF_FEET_3">%1$s</ns1:g> kaki</item>
+    </plurals>
+    <plurals formatted="false" msgid="4715395619972917121" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_KILOMETERS">
+        <item quantity="other">Tetap di <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> sejauh <ns1:g id="NUMBER_OF_KILOMETERS_11">%1$s</ns1:g> kilometer</item>
+        <item quantity="one">Tetap di <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> sejauh <ns1:g id="NUMBER_OF_KILOMETERS_3">%1$s</ns1:g> kilometer</item>
+    </plurals>
+    <plurals formatted="false" msgid="3492075494171740042" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_METERS">
+        <item quantity="other">Tetap di <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> sejauh <ns1:g id="NUMBER_OF_METERS_11">%1$s</ns1:g> meter</item>
+        <item quantity="one">Tetap di <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> sejauh <ns1:g id="NUMBER_OF_METERS_3">%1$s</ns1:g> meter</item>
+    </plurals>
+    <plurals formatted="false" msgid="6281859705184148951" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_MILES">
+        <item quantity="other">Tetap di <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> sejauh <ns1:g id="NUMBER_OF_MILES_11">%1$s</ns1:g> mil</item>
+        <item quantity="one">Tetap di <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> sejauh <ns1:g id="NUMBER_OF_MILES_3">%1$s</ns1:g> mil</item>
+    </plurals>
+    <plurals formatted="false" msgid="1750899323638437779" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_YARDS">
+        <item quantity="other">Tetap di <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> sejauh <ns1:g id="NUMBER_OF_YARDS_11">%1$s</ns1:g> yard</item>
+        <item quantity="one">Tetap di <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> sejauh <ns1:g id="NUMBER_OF_YARDS_3">%1$s</ns1:g> yard</item>
+    </plurals>
+    <plurals formatted="false" msgid="6824002006206583196" name="DA_SPEECH_IN_X_FEET">
+        <item quantity="other">Dalam <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> kaki</item>
+        <item quantity="one">Dalam <ns1:g id="NUMBER_OF_FEET_1">%1$s</ns1:g> kaki</item>
+    </plurals>
+    <plurals formatted="false" msgid="3927150446141308796" name="DA_SPEECH_IN_X_KILOMETERS">
+        <item quantity="other">Dalam <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> kilometer</item>
+        <item quantity="one">Dalam <ns1:g id="NUMBER_OF_KILOMETERS_1">%1$s</ns1:g> kilometer</item>
+    </plurals>
+    <plurals formatted="false" msgid="8424550718788882600" name="DA_SPEECH_IN_X_METERS">
+        <item quantity="other">Dalam <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> meter</item>
+        <item quantity="one">Dalam <ns1:g id="NUMBER_OF_METERS_1">%1$s</ns1:g> meter</item>
+    </plurals>
+    <plurals formatted="false" msgid="5844894205706436077" name="DA_SPEECH_IN_X_MILES">
+        <item quantity="other">Dalam <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> mil</item>
+        <item quantity="one">Dalam <ns1:g id="NUMBER_OF_MILES_1">%1$s</ns1:g> mil</item>
+    </plurals>
+    <plurals formatted="false" msgid="1857544676918506731" name="DA_SPEECH_IN_X_YARDS">
+        <item quantity="other">Dalam <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> yard</item>
+        <item quantity="one">Dalam <ns1:g id="NUMBER_OF_YARDS_1">%1$s</ns1:g> yard</item>
+    </plurals>
+    <plurals formatted="false" msgid="2339336258154180702" name="DA_SPEED_FORMAT_KILOMETERS_PER_HOUR_EXTENDED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_KILOMETERS_5">%s</ns1:g> kilometer per jam</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_KILOMETERS_1">%s</ns1:g> kilometer per jam</item>
+    </plurals>
+    <plurals formatted="false" msgid="6140682604650140709" name="DA_SPEED_FORMAT_MILES_PER_HOUR_EXTENDED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MILES_5">%s</ns1:g> mil per jam</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MILES_1">%s</ns1:g> mil per jam</item>
+    </plurals>
+    <plurals formatted="false" msgid="5488601092985524575" name="DA_YOUR_DESTINATION_IS_X_FEET_AHEAD">
+        <item quantity="other">Tujuan Anda berada sejauh <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> kaki di depan</item>
+        <item quantity="one">Tujuan Anda berada sejauh <ns1:g id="NUMBER_OF_FEET_1">%1$s</ns1:g> kaki di depan</item>
+    </plurals>
+    <plurals formatted="false" msgid="3956464927073329258" name="DA_YOUR_DESTINATION_IS_X_KILOMETERS_AHEAD">
+        <item quantity="other">Tujuan Anda berada sejauh <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> kilometer di depan</item>
+        <item quantity="one">Tujuan Anda berada sejauh <ns1:g id="NUMBER_OF_KILOMETERS_1">%1$s</ns1:g> kilometer di depan</item>
+    </plurals>
+    <plurals formatted="false" msgid="1869769789353944376" name="DA_YOUR_DESTINATION_IS_X_METERS_AHEAD">
+        <item quantity="other">Tujuan Anda berada sejauh <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> meter di depan</item>
+        <item quantity="one">Tujuan Anda berada sejauh <ns1:g id="NUMBER_OF_METERS_1">%1$s</ns1:g> meter di depan</item>
+    </plurals>
+    <plurals formatted="false" msgid="3933752078325316030" name="DA_YOUR_DESTINATION_IS_X_MILES_AHEAD">
+        <item quantity="other">Tujuan Anda berada sejauh <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> mil di depan</item>
+        <item quantity="one">Tujuan Anda berada sejauh <ns1:g id="NUMBER_OF_MILES_1">%1$s</ns1:g> mil di depan</item>
+    </plurals>
+    <plurals formatted="false" msgid="3730606906820969126" name="DA_YOUR_DESTINATION_IS_X_YARDS_AHEAD">
+        <item quantity="other">Tujuan Anda berada sejauh <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> yard di depan</item>
+        <item quantity="one">Tujuan Anda berada sejauh <ns1:g id="NUMBER_OF_YARDS_1">%1$s</ns1:g> yard di depan</item>
+    </plurals>
+    <plurals formatted="false" msgid="4613320652217353645" name="TRANSIT_NUM_STOPS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_STOPS_5">%d</ns1:g> perhentian</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_STOPS_1">%d</ns1:g> perhentian</item>
+    </plurals>
+    <plurals formatted="false" msgid="5579098508661025925" name="TRANSIT_PLUS_NUMBER_OF_ALERTS_TITLE">
+        <item quantity="other">+<ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g> notifikasi</item>
+        <item quantity="one">+<ns1:g id="NUMBER_OF_ALERTS_0">%d</ns1:g> notifikasi</item>
+    </plurals>
+    <plurals formatted="false" msgid="7409021725106195613" name="TRANSIT_PLUS_NUMBER_OF_ALERTS_TITLE_CONTENT_DESCRIPTION">
+        <item quantity="other">+ <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g> pemberitahuan</item>
+        <item quantity="one">+ <ns1:g id="NUMBER_OF_ALERTS_0">%d</ns1:g> pemberitahuan</item>
+    </plurals>
+    <plurals formatted="false" msgid="8048195651219433071" name="TRANSIT_PLUS_NUMBER_OF_INFORMATION_ITEMS_TITLE">
+        <item quantity="other">+<ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g> lainnya</item>
+        <item quantity="one">+<ns1:g id="NUMBER_OF_ALERTS_0">%d</ns1:g> lainnya</item>
+    </plurals>
+    <plurals formatted="false" msgid="3673235514357385007" name="TRANSIT_PLUS_NUMBER_OF_INFORMATION_ITEMS_TITLE_CONTENT_DESCRIPTION">
+        <item quantity="other">+ <ns1:g id="NUMBER_OF_INFORMATION_1">%d</ns1:g> lainnya</item>
+        <item quantity="one">+ <ns1:g id="NUMBER_OF_INFORMATION_0">%d</ns1:g> lainnya</item>
+    </plurals>
     <plurals name="mtrl_badge_content_description">
     <item quantity="one">%d notifikasi baru</item>
     <item quantity="other">%d notifikasi baru</item>
   </plurals>
+    <string msgid="988766512127533844" name="ABOUT">"Tentang, persyaratan &amp; privasi"</string>
+    <string msgid="4382378373633137407" name="ACCESSIBILITY_ACTIVATE_TO_CLOSE_STEP_LIST">"Aktifkan untuk menutup daftar arahan"</string>
+    <string msgid="8888075998205469082" name="ACCESSIBILITY_ACTIVATE_TO_OPEN_STEP_LIST">"Aktifkan untuk membuka daftar arahan"</string>
+    <string msgid="7470955658075607809" name="ACCESSIBILITY_ALTERNATE_ROUTE_DESCRIPTION">"Rute alternatif melalui <ns1:g id="ROAD">%2$s</ns1:g> (<ns1:g id="DURATION">%1$s</ns1:g>)"</string>
+    <string msgid="1096848458128224503" name="ACCESSIBILITY_ALTERNATE_ROUTE_FUEL_EFFICIENT_DESCRIPTION">"Rute yang paling hemat bahan bakar"</string>
+    <string msgid="8434539979603521046" name="ACCESSIBILITY_ALTERNATE_ROUTE_HAS_TOLLS_DESCRIPTION">"Rute alternatif <ns1:g id="DURATION">%1$s</ns1:g> melalui <ns1:g id="ROAD">%2$s</ns1:g>, melewati tol"</string>
+    <string msgid="6280010901313672282" name="ACCESSIBILITY_ALTERNATE_ROUTE_HAS_TOLL_PRICE_DESCRIPTION">"Rute alternatif <ns1:g id="DURATION">%1$s</ns1:g> melalui <ns1:g id="ROAD">%2$s</ns1:g>, melewati tol <ns1:g id="COST">%3$s</ns1:g>"</string>
+    <string msgid="4147878166568539021" name="ACCESSIBILITY_ALTERNATE_ROUTE_NO_TOLLS_DESCRIPTION">"Rute alternatif <ns1:g id="DURATION">%1$s</ns1:g> melalui <ns1:g id="ROAD">%2$s</ns1:g>, tanpa tol"</string>
+    <string msgid="6020573412357611477" name="ACCESSIBILITY_COMPASS">"Tampilan utara atas"</string>
+    <string msgid="8223442679494597781" name="ACCESSIBILITY_DIRECTIONS_PROCEED_TO_METERS_WITH_STEP">"Langkah <ns1:g id="STEP_NUMBER">%1$d</ns1:g>, lanjutkan sejauh <ns1:g id="DISTANCE">%2$s</ns1:g>"</string>
+    <string msgid="7868137419995936422" name="ACCESSIBILITY_DIRECTIONS_STEP_LIST_TO">"Daftar arahan navigasi menuju <ns1:g id="DESTINATION">%s</ns1:g>. Aktifkan untuk memperluas."</string>
+    <string msgid="5761061967444438907" name="ACCESSIBILITY_DIRECTION_STEP_PREFIX">"Langkah <ns1:g id="STEP_NUMBER">%1$d</ns1:g>, <ns1:g id="STEP_DESCRIPTION">%2$s</ns1:g>"</string>
+    <string msgid="5429655055049309673" name="ACCESSIBILITY_LABEL_HAZARDOUS_GOODS_RESTRICTED">"Bawaan berbahaya dibatasi"</string>
+    <string msgid="7244890995607172810" name="ACCESSIBILITY_LABEL_HEIGHT_RESTRICTED">"Tinggi dibatasi"</string>
+    <string msgid="5720128131726601812" name="ACCESSIBILITY_LABEL_HEIGHT_RESTRICTED_WITH_VALUE">"Tinggi dibatasi <ns1:g id="HEIGHT">%s</ns1:g>"</string>
+    <string msgid="2427955214381665545" name="ACCESSIBILITY_LABEL_TRUCKS_RESTRICTED">"Truk dibatasi"</string>
+    <string msgid="1735969374518715138" name="ACCESSIBILITY_LABEL_WEIGHT_RESTRICTED">"Berat dibatasi"</string>
+    <string msgid="2228263168852010676" name="ACCESSIBILITY_LABEL_WEIGHT_RESTRICTED_WITH_VALUE">"Berat dibatasi <ns1:g id="WEIGHT">%s</ns1:g>"</string>
+    <string msgid="3500168200113756692" name="ACCESSIBILITY_LONG_PAUSE">". "</string>
+    <string msgid="4028351416429434451" name="ACCESSIBILITY_SELECTED_ROUTE_DESCRIPTION">"Rute yang dipilih <ns1:g id="DURATION">%1$s</ns1:g> melalui <ns1:g id="ROAD">%2$s</ns1:g>"</string>
+    <string msgid="5435510447657254534" name="ACCESSIBILITY_SELECTED_ROUTE_HAS_TOLLS_DESCRIPTION">"Rute yang dipilih <ns1:g id="DURATION">%1$s</ns1:g> melalui <ns1:g id="ROAD">%2$s</ns1:g>, melewati tol"</string>
+    <string msgid="1753061936075193628" name="ACCESSIBILITY_SELECTED_ROUTE_HAS_TOLL_PRICE_DESCRIPTION">"Rute yang dipilih <ns1:g id="DURATION">%1$s</ns1:g> melalui <ns1:g id="ROAD">%2$s</ns1:g>, melewati tol <ns1:g id="COST">%3$s</ns1:g>"</string>
+    <string msgid="7666497790505910181" name="ACCESSIBILITY_SELECTED_ROUTE_NO_TOLLS_DESCRIPTION">"Rute yang dipilih <ns1:g id="DURATION">%1$s</ns1:g> melalui <ns1:g id="ROAD">%2$s</ns1:g>, tanpa tol"</string>
+    <string msgid="9109457196557412064" name="ACCESSIBILITY_SENTENCE_DELIMITER">", "</string>
+    <string msgid="8567406792741571450" name="ACCESSIBILITY_SETTINGS_TITLE">"Setelan aksesibilitas"</string>
+    <string msgid="8175283740736118872" name="ACCESSIBILITY_SHORT_PAUSE">", "</string>
+    <string msgid="8994692387102653205" name="ACCESSIBILITY_STREET_VIEW_WITH_DESTINATION">"Street View di <ns1:g id="DESTINATION">%1$s</ns1:g>"</string>
+    <string msgid="6051617480676658328" name="ACCESSIBILITY_STREET_VIEW_WITH_STEP">"Street View pada langkah <ns1:g id="STEP_NUMBER">%1$d</ns1:g>"</string>
+    <string msgid="2864917498473472285" name="ACCESSIBILITY_WALK_ROUTE">"Rute jalan kaki"</string>
+    <string msgid="8493757823683214418" name="ALERT_DETAILS_CARD_CLICKABLE_PROMPT">"Pelajari lebih lanjut"</string>
+    <string msgid="3989324736757060364" name="ALERT_SEVERITY_CONTENT_DESCRIPTION">"Notifikasi"</string>
+    <string msgid="7887415291228067160" name="APP_LANGUAGE_SETTINGS_TITLE">"Bahasa aplikasi"</string>
+    <string msgid="18182619617560500" name="ARRIVE_AT_TIME">"Tiba pukul <ns1:g id="ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="3456517746042480651" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan info terbaru tentang tempat baru &amp; populer berdasarkan preferensi Anda"</string>
+    <string msgid="8609071464979199056" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_SETTINGS_SUMMARY">"Dapatkan notifikasi terkait tempat baru &amp; populer berdasarkan preferensi Anda"</string>
+    <string msgid="7386889502955593752" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_SETTINGS_TITLE">"Tempat baru &amp; populer"</string>
+    <string msgid="4073140123776083415" name="BIKESHARING_RETURN_BIKE">"Kembalikan sepeda"</string>
+    <string msgid="3764472074385554783" name="BIKESHARING_UNLOCK_BIKE">"Buka kunci sepeda"</string>
+    <string msgid="4321720802782027634" name="BIKESHARING_UNLOCK_IN_X">"Buka kunci di <ns1:g id="APP_NAME">%s</ns1:g>"</string>
+    <string msgid="906252415244469164" name="BUSINESS_MESSAGE_FROM_CUSTOMER_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan notifikasi saat pelanggan mengirim pesan ke bisnis Anda di Google"</string>
+    <string msgid="2660141319896744644" name="BUSINESS_MESSAGE_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan info terbaru tentang jawaban atas pertanyaan yang Anda ajukan ke bisnis di Maps"</string>
+    <string msgid="6503029847043791301" name="BUSINESS_MESSAGE_NOTIFICATION_SETTINGS_SUMMARY">"Dapatkan jawaban dari pertanyaan yang Anda ajukan ke bisnis di Maps"</string>
+    <string msgid="717732884052571101" name="BUSINESS_MESSAGE_NOTIFICATION_SETTINGS_TITLE">"Pesan"</string>
+    <string msgid="6956338141212937008" name="CANCEL_BUTTON">"Batal"</string>
+    <string msgid="7385460563057493069" name="CHAT_SETTINGS_ITEM_TITLE">"Chat"</string>
+    <string msgid="3849295477853657853" name="CLIENT_SIDE_RECENT_HISTORY_ENABLED">"Simpan penelusuran terbaru di perangkat ini"</string>
+    <string msgid="4356531394932608249" name="COLLABORATIVE_LISTS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan info terbaru tentang daftar yang Anda miliki dan edit"</string>
+    <string msgid="8615172296793020463" name="COLLABORATIVE_LISTS_NOTIFICATION_SETTINGS_SUMMARY">"Dapatkan notifikasi terkait daftar yang Anda miliki dan edit"</string>
+    <string msgid="6724970202733370522" name="COLLABORATIVE_LISTS_NOTIFICATION_SETTINGS_TITLE">"Daftar"</string>
+    <string msgid="3990714189475821790" name="COMMUTE_PROFILE_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan pengingat untuk memperbarui informasi tentang preferensi perjalanan Anda"</string>
+    <string msgid="2350458858231203291" name="COMMUTE_PROFILE_SETTINGS_SUMMARY">"Dapatkan pengingat untuk memperbarui informasi tentang preferensi perjalanan Anda"</string>
+    <string msgid="7744486401672603894" name="COMMUTE_PROFILE_SETTINGS_TITLE">"Profil perjalanan"</string>
+    <string msgid="7369031720555343766" name="COMPASS_ACCESSIBILITY_FOLLOW">"Ikuti orientasi Anda"</string>
+    <string msgid="5236771457267031238" name="COMPASS_ACCESSIBILITY_NORTH_UP">"Biarkan peta selalu mengarah ke utara"</string>
+    <string msgid="7676079846529082801" name="CYCLING_ELEVATION_X_DECLINE">"-<ns1:g id="DISTANCE">%s</ns1:g> turunan"</string>
+    <string msgid="8573003133952335858" name="CYCLING_ELEVATION_X_INCLINE">"+<ns1:g id="DISTANCE">%s</ns1:g> tanjakan"</string>
+    <string msgid="2150378996327208305" name="CYCLING_ROAD_TYPE_HIGHWAY">"Jalan raya"</string>
+    <string msgid="3738580863381374955" name="CYCLING_ROAD_TYPE_MAIN_ROAD">"Jalan utama"</string>
+    <string msgid="784178227646746623" name="CYCLING_ROAD_TYPE_MARKED_BIKE_LANE">"Jalan sepeda bermarkah"</string>
+    <string msgid="1244790010869914494" name="CYCLING_ROAD_TYPE_MINOR_ROAD">"Jalan kecil"</string>
+    <string msgid="5593259990952540902" name="CYCLING_ROAD_TYPE_PEDESTRIAN_PATH">"Jalur pejalan kaki"</string>
+    <string msgid="7434121718026354602" name="CYCLING_ROAD_TYPE_SEPARATE_BIKE_LANE">"Jalur khusus sepeda"</string>
+    <string msgid="2993992995228313773" name="CYCLING_ROAD_TYPE_SHARED_PATH">"Jalur bersama"</string>
+    <string msgid="3315402422807617192" name="CYCLING_ROAD_TYPE_STAIRS">"Tangga"</string>
+    <string msgid="8104447113497885959" name="CYCLING_ROUTE_LABEL_BEST_ROUTE">"Rute terbaik"</string>
+    <string msgid="595174014278343405" name="CYCLING_ROUTE_LABEL_FASTEST">"Tercepat"</string>
+    <string msgid="5308557378285449822" name="CYCLING_ROUTE_LABEL_LESS_HIGHWAYS">"Sedikit jalan raya"</string>
+    <string msgid="5788540842553685198" name="CYCLING_ROUTE_LABEL_LESS_STEEP_HILLS">"Lebih sedikit bukit"</string>
+    <string msgid="6544580293408762300" name="CYCLING_ROUTE_LABEL_LESS_TRAFFIC">"Lalu lintas lancar"</string>
+    <string msgid="771749047614319020" name="CYCLING_ROUTE_LABEL_LESS_TURNS">"Sedikit belokan"</string>
+    <string msgid="5514720260010380200" name="CYCLING_ROUTE_LABEL_MORE_BIKE_LANES">"Banyak jalan sepeda"</string>
+    <string msgid="6799295909450023751" name="DA_AT">"di <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="6204348838228824214" name="DA_DATA_CONNECTION_LOST">"Koneksi data putus..."</string>
+    <string msgid="9055920400292445132" name="DA_DISTANCE_FORMAT_FEET_ABBREVIATED">"<ns1:g id="NUMBER_OF_FEET">%s</ns1:g> kaki"</string>
+    <string msgid="1596038795147620692" name="DA_DISTANCE_FORMAT_FEET_EXTENDED">"<ns1:g id="NUMBER_OF_FEET">%s</ns1:g> kaki"</string>
+    <string msgid="5955263181315504888" name="DA_DISTANCE_FORMAT_KILOMETERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g> km"</string>
+    <string msgid="566231057264804657" name="DA_DISTANCE_FORMAT_KILOMETERS_EXTENDED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g> kilometer"</string>
+    <string msgid="4017347679220015543" name="DA_DISTANCE_FORMAT_METERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_METERS">%s</ns1:g> m"</string>
+    <string msgid="1379464276280242796" name="DA_DISTANCE_FORMAT_METERS_EXTENDED">"<ns1:g id="NUMBER_OF_METERS">%s</ns1:g> meter"</string>
+    <string msgid="2515401957955350520" name="DA_DISTANCE_FORMAT_MILES_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g> mil"</string>
+    <string msgid="4237807912458051628" name="DA_DISTANCE_FORMAT_MILES_EXTENDED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g> mil"</string>
+    <string msgid="7253880469383384966" name="DA_DISTANCE_FORMAT_MODE">"metric"</string>
+    <string msgid="4169708828913710793" name="DA_DISTANCE_FORMAT_YARDS_ABBREVIATED">"<ns1:g id="NUMBER_OF_YARDS">%s</ns1:g> yard"</string>
+    <string msgid="3150387851356211916" name="DA_DISTANCE_FORMAT_YARDS_EXTENDED">"<ns1:g id="NUMBER_OF_YARDS">%s</ns1:g> yard"</string>
+    <string msgid="4944833818130154379" name="DA_DISTANCE_RELATIVE_EQUIVALENT">"Jarak<ns1:g id="WHITESPACE">%1$s</ns1:g>serupa"</string>
+    <string msgid="8140845091471826735" name="DA_DISTANCE_RELATIVE_LONGER">"<ns1:g id="DISTANCE">%1$s</ns1:g><ns1:g id="WHITESPACE">%2$s</ns1:g>lebih jauh"</string>
+    <string msgid="4380111419025048248" name="DA_DISTANCE_RELATIVE_SHORTER">"<ns1:g id="DISTANCE">%1$s</ns1:g><ns1:g id="WHITESPACE">%2$s</ns1:g>lebih dekat"</string>
+    <string msgid="3065017842969529520" name="DA_EXIT_NAME">"Keluar di <ns1:g id="EXIT_NAME">{0}</ns1:g>"</string>
+    <string msgid="4966940297863570499" name="DA_EXIT_NUMBER">"Keluar di <ns1:g id="EXIT_NUMBER">{0}</ns1:g>"</string>
+    <string msgid="8494855683148237403" name="DA_EXPANDED_NOTIFICATION_SUBTEXT">"<ns1:g id="TIME_REMAINING">%1$s</ns1:g> · <ns1:g id="DISTANCE_REMAINING">%2$s</ns1:g> · <ns1:g id="ETA">%3$s</ns1:g>"</string>
+    <string msgid="8878104100559765265" name="DA_LOCKSCREEN_NOTIFICATION_DIRECTIONS">"<ns1:g id="DISTANCE_TO_NEXT_STEP">%1$s</ns1:g> - <ns1:g id="ROAD_NAME">%2$s</ns1:g>"</string>
+    <string msgid="8553864305083974087" name="DA_LOCKSCREEN_NOTIFICATION_SUBTEXT">"<ns1:g id="DESTINATION_NAME">%1$s</ns1:g> - <ns1:g id="ETA">%2$s</ns1:g>"</string>
+    <string msgid="698528250212661998" name="DA_MINUTES_ABBREVIATED_SHORT_UNIT">"mnt"</string>
+    <string msgid="7929640078602313092" name="DA_NAME_DELIMITER">" / "</string>
+    <string msgid="3380792810890405138" name="DA_NOTIFICATION_STEP_FORMAT">"<ns1:g id="STRING_0">{0}</ns1:g> - <ns1:g id="STRING_1">{1}</ns1:g>"</string>
+    <string msgid="6662097821719572140" name="DA_OFF_ROUTE">"Menyimpang dari rute…"</string>
+    <string msgid="4249562764540028107" name="DA_ONTO">"menuju <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="5914998525734325362" name="DA_POINT_ON_MAP">"Titik di peta"</string>
+    <string msgid="1525420669081149187" name="DA_RELATIVE_EQUIVALENT">"PWT\nserupa"</string>
+    <string msgid="6345879111462833077" name="DA_RELATIVE_FASTER">"<ns1:g id="MINUTES">%1$s</ns1:g>\nlebih cepat"</string>
+    <string msgid="9026835910813824786" name="DA_RELATIVE_SLOWER">"<ns1:g id="MINUTES">%1$s</ns1:g>\nlebih lambat"</string>
+    <string msgid="1136623639867405953" name="DA_REROUTING">"Mengubah rute..."</string>
+    <string msgid="7438343460352215122" name="DA_ROUTE_PREFIXES">"N,U,NE,TL,E,T,SE,TG,S,S,SW,BD,W,B,NW,BL"</string>
+    <string msgid="5218446718068301940" name="DA_ROUTE_SUFFIXES">"N,U,NE,TL,E,T,SE,TG,S,S,SW,BD,W,B,NW,BL,Ave,Blvd,Byp,Cir,Ct,Dr,Expy,Fwy,Hwy,Ln,Pkwy,Pl,Rd,St,Thrwy,Way"</string>
+    <string msgid="4645745718037033230" name="DA_SPEECH_CONTINUE_FOR_A_HALF_MILE">"Terus sejauh setengah mil"</string>
+    <string msgid="4164172923590406078" name="DA_SPEECH_CONTINUE_FOR_A_QUARTER_MILE">"Terus sejauh seperempat mil"</string>
+    <string msgid="4639761855126118140" name="DA_SPEECH_CONTINUE_FOR_ONE_AND_A_HALF_KILOMETERS">"Terus sejauh satu setengah kilometer"</string>
+    <string msgid="7622810818891191525" name="DA_SPEECH_CONTINUE_FOR_ONE_AND_A_HALF_MILES">"Terus sejauh satu setengah mil"</string>
+    <string msgid="805371831027414281" name="DA_SPEECH_CONTINUE_FOR_THREE_QUARTERS_OF_A_MILE">"Terus sejauh tiga perempat mil"</string>
+    <string msgid="9112904440572551597" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_A_HALF_MILE">"Tetap di <ns1:g id="ROAD_NAME">%1$s</ns1:g> sejauh setengah mil"</string>
+    <string msgid="1306868173119066430" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_A_QUARTER_MILE">"Tetap di <ns1:g id="ROAD_NAME">%1$s</ns1:g> sejauh seperempat mil"</string>
+    <string msgid="1481342479470867549" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_ONE_AND_A_HALF_KILOMETERS">"Tetap di <ns1:g id="ROAD_NAME">%1$s</ns1:g> sejauh satu setengah kilometer"</string>
+    <string msgid="6881684665273996002" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_ONE_AND_A_HALF_MILES">"Tetap di <ns1:g id="ROAD_NAME">%1$s</ns1:g> sejauh satu setengah mil"</string>
+    <string msgid="7098370444643797153" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_THREE_QUARTERS_OF_A_MILE">"Tetap di <ns1:g id="ROAD_NAME">%1$s</ns1:g> sejauh tiga perempat mil"</string>
+    <string msgid="1622868587212934709" name="DA_SPEECH_IN_A_HALF_MILE">"Setelah setengah mil"</string>
+    <string msgid="776151086427605353" name="DA_SPEECH_IN_A_QUARTER_MILE">"Setelah seperempat mil"</string>
+    <string msgid="3825333003762141464" name="DA_SPEECH_IN_ONE_AND_A_HALF_KILOMETERS">"Setelah satu setengah kilometer"</string>
+    <string msgid="6689160907320579504" name="DA_SPEECH_IN_ONE_AND_A_HALF_MILES">"Setelah satu setengah mil"</string>
+    <string msgid="8298844267891398809" name="DA_SPEECH_IN_THREE_QUARTERS_OF_A_MILE">"Setelah tiga perempat mil"</string>
+    <string msgid="5536748116879901705" name="DA_SPEECH_LOST_GPS">"Sinyal GPS hilang"</string>
+    <string msgid="7031013673377029795" name="DA_SPEECH_YOU_SHOULD_GET_THERE_BY">"Anda akan tiba di tujuan pukul <ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="2864490850591934011" name="DA_SPEECH_YOU_WILL_NOW_ARRIVE_AT">"Sekarang Anda akan tiba pukul <ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="626040107222949163" name="DA_SPEED_FORMAT_KILOMETERS_PER_HOUR_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g> km/j"</string>
+    <string msgid="5696017829806052324" name="DA_SPEED_FORMAT_MILES_PER_HOUR_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g> mpj"</string>
+    <string msgid="8717832301235175955" name="DA_STAY_ON_ROAD_PRIMARY">"Tetap di <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="1522051354942059491" name="DA_STAY_ON_ROAD_SECONDARY_MANEUVER">"<ns1:g id="STRING_0">{0}</ns1:g> ke <ns1:g id="STRING_1">{1}</ns1:g>"</string>
+    <string msgid="6588954374506898552" name="DA_THEN">"Lalu <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="5783008655276864364" name="DA_TIME_FORMAT_CLOCK">"<ns1:g id="HOURS">%1$d</ns1:g>.<ns1:g id="MINUTES">%2$02d</ns1:g>"</string>
+    <string msgid="7707919387811958765" name="DA_TIME_FORMAT_DAYS_AND_HOURS">"<ns1:g id="NUMBER_OF_DAYS">%1$s</ns1:g> <ns1:g id="NUMBER_OF_HOURS">%2$s</ns1:g>"</string>
+    <string msgid="6892640684881875785" name="DA_TIME_FORMAT_HOURS_AND_MINUTES">"<ns1:g id="NUMBER_OF_HOURS">%1$s</ns1:g> <ns1:g id="NUMBER_OF_MINUTES">%2$s</ns1:g>"</string>
+    <string msgid="7817998043468236136" name="DA_TOWARD">"ke arah <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="3123596705054737201" name="DA_YOUR_DESTINATION_IS_A_HALF_MILE_AHEAD">"Tujuan Anda ada di setengah mil ke depan"</string>
+    <string msgid="8661505845314857886" name="DA_YOUR_DESTINATION_IS_A_QUARTER_MILE_AHEAD">"Tujuan Anda ada di seperempat mil ke depan"</string>
+    <string msgid="3905156493194280718" name="DA_YOUR_DESTINATION_IS_ONE_AND_A_HALF_KILOMETERS_AHEAD">"Tujuan Anda ada di satu setengah kilometer ke depan"</string>
+    <string msgid="4589187785814099880" name="DA_YOUR_DESTINATION_IS_ONE_AND_A_HALF_MILES_AHEAD">"Tujuan Anda ada di satu setengah mil ke depan"</string>
+    <string msgid="4923490260885185878" name="DA_YOUR_DESTINATION_IS_THREE_QUARTERS_OF_A_MILE_AHEAD">"Tujuan Anda ada di tiga perempat mil ke depan"</string>
+    <string msgid="1064900343663975467" name="DEBUG_MAPS_FEATURES_SETTINGS_TITLE">"Fitur debug [dogfood only]"</string>
+    <string msgid="5698435378918936657" name="DIRECTIONS_PROCEED_TO_METERS">"Lanjutkan sejauh <ns1:g id="DISTANCE">%1$s</ns1:g>"</string>
+    <string msgid="4176893357736379300" name="DIRECTIONS_STEP_LIST_TO">"Ke <ns1:g id="DESTINATION">%s</ns1:g>"</string>
+    <string msgid="1814428387459568726" name="DIRECTIONS_YOUR_LOCATION">"Lokasi Anda"</string>
+    <string msgid="737968998903158015" name="DISCLAIMER">"Perhatikan jalan dan patuhi hukum yang berlaku. Jangan mengotak-atik aplikasi ini sambil bergerak. Rute mungkin tidak akurat, tidak lengkap, berbahaya, tidak sesuai, terlarang, atau melintasi batas daerah administratif. Data bukan laporan langsung dan akurasi lokasi tidak dapat dijamin."</string>
+    <string msgid="2642186254766054874" name="DISCLAIMER_TITLE">"Google Maps Navigasi masih beta. Gunakan dengan hati-hati."</string>
+    <string msgid="2322386471590166279" name="DISTANCE_FEET_ABBREVIATED">"<ns1:g id="NUMBER_OF_FEET"/> kaki"</string>
+    <string msgid="1770611150911759090" name="DISTANCE_FEET_EXTENDED">"<ns1:g id="NUMBER_OF_FEET"/> kaki"</string>
+    <string msgid="8832117946718206516" name="DISTANCE_KILOMETERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS"/> km"</string>
+    <string msgid="1712822516939066073" name="DISTANCE_KILOMETERS_EXTENDED">"<ns1:g id="NUMBER_OF_KILOMETERS"/> kilometer"</string>
+    <string msgid="5115749175241245588" name="DISTANCE_METERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_METERS"/> m"</string>
+    <string msgid="6786188804325739113" name="DISTANCE_METERS_EXTENDED">"<ns1:g id="NUMBER_OF_METERS"/> meter"</string>
+    <string msgid="1663691802801530665" name="DISTANCE_MILES_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES"/> mi"</string>
+    <string msgid="7535910480336049458" name="DISTANCE_MILES_EXTENDED">"<ns1:g id="NUMBER_OF_MILES"/> mil"</string>
+    <string msgid="3873406547898134225" name="DISTANCE_TO_TRIP_LEVEL_NOTICE">"dlm <ns1:g id="DISTANCE">%1$s</ns1:g>"</string>
+    <string msgid="5782765699559481543" name="DISTANCE_YARDS_ABBREVIATED">"<ns1:g id="NUMBER_OF_YARDS"/> yard"</string>
+    <string msgid="314073790876879964" name="DISTANCE_YARDS_EXTENDED">"<ns1:g id="NUMBER_OF_YARDS"/> yard"</string>
+    <string msgid="738884423108976541" name="DONE">"Selesai"</string>
+    <string msgid="2363263758654372020" name="DRIVING_MODE_NOTIFICATION_DRIVING_WITH_NO_CURRENT_ROAD">"Mengemudi dengan Google Maps"</string>
+    <string msgid="4220331858318238031" name="DURATION_AND_DISTANCE_TO_DESTINATION">"<ns1:g id="DURATION">%1$s</ns1:g> (<ns1:g id="DISTANCE">%2$s</ns1:g>) ke tujuan"</string>
+    <string msgid="6479013822372531284" name="DURATION_AND_DISTANCE_WITH_DESTINATION">"<ns1:g id="DURATION">%1$s</ns1:g> (<ns1:g id="DISTANCE">%2$s</ns1:g>) ke <ns1:g id="DESTINATION">%3$s</ns1:g>"</string>
+    <string msgid="6003991895084447024" name="EDIT_HOME_WORK">"Edit rumah atau kantor"</string>
+    <string msgid="516081725937928083" name="ENERGY_CONSUMPTION_ENGINE_TYPE_SETTINGS_TITLE">"Jenis mesin"</string>
+    <string msgid="3843996814576444609" name="ESTIMATED_TIME_OF_ARRIVAL">"Perkiraan tiba pukul <ns1:g id="ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="3733379082443710457" name="ESTIMATED_TIME_OF_ARRIVAL_SHORT">"PWT: <ns1:g id="ESTIMATED_TIME_OF_ARRIVAL">%1$s</ns1:g>"</string>
+    <string msgid="4474776824279943996" name="ESTIMATED_TIME_OF_ARRIVAL_WITH_TIME_ZONE">"<ns1:g id="ESTIMATED_TIME_OF_ARRIVAL">%1$s</ns1:g> <ns1:g id="SHORT_TIME_ZONE">%2$s</ns1:g>"</string>
+    <string msgid="6999585662399273468" name="EVEN_ONLY_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Genap saja"</string>
+    <string msgid="7000439285054278098" name="EV_CONNECTOR_PREFERENCES_SUMMARY">"Pilih steker"</string>
+    <string msgid="538913145063218200" name="EV_CONNECTOR_PREFERENCES_TITLE">"Steker dan adaptor yang kompatibel"</string>
+    <string msgid="2967277365338415762" name="EV_PROFILE_SETTINGS_TITLE_V2">"Setelan kendaraan listrik"</string>
+    <string msgid="833120489844392943" name="EXPLORE_PREFERENCES_SETTINGS_LANDING_PAGE_ENTRY_POINT_TEXT">"Kelola preferensi Anda"</string>
+    <string msgid="1042961630059727812" name="EYES_FREE_MODE_REROUTE_NOTIFICATION">"Sepertinya Anda keluar dari rute yang disarankan, kami akan menampilkan rute baru."</string>
+    <string msgid="2695748113301305354" name="FAILED_TO_LAUNCH_APPLICATION">"Gagal meluncurkan aplikasi."</string>
+    <string msgid="6461634184436147039" name="GENERIC_DELAY_SUBTITLE">"Diperkirakan macet"</string>
+    <string msgid="5033029603744943710" name="GETTING_AROUND_CATEGORY_TITLE">"Transportasi"</string>
+    <string msgid="5232271074030694384" name="GOOGLE_LOCATION_SETTINGS">"Setelan lokasi Google"</string>
+    <string msgid="5646148448362261180" name="GOOGLE_MAPS_TIMELINE_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan info terbaru tentang histori lokasi Anda"</string>
+    <string msgid="2493857178325724377" name="GOOGLE_MAPS_TIMELINE_SETTINGS_SUMMARY">"Dapatkan notifikasi tentang histori lokasi Anda"</string>
+    <string msgid="196582671347677600" name="GOOGLE_MAPS_TIMELINE_SETTINGS_TITLE">"Linimasa Google Maps"</string>
+    <string msgid="4749894635859607507" name="GPS_SIGNAL_LOST_CALLOUT_TEXT">"Menelusuri GPS..."</string>
+    <string msgid="3033976480311745440" name="HAZARDOUS_GOODS_RESTRICTED">"Bawaan Berbahaya Dibatasi"</string>
+    <string msgid="4732345555387659208" name="HEAVY_TRAFFIC">"Lalu lintas padat"</string>
+    <string msgid="173409722067999322" name="HEIGHT_FEET_ABBREVIATED">"<ns1:g id="FEET">%d</ns1:g> ft"</string>
+    <string msgid="8966636302039617408" name="HEIGHT_FEET_INCHES_ABBREVIATED">"<ns1:g id="FEET">%d</ns1:g> kaki <ns1:g id="INCHES">%d</ns1:g> inci"</string>
+    <string msgid="8637363475448752754" name="HEIGHT_FEET_INCHES_LONGFORM">"<ns1:g id="FEET">%d</ns1:g> kaki <ns1:g id="INCHES">%d</ns1:g> inci"</string>
+    <string msgid="1521089235551336608" name="HEIGHT_FEET_LONGFORM">"<ns1:g id="FEET">%d</ns1:g> kaki"</string>
+    <string msgid="1887668386950703406" name="HEIGHT_RESTRICTED">"Tinggi Dibatasi"</string>
+    <string msgid="784251430855706294" name="HOV_AVAILABLE">"Kendaraan Padat Penumpang tersedia"</string>
+    <string msgid="6529821054904011518" name="IMPROVE_YOUR_LOCATION">"Tips akurasi lokasi"</string>
+    <string msgid="2540976662746914375" name="INCIDENT_VOTE_COUNT_BUCKET_LONG">"Dilaporkan <ns1:g id="VOTE_COUNT">%1$s</ns1:g>+"</string>
+    <string msgid="8281026530646827235" name="INCIDENT_VOTE_COUNT_BUCKET_SHORT">"<ns1:g id="VOTE_COUNT">%1$s</ns1:g>+"</string>
+    <string msgid="1284004591458612182" name="INCIDENT_VOTE_COUNT_LONG">"Dilaporkan <ns1:g id="VOTE_COUNT">%1$s</ns1:g>"</string>
+    <string msgid="7857287556098266775" name="INFORMATION_SEVERITY_CONTENT_DESCRIPTION">"Pemberitahuan"</string>
+    <string msgid="6766669801183231447" name="INITIAL_NOTIFICATION_CONTENT_TITLE">"Memulai navigasi..."</string>
+    <string msgid="3945432022630896702" name="JAMCIDENT_DELAY_TIME">"+<ns1:g id="TIME">%1$s</ns1:g>"</string>
+    <string msgid="6857277423395462126" name="LIGHT_TRAFFIC">"Lalu lintas lengang"</string>
+    <string msgid="2755809767742409326" name="LOADING">"Memproses"</string>
+    <string msgid="8072745940066400784" name="LOCAL_PREFERENCES_AREA_MANAGEMENT_ENTRY_POINT_TEXT">"Kelola area Anda"</string>
+    <string msgid="5423743480617991599" name="LOCATION_AND_PROFILE_CATEGORY_TITLE">"Lokasi dan profil"</string>
+    <string msgid="2086740505285691302" name="LOCATION_NOT_YET_AVAILABLE">"Menunggu lokasi..."</string>
+    <string msgid="8345606348711609944" name="LOCATION_SHARING_FRIENDS_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan info terbaru tentang teman Anda dan lokasi yang mereka bagikan"</string>
+    <string msgid="584985529279859810" name="LOCATION_SHARING_FRIENDS_SETTINGS_SUMMARY">"Dapatkan notifikasi tentang teman dan lokasi yang dibagikannya"</string>
+    <string msgid="1787475954612106105" name="LOCATION_SHARING_FRIENDS_SETTINGS_TITLE">"Berbagi lokasi Google (teman)"</string>
+    <string msgid="1798157651559312287" name="LOCATION_SHARING_UPDATES_SETTINGS_SUMMARY">"Dapatkan notifikasi saat lokasi yang dibagikan diperbarui"</string>
+    <string msgid="4145708674804313912" name="LOCATION_SHARING_UPDATES_SETTINGS_TITLE">"Notifikasi berbagi lokasi Google"</string>
+    <string msgid="6974966951431091715" name="LOCATION_SHARING_YOU_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan info terbaru tentang lokasi yang Anda bagikan"</string>
+    <string msgid="2507248622422659061" name="LOCATION_SHARING_YOU_SETTINGS_SUMMARY">"Dapatkan notifikasi tentang lokasi yang Anda bagikan"</string>
+    <string msgid="3628122068571233362" name="LOCATION_SHARING_YOU_SETTINGS_TITLE">"Berbagi lokasi Google (Anda)"</string>
+    <string msgid="5983765003219829883" name="MANILA_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Pengodean <ns1:g id="PLATE_1">%1$d</ns1:g> &amp; <ns1:g id="PLATE_2">%2$d</ns1:g>"</string>
+    <string msgid="2282765788770439491" name="MAPS_FEATURES_CATEGORY_TITLE">"Fitur Maps"</string>
+    <string msgid="8758525520286582553" name="MAPS_FEATURES_URGENT_SETTINGS_TITLE">"Pemberitahuan penting fitur Maps"</string>
+    <string msgid="2890999488170047937" name="MAPS_HISTORY">"Histori Maps"</string>
+    <string msgid="7523320203882314616" name="MAP_COPYRIGHTS_FULL">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - Citra ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>, Data peta ©<ns1:g id="COPYRIGHT_YEAR_2">%4$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%5$s</ns1:g>"</string>
+    <string msgid="3080854072740850768" name="MAP_COPYRIGHTS_GOOGLE_ONLY">"©<ns1:g id="COPYRIGHT_YEAR">%1$s</ns1:g> Google"</string>
+    <string msgid="271754604139169484" name="MAP_COPYRIGHTS_IMAGERY_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - Citra ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>"</string>
+    <string msgid="6150599764044956009" name="MAP_COPYRIGHTS_MAP_DATA_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - Data peta ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%3$s</ns1:g>"</string>
+    <string msgid="1172850333329779755" name="NAVIGATION_CATEGORY_TITLE">"Navigasi"</string>
+    <string msgid="2003321543190473980" name="NAVIGATION_SETTINGS">"Setelan navigasi"</string>
+    <string msgid="6362228591814936571" name="NAVIGATION_STEP_LIST_DISTANCE_TO_NEXT_STEP">"Dalam <ns1:g id="DISTANCE">%1$s</ns1:g>"</string>
+    <string msgid="8513156606874950515" name="NAVIGATION_URGENT_SETTINGS_TITLE">"Informasi penting terkait navigasi"</string>
+    <string msgid="8746273910770749866" name="NAV_SDK_DEFAULT_COMPANY_NAME">"developer aplikasi"</string>
+    <string msgid="3522779505396739599" name="NAV_SDK_DISCLAIMER">"Jangan lupa untuk memperhatikan sekeliling Anda dan selalu patuhi hukum."</string>
+    <string msgid="2337842297414069478" name="NAV_SDK_GOT_IT">"Oke"</string>
+    <string msgid="6986418512565360329" name="NAV_SDK_I_AM_IN">"Ya, saya setuju"</string>
+    <string msgid="2296133702373295473" name="NAV_SDK_LEGAL_TEXT">"Saat Anda menggunakan <ns1:g id="NAV_SDK_COMPANY_NAME_2">%1$s</ns1:g>, Google akan mengumpulkan data navigasi, seperti lokasi GPS dan rute yang Anda ambil, untuk meningkatkan kualitas Google Maps bagi semua orang. Data ini dapat digunakan untuk memperlihatkan informasi, termasuk kondisi dan gangguan lalu lintas secara real-time, kepada orang lain dan membantu mereka menemukan rute terbaik.\n\nPembaruan untuk peta ini tidak akan dikaitkan dengan Akun Google atau perangkat Anda. Berlaku <ns1:g id="NAV_SDK_TERMS">%2$s</ns1:g> dan <ns1:g id="NAV_SDK_PRIVACY_POLICY">%3$s</ns1:g> Google.\n\n<ns1:g id="NAV_SDK_COMPANY_NAME_3">%4$s</ns1:g> juga dapat mengumpulkan dan menggunakan data ini. Silakan merujuk ke Kebijakan Privasi Aplikasi <ns1:g id="NAV_SDK_COMPANY_NAME_4">%5$s</ns1:g> untuk mengetahui informasi selengkapnya."</string>
+    <string msgid="5332923116377998043" name="NAV_SDK_LEGAL_TEXT_LEGACY">"Google dapat mengumpulkan data lokasi dan mengemudi Anda saat Aplikasi berjalan demi memberikan dan meningkatkan layanan. Data ini juga dapat dibagikan kepada <ns1:g id="NAV_SDK_COMPANY_NAME">%1$s</ns1:g> untuk meningkatkan pengoperasiannya. <ns1:g id="NAV_SDK_TERMS">%2$s</ns1:g> dan <ns1:g id="NAV_SDK_PRIVACY_POLICY">%3$s</ns1:g> Google berlaku."</string>
+    <string msgid="6340328118114501085" name="NAV_SDK_PRIVACY_POLICY">"kebijakan privasi"</string>
+    <string msgid="2982362725876163352" name="NAV_SDK_PRIVACY_POLICY_CAPITALIZED">"Kebijakan Privasi"</string>
+    <string msgid="4531136199149528407" name="NAV_SDK_TERMS">"persyaratan"</string>
+    <string msgid="7707795984529102497" name="NAV_SDK_TERMS_CAPITALIZED">"Persyaratan"</string>
+    <string msgid="3015266809371007473" name="NAV_SDK_TERMS_CLOSE">"Tutup aplikasi"</string>
+    <string msgid="8901594003619146647" name="NAV_SDK_TERMS_ERROR">"Terjadi error saat memuat persyaratan layanan Navigasi. Mulai ulang aplikasi."</string>
+    <string msgid="6958049100686788454" name="NAV_SDK_WELCOME_TO_GOOGLE_MAPS_NAVIGATION">"Selamat datang di Navigasi Google Maps."</string>
+    <string msgid="6791023658564191335" name="NEARBY_PLACES_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY_V2">"Anda mendapatkan rekomendasi tentang tempat dan acara terdekat"</string>
+    <string msgid="5467978305791925717" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_SUMMARY">"Dapatkan notifikasi saat Anda berada di sekitar salah satu tempat atau acara tersimpan"</string>
+    <string msgid="2899316768992820532" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_SUMMARY_V2">"Dapatkan rekomendasi tentang tempat dan acara di sekitar"</string>
+    <string msgid="7613155153180186667" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_TITLE">"Tempat &amp; acara di sekitar"</string>
+    <string msgid="2522056010363733176" name="NETWORK_UNAVAILABLE">"Tidak dapat terhubung"</string>
+    <string msgid="5798081927324715154" name="NEW_ON_MAPS_CATEGORY_TITLE">"Baru di Maps"</string>
+    <string msgid="1286364333769843890" name="NEW_ON_MAPS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan info terbaru tentang hal-hal baru yang dapat Anda lakukan di Maps"</string>
+    <string msgid="7425167408473147318" name="NEW_ON_MAPS_NOTIFICATION_SETTINGS_SUMMARY">"Dapatkan info sesekali tentang hal-hal baru yang dapat dilakukan di Maps"</string>
+    <string msgid="8563411120076685209" name="NORMAL_TRAFFIC">"Lalu lintas normal"</string>
+    <string msgid="7130046223811209078" name="NOTICE_EFFECTIVE_RANGE">"Berlaku <ns1:g id="DATE_OR_DATE_RANGE">%s</ns1:g>"</string>
+    <string msgid="4156394438137475279" name="NOTIFICATIONS_SETTINGS_TITLE">"Notifikasi"</string>
+    <string msgid="889779361831341194" name="ODD_ONLY_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Ganjil saja"</string>
+    <string msgid="5195182224903466222" name="OFFLINE_MAPS_DOWNLOAD_EMBEDDED_TITLE">"Download peta offline"</string>
+    <string msgid="103070061409767941" name="OFFLINE_MAPS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan info terbaru tentang area yang disimpan di ponsel atau tablet Anda"</string>
+    <string msgid="2065934284598719130" name="OFFLINE_MAPS_NOTIFICATION_SETTINGS_SUMMARY">"Dapatkan notifikasi tentang area yang disimpan di ponsel atau tablet Anda"</string>
+    <string msgid="4278334889579817101" name="OFFLINE_MAPS_TITLE">"Peta offline"</string>
+    <string msgid="5659021817125812935" name="OFFLINE_SETTINGS">"Setelan peta offline"</string>
+    <string msgid="2611064167742529426" name="OTHER_NOTIFICATION_CHANNEL">"Notifikasi lainnya"</string>
+    <string msgid="653910275023514690" name="PARKING_LOCATION_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan info terbaru tentang lokasi parkir Anda"</string>
+    <string msgid="8831411745546173529" name="PARKING_LOCATION_SETTINGS_SUMMARY">"Dapatkan notifikasi tentang lokasi parkir Anda"</string>
+    <string msgid="874143968644994017" name="PARKING_LOCATION_SETTINGS_TITLE">"Lokasi parkir"</string>
+    <string msgid="4109028911398058028" name="PERSONAL_CONTENT_TITLE">"Konten pribadi"</string>
+    <string msgid="6309784419540645516" name="PHOTO_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan pengingat untuk mengupload foto dan memberi tag pada hidangan berdasarkan tempat yang telah Anda kunjungi"</string>
+    <string msgid="2017256142609753488" name="PHOTO_NOTIFICATION_SETTINGS_SUMMARY">"Dapatkan pengingat untuk mengupload foto dan memberi tag pada hidangan berdasarkan tempat yang pernah Anda kunjungi"</string>
+    <string msgid="7486650467383313327" name="PHOTO_NOTIFICATION_SETTINGS_TITLE">"Bagikan &amp; beri tag pada foto"</string>
+    <string msgid="2975029997059956743" name="PICKUP_ORDERS_NOTIFICATION_OPT_OUT_SETTING_SUMMARY">"Anda mendapatkan info terbaru tentang pesanan ambil sendiri di Maps"</string>
+    <string msgid="3374210285480569472" name="PICKUP_ORDERS_NOTIFICATION_SETTING_SUMMARY">"Dapatkan info terbaru tentang status pesanan, serta pengingat untuk membagikan waktu tiba dan check in"</string>
+    <string msgid="668310841030579677" name="PICKUP_ORDERS_NOTIFICATION_SETTING_TITLE">"Pengambilan Pesanan"</string>
+    <string msgid="8127880752570065607" name="PLACES_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan pertanyaan tentang tempat yang telah Anda kunjungi sehingga orang lain mengetahui kondisi tempatnya"</string>
+    <string msgid="5365776433570962189" name="PLACES_NOTIFICATION_SETTINGS_SUMMARY">"Jawab pertanyaan tentang tempat yang pernah Anda kunjungi agar orang lain mengetahui kondisi tempatnya"</string>
+    <string msgid="3724976413506253643" name="PLACES_NOTIFICATION_SETTINGS_TITLE">"Tempat yang dikunjungi"</string>
+    <string msgid="7471023852308791790" name="POI_PROMPT_ADD_STOP">"Tambahkan"</string>
+    <string msgid="7983858942352259551" name="POI_PROMPT_ADD_STOP_ACTION">"Ditambahkan ke rute"</string>
+    <string msgid="8778537284281768607" name="POI_PROMPT_NAVIGATE">"Navigasi"</string>
+    <string msgid="472834733509383200" name="POI_PROMPT_NAVIGATE_ACTION">"Menavigasi"</string>
+    <string msgid="298606571303064040" name="PROMPT_CANCEL">"Batal"</string>
+    <string msgid="4066051640880834866" name="PROMPT_DISMISS">"Tutup"</string>
+    <string msgid="5503515646274126756" name="QA_AND_CHAT_CATEGORY_TITLE">"Tanya Jawab dan chat"</string>
+    <string msgid="3324329907005959185" name="RECENTER_FOLLOW_MODE">"Pusatkan lagi"</string>
+    <string msgid="1486707796824890396" name="RECOMMENDATIONS_FOR_YOU_CATEGORY_TITLE">"Rekomendasi untuk Anda"</string>
+    <string msgid="8105228677480057073" name="REMOVE">"Hapus"</string>
+    <string msgid="1550982124371473702" name="REPORTED_VIA_WAZE_APP">"Dilaporkan via aplikasi Waze"</string>
+    <string msgid="2241569767697676295" name="REROUTE_CALLOUT_CURRENT">"Terbaru"</string>
+    <string msgid="520999062746509578" name="REROUTE_CALLOUT_NEW">"Baru"</string>
+    <string msgid="3344101668786395431" name="REVIEW_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan pengingat untuk menulis ulasan berdasarkan tempat yang telah Anda kunjungi"</string>
+    <string msgid="7888846095073550740" name="REVIEW_NOTIFICATION_SETTINGS_SUMMARY">"Dapatkan pengingat untuk menulis ulasan berdasarkan tempat yang pernah Anda kunjungi"</string>
+    <string msgid="7916601440448962034" name="REVIEW_NOTIFICATION_SETTINGS_TITLE">"Saran untuk menulis ulasan"</string>
+    <string msgid="1541842670412044840" name="RODIZIO_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Rodízio <ns1:g id="PLATE_1">%1$d</ns1:g> &amp; <ns1:g id="PLATE_2">%2$d</ns1:g>"</string>
+    <string msgid="8062022808692087963" name="ROUTE_AROUND_CLOSURE_CALLOUT_CLOSED">"Ditutup"</string>
+    <string msgid="623689270367292384" name="ROUTE_AROUND_TRAFFIC_ACTION">"Mengubah rute"</string>
+    <string msgid="7859812763744711003" name="ROUTE_AROUND_TRAFFIC_CALLOUT_FASTER">"Lebih cepat"</string>
+    <string msgid="2611671618289658133" name="ROUTE_AROUND_TRAFFIC_DECLINE">"Lain kali"</string>
+    <string msgid="1962094888482140214" name="ROUTE_AROUND_TRAFFIC_REROUTE">"Terima"</string>
+    <string msgid="5344116890552800007" name="ROUTE_AROUND_TRAFFIC_TAKE_ACTION_CUE_DEFAULT_DECLINE">"Untuk mengambil rute yang lebih cepat, ketuk <ns1:g id="REROUTE_BUTTON">%1$s</ns1:g>."</string>
+    <string msgid="9048657312424993512" name="ROUTE_AROUND_TRAFFIC_TAKE_ACTION_CUE_DEFAULT_REROUTE">"Jika Anda memilih untuk tetap mengikuti rute yang sekarang, ketuk <ns1:g id="DECLINE_BUTTON">%1$s</ns1:g>."</string>
+    <string msgid="668738352458665249" name="SATELLITE_KEEP_ON_SETTING_SUMMARY">"Tampilan memakai lebih banyak kuota"</string>
+    <string msgid="5458955675293713001" name="SATELLITE_KEEP_ON_SETTING_TITLE">"Mulai Maps dalam tampilan satelit"</string>
+    <string msgid="2513389490217803388" name="SHAKE_TO_SEND_FEEDBACK">"Goyang untuk mengirim masukan"</string>
+    <string msgid="7927333567450914524" name="SHOW_SCALEBAR">"Tampilkan skala di peta"</string>
+    <string msgid="8853862950824858965" name="SIGN_IN">"Login"</string>
+    <string msgid="6614611063829352216" name="SPEEDOMETER_CONTENT_DESCRIPTION">"Kecepatan saat ini"</string>
+    <string msgid="2485928112866408949" name="SPEEDOMETER_LABEL_MPH">"mpj"</string>
+    <string msgid="714338337064997840" name="SPEED_LIMIT_CONTENT_DESCRIPTION">"Batas kecepatan"</string>
+    <string msgid="8329935752572916663" name="SPEED_LIMIT_LABEL_KPH">"km/j"</string>
+    <string msgid="6049037484128190260" name="SPEED_LIMIT_LABEL_MPH">"mpj"</string>
+    <string msgid="6933103859272522200" name="STATUS_DATA_CONNECTION_LOST">"Koneksi data putus..."</string>
+    <string msgid="3486534637879952316" name="STATUS_LOCATION_NOT_YET_AVAILABLE">"Menunggu lokasi..."</string>
+    <string msgid="2640731163709778825" name="STATUS_OFF_ROUTE">"Menyimpang dari rute"</string>
+    <string msgid="2545735105255092828" name="STATUS_REROUTING">"Mengubah rute..."</string>
+    <string msgid="2050512013597272527" name="STEP_LIST_INTERACTION_LOCKOUT">"Untuk melihat arahan lebih lanjut, menepilah ketika aman"</string>
+    <string msgid="4380539129160098186" name="TBP_TIME_FORMAT_STRING">"Biasanya <ns1:g id="DURATION_RANGE">%1$s</ns1:g>"</string>
+    <string msgid="3969156182655336787" name="TIME_TO_LEAVE_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan pengingat waktu untuk berangkat berdasarkan acara dari Gmail dan Kalender Anda"</string>
+    <string msgid="5878136911262367593" name="TIME_TO_LEAVE_SETTINGS_SUMMARY">"Dapatkan pengingat waktunya berangkat berdasarkan acara dari Gmail dan Kalender"</string>
+    <string msgid="5802789254332120401" name="TIME_TO_LEAVE_SETTINGS_TITLE">"Waktunya berangkat"</string>
+    <string msgid="279144067639888797" name="TRAFFIC_INCIDENT_CANCEL_BUTTON">"Tutup"</string>
+    <string msgid="2556434376988861569" name="TRAFFIC_INCIDENT_CARD_ACTION_DESCRIPTION">"menampilkan insiden di peta"</string>
+    <string msgid="6842632577325526492" name="TRAFFIC_INCIDENT_CAUSE_LABEL">"Tutup karena"</string>
+    <string msgid="988935259303895134" name="TRAFFIC_INCIDENT_CLEARED_UP">"Insiden teratasi."</string>
+    <string msgid="7567994859964694495" name="TRAFFIC_INCIDENT_GET_MORE_INFO_LINK_LABEL">"Dapatkan info terbaru:"</string>
+    <string msgid="3198922267208778988" name="TRAFFIC_IN_YOUR_AREA_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan kondisi lalu lintas berdasarkan lokasi Anda saat ini"</string>
+    <string msgid="1473827289987133797" name="TRAFFIC_IN_YOUR_AREA_SETTINGS_SUMMARY">"Dapatkan info kondisi lalu lintas berdasarkan lokasi Anda saat ini"</string>
+    <string msgid="1128033297013450984" name="TRAFFIC_IN_YOUR_AREA_SETTINGS_TITLE">"Lalu lintas di area Anda"</string>
+    <string msgid="7311918430526640931" name="TRAFFIC_NEARBY_EVENTS_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan peringatan tentang rencana penutupan jalan dan peristiwa yang dapat memengaruhi lalu lintas"</string>
+    <string msgid="7229793065931553473" name="TRAFFIC_NEARBY_EVENTS_SETTINGS_SUMMARY">"Dapatkan peringatan tentang rencana penutupan jalan dan kegiatan yang dapat memengaruhi lalu lintas"</string>
+    <string msgid="7458119512976033960" name="TRAFFIC_NEARBY_EVENTS_SETTINGS_TITLE">"Lalu lintas dari acara terdekat"</string>
+    <string msgid="3736157622661020905" name="TRAFFIC_UPDATE_ETA_PROMPT_SUBTITLE">"Diperkirakan tiba pukul <ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="6992797437864599238" name="TRANSIT_ENTER_VIA">"Masuk lewat <ns1:g id="ENTRANCE">%1$s</ns1:g>"</string>
+    <string msgid="5577370445084558613" name="TRANSIT_ENTRANCE_ENTER_TITLE">"Masuk ke stasiun"</string>
+    <string msgid="6142195623804653271" name="TRANSIT_ENTRANCE_EXIT_TITLE">"Keluar dari stasiun"</string>
+    <string msgid="1010084563211368398" name="TRANSIT_EXIT_VIA">"Keluar lewat <ns1:g id="EXIT">%1$s</ns1:g>"</string>
+    <string msgid="3806065467172569991" name="TRANSIT_INFO_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan keberangkatan, gangguan, dan peta dari stasiun terdekat"</string>
+    <string msgid="1534490659851000732" name="TRANSIT_INFO_SETTINGS_SUMMARY">"Dapatkan info keberangkatan, gangguan, dan peta dari stasiun terdekat"</string>
+    <string msgid="4220388452166772640" name="TRANSIT_INFO_SETTINGS_TITLE">"Peta &amp; info transportasi umum"</string>
+    <string msgid="5472231200918516614" name="TRANSIT_LINE_SEPARATOR">", atau "</string>
+    <string msgid="1781544592846552935" name="TRANSIT_STEPTHROUGH_BOARD_TRANSPORTATION_AT">"Naik <ns1:g id="TRANSPORTATION_TITLE">%1$s</ns1:g> di <ns1:g id="DEPARTURE_STATION_NAME">%2$s</ns1:g>"</string>
+    <string msgid="4852979524663289910" name="TRANSIT_STEPTHROUGH_GET_OFF_AT">"Turun di <ns1:g id="ARRIVAL_STATION_NAME">%1$s</ns1:g>"</string>
+    <string msgid="100719016293137101" name="TRANSIT_STEPTHROUGH_TRANSFER_TRANSPORTATION_AT">"Transfer ke <ns1:g id="TRANSPORTATION_TITLE">%1$s</ns1:g> di <ns1:g id="TRANSFER_STATION_NAME">%2$s</ns1:g>"</string>
+    <string msgid="4075726691937451191" name="TRANSIT_STEP_SEPARATOR">", kemudian "</string>
+    <string msgid="4347114544007413130" name="TRANSIT_TRANSFER_DESCRIPTION">"<ns1:g id="LINE_NAME">%1$s</ns1:g> <ns1:g id="DESTINATION">%2$s</ns1:g>"</string>
+    <string msgid="1067501494466681470" name="TRANSIT_TRANSFER_DESCRIPTION_WITH_EXPRESS_TYPE">"<ns1:g id="LINE_NAME">%1$s</ns1:g> <ns1:g id="EXPRESS_TYPE_NAME">%2$s</ns1:g> <ns1:g id="DESTINATION">%3$s</ns1:g>"</string>
+    <string msgid="2817788206332504699" name="TRANSIT_VIA">"melalui <ns1:g id="ENTRANCE">%1$s</ns1:g>"</string>
+    <string msgid="755148195746788198" name="TRUCKS_RESTRICTED">"Truk Dibatasi"</string>
+    <string msgid="6607947384151787482" name="TURN_CARD_THEN_INSTRUCTION">"Kemudian <ns1:g id="NEXT_INSTRUCTION">%1$s</ns1:g>"</string>
+    <string msgid="8308160665835594365" name="UGC_IMPACT_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan info terbaru tentang suka dan komentar, dan saat Anda mendapatkan badge dan keuntungan"</string>
+    <string msgid="5429102650839711069" name="UGC_IMPACT_NOTIFICATION_SETTINGS_SUMMARY">"Dapatkan notifikasi tentang suka dan komentar, serta saat Anda memperoleh badge dan keuntungan"</string>
+    <string msgid="2032622348248043611" name="UGC_IMPACT_NOTIFICATION_SETTINGS_TITLE">"Suka, pencapaian, &amp; badge"</string>
+    <string msgid="7013124010125038791" name="UGC_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan pertanyaan tentang lingkungan lokal, jalan, &amp; perjalanan Anda"</string>
+    <string msgid="3565867092229885716" name="UGC_NOTIFICATION_SETTINGS_SUMMARY">"Bantu sempurnakan Maps dengan menjawab pertanyaan tentang lingkungan sekitar, jalan, &amp; perjalanan Anda"</string>
+    <string msgid="9024065710924542964" name="UGC_NOTIFICATION_SETTINGS_TITLE">"Area, jalan, &amp; perjalanan Anda"</string>
+    <string msgid="1738086435281091835" name="UNABLE_TO_LOAD_DATA">"Tidak dapat memuat data"</string>
+    <string msgid="2670705425616869617" name="UNITS">"Satuan jarak"</string>
+    <string msgid="4893017073865021264" name="UNITS_AUTOMATIC">"Otomatis"</string>
+    <string msgid="7876257382820058712" name="UNITS_IMPERIAL">"Mil"</string>
+    <string msgid="117093659918958729" name="UNITS_METRIC">"Kilometer"</string>
+    <string msgid="6580177403276978686" name="VEHICLE_SETTINGS_TITLE">"Setelan kendaraan"</string>
+    <string msgid="5710449106540223967" name="VIDEO_SETTINGS_TITLE">"Setelan video"</string>
+    <string msgid="8573971634735221604" name="WARNING_SEVERITY_CONTENT_DESCRIPTION">"Peringatan"</string>
+    <string msgid="4161070547943419580" name="WAZE_ATTRIBUTION_DIALOG_CONTENT_ALREADY_INSTALLED">"Insiden ini dilaporkan oleh komunitas pengguna Waze dengan menggunakan aplikasi lalu lintas dan navigasi Waze.\n\nKirimkan laporan Anda yang berguna melalui Waze."</string>
+    <string msgid="6296131061336170909" name="WAZE_ATTRIBUTION_DIALOG_CONTENT_NOT_INSTALLED">"Insiden ini dilaporkan oleh komunitas pengguna Waze dengan menggunakan aplikasi lalu lintas dan navigasi Waze.\n\nDownload Waze dan kirimkan laporan Anda yang berguna."</string>
+    <string msgid="6423551936568425898" name="WAZE_ATTRIBUTION_DIALOG_DISMISS">"Tutup"</string>
+    <string msgid="3887930200748972622" name="WAZE_ATTRIBUTION_DIALOG_GET_WAZE">"Dapatkan Waze"</string>
+    <string msgid="1221046906467082448" name="WAZE_ATTRIBUTION_DIALOG_OPEN_WAZE">"Buka Waze"</string>
+    <string msgid="3260434220328093048" name="WAZE_ATTRIBUTION_DIALOG_TITLE">"Dilaporkan oleh pengguna aplikasi Waze"</string>
+    <string msgid="8332911579512824593" name="WAZE_NOT_AVAILABLE">"Tidak dapat membuka Waze."</string>
+    <string msgid="6557028535722391556" name="WEIGHT_RESTRICTED">"Berat Dibatasi"</string>
+    <string msgid="6708487118738049074" name="WEIGHT_SHORT_TONS_ABBREVIATED">"<ns1:g id="SHORT_TONS">%s</ns1:g> T"</string>
+    <string msgid="6017366300652518735" name="WEIGHT_SHORT_TONS_LONGFORM">"<ns1:g id="SHORT_TONS">%s</ns1:g> ton"</string>
+    <string msgid="444421108406293150" name="WIFI_ONLY_TITLE">"Hanya Wi‑Fi"</string>
+    <string msgid="3295691316074264165" name="YOUR_BUSINESS_CATEGORY_TITLE">"Bisnis Anda"</string>
+    <string msgid="5038513763080836030" name="YOUR_BUSINESS_OPT_OUT_SETTINGS_SUMMARY">"Anda mendapatkan pengingat dan info terbaru tentang bisnis Anda"</string>
+    <string msgid="7935186140284907584" name="YOUR_BUSINESS_SETTINGS_SUMMARY">"Dapatkan pengingat dan notifikasi tentang bisnis Anda"</string>
+    <string msgid="2331921429803725767" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_OPT_OUT_SETTING_SUMMARY">"Anda mendapatkan notifikasi saat profil Anda mendapatkan pengikut baru atau Anda menerima permintaan mengikuti"</string>
+    <string msgid="6256049818965016724" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_SETTING_SUMMARY">"Dapatkan info terbaru saat profil Anda memiliki pengikut baru atau menerima permintaan mengikuti"</string>
+    <string msgid="5149876045450704766" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_SETTING_TITLE">"Profil Maps &amp; pengikut Anda"</string>
+    <string msgid="6302976185347215423" name="YOUR_REVIEWS_CATEGORY_TITLE">"Ulasan Anda"</string>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Tunjukkan jalan ke rumah"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Kembali ke atas"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Opsi lainnya"</string>
@@ -53,6 +619,7 @@
     <string msgid="406453423630273620" name="close_drawer">"Tutup menu navigasi"</string>
     <string msgid="7573152094250666567" name="close_sheet">"Tutup sheet"</string>
     <string msgid="5389587048670450460" name="collapsed">"Diciutkan"</string>
+    <string msgid="6083905920877235314" name="copy">"Salin"</string>
     <string msgid="3499643850558715142" name="date_input_headline">"Tanggal yang dimasukkan"</string>
     <string msgid="8562356184193964298" name="date_input_headline_description">"Tanggal yang dimasukkan: %1$s"</string>
     <string msgid="5281836720766682161" name="date_input_invalid_for_pattern">"Tanggal tidak cocok dengan pola yang diharapkan: %1$s"</string>
@@ -90,12 +657,27 @@
     <string msgid="1890207353314751437" name="dropdown_menu">"Menu dropdown"</string>
     <string name="error_a11y_label">Error: tidak valid</string>
     <string name="error_icon_content_description">Error</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Lanjutan"</string>
     <string msgid="5974471714631304645" name="expanded">"Diluaskan"</string>
     <string name="exposed_dropdown_menu_content_description">Tampilkan menu dropdown</string>
     <string name="icon_content_description">Ikon Dialog</string>
     <string msgid="6827826412747255547" name="in_progress">"Dalam proses"</string>
     <string msgid="7933458017204019916" name="indeterminate">"Diperiksa sebagian"</string>
     <string name="item_view_role_description">Tab</string>
+    <string msgid="9210820207514660247" name="maps_API_OUTDATED_WARNING">"Aplikasi ini menggunakan Maps versi lama. Ada kemungkinan tidak akan berfungsi dengan benar."</string>
+    <string msgid="6807007598222074916" name="maps_COMPASS_ALT_TEXT">"Kompas"</string>
+    <string msgid="3371108618085690173" name="maps_DIRECTIONS_ALT_TEXT">"Lihat rute"</string>
+    <string msgid="1189955191774927738" name="maps_GOOGLE_MAP">"Google Maps"</string>
+    <string msgid="2264878565827236979" name="maps_LEVEL_ALT_TEXT">"Level {0}"</string>
+    <string msgid="6875584096776566703" name="maps_MY_LOCATION_ALT_TEXT">"Lokasiku"</string>
+    <string msgid="7383272971595812419" name="maps_NO_GMM">"Google Maps dinonaktifkan atau belum diinstal"</string>
+    <string msgid="1460559660387626258" name="maps_OPEN_GMM_ALT_TEXT">"Buka di Google Maps"</string>
+    <string msgid="175515198141357876" name="maps_YOUR_LOCATION">"Lokasi Anda saat ini"</string>
+    <string msgid="8499414555829263194" name="maps_ZOOM_IN_ALT_TEXT">"Perbesar"</string>
+    <string msgid="8347872495490681122" name="maps_ZOOM_OUT_ALT_TEXT">"Perkecil"</string>
+    <string msgid="7422837848992631163" name="maps_default_user_error_message">"Maaf. Terjadi error."</string>
+    <string msgid="2220756820707696446" name="maps_invalid_panorama_data">"Panorama tidak valid."</string>
+    <string msgid="2960355978460391458" name="maps_marker_default_on_select_content_description">"Penanda Peta"</string>
     <string name="material_clock_toggle_content_description">Pilih AM atau PM</string>
     <string name="material_hour_24h_suffix">%1$s jam</string>
     <string name="material_hour_selection">Pilih jam</string>
@@ -109,6 +691,31 @@
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Pilih waktu</string>
     <string name="material_timepicker_text_input_mode_description">Beralih ke mode masukan teks untuk masukan waktu.</string>
+    <string msgid="2939063992730535343" name="mr_button_content_description">"Transmisikan"</string>
+    <string msgid="6073720094880410356" name="mr_cast_button_connected">"Transmisikan. Terhubung"</string>
+    <string msgid="6629927151350192407" name="mr_cast_button_connecting">"Transmisikan. Menghubungkan"</string>
+    <string msgid="8071109333469380363" name="mr_cast_button_disconnected">"Transmisikan. Terputus"</string>
+    <string msgid="2175930138959078155" name="mr_cast_dialog_title_view_placeholder">"Info tidak tersedia"</string>
+    <string msgid="6114250663023140921" name="mr_chooser_searching">"Mencari perangkat"</string>
+    <string msgid="1419936397646839840" name="mr_chooser_title">"Transmisikan ke"</string>
+    <string msgid="3330502667672708728" name="mr_controller_album_art">"Sampul album"</string>
+    <string msgid="9171231064758955152" name="mr_controller_casting_screen">"Melakukan cast layar"</string>
+    <string msgid="5684434439232634509" name="mr_controller_close_description">"Tutup"</string>
+    <string msgid="2585048604188129749" name="mr_controller_collapse_group">"Ciutkan"</string>
+    <string msgid="7812275474138309497" name="mr_controller_disconnect">"Putuskan koneksi"</string>
+    <string msgid="4521419834052044261" name="mr_controller_expand_group">"Luaskan"</string>
+    <string msgid="855271725131981086" name="mr_controller_no_info_available">"Tidak ada info yang tersedia"</string>
+    <string msgid="5495452265246139458" name="mr_controller_no_media_selected">"Tidak ada media yang dipilih"</string>
+    <string msgid="747801650871398383" name="mr_controller_pause">"Jeda"</string>
+    <string msgid="1253345086594430054" name="mr_controller_play">"Putar"</string>
+    <string msgid="5497722768305745508" name="mr_controller_stop">"Berhenti"</string>
+    <string msgid="804210341192624074" name="mr_controller_stop_casting">"Hentikan transmisi"</string>
+    <string msgid="2955862765169128170" name="mr_controller_volume_slider">"Pengatur volume"</string>
+    <string msgid="4115858704575247342" name="mr_dialog_default_group_name">"Grup"</string>
+    <string msgid="4307018456678388936" name="mr_dialog_groupable_header">"Tambahkan perangkat"</string>
+    <string msgid="6068257520605505468" name="mr_dialog_transferable_header">"Putar di grup"</string>
+    <string msgid="7449553026175453403" name="mr_system_route_name">"Sistem"</string>
+    <string msgid="4088331695424166162" name="mr_user_route_category_name">"Perangkat"</string>
     <string name="mtrl_badge_numberless_content_description">Notifikasi baru</string>
     <string name="mtrl_checkbox_state_description_checked">Dicentang</string>
     <string name="mtrl_checkbox_state_description_indeterminate">Dicentang sebagian</string>
@@ -156,11 +763,14 @@
     <string name="mtrl_timepicker_confirm">Oke</string>
     <string msgid="542007171693138492" name="navigation_menu">"Menu navigasi"</string>
     <string msgid="6610465462668679431" name="not_selected">"Tidak dipilih"</string>
+    <string msgid="6573031135582639649" name="not_set">"Belum disetel"</string>
     <string msgid="875452955155264703" name="off">"Nonaktif"</string>
     <string msgid="8655164131929253426" name="on">"Aktif"</string>
     <string name="password_toggle_content_description">Tampilkan sandi</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" disalin ke papan klip."</string>
     <string msgid="5941395253238309765" name="range_end">"Rentang akhir"</string>
     <string msgid="7097486360902471446" name="range_start">"Rentang awal"</string>
+    <string msgid="1660595293173844803" name="report_a_problem">"Laporkan masalah"</string>
     <string msgid="6420018528474762666" name="search_bar_search">"Telusuri"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Telusuri"</string>
     <string name="searchview_clear_text_content_description">Hapus teks</string>
@@ -170,6 +780,7 @@
     <string msgid="3962933905051144957" name="snackbar_dismiss">"Tutup"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="7189888345201419934" name="suggestions_available">"Saran di bawah"</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
     <string msgid="2561197295334830845" name="switch_role">"Alihkan"</string>
     <string msgid="1672349317127674378" name="tab">"Tab"</string>
     <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> persen."</string>
@@ -187,4 +798,6 @@
     <string msgid="2232702812657998674" name="time_picker_pm">"PM"</string>
     <string msgid="2732804537909054941" name="tooltip_long_press_label">"Tampilkan tooltip"</string>
     <string msgid="8191239805703103845" name="tooltip_pane_description">"Tooltip"</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"NONAKTIF"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"AKTIF"</string>
 </resources>

@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.navsdkcodelab.app-mergeDebugResources-65:/values-es-rMX/values-es-rMX.xml",
+            "map": [
+                {
+                    "source": "/Users/afiananwar/.gradle/caches/transforms-4/38a297fd11b4bd2b6f32e52513493220/transformed/navigation-5.2.3/res/values-es-rMX/values.xml",
+                    "from": {
+                        "startLines": "8",
+                        "startColumns": "4",
+                        "startOffsets": "445",
+                        "endColumns": "74",
+                        "endOffsets": "515"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "74",
+                        "endOffsets": "125"
+                    }
+                }
+            ]
+        }
+    ]
+}

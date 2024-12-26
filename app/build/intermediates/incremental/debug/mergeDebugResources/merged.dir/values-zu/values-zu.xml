@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="maps_compass_directions">
+        <item>"N"</item>
+        <item>"NE"</item>
+        <item>"E"</item>
+        <item>"SE"</item>
+        <item>"S"</item>
+        <item>"SW"</item>
+        <item>"W"</item>
+        <item>"NW"</item>
+    </string-array>
+    <string-array name="maps_full_compass_directions">
+        <item>"nyakatho"</item>
+        <item>"nyakatho-mpumalanga"</item>
+        <item>"mpumalanga"</item>
+        <item>"ningizimu-mpumalanga"</item>
+        <item>"ningizimi"</item>
+        <item>"ningizumu-ntshonalanga"</item>
+        <item>"ntshonalanga"</item>
+        <item>"nyakatho-ntshonalanga"</item>
+    </string-array>
     <plurals name="mtrl_badge_content_description">
     <item quantity="one">%d izaziso ezintsha</item>
     <item quantity="other">%d izaziso ezintsha</item>
@@ -53,6 +73,7 @@
     <string msgid="406453423630273620" name="close_drawer">"Vala imenyu yokuzulazula"</string>
     <string msgid="7573152094250666567" name="close_sheet">"Vala ishidi"</string>
     <string msgid="5389587048670450460" name="collapsed">"Kugoqiwe"</string>
+    <string msgid="6083905920877235314" name="copy">"Kopisha"</string>
     <string msgid="3499643850558715142" name="date_input_headline">"Usuku olufakiwe"</string>
     <string msgid="8562356184193964298" name="date_input_headline_description">"Usuku olufakiwe: %1$s"</string>
     <string msgid="5281836720766682161" name="date_input_invalid_for_pattern">"Usuku alufani nephethini elindelekile: %1$s"</string>
@@ -90,12 +111,27 @@
     <string msgid="1890207353314751437" name="dropdown_menu">"Imenyu eya phansi"</string>
     <string name="error_a11y_label">Iphutha: okungavumelekile</string>
     <string name="error_icon_content_description">Iphutha</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Okuthuthukisiwe"</string>
     <string msgid="5974471714631304645" name="expanded">"Kunwetshiwe"</string>
     <string name="exposed_dropdown_menu_content_description">Bonisa imenyu yokudonsela phansi</string>
     <string name="icon_content_description">Isithonjana sebhokisi</string>
     <string msgid="6827826412747255547" name="in_progress">"Kuyaqhubeka"</string>
     <string msgid="7933458017204019916" name="indeterminate">"Kuhlolwe kancane"</string>
     <string name="item_view_role_description">Ithebhu</string>
+    <string msgid="9210820207514660247" name="maps_API_OUTDATED_WARNING">"Lolu hlelo lokusebenza lusebenzisa inguqulo ephelelwe yisikhathi ye-Amamephu. Kungenzeka ingasebenzi kahle."</string>
+    <string msgid="6807007598222074916" name="maps_COMPASS_ALT_TEXT">"Ikhampasi"</string>
+    <string msgid="3371108618085690173" name="maps_DIRECTIONS_ALT_TEXT">"Thola izikhombisi-ndlela"</string>
+    <string msgid="1189955191774927738" name="maps_GOOGLE_MAP">"I-Google Amamephu"</string>
+    <string msgid="2264878565827236979" name="maps_LEVEL_ALT_TEXT">"Ileveli {0}"</string>
+    <string msgid="6875584096776566703" name="maps_MY_LOCATION_ALT_TEXT">"Indawo Yami"</string>
+    <string msgid="7383272971595812419" name="maps_NO_GMM">"I-Google Amamephu ayifakiwe noma ikhutshaziwe"</string>
+    <string msgid="1460559660387626258" name="maps_OPEN_GMM_ALT_TEXT">"Vula ku-Google Amamephu"</string>
+    <string msgid="175515198141357876" name="maps_YOUR_LOCATION">"Indawo yakho yamanje"</string>
+    <string msgid="8499414555829263194" name="maps_ZOOM_IN_ALT_TEXT">"Sondeza isithombe"</string>
+    <string msgid="8347872495490681122" name="maps_ZOOM_OUT_ALT_TEXT">"Hlehlisa isithombe"</string>
+    <string msgid="7422837848992631163" name="maps_default_user_error_message">"Eshu! Kukhona okungahambanga kahle."</string>
+    <string msgid="2220756820707696446" name="maps_invalid_panorama_data">"Iphanorama engavumelekile."</string>
+    <string msgid="2960355978460391458" name="maps_marker_default_on_select_content_description">"Umaka wemephu"</string>
     <string name="material_clock_toggle_content_description">Khetha u-AM noma u-PM</string>
     <string name="material_hour_24h_suffix">amahora angu-%1$s</string>
     <string name="material_hour_selection">Khetha ihora</string>
@@ -109,6 +145,31 @@
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Khetha isikhathi</string>
     <string name="material_timepicker_text_input_mode_description">Shintshela kumodi yokufaka umbhalo ngokufaka isikhathi.</string>
+    <string msgid="2939063992730535343" name="mr_button_content_description">"Sakaza"</string>
+    <string msgid="6073720094880410356" name="mr_cast_button_connected">"Sakaza. Ixhunyiwe"</string>
+    <string msgid="6629927151350192407" name="mr_cast_button_connecting">"Sakaza. Iyaxhuma"</string>
+    <string msgid="8071109333469380363" name="mr_cast_button_disconnected">"Sakaza. Inqamukile"</string>
+    <string msgid="2175930138959078155" name="mr_cast_dialog_title_view_placeholder">"Alukho ulwazi olutholakalayo"</string>
+    <string msgid="6114250663023140921" name="mr_chooser_searching">"Ithola amadivayisi"</string>
+    <string msgid="1419936397646839840" name="mr_chooser_title">"Sakaza ku-"</string>
+    <string msgid="3330502667672708728" name="mr_controller_album_art">"Ubuciko be-albhamu"</string>
+    <string msgid="9171231064758955152" name="mr_controller_casting_screen">"Isikrini sokusakaza"</string>
+    <string msgid="5684434439232634509" name="mr_controller_close_description">"Vala"</string>
+    <string msgid="2585048604188129749" name="mr_controller_collapse_group">"Goqa"</string>
+    <string msgid="7812275474138309497" name="mr_controller_disconnect">"Nqamula"</string>
+    <string msgid="4521419834052044261" name="mr_controller_expand_group">"Nweba"</string>
+    <string msgid="855271725131981086" name="mr_controller_no_info_available">"Alukho ulwazi olutholakalayo"</string>
+    <string msgid="5495452265246139458" name="mr_controller_no_media_selected">"Ayikho imidiya ekhethiwe"</string>
+    <string msgid="747801650871398383" name="mr_controller_pause">"Phumula"</string>
+    <string msgid="1253345086594430054" name="mr_controller_play">"Dlala"</string>
+    <string msgid="5497722768305745508" name="mr_controller_stop">"Misa"</string>
+    <string msgid="804210341192624074" name="mr_controller_stop_casting">"Misa ukusakaza"</string>
+    <string msgid="2955862765169128170" name="mr_controller_volume_slider">"Isilayida sevolumu"</string>
+    <string msgid="4115858704575247342" name="mr_dialog_default_group_name">"Iqembu"</string>
+    <string msgid="4307018456678388936" name="mr_dialog_groupable_header">"Engeza idivayisi"</string>
+    <string msgid="6068257520605505468" name="mr_dialog_transferable_header">"Dlala eqenjini"</string>
+    <string msgid="7449553026175453403" name="mr_system_route_name">"Isistimu"</string>
+    <string msgid="4088331695424166162" name="mr_user_route_category_name">"Amadivayisi"</string>
     <string name="mtrl_badge_numberless_content_description">Isaziso esisha</string>
     <string name="mtrl_checkbox_state_description_checked">Kumakiwe</string>
     <string name="mtrl_checkbox_state_description_indeterminate">Kumakwe kancane</string>
@@ -156,11 +217,14 @@
     <string name="mtrl_timepicker_confirm">KULUNGILE</string>
     <string msgid="542007171693138492" name="navigation_menu">"Imenyu yokuzulazula"</string>
     <string msgid="6610465462668679431" name="not_selected">"Ayikhethiwe"</string>
+    <string msgid="6573031135582639649" name="not_set">"Ayisethiwe"</string>
     <string msgid="875452955155264703" name="off">"Valiwe"</string>
     <string msgid="8655164131929253426" name="on">"Vuliwe"</string>
     <string name="password_toggle_content_description">Bonisa iphasiwedi</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" kukopishelwe kuklibhodi."</string>
     <string msgid="5941395253238309765" name="range_end">"Umkhawulo wobubanzi"</string>
     <string msgid="7097486360902471446" name="range_start">"Ukuqala kobubanzi"</string>
+    <string msgid="1660595293173844803" name="report_a_problem">"Bika isikhalazo"</string>
     <string msgid="6420018528474762666" name="search_bar_search">"Sesha"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Sesha"</string>
     <string name="searchview_clear_text_content_description">Sula umbhalo</string>
@@ -170,6 +234,7 @@
     <string msgid="3962933905051144957" name="snackbar_dismiss">"Chitha"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="7189888345201419934" name="suggestions_available">"Iziphakamiso ngezansi"</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
     <string msgid="2561197295334830845" name="switch_role">"Shintsha"</string>
     <string msgid="1672349317127674378" name="tab">"Ithebhu"</string>
     <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> amaphesenti."</string>
@@ -187,4 +252,6 @@
     <string msgid="2232702812657998674" name="time_picker_pm">"PM"</string>
     <string msgid="2732804537909054941" name="tooltip_long_press_label">"Bonisa ithulithiphu"</string>
     <string msgid="8191239805703103845" name="tooltip_pane_description">"Ithulithiphu"</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"VALA"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"VULA"</string>
 </resources>

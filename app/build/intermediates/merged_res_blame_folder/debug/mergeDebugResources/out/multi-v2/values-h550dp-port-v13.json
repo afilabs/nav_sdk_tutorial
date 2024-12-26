@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.navsdkcodelab.app-mergeDebugResources-56:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
+            "outputFile": "com.example.navsdkcodelab.app-mergeDebugResources-65:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
                     "source": "/Users/afiananwar/.gradle/caches/transforms-4/5dd6bea5aadbd68003221a6bbf40898d/transformed/material-1.12.0/res/values-h550dp-port-v13/values-h550dp-port-v13.xml",

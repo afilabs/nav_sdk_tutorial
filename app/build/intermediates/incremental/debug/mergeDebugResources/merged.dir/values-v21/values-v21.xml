@@ -18,6 +18,7 @@
     <dimen name="notification_content_margin_start">0dp</dimen>
     <dimen name="notification_main_column_padding_top">0dp</dimen>
     <dimen name="notification_media_narrow_margin">12dp</dimen>
+    <dimen name="preference_dropdown_padding_start">72dp</dimen>
     <string name="m3_ref_typeface_brand_medium" translatable="false">sans-serif-medium</string>
     <string name="m3_ref_typeface_brand_regular" translatable="false">sans-serif</string>
     <string name="m3_ref_typeface_plain_medium" translatable="false">sans-serif-medium</string>
@@ -269,8 +270,7 @@
     </style>
     <style name="Base.Widget.AppCompat.ProgressBar" parent="android:Widget.Material.ProgressBar">
     </style>
-    <style name="Base.Widget.AppCompat.ProgressBar.Horizontal" parent="android:Widget.Material.ProgressBar.Horizontal">
-    </style>
+    <style name="Base.Widget.AppCompat.ProgressBar.Horizontal" parent="android:Widget.Material.ProgressBar.Horizontal"/>
     <style name="Base.Widget.AppCompat.RatingBar" parent="android:Widget.Material.RatingBar"/>
     <style name="Base.Widget.AppCompat.SeekBar" parent="android:Widget.Material.SeekBar"/>
     <style name="Base.Widget.AppCompat.Spinner" parent="android:Widget.Material.Spinner"/>
@@ -345,10 +345,28 @@
         <item name="android:buttonBarStyle">?attr/buttonBarStyle</item>
         <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
     </style>
+    <style name="PreferenceSummaryTextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceListItemSecondary</item>
+    </style>
+    <style name="PreferenceThemeOverlay" parent="BasePreferenceThemeOverlay">
+        <item name="preferenceCategoryTitleTextColor">?android:attr/colorAccent</item>
+    </style>
     <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.Material.Notification"/>
     <style name="TextAppearance.Compat.Notification.Info" parent="@android:style/TextAppearance.Material.Notification.Info"/>
+    <style name="TextAppearance.Compat.Notification.Info.Media">
+        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Media">
+        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
+    </style>
     <style name="TextAppearance.Compat.Notification.Time" parent="@android:style/TextAppearance.Material.Notification.Time"/>
+    <style name="TextAppearance.Compat.Notification.Time.Media">
+        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
+    </style>
     <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.Material.Notification.Title"/>
+    <style name="TextAppearance.Compat.Notification.Title.Media">
+        <item name="android:textColor">@color/primary_text_default_material_dark</item>
+    </style>
     <style name="TextAppearance.M3.Sys.Typescale.BodyLarge" parent="TextAppearance.AppCompat.Body2">
     <item name="fontFamily">@string/m3_ref_typeface_plain_regular</item>
     <item name="android:fontFamily">@string/m3_ref_typeface_plain_regular</item>

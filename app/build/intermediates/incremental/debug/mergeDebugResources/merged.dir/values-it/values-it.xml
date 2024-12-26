@@ -1,9 +1,575 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="CALLOUT_ALPHABETIC_LABELS">
+        <item>"A"</item>
+        <item>"B"</item>
+        <item>"C"</item>
+        <item>"D"</item>
+        <item>"E"</item>
+        <item>"F"</item>
+        <item>"G"</item>
+        <item>"H"</item>
+    </string-array>
+    <string-array name="SHOW_SCALEBAR_ENTRIES">
+        <item>"Quando aumenti o diminuisci lo zoom"</item>
+        <item>"Sempre"</item>
+    </string-array>
+    <string-array name="maps_compass_directions">
+        <item>"N"</item>
+        <item>"NE"</item>
+        <item>"E"</item>
+        <item>"SE"</item>
+        <item>"S"</item>
+        <item>"SO"</item>
+        <item>"O"</item>
+        <item>"NO"</item>
+    </string-array>
+    <string-array name="maps_full_compass_directions">
+        <item>"nord"</item>
+        <item>"nordest"</item>
+        <item>"est"</item>
+        <item>"sudest"</item>
+        <item>"sud"</item>
+        <item>"sudovest"</item>
+        <item>"ovest"</item>
+        <item>"nordovest"</item>
+    </string-array>
+    <plurals formatted="false" msgid="4326673060750344846" name="BIKESHARING_BIKES_AVAILABLE">
+        <item quantity="other"><ns1:g id="BIKES_AVAILABLE_5">%d</ns1:g> bici disponibili </item>
+        <item quantity="one"><ns1:g id="BIKES_AVAILABLE_1">%d</ns1:g> bici disponibile </item>
+    </plurals>
+    <plurals formatted="false" msgid="2128912764519502183" name="BIKESHARING_DOCKS_AVAILABLE">
+        <item quantity="other"><ns1:g id="NUM_DOCKS_5">%d</ns1:g> stazioni di bike sharing disponibili </item>
+        <item quantity="one"><ns1:g id="NUM_DOCKS_1">%d</ns1:g> stazione di bike sharing disponibile </item>
+    </plurals>
+    <plurals formatted="false" msgid="3587957769510236203" name="COMPASS_ACCESSIBILITY_BEARING">
+        <item quantity="other">Orientamento mappa: <ns1:g id="MAP_BEARING_5">%d</ns1:g> gradi.</item>
+        <item quantity="one">Orientamento mappa: <ns1:g id="MAP_BEARING_1">%d</ns1:g> grado.</item>
+    </plurals>
+    <plurals formatted="false" msgid="4689781638232061047" name="DA_DAYS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> giorni</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g> giorno</item>
+    </plurals>
+    <plurals formatted="false" msgid="6144185587501044196" name="DA_DAYS_ABBREVIATED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> gg</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g> g</item>
+    </plurals>
+    <plurals formatted="false" msgid="6393943752589702797" name="DA_DAYS_ABBREVIATED_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> gg</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g> g</item>
+    </plurals>
+    <plurals formatted="false" msgid="2798004425159140146" name="DA_DAYS_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> giorni</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g> giorno</item>
+    </plurals>
+    <plurals formatted="false" msgid="4077931414703271286" name="DA_HOURS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g> h</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_1">%s</ns1:g> h</item>
+    </plurals>
+    <plurals formatted="false" msgid="7410132942057247478" name="DA_HOURS_ABBREVIATED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g> h</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_1">%s</ns1:g> h</item>
+    </plurals>
+    <plurals formatted="false" msgid="5724380721819842832" name="DA_HOURS_ABBREVIATED_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g> h</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_1">%s</ns1:g> h</item>
+    </plurals>
+    <plurals formatted="false" msgid="302465155895970807" name="DA_MINUTES">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g> minuti</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g> minuto</item>
+    </plurals>
+    <plurals formatted="false" msgid="6854365863287202322" name="DA_MINUTES_ABBREVIATED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g> min</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g> min</item>
+    </plurals>
+    <plurals formatted="false" msgid="7896893686804578870" name="DA_MINUTES_ABBREVIATED_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g> m</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g> m</item>
+    </plurals>
+    <plurals formatted="false" msgid="2581719964976016874" name="DA_MINUTES_BARE_FOLLOWING_HOURS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g></item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g></item>
+    </plurals>
+    <plurals formatted="false" msgid="6345729166163721080" name="DA_SECONDS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_SECONDS_5">%s</ns1:g> secondi</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_SECONDS_1">%s</ns1:g> secondo</item>
+    </plurals>
+    <plurals formatted="false" msgid="1032855961281750509" name="DA_SPEECH_CONTINUE_FOR_X_FEET">
+        <item quantity="other">Continua per <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> piedi</item>
+        <item quantity="one">Continua per <ns1:g id="NUMBER_OF_FEET_1">%1$s</ns1:g> piede</item>
+    </plurals>
+    <plurals formatted="false" msgid="8557996246843277515" name="DA_SPEECH_CONTINUE_FOR_X_KILOMETERS">
+        <item quantity="other">Continua per <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> chilometri</item>
+        <item quantity="one">Continua per <ns1:g id="NUMBER_OF_KILOMETERS_1">%1$s</ns1:g> chilometro</item>
+    </plurals>
+    <plurals formatted="false" msgid="605905875424024433" name="DA_SPEECH_CONTINUE_FOR_X_METERS">
+        <item quantity="other">Continua per <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> metri</item>
+        <item quantity="one">Continua per <ns1:g id="NUMBER_OF_METERS_1">%1$s</ns1:g> metro</item>
+    </plurals>
+    <plurals formatted="false" msgid="5775940963454325209" name="DA_SPEECH_CONTINUE_FOR_X_MILES">
+        <item quantity="other">Continua per <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> miglia</item>
+        <item quantity="one">Continua per <ns1:g id="NUMBER_OF_MILES_1">%1$s</ns1:g> miglio</item>
+    </plurals>
+    <plurals formatted="false" msgid="4742053200406294830" name="DA_SPEECH_CONTINUE_FOR_X_YARDS">
+        <item quantity="other">Continua per <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> iarde</item>
+        <item quantity="one">Continua per <ns1:g id="NUMBER_OF_YARDS_1">%1$s</ns1:g> iarda</item>
+    </plurals>
+    <plurals formatted="false" msgid="2823664751659973629" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_FEET">
+        <item quantity="other">Continua su <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> per <ns1:g id="NUMBER_OF_FEET_11">%1$s</ns1:g> piedi</item>
+        <item quantity="one">Continua su <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> per <ns1:g id="NUMBER_OF_FEET_3">%1$s</ns1:g> piede</item>
+    </plurals>
+    <plurals formatted="false" msgid="4715395619972917121" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_KILOMETERS">
+        <item quantity="other">Continua su <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> per <ns1:g id="NUMBER_OF_KILOMETERS_11">%1$s</ns1:g> chilometri</item>
+        <item quantity="one">Continua su <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> per <ns1:g id="NUMBER_OF_KILOMETERS_3">%1$s</ns1:g> chilometro</item>
+    </plurals>
+    <plurals formatted="false" msgid="3492075494171740042" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_METERS">
+        <item quantity="other">Continua su <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> per <ns1:g id="NUMBER_OF_METERS_11">%1$s</ns1:g> metri</item>
+        <item quantity="one">Continua su <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> per <ns1:g id="NUMBER_OF_METERS_3">%1$s</ns1:g> metro</item>
+    </plurals>
+    <plurals formatted="false" msgid="6281859705184148951" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_MILES">
+        <item quantity="other">Continua su <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> per <ns1:g id="NUMBER_OF_MILES_11">%1$s</ns1:g> miglia</item>
+        <item quantity="one">Continua su <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> per <ns1:g id="NUMBER_OF_MILES_3">%1$s</ns1:g> miglio</item>
+    </plurals>
+    <plurals formatted="false" msgid="1750899323638437779" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_YARDS">
+        <item quantity="other">Continua su <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> per <ns1:g id="NUMBER_OF_YARDS_11">%1$s</ns1:g> iarde</item>
+        <item quantity="one">Continua su <ns1:g id="ROAD_NAME_2">%2$s</ns1:g> per <ns1:g id="NUMBER_OF_YARDS_3">%1$s</ns1:g> iarda</item>
+    </plurals>
+    <plurals formatted="false" msgid="6824002006206583196" name="DA_SPEECH_IN_X_FEET">
+        <item quantity="other">Tra <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> piedi</item>
+        <item quantity="one">Tra <ns1:g id="NUMBER_OF_FEET_1">%1$s</ns1:g> piede</item>
+    </plurals>
+    <plurals formatted="false" msgid="3927150446141308796" name="DA_SPEECH_IN_X_KILOMETERS">
+        <item quantity="other">Tra <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> chilometri</item>
+        <item quantity="one">Tra <ns1:g id="NUMBER_OF_KILOMETERS_1">%1$s</ns1:g> chilometro</item>
+    </plurals>
+    <plurals formatted="false" msgid="8424550718788882600" name="DA_SPEECH_IN_X_METERS">
+        <item quantity="other">Tra <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> metri</item>
+        <item quantity="one">Tra <ns1:g id="NUMBER_OF_METERS_1">%1$s</ns1:g> metro</item>
+    </plurals>
+    <plurals formatted="false" msgid="5844894205706436077" name="DA_SPEECH_IN_X_MILES">
+        <item quantity="other">Tra <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> miglia</item>
+        <item quantity="one">Tra <ns1:g id="NUMBER_OF_MILES_1">%1$s</ns1:g> miglio</item>
+    </plurals>
+    <plurals formatted="false" msgid="1857544676918506731" name="DA_SPEECH_IN_X_YARDS">
+        <item quantity="other">Tra <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> iarde</item>
+        <item quantity="one">Tra <ns1:g id="NUMBER_OF_YARDS_1">%1$s</ns1:g> iarda</item>
+    </plurals>
+    <plurals formatted="false" msgid="2339336258154180702" name="DA_SPEED_FORMAT_KILOMETERS_PER_HOUR_EXTENDED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_KILOMETERS_5">%s</ns1:g> chilometri all\'ora</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_KILOMETERS_1">%s</ns1:g> chilometro all\'ora</item>
+    </plurals>
+    <plurals formatted="false" msgid="6140682604650140709" name="DA_SPEED_FORMAT_MILES_PER_HOUR_EXTENDED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MILES_5">%s</ns1:g> miglia all\'ora</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MILES_1">%s</ns1:g> miglio all\'ora</item>
+    </plurals>
+    <plurals formatted="false" msgid="5488601092985524575" name="DA_YOUR_DESTINATION_IS_X_FEET_AHEAD">
+        <item quantity="other">La tua destinazione è a <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> piedi</item>
+        <item quantity="one">La tua destinazione è a <ns1:g id="NUMBER_OF_FEET_1">%1$s</ns1:g> piede</item>
+    </plurals>
+    <plurals formatted="false" msgid="3956464927073329258" name="DA_YOUR_DESTINATION_IS_X_KILOMETERS_AHEAD">
+        <item quantity="other">La tua destinazione è a <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> chilometri</item>
+        <item quantity="one">La tua destinazione è a <ns1:g id="NUMBER_OF_KILOMETERS_1">%1$s</ns1:g> chilometro</item>
+    </plurals>
+    <plurals formatted="false" msgid="1869769789353944376" name="DA_YOUR_DESTINATION_IS_X_METERS_AHEAD">
+        <item quantity="other">La tua destinazione è a <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> metri</item>
+        <item quantity="one">La tua destinazione è a <ns1:g id="NUMBER_OF_METERS_1">%1$s</ns1:g> metro</item>
+    </plurals>
+    <plurals formatted="false" msgid="3933752078325316030" name="DA_YOUR_DESTINATION_IS_X_MILES_AHEAD">
+        <item quantity="other">La tua destinazione è a <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> miglia</item>
+        <item quantity="one">La tua destinazione è a <ns1:g id="NUMBER_OF_MILES_1">%1$s</ns1:g> miglio</item>
+    </plurals>
+    <plurals formatted="false" msgid="3730606906820969126" name="DA_YOUR_DESTINATION_IS_X_YARDS_AHEAD">
+        <item quantity="other">La tua destinazione è a <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> iarde</item>
+        <item quantity="one">La tua destinazione è a <ns1:g id="NUMBER_OF_YARDS_1">%1$s</ns1:g> iarda</item>
+    </plurals>
+    <plurals formatted="false" msgid="4613320652217353645" name="TRANSIT_NUM_STOPS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_STOPS_5">%d</ns1:g> fermate</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_STOPS_1">%d</ns1:g> fermata</item>
+    </plurals>
+    <plurals formatted="false" msgid="5579098508661025925" name="TRANSIT_PLUS_NUMBER_OF_ALERTS_TITLE">
+        <item quantity="other">+<ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g> avvisi</item>
+        <item quantity="one">+<ns1:g id="NUMBER_OF_ALERTS_0">%d</ns1:g> avviso</item>
+    </plurals>
+    <plurals formatted="false" msgid="7409021725106195613" name="TRANSIT_PLUS_NUMBER_OF_ALERTS_TITLE_CONTENT_DESCRIPTION">
+        <item quantity="other">+ <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g> avvisi</item>
+        <item quantity="one">+ <ns1:g id="NUMBER_OF_ALERTS_0">%d</ns1:g> avviso</item>
+    </plurals>
+    <plurals formatted="false" msgid="8048195651219433071" name="TRANSIT_PLUS_NUMBER_OF_INFORMATION_ITEMS_TITLE">
+        <item quantity="other">+ altre <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g></item>
+        <item quantity="one">+ <ns1:g id="NUMBER_OF_ALERTS_0">%d</ns1:g> altra</item>
+    </plurals>
+    <plurals formatted="false" msgid="3673235514357385007" name="TRANSIT_PLUS_NUMBER_OF_INFORMATION_ITEMS_TITLE_CONTENT_DESCRIPTION">
+        <item quantity="other">+ altri <ns1:g id="NUMBER_OF_INFORMATION_1">%d</ns1:g></item>
+        <item quantity="one">+ <ns1:g id="NUMBER_OF_INFORMATION_0">%d</ns1:g> altro</item>
+    </plurals>
     <plurals name="mtrl_badge_content_description">
     <item quantity="one">%d nuova notifica</item>
     <item quantity="other">%d nuove notifiche</item>
   </plurals>
+    <string msgid="988766512127533844" name="ABOUT">"Informazioni, termini e privacy"</string>
+    <string msgid="4382378373633137407" name="ACCESSIBILITY_ACTIVATE_TO_CLOSE_STEP_LIST">"Attiva per chiudere l\'elenco dei passaggi"</string>
+    <string msgid="8888075998205469082" name="ACCESSIBILITY_ACTIVATE_TO_OPEN_STEP_LIST">"Attiva per aprire l\'elenco dei passaggi"</string>
+    <string msgid="7470955658075607809" name="ACCESSIBILITY_ALTERNATE_ROUTE_DESCRIPTION">"Percorso alternativo <ns1:g id="DURATION">%1$s</ns1:g> passando per <ns1:g id="ROAD">%2$s</ns1:g>"</string>
+    <string msgid="1096848458128224503" name="ACCESSIBILITY_ALTERNATE_ROUTE_FUEL_EFFICIENT_DESCRIPTION">"Percorso con il minor consumo di carburante"</string>
+    <string msgid="8434539979603521046" name="ACCESSIBILITY_ALTERNATE_ROUTE_HAS_TOLLS_DESCRIPTION">"Il percorso alternativo di <ns1:g id="DURATION">%1$s</ns1:g> passando per <ns1:g id="ROAD">%2$s</ns1:g> prevede il pagamento di pedaggi"</string>
+    <string msgid="6280010901313672282" name="ACCESSIBILITY_ALTERNATE_ROUTE_HAS_TOLL_PRICE_DESCRIPTION">"Il percorso alternativo di <ns1:g id="DURATION">%1$s</ns1:g> passando per <ns1:g id="ROAD">%2$s</ns1:g> prevede il pagamento di <ns1:g id="COST">%3$s</ns1:g> di pedaggi"</string>
+    <string msgid="4147878166568539021" name="ACCESSIBILITY_ALTERNATE_ROUTE_NO_TOLLS_DESCRIPTION">"Il percorso alternativo di <ns1:g id="DURATION">%1$s</ns1:g> passando per <ns1:g id="ROAD">%2$s</ns1:g> non prevede il pagamento di pedaggi"</string>
+    <string msgid="6020573412357611477" name="ACCESSIBILITY_COMPASS">"Visualizzazione nord in alto"</string>
+    <string msgid="8223442679494597781" name="ACCESSIBILITY_DIRECTIONS_PROCEED_TO_METERS_WITH_STEP">"Passaggio <ns1:g id="STEP_NUMBER">%1$d</ns1:g>, procedi per <ns1:g id="DISTANCE">%2$s</ns1:g>"</string>
+    <string msgid="7868137419995936422" name="ACCESSIBILITY_DIRECTIONS_STEP_LIST_TO">"Elenco delle tappe per <ns1:g id="DESTINATION">%s</ns1:g>. Attiva per espandere."</string>
+    <string msgid="5761061967444438907" name="ACCESSIBILITY_DIRECTION_STEP_PREFIX">"Passaggio <ns1:g id="STEP_NUMBER">%1$d</ns1:g>, <ns1:g id="STEP_DESCRIPTION">%2$s</ns1:g>"</string>
+    <string msgid="5429655055049309673" name="ACCESSIBILITY_LABEL_HAZARDOUS_GOODS_RESTRICTED">"Limitazioni per le merci pericolose"</string>
+    <string msgid="7244890995607172810" name="ACCESSIBILITY_LABEL_HEIGHT_RESTRICTED">"Limitazioni di altezza"</string>
+    <string msgid="5720128131726601812" name="ACCESSIBILITY_LABEL_HEIGHT_RESTRICTED_WITH_VALUE">"Limitazioni di altezza: <ns1:g id="HEIGHT">%s</ns1:g>"</string>
+    <string msgid="2427955214381665545" name="ACCESSIBILITY_LABEL_TRUCKS_RESTRICTED">"Limitazioni per i camion"</string>
+    <string msgid="1735969374518715138" name="ACCESSIBILITY_LABEL_WEIGHT_RESTRICTED">"Limitazioni di peso"</string>
+    <string msgid="2228263168852010676" name="ACCESSIBILITY_LABEL_WEIGHT_RESTRICTED_WITH_VALUE">"Limitazioni di peso: <ns1:g id="WEIGHT">%s</ns1:g>"</string>
+    <string msgid="3500168200113756692" name="ACCESSIBILITY_LONG_PAUSE">".  "</string>
+    <string msgid="4028351416429434451" name="ACCESSIBILITY_SELECTED_ROUTE_DESCRIPTION">"Percorso selezionato di <ns1:g id="DURATION">%1$s</ns1:g> passando per <ns1:g id="ROAD">%2$s</ns1:g>"</string>
+    <string msgid="5435510447657254534" name="ACCESSIBILITY_SELECTED_ROUTE_HAS_TOLLS_DESCRIPTION">"Il percorso selezionato di <ns1:g id="DURATION">%1$s</ns1:g> passando per <ns1:g id="ROAD">%2$s</ns1:g> prevede il pagamento di pedaggi"</string>
+    <string msgid="1753061936075193628" name="ACCESSIBILITY_SELECTED_ROUTE_HAS_TOLL_PRICE_DESCRIPTION">"Il percorso selezionato di <ns1:g id="DURATION">%1$s</ns1:g> passando per <ns1:g id="ROAD">%2$s</ns1:g> prevede il pagamento di <ns1:g id="COST">%3$s</ns1:g> di pedaggi"</string>
+    <string msgid="7666497790505910181" name="ACCESSIBILITY_SELECTED_ROUTE_NO_TOLLS_DESCRIPTION">"Il percorso selezionato di <ns1:g id="DURATION">%1$s</ns1:g> passando per <ns1:g id="ROAD">%2$s</ns1:g> non prevede il pagamenti di pedaggi"</string>
+    <string msgid="9109457196557412064" name="ACCESSIBILITY_SENTENCE_DELIMITER">", "</string>
+    <string msgid="8567406792741571450" name="ACCESSIBILITY_SETTINGS_TITLE">"Impostazioni di accessibilità"</string>
+    <string msgid="8175283740736118872" name="ACCESSIBILITY_SHORT_PAUSE">", "</string>
+    <string msgid="8994692387102653205" name="ACCESSIBILITY_STREET_VIEW_WITH_DESTINATION">"Street View a <ns1:g id="DESTINATION">%1$s</ns1:g>"</string>
+    <string msgid="6051617480676658328" name="ACCESSIBILITY_STREET_VIEW_WITH_STEP">"Street View al passaggio <ns1:g id="STEP_NUMBER">%1$d</ns1:g>"</string>
+    <string msgid="2864917498473472285" name="ACCESSIBILITY_WALK_ROUTE">"Percorso a piedi"</string>
+    <string msgid="8493757823683214418" name="ALERT_DETAILS_CARD_CLICKABLE_PROMPT">"Scopri di più"</string>
+    <string msgid="3989324736757060364" name="ALERT_SEVERITY_CONTENT_DESCRIPTION">"Avviso"</string>
+    <string msgid="7887415291228067160" name="APP_LANGUAGE_SETTINGS_TITLE">"Lingua dell\'app"</string>
+    <string msgid="18182619617560500" name="ARRIVE_AT_TIME">"Arrivo alle <ns1:g id="ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="3456517746042480651" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Riceverai aggiornamenti sui luoghi nuovi e di tendenza in base alle tue preferenze"</string>
+    <string msgid="8609071464979199056" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_SETTINGS_SUMMARY">"Ricevi aggiornamenti sui luoghi nuovi e di tendenza in base alle tue preferenze"</string>
+    <string msgid="7386889502955593752" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_SETTINGS_TITLE">"Luoghi nuovi e di tendenza"</string>
+    <string msgid="4073140123776083415" name="BIKESHARING_RETURN_BIKE">"Restituisci bici"</string>
+    <string msgid="3764472074385554783" name="BIKESHARING_UNLOCK_BIKE">"Sblocca bici"</string>
+    <string msgid="4321720802782027634" name="BIKESHARING_UNLOCK_IN_X">"Sblocca in <ns1:g id="APP_NAME">%s</ns1:g>"</string>
+    <string msgid="906252415244469164" name="BUSINESS_MESSAGE_FROM_CUSTOMER_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Riceverai una notifica quando i clienti invieranno un messaggio alle tue attività su Google"</string>
+    <string msgid="2660141319896744644" name="BUSINESS_MESSAGE_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Riceverai aggiornamenti sulle risposte alle domande che hai posto alle attività su Maps"</string>
+    <string msgid="6503029847043791301" name="BUSINESS_MESSAGE_NOTIFICATION_SETTINGS_SUMMARY">"Ricevi risposte alle domande che hai posto alle attività su Maps"</string>
+    <string msgid="717732884052571101" name="BUSINESS_MESSAGE_NOTIFICATION_SETTINGS_TITLE">"Messaggi"</string>
+    <string msgid="6956338141212937008" name="CANCEL_BUTTON">"Annulla"</string>
+    <string msgid="7385460563057493069" name="CHAT_SETTINGS_ITEM_TITLE">"Chat"</string>
+    <string msgid="3849295477853657853" name="CLIENT_SIDE_RECENT_HISTORY_ENABLED">"Salva le ricerche recenti su questo dispositivo"</string>
+    <string msgid="4356531394932608249" name="COLLABORATIVE_LISTS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Riceverai aggiornamenti sugli elenchi che possiedi e modifichi"</string>
+    <string msgid="8615172296793020463" name="COLLABORATIVE_LISTS_NOTIFICATION_SETTINGS_SUMMARY">"Ricevi aggiornamenti sugli elenchi che possiedi e modifichi"</string>
+    <string msgid="6724970202733370522" name="COLLABORATIVE_LISTS_NOTIFICATION_SETTINGS_TITLE">"Elenchi"</string>
+    <string msgid="3990714189475821790" name="COMMUTE_PROFILE_OPT_OUT_SETTINGS_SUMMARY">"Riceverai promemoria per aggiornare le informazioni sulle tue preferenze per il tragitto giornaliero"</string>
+    <string msgid="2350458858231203291" name="COMMUTE_PROFILE_SETTINGS_SUMMARY">"Ricevi promemoria per aggiornare le informazioni sulle tue preferenze per il tragitto giornaliero"</string>
+    <string msgid="7744486401672603894" name="COMMUTE_PROFILE_SETTINGS_TITLE">"Profilo tragitto giornaliero"</string>
+    <string msgid="7369031720555343766" name="COMPASS_ACCESSIBILITY_FOLLOW">"Segui la direzione indicata"</string>
+    <string msgid="5236771457267031238" name="COMPASS_ACCESSIBILITY_NORTH_UP">"Mantieni nord in alto"</string>
+    <string msgid="7676079846529082801" name="CYCLING_ELEVATION_X_DECLINE">"-<ns1:g id="DISTANCE">%s</ns1:g> in discesa"</string>
+    <string msgid="8573003133952335858" name="CYCLING_ELEVATION_X_INCLINE">"+<ns1:g id="DISTANCE">%s</ns1:g> in salita"</string>
+    <string msgid="2150378996327208305" name="CYCLING_ROAD_TYPE_HIGHWAY">"Autostrada"</string>
+    <string msgid="3738580863381374955" name="CYCLING_ROAD_TYPE_MAIN_ROAD">"Strada principale"</string>
+    <string msgid="784178227646746623" name="CYCLING_ROAD_TYPE_MARKED_BIKE_LANE">"Corsia ciclabile contrassegnata"</string>
+    <string msgid="1244790010869914494" name="CYCLING_ROAD_TYPE_MINOR_ROAD">"Strada secondaria"</string>
+    <string msgid="5593259990952540902" name="CYCLING_ROAD_TYPE_PEDESTRIAN_PATH">"Percorso pedonale"</string>
+    <string msgid="7434121718026354602" name="CYCLING_ROAD_TYPE_SEPARATE_BIKE_LANE">"Corsia ciclabile separata"</string>
+    <string msgid="2993992995228313773" name="CYCLING_ROAD_TYPE_SHARED_PATH">"Percorso condiviso"</string>
+    <string msgid="3315402422807617192" name="CYCLING_ROAD_TYPE_STAIRS">"Scale"</string>
+    <string msgid="8104447113497885959" name="CYCLING_ROUTE_LABEL_BEST_ROUTE">"Percorso migliore"</string>
+    <string msgid="595174014278343405" name="CYCLING_ROUTE_LABEL_FASTEST">"Più veloce"</string>
+    <string msgid="5308557378285449822" name="CYCLING_ROUTE_LABEL_LESS_HIGHWAYS">"Meno autostrade"</string>
+    <string msgid="5788540842553685198" name="CYCLING_ROUTE_LABEL_LESS_STEEP_HILLS">"Meno salite"</string>
+    <string msgid="6544580293408762300" name="CYCLING_ROUTE_LABEL_LESS_TRAFFIC">"Meno traffico"</string>
+    <string msgid="771749047614319020" name="CYCLING_ROUTE_LABEL_LESS_TURNS">"Meno svolte"</string>
+    <string msgid="5514720260010380200" name="CYCLING_ROUTE_LABEL_MORE_BIKE_LANES">"Più corsie ciclabili"</string>
+    <string msgid="6799295909450023751" name="DA_AT">"all\'altezza di <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="6204348838228824214" name="DA_DATA_CONNECTION_LOST">"Connessione ai dati interrotta..."</string>
+    <string msgid="9055920400292445132" name="DA_DISTANCE_FORMAT_FEET_ABBREVIATED">"<ns1:g id="NUMBER_OF_FEET">%s</ns1:g> ft"</string>
+    <string msgid="1596038795147620692" name="DA_DISTANCE_FORMAT_FEET_EXTENDED">"<ns1:g id="NUMBER_OF_FEET">%s</ns1:g> piedi"</string>
+    <string msgid="5955263181315504888" name="DA_DISTANCE_FORMAT_KILOMETERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g> km"</string>
+    <string msgid="566231057264804657" name="DA_DISTANCE_FORMAT_KILOMETERS_EXTENDED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g> chilometri"</string>
+    <string msgid="4017347679220015543" name="DA_DISTANCE_FORMAT_METERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_METERS">%s</ns1:g> m"</string>
+    <string msgid="1379464276280242796" name="DA_DISTANCE_FORMAT_METERS_EXTENDED">"<ns1:g id="NUMBER_OF_METERS">%s</ns1:g> metri"</string>
+    <string msgid="2515401957955350520" name="DA_DISTANCE_FORMAT_MILES_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g> mi"</string>
+    <string msgid="4237807912458051628" name="DA_DISTANCE_FORMAT_MILES_EXTENDED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g> miglia"</string>
+    <string msgid="7253880469383384966" name="DA_DISTANCE_FORMAT_MODE">"metric"</string>
+    <string msgid="4169708828913710793" name="DA_DISTANCE_FORMAT_YARDS_ABBREVIATED">"<ns1:g id="NUMBER_OF_YARDS">%s</ns1:g> yd"</string>
+    <string msgid="3150387851356211916" name="DA_DISTANCE_FORMAT_YARDS_EXTENDED">"<ns1:g id="NUMBER_OF_YARDS">%s</ns1:g> iarde"</string>
+    <string msgid="4944833818130154379" name="DA_DISTANCE_RELATIVE_EQUIVALENT">"Distanza<ns1:g id="WHITESPACE">%1$s</ns1:g>simile"</string>
+    <string msgid="8140845091471826735" name="DA_DISTANCE_RELATIVE_LONGER">"Più lungo di<ns1:g id="WHITESPACE">%2$s</ns1:g><ns1:g id="DISTANCE">%1$s</ns1:g>"</string>
+    <string msgid="4380111419025048248" name="DA_DISTANCE_RELATIVE_SHORTER">"Più breve di<ns1:g id="WHITESPACE">%2$s</ns1:g><ns1:g id="DISTANCE">%1$s</ns1:g>"</string>
+    <string msgid="3065017842969529520" name="DA_EXIT_NAME">"Uscita <ns1:g id="EXIT_NAME">{0}</ns1:g>"</string>
+    <string msgid="4966940297863570499" name="DA_EXIT_NUMBER">"Uscita <ns1:g id="EXIT_NUMBER">{0}</ns1:g>"</string>
+    <string msgid="8494855683148237403" name="DA_EXPANDED_NOTIFICATION_SUBTEXT">"<ns1:g id="TIME_REMAINING">%1$s</ns1:g> · <ns1:g id="DISTANCE_REMAINING">%2$s</ns1:g> · <ns1:g id="ETA">%3$s</ns1:g>"</string>
+    <string msgid="8878104100559765265" name="DA_LOCKSCREEN_NOTIFICATION_DIRECTIONS">"<ns1:g id="DISTANCE_TO_NEXT_STEP">%1$s</ns1:g> - <ns1:g id="ROAD_NAME">%2$s</ns1:g>"</string>
+    <string msgid="8553864305083974087" name="DA_LOCKSCREEN_NOTIFICATION_SUBTEXT">"<ns1:g id="DESTINATION_NAME">%1$s</ns1:g> - <ns1:g id="ETA">%2$s</ns1:g>"</string>
+    <string msgid="698528250212661998" name="DA_MINUTES_ABBREVIATED_SHORT_UNIT">"min"</string>
+    <string msgid="7929640078602313092" name="DA_NAME_DELIMITER">" / "</string>
+    <string msgid="3380792810890405138" name="DA_NOTIFICATION_STEP_FORMAT">"<ns1:g id="STRING_0">{0}</ns1:g> - <ns1:g id="STRING_1">{1}</ns1:g>"</string>
+    <string msgid="6662097821719572140" name="DA_OFF_ROUTE">"Deviazione dal percorso…"</string>
+    <string msgid="4249562764540028107" name="DA_ONTO">"in <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="5914998525734325362" name="DA_POINT_ON_MAP">"Punto sulla mappa"</string>
+    <string msgid="1525420669081149187" name="DA_RELATIVE_EQUIVALENT">"Durata\nsimile"</string>
+    <string msgid="6345879111462833077" name="DA_RELATIVE_FASTER">"<ns1:g id="MINUTES">%1$s</ns1:g>\nin meno"</string>
+    <string msgid="9026835910813824786" name="DA_RELATIVE_SLOWER">"<ns1:g id="MINUTES">%1$s</ns1:g>\nin più"</string>
+    <string msgid="1136623639867405953" name="DA_REROUTING">"Rielaborazione percorso..."</string>
+    <string msgid="7438343460352215122" name="DA_ROUTE_PREFIXES">"N,NE,E,SE,S,SO,O,NO"</string>
+    <string msgid="5218446718068301940" name="DA_ROUTE_SUFFIXES">"N,NE,E,SE,S,SO,O,NO,Via,Viale,Vicolo,Corso,A,SS,SR,SP,RA,NSA,SC"</string>
+    <string msgid="4645745718037033230" name="DA_SPEECH_CONTINUE_FOR_A_HALF_MILE">"Continua per mezzo miglio"</string>
+    <string msgid="4164172923590406078" name="DA_SPEECH_CONTINUE_FOR_A_QUARTER_MILE">"Continua per un quarto di miglio"</string>
+    <string msgid="4639761855126118140" name="DA_SPEECH_CONTINUE_FOR_ONE_AND_A_HALF_KILOMETERS">"Continua per un chilometro e mezzo"</string>
+    <string msgid="7622810818891191525" name="DA_SPEECH_CONTINUE_FOR_ONE_AND_A_HALF_MILES">"Continua per un miglio e mezzo"</string>
+    <string msgid="805371831027414281" name="DA_SPEECH_CONTINUE_FOR_THREE_QUARTERS_OF_A_MILE">"Continua per tre quarti di miglio"</string>
+    <string msgid="9112904440572551597" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_A_HALF_MILE">"Continua su <ns1:g id="ROAD_NAME">%1$s</ns1:g> per mezzo miglio"</string>
+    <string msgid="1306868173119066430" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_A_QUARTER_MILE">"Continua su <ns1:g id="ROAD_NAME">%1$s</ns1:g> per un quarto di miglio"</string>
+    <string msgid="1481342479470867549" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_ONE_AND_A_HALF_KILOMETERS">"Continua su <ns1:g id="ROAD_NAME">%1$s</ns1:g> per un chilometro e mezzo"</string>
+    <string msgid="6881684665273996002" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_ONE_AND_A_HALF_MILES">"Continua su <ns1:g id="ROAD_NAME">%1$s</ns1:g> per un miglio e mezzo"</string>
+    <string msgid="7098370444643797153" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_THREE_QUARTERS_OF_A_MILE">"Continua su <ns1:g id="ROAD_NAME">%1$s</ns1:g> per tre quarti di miglio"</string>
+    <string msgid="1622868587212934709" name="DA_SPEECH_IN_A_HALF_MILE">"Tra mezzo miglio"</string>
+    <string msgid="776151086427605353" name="DA_SPEECH_IN_A_QUARTER_MILE">"Tra un quarto di miglio"</string>
+    <string msgid="3825333003762141464" name="DA_SPEECH_IN_ONE_AND_A_HALF_KILOMETERS">"Tra un chilometro e mezzo"</string>
+    <string msgid="6689160907320579504" name="DA_SPEECH_IN_ONE_AND_A_HALF_MILES">"Tra un miglio e mezzo"</string>
+    <string msgid="8298844267891398809" name="DA_SPEECH_IN_THREE_QUARTERS_OF_A_MILE">"Tra tre quarti di miglio"</string>
+    <string msgid="5536748116879901705" name="DA_SPEECH_LOST_GPS">"Segnale GPS interrotto"</string>
+    <string msgid="7031013673377029795" name="DA_SPEECH_YOU_SHOULD_GET_THERE_BY">"Dovresti arrivare a destinazione entro le ore <ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="2864490850591934011" name="DA_SPEECH_YOU_WILL_NOW_ARRIVE_AT">"Arriverai alle <ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="626040107222949163" name="DA_SPEED_FORMAT_KILOMETERS_PER_HOUR_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g> km/h"</string>
+    <string msgid="5696017829806052324" name="DA_SPEED_FORMAT_MILES_PER_HOUR_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g> mph"</string>
+    <string msgid="8717832301235175955" name="DA_STAY_ON_ROAD_PRIMARY">"Rimani su <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="1522051354942059491" name="DA_STAY_ON_ROAD_SECONDARY_MANEUVER">"<ns1:g id="STRING_0">{0}</ns1:g> a <ns1:g id="STRING_1">{1}</ns1:g>"</string>
+    <string msgid="6588954374506898552" name="DA_THEN">"Poi <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="5783008655276864364" name="DA_TIME_FORMAT_CLOCK">"<ns1:g id="HOURS">%1$d</ns1:g>:<ns1:g id="MINUTES">%2$02d</ns1:g>"</string>
+    <string msgid="7707919387811958765" name="DA_TIME_FORMAT_DAYS_AND_HOURS">"<ns1:g id="NUMBER_OF_DAYS">%1$s</ns1:g> <ns1:g id="NUMBER_OF_HOURS">%2$s</ns1:g>"</string>
+    <string msgid="6892640684881875785" name="DA_TIME_FORMAT_HOURS_AND_MINUTES">"<ns1:g id="NUMBER_OF_HOURS">%1$s</ns1:g> <ns1:g id="NUMBER_OF_MINUTES">%2$s</ns1:g>"</string>
+    <string msgid="7817998043468236136" name="DA_TOWARD">"verso <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="3123596705054737201" name="DA_YOUR_DESTINATION_IS_A_HALF_MILE_AHEAD">"La tua destinazione è a mezzo miglio"</string>
+    <string msgid="8661505845314857886" name="DA_YOUR_DESTINATION_IS_A_QUARTER_MILE_AHEAD">"La tua destinazione è a un quarto di miglio"</string>
+    <string msgid="3905156493194280718" name="DA_YOUR_DESTINATION_IS_ONE_AND_A_HALF_KILOMETERS_AHEAD">"La tua destinazione è a un chilometro e mezzo"</string>
+    <string msgid="4589187785814099880" name="DA_YOUR_DESTINATION_IS_ONE_AND_A_HALF_MILES_AHEAD">"La tua destinazione è a un miglio e mezzo"</string>
+    <string msgid="4923490260885185878" name="DA_YOUR_DESTINATION_IS_THREE_QUARTERS_OF_A_MILE_AHEAD">"La tua destinazione è a tre quarti di miglio"</string>
+    <string msgid="1064900343663975467" name="DEBUG_MAPS_FEATURES_SETTINGS_TITLE">"Debug funzionalità [solo versione sperimentale]"</string>
+    <string msgid="5698435378918936657" name="DIRECTIONS_PROCEED_TO_METERS">"Procedi per <ns1:g id="DISTANCE">%1$s</ns1:g>"</string>
+    <string msgid="4176893357736379300" name="DIRECTIONS_STEP_LIST_TO">"Per <ns1:g id="DESTINATION">%s</ns1:g>"</string>
+    <string msgid="1814428387459568726" name="DIRECTIONS_YOUR_LOCATION">"La tua posizione"</string>
+    <string msgid="737968998903158015" name="DISCLAIMER">"Tieni lo sguardo sulla strada e rispetta le leggi in vigore. Non farti distrarre dall\'applicazione mentre sei in movimento. Le indicazioni stradali potrebbero essere imprecise, incomplete, pericolose, non adeguate, non consentite o potrebbero implicare l\'attraversamento di confini amministrativi. I dati non sono in tempo reale e la precisione della posizione non può essere garantita."</string>
+    <string msgid="2642186254766054874" name="DISCLAIMER_TITLE">"Il Navigatore di Google Maps è in versione beta. Sii prudente."</string>
+    <string msgid="2322386471590166279" name="DISTANCE_FEET_ABBREVIATED">"<ns1:g id="NUMBER_OF_FEET"/> pd"</string>
+    <string msgid="1770611150911759090" name="DISTANCE_FEET_EXTENDED">"<ns1:g id="NUMBER_OF_FEET"/> piedi"</string>
+    <string msgid="8832117946718206516" name="DISTANCE_KILOMETERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS"/> km"</string>
+    <string msgid="1712822516939066073" name="DISTANCE_KILOMETERS_EXTENDED">"<ns1:g id="NUMBER_OF_KILOMETERS"/> chilometri"</string>
+    <string msgid="5115749175241245588" name="DISTANCE_METERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_METERS"/> m"</string>
+    <string msgid="6786188804325739113" name="DISTANCE_METERS_EXTENDED">"<ns1:g id="NUMBER_OF_METERS"/> metri"</string>
+    <string msgid="1663691802801530665" name="DISTANCE_MILES_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES"/> miglia"</string>
+    <string msgid="7535910480336049458" name="DISTANCE_MILES_EXTENDED">"<ns1:g id="NUMBER_OF_MILES"/> miglia"</string>
+    <string msgid="3873406547898134225" name="DISTANCE_TO_TRIP_LEVEL_NOTICE">"tra <ns1:g id="DISTANCE">%1$s</ns1:g>"</string>
+    <string msgid="5782765699559481543" name="DISTANCE_YARDS_ABBREVIATED">"<ns1:g id="NUMBER_OF_YARDS"/> yd"</string>
+    <string msgid="314073790876879964" name="DISTANCE_YARDS_EXTENDED">"<ns1:g id="NUMBER_OF_YARDS"/> iarde"</string>
+    <string msgid="738884423108976541" name="DONE">"Fine"</string>
+    <string msgid="2363263758654372020" name="DRIVING_MODE_NOTIFICATION_DRIVING_WITH_NO_CURRENT_ROAD">"Modalità Auto con Google Maps"</string>
+    <string msgid="4220331858318238031" name="DURATION_AND_DISTANCE_TO_DESTINATION">"<ns1:g id="DURATION">%1$s</ns1:g> (<ns1:g id="DISTANCE">%2$s</ns1:g>) all\'arrivo"</string>
+    <string msgid="6479013822372531284" name="DURATION_AND_DISTANCE_WITH_DESTINATION">"<ns1:g id="DURATION">%1$s</ns1:g> (<ns1:g id="DISTANCE">%2$s</ns1:g>) a <ns1:g id="DESTINATION">%3$s</ns1:g>"</string>
+    <string msgid="6003991895084447024" name="EDIT_HOME_WORK">"Indirizzo casa o lavoro"</string>
+    <string msgid="516081725937928083" name="ENERGY_CONSUMPTION_ENGINE_TYPE_SETTINGS_TITLE">"Tipo di motore"</string>
+    <string msgid="3843996814576444609" name="ESTIMATED_TIME_OF_ARRIVAL">"Arrivo previsto: <ns1:g id="ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="3733379082443710457" name="ESTIMATED_TIME_OF_ARRIVAL_SHORT">"Arrivo <ns1:g id="ESTIMATED_TIME_OF_ARRIVAL">%1$s</ns1:g>"</string>
+    <string msgid="4474776824279943996" name="ESTIMATED_TIME_OF_ARRIVAL_WITH_TIME_ZONE">"<ns1:g id="ESTIMATED_TIME_OF_ARRIVAL">%1$s</ns1:g> <ns1:g id="SHORT_TIME_ZONE">%2$s</ns1:g>"</string>
+    <string msgid="6999585662399273468" name="EVEN_ONLY_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Solo targhe pari"</string>
+    <string msgid="7000439285054278098" name="EV_CONNECTOR_PREFERENCES_SUMMARY">"Seleziona connettori"</string>
+    <string msgid="538913145063218200" name="EV_CONNECTOR_PREFERENCES_TITLE">"Connettori e adattatori compatibili"</string>
+    <string msgid="2967277365338415762" name="EV_PROFILE_SETTINGS_TITLE_V2">"Impostazioni veicolo elettrico"</string>
+    <string msgid="833120489844392943" name="EXPLORE_PREFERENCES_SETTINGS_LANDING_PAGE_ENTRY_POINT_TEXT">"Gestisci le tue preferenze"</string>
+    <string msgid="1042961630059727812" name="EYES_FREE_MODE_REROUTE_NOTIFICATION">"Sembra che tu non stia più seguendo il percorso consigliato, quindi te ne indicherò uno alternativo."</string>
+    <string msgid="2695748113301305354" name="FAILED_TO_LAUNCH_APPLICATION">"Impossibile avviare l\'applicazione."</string>
+    <string msgid="6461634184436147039" name="GENERIC_DELAY_SUBTITLE">"Possibili ritardi"</string>
+    <string msgid="5033029603744943710" name="GETTING_AROUND_CATEGORY_TITLE">"Come spostarsi"</string>
+    <string msgid="5232271074030694384" name="GOOGLE_LOCATION_SETTINGS">"Geolocalizzazione Google"</string>
+    <string msgid="5646148448362261180" name="GOOGLE_MAPS_TIMELINE_OPT_OUT_SETTINGS_SUMMARY">"Riceverai aggiornamenti sulla Cronologia delle posizioni"</string>
+    <string msgid="2493857178325724377" name="GOOGLE_MAPS_TIMELINE_SETTINGS_SUMMARY">"Ricevi aggiornamenti sulla tua cronologia delle posizioni"</string>
+    <string msgid="196582671347677600" name="GOOGLE_MAPS_TIMELINE_SETTINGS_TITLE">"Spostamenti di Google Maps"</string>
+    <string msgid="4749894635859607507" name="GPS_SIGNAL_LOST_CALLOUT_TEXT">"Ricerca GPS in corso..."</string>
+    <string msgid="3033976480311745440" name="HAZARDOUS_GOODS_RESTRICTED">"Limitazioni per le merci pericolose"</string>
+    <string msgid="4732345555387659208" name="HEAVY_TRAFFIC">"Traffico intenso"</string>
+    <string msgid="173409722067999322" name="HEIGHT_FEET_ABBREVIATED">"<ns1:g id="FEET">%d</ns1:g> ft"</string>
+    <string msgid="8966636302039617408" name="HEIGHT_FEET_INCHES_ABBREVIATED">"<ns1:g id="FEET">%d</ns1:g> ft e <ns1:g id="INCHES">%d</ns1:g> in"</string>
+    <string msgid="8637363475448752754" name="HEIGHT_FEET_INCHES_LONGFORM">"<ns1:g id="FEET">%d</ns1:g> piedi e <ns1:g id="INCHES">%d</ns1:g> pollici"</string>
+    <string msgid="1521089235551336608" name="HEIGHT_FEET_LONGFORM">"<ns1:g id="FEET">%d</ns1:g> piedi"</string>
+    <string msgid="1887668386950703406" name="HEIGHT_RESTRICTED">"Limitazioni di altezza"</string>
+    <string msgid="784251430855706294" name="HOV_AVAILABLE">"Car pooling disponibile"</string>
+    <string msgid="6529821054904011518" name="IMPROVE_YOUR_LOCATION">"Migliora precisione posizione"</string>
+    <string msgid="2540976662746914375" name="INCIDENT_VOTE_COUNT_BUCKET_LONG">"Segnalazioni: <ns1:g id="VOTE_COUNT">%1$s</ns1:g>+"</string>
+    <string msgid="8281026530646827235" name="INCIDENT_VOTE_COUNT_BUCKET_SHORT">"<ns1:g id="VOTE_COUNT">%1$s</ns1:g>+"</string>
+    <string msgid="1284004591458612182" name="INCIDENT_VOTE_COUNT_LONG">"Segnalazioni: <ns1:g id="VOTE_COUNT">%1$s</ns1:g>"</string>
+    <string msgid="7857287556098266775" name="INFORMATION_SEVERITY_CONTENT_DESCRIPTION">"Informativa"</string>
+    <string msgid="6766669801183231447" name="INITIAL_NOTIFICATION_CONTENT_TITLE">"Avvio della navigazione in corso…"</string>
+    <string msgid="3945432022630896702" name="JAMCIDENT_DELAY_TIME">"+<ns1:g id="TIME">%1$s</ns1:g>"</string>
+    <string msgid="6857277423395462126" name="LIGHT_TRAFFIC">"Traffico scorrevole"</string>
+    <string msgid="2755809767742409326" name="LOADING">"Caricamento in corso"</string>
+    <string msgid="8072745940066400784" name="LOCAL_PREFERENCES_AREA_MANAGEMENT_ENTRY_POINT_TEXT">"Gestisci le tue zone"</string>
+    <string msgid="5423743480617991599" name="LOCATION_AND_PROFILE_CATEGORY_TITLE">"Posizione e profilo"</string>
+    <string msgid="2086740505285691302" name="LOCATION_NOT_YET_AVAILABLE">"In attesa della posizione..."</string>
+    <string msgid="8345606348711609944" name="LOCATION_SHARING_FRIENDS_OPT_OUT_SETTINGS_SUMMARY">"Riceverai aggiornamenti sui tuoi amici e sulla loro posizione condivisa"</string>
+    <string msgid="584985529279859810" name="LOCATION_SHARING_FRIENDS_SETTINGS_SUMMARY">"Ricevi aggiornamenti sui tuoi amici e sulla loro posizione condivisa"</string>
+    <string msgid="1787475954612106105" name="LOCATION_SHARING_FRIENDS_SETTINGS_TITLE">"Condivisione della posizione di Google (amici)"</string>
+    <string msgid="1798157651559312287" name="LOCATION_SHARING_UPDATES_SETTINGS_SUMMARY">"Ricevi aggiornamenti quando la tua posizione condivisa viene aggiornata"</string>
+    <string msgid="4145708674804313912" name="LOCATION_SHARING_UPDATES_SETTINGS_TITLE">"Aggiornamenti su condivisione posizione di Google"</string>
+    <string msgid="6974966951431091715" name="LOCATION_SHARING_YOU_OPT_OUT_SETTINGS_SUMMARY">"Riceverai aggiornamenti sulla condivisione della tua posizione"</string>
+    <string msgid="2507248622422659061" name="LOCATION_SHARING_YOU_SETTINGS_SUMMARY">"Ricevi aggiornamenti sulla condivisione della tua posizione"</string>
+    <string msgid="3628122068571233362" name="LOCATION_SHARING_YOU_SETTINGS_TITLE">"Condivisione della posizione di Google (tu)"</string>
+    <string msgid="5983765003219829883" name="MANILA_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Targhe: <ns1:g id="PLATE_1">%1$d</ns1:g> e <ns1:g id="PLATE_2">%2$d</ns1:g>"</string>
+    <string msgid="2282765788770439491" name="MAPS_FEATURES_CATEGORY_TITLE">"Funzionalità di Maps"</string>
+    <string msgid="8758525520286582553" name="MAPS_FEATURES_URGENT_SETTINGS_TITLE">"Aggiornamenti immediati sulle funzionalità di Maps"</string>
+    <string msgid="2890999488170047937" name="MAPS_HISTORY">"Cronologia di Maps"</string>
+    <string msgid="7523320203882314616" name="MAP_COPYRIGHTS_FULL">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - Immagini ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>, Dati mappe ©<ns1:g id="COPYRIGHT_YEAR_2">%4$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%5$s</ns1:g>"</string>
+    <string msgid="3080854072740850768" name="MAP_COPYRIGHTS_GOOGLE_ONLY">"©<ns1:g id="COPYRIGHT_YEAR">%1$s</ns1:g> Google"</string>
+    <string msgid="271754604139169484" name="MAP_COPYRIGHTS_IMAGERY_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - Immagini ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>"</string>
+    <string msgid="6150599764044956009" name="MAP_COPYRIGHTS_MAP_DATA_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - Dati mappe ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%3$s</ns1:g>"</string>
+    <string msgid="1172850333329779755" name="NAVIGATION_CATEGORY_TITLE">"Navigatore"</string>
+    <string msgid="2003321543190473980" name="NAVIGATION_SETTINGS">"Impostazioni di navigazione"</string>
+    <string msgid="6362228591814936571" name="NAVIGATION_STEP_LIST_DISTANCE_TO_NEXT_STEP">"Fra <ns1:g id="DISTANCE">%1$s</ns1:g>"</string>
+    <string msgid="8513156606874950515" name="NAVIGATION_URGENT_SETTINGS_TITLE">"Aggiornamenti immediati sulla navigazione"</string>
+    <string msgid="8746273910770749866" name="NAV_SDK_DEFAULT_COMPANY_NAME">"lo sviluppatore dell\'app"</string>
+    <string msgid="3522779505396739599" name="NAV_SDK_DISCLAIMER">"Non dimenticare di prestare attenzione all\'area circostante e di rispettare sempre la legge."</string>
+    <string msgid="2337842297414069478" name="NAV_SDK_GOT_IT">"OK"</string>
+    <string msgid="6986418512565360329" name="NAV_SDK_I_AM_IN">"Sì, mi trovo in"</string>
+    <string msgid="2296133702373295473" name="NAV_SDK_LEGAL_TEXT">"Quando utilizzi <ns1:g id="NAV_SDK_COMPANY_NAME_2">%1$s</ns1:g>, Google raccoglie i dati di navigazione, ad esempio la posizione GPS e il percorso che hai seguito, per migliorare Google Maps per tutti gli utenti. Questi dati potranno essere utilizzati per generare informazioni (ad es. condizioni del traffico in tempo reale ed eventuali interruzioni) che vengono mostrate agli altri utenti per aiutarli a trovare il percorso migliore.\n\nQuesti aggiornamenti della mappa non vengono associati al tuo Account Google o dispositivo. Si applicano anche i <ns1:g id="NAV_SDK_TERMS">%2$s</ns1:g> e le <ns1:g id="NAV_SDK_PRIVACY_POLICY">%3$s</ns1:g> di Google.\n\n<ns1:g id="NAV_SDK_COMPANY_NAME_3">%4$s</ns1:g> può anche raccogliere e utilizzare questi dati. Per saperne di più, consulta le norme sulla privacy dell\'app <ns1:g id="NAV_SDK_COMPANY_NAME_4">%5$s</ns1:g>."</string>
+    <string msgid="5332923116377998043" name="NAV_SDK_LEGAL_TEXT_LEGACY">"Se l\'app è in esecuzione, Google può raccogliere i dati relativi alla guida e alla tua posizione per fornire i servizi e migliorarli. Questi dati potrebbero essere condivisi anche con <ns1:g id="NAV_SDK_COMPANY_NAME">%1$s</ns1:g> per migliorare l\'operatività. Servizi soggetti ai <ns1:g id="NAV_SDK_TERMS">%2$s</ns1:g> e alle <ns1:g id="NAV_SDK_PRIVACY_POLICY">%3$s</ns1:g> di Google."</string>
+    <string msgid="6340328118114501085" name="NAV_SDK_PRIVACY_POLICY">"norme sulla privacy"</string>
+    <string msgid="2982362725876163352" name="NAV_SDK_PRIVACY_POLICY_CAPITALIZED">"Norme sulla privacy"</string>
+    <string msgid="4531136199149528407" name="NAV_SDK_TERMS">"termini"</string>
+    <string msgid="7707795984529102497" name="NAV_SDK_TERMS_CAPITALIZED">"Termini"</string>
+    <string msgid="3015266809371007473" name="NAV_SDK_TERMS_CLOSE">"Chiudi l\'app"</string>
+    <string msgid="8901594003619146647" name="NAV_SDK_TERMS_ERROR">"Si è verificato un errore durante il caricamento dei termini di servizio della navigazione. Riavvia l\'app."</string>
+    <string msgid="6958049100686788454" name="NAV_SDK_WELCOME_TO_GOOGLE_MAPS_NAVIGATION">"Navigatore di Google Maps"</string>
+    <string msgid="6791023658564191335" name="NEARBY_PLACES_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY_V2">"Riceverai consigli su luoghi ed eventi nelle vicinanze"</string>
+    <string msgid="5467978305791925717" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_SUMMARY">"Scopri quando ti trovi nelle vicinanze di uno dei tuoi luoghi o eventi salvati"</string>
+    <string msgid="2899316768992820532" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_SUMMARY_V2">"Ricevi consigli su luoghi ed eventi nelle vicinanze"</string>
+    <string msgid="7613155153180186667" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_TITLE">"Luoghi ed eventi nelle vicinanze"</string>
+    <string msgid="2522056010363733176" name="NETWORK_UNAVAILABLE">"Impossibile connettersi"</string>
+    <string msgid="5798081927324715154" name="NEW_ON_MAPS_CATEGORY_TITLE">"Novità di Maps"</string>
+    <string msgid="1286364333769843890" name="NEW_ON_MAPS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Riceverai aggiornamenti sulle nuove operazioni che puoi eseguire su Maps"</string>
+    <string msgid="7425167408473147318" name="NEW_ON_MAPS_NOTIFICATION_SETTINGS_SUMMARY">"Ricevi aggiornamenti occasionali sulle nuove operazioni che puoi eseguire su Maps"</string>
+    <string msgid="8563411120076685209" name="NORMAL_TRAFFIC">"Traffico normale"</string>
+    <string msgid="7130046223811209078" name="NOTICE_EFFECTIVE_RANGE">"Validità: <ns1:g id="DATE_OR_DATE_RANGE">%s</ns1:g>"</string>
+    <string msgid="4156394438137475279" name="NOTIFICATIONS_SETTINGS_TITLE">"Notifiche"</string>
+    <string msgid="889779361831341194" name="ODD_ONLY_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Solo targhe dispari"</string>
+    <string msgid="5195182224903466222" name="OFFLINE_MAPS_DOWNLOAD_EMBEDDED_TITLE">"Download mappe offline"</string>
+    <string msgid="103070061409767941" name="OFFLINE_MAPS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Riceverai aggiornamenti sulle zone salvate sul tuo telefono o tablet"</string>
+    <string msgid="2065934284598719130" name="OFFLINE_MAPS_NOTIFICATION_SETTINGS_SUMMARY">"Ricevi aggiornamenti sulle zone salvate sul tuo telefono o tablet"</string>
+    <string msgid="4278334889579817101" name="OFFLINE_MAPS_TITLE">"Mappe offline"</string>
+    <string msgid="5659021817125812935" name="OFFLINE_SETTINGS">"Impostazioni mappe offline"</string>
+    <string msgid="2611064167742529426" name="OTHER_NOTIFICATION_CHANNEL">"Altre notifiche"</string>
+    <string msgid="653910275023514690" name="PARKING_LOCATION_OPT_OUT_SETTINGS_SUMMARY">"Riceverai aggiornamenti sulla posizione del parcheggio"</string>
+    <string msgid="8831411745546173529" name="PARKING_LOCATION_SETTINGS_SUMMARY">"Ricevi aggiornamenti sulla posizione del parcheggio"</string>
+    <string msgid="874143968644994017" name="PARKING_LOCATION_SETTINGS_TITLE">"Posizione del parcheggio"</string>
+    <string msgid="4109028911398058028" name="PERSONAL_CONTENT_TITLE">"Contenuti personali"</string>
+    <string msgid="6309784419540645516" name="PHOTO_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Riceverai promemoria per caricare foto e taggare piatti in base ai luoghi che hai visitato"</string>
+    <string msgid="2017256142609753488" name="PHOTO_NOTIFICATION_SETTINGS_SUMMARY">"Ricevi promemoria per caricare foto e taggare piatti in base ai luoghi che hai visitato"</string>
+    <string msgid="7486650467383313327" name="PHOTO_NOTIFICATION_SETTINGS_TITLE">"Condividi e tagga foto"</string>
+    <string msgid="2975029997059956743" name="PICKUP_ORDERS_NOTIFICATION_OPT_OUT_SETTING_SUMMARY">"Riceverai gli aggiornamenti sui tuoi ordini da ritirare su Maps"</string>
+    <string msgid="3374210285480569472" name="PICKUP_ORDERS_NOTIFICATION_SETTING_SUMMARY">"Ricevi aggiornamenti sullo stato dell\'ordine e promemoria per comunicare l\'ora di arrivo e il tuo arrivo effettivo"</string>
+    <string msgid="668310841030579677" name="PICKUP_ORDERS_NOTIFICATION_SETTING_TITLE">"Asporto ordine"</string>
+    <string msgid="8127880752570065607" name="PLACES_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Riceverai domande sui luoghi che hai visitato in modo che gli altri sappiano cosa aspettarsi"</string>
+    <string msgid="5365776433570962189" name="PLACES_NOTIFICATION_SETTINGS_SUMMARY">"Rispondi a domande sui luoghi che hai visitato in modo che gli altri sappiano cosa aspettarsi"</string>
+    <string msgid="3724976413506253643" name="PLACES_NOTIFICATION_SETTINGS_TITLE">"Luoghi visitati"</string>
+    <string msgid="7471023852308791790" name="POI_PROMPT_ADD_STOP">"Nuova tappa"</string>
+    <string msgid="7983858942352259551" name="POI_PROMPT_ADD_STOP_ACTION">"Aggiunto al percorso"</string>
+    <string msgid="8778537284281768607" name="POI_PROMPT_NAVIGATE">"Naviga"</string>
+    <string msgid="472834733509383200" name="POI_PROMPT_NAVIGATE_ACTION">"Navigazione in corso"</string>
+    <string msgid="298606571303064040" name="PROMPT_CANCEL">"Annulla"</string>
+    <string msgid="4066051640880834866" name="PROMPT_DISMISS">"Ignora"</string>
+    <string msgid="5503515646274126756" name="QA_AND_CHAT_CATEGORY_TITLE">"Domande e risposte e chat"</string>
+    <string msgid="3324329907005959185" name="RECENTER_FOLLOW_MODE">"Riposiziona"</string>
+    <string msgid="1486707796824890396" name="RECOMMENDATIONS_FOR_YOU_CATEGORY_TITLE">"Consigli per te"</string>
+    <string msgid="8105228677480057073" name="REMOVE">"Rimuovi"</string>
+    <string msgid="1550982124371473702" name="REPORTED_VIA_WAZE_APP">"Segnalato via Waze app"</string>
+    <string msgid="2241569767697676295" name="REROUTE_CALLOUT_CURRENT">"Attuale"</string>
+    <string msgid="520999062746509578" name="REROUTE_CALLOUT_NEW">"Nuova"</string>
+    <string msgid="3344101668786395431" name="REVIEW_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Riceverai promemoria per scrivere recensioni in base ai luoghi che hai visitato"</string>
+    <string msgid="7888846095073550740" name="REVIEW_NOTIFICATION_SETTINGS_SUMMARY">"Ricevi promemoria per scrivere recensioni in base ai luoghi che hai visitato"</string>
+    <string msgid="7916601440448962034" name="REVIEW_NOTIFICATION_SETTINGS_TITLE">"Suggerimenti per scrivere recensioni"</string>
+    <string msgid="1541842670412044840" name="RODIZIO_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Rodízio <ns1:g id="PLATE_1">%1$d</ns1:g> e <ns1:g id="PLATE_2">%2$d</ns1:g>"</string>
+    <string msgid="8062022808692087963" name="ROUTE_AROUND_CLOSURE_CALLOUT_CLOSED">"Chiusa"</string>
+    <string msgid="623689270367292384" name="ROUTE_AROUND_TRAFFIC_ACTION">"Rielaborazione percorso"</string>
+    <string msgid="7859812763744711003" name="ROUTE_AROUND_TRAFFIC_CALLOUT_FASTER">"Più veloce"</string>
+    <string msgid="2611671618289658133" name="ROUTE_AROUND_TRAFFIC_DECLINE">"No, grazie"</string>
+    <string msgid="1962094888482140214" name="ROUTE_AROUND_TRAFFIC_REROUTE">"Accetta"</string>
+    <string msgid="5344116890552800007" name="ROUTE_AROUND_TRAFFIC_TAKE_ACTION_CUE_DEFAULT_DECLINE">"Per prendere l\'itinerario più veloce, tocca <ns1:g id="REROUTE_BUTTON">%1$s</ns1:g>."</string>
+    <string msgid="9048657312424993512" name="ROUTE_AROUND_TRAFFIC_TAKE_ACTION_CUE_DEFAULT_REROUTE">"Se preferisci restare sull\'itinerario corrente, tocca <ns1:g id="DECLINE_BUTTON">%1$s</ns1:g>."</string>
+    <string msgid="668738352458665249" name="SATELLITE_KEEP_ON_SETTING_SUMMARY">"Vengono usati più dati"</string>
+    <string msgid="5458955675293713001" name="SATELLITE_KEEP_ON_SETTING_TITLE">"Apri le mappe in vista Satellite"</string>
+    <string msgid="2513389490217803388" name="SHAKE_TO_SEND_FEEDBACK">"Scuoti per inviare feedback"</string>
+    <string msgid="7927333567450914524" name="SHOW_SCALEBAR">"Mostra scala su mappa"</string>
+    <string msgid="8853862950824858965" name="SIGN_IN">"Accedi"</string>
+    <string msgid="6614611063829352216" name="SPEEDOMETER_CONTENT_DESCRIPTION">"Velocità attuale"</string>
+    <string msgid="2485928112866408949" name="SPEEDOMETER_LABEL_MPH">"mph"</string>
+    <string msgid="714338337064997840" name="SPEED_LIMIT_CONTENT_DESCRIPTION">"Limite di velocità"</string>
+    <string msgid="8329935752572916663" name="SPEED_LIMIT_LABEL_KPH">"km/h"</string>
+    <string msgid="6049037484128190260" name="SPEED_LIMIT_LABEL_MPH">"mph"</string>
+    <string msgid="6933103859272522200" name="STATUS_DATA_CONNECTION_LOST">"Connessione dati interrotta…"</string>
+    <string msgid="3486534637879952316" name="STATUS_LOCATION_NOT_YET_AVAILABLE">"In attesa della posizione…"</string>
+    <string msgid="2640731163709778825" name="STATUS_OFF_ROUTE">"Deviazione dal percorso…"</string>
+    <string msgid="2545735105255092828" name="STATUS_REROUTING">"Rielaborazione percorso…"</string>
+    <string msgid="2050512013597272527" name="STEP_LIST_INTERACTION_LOCKOUT">"Per visualizzare i prossimi passaggi, accosta quando possibile"</string>
+    <string msgid="4380539129160098186" name="TBP_TIME_FORMAT_STRING">"Di solito <ns1:g id="DURATION_RANGE">%1$s</ns1:g>"</string>
+    <string msgid="3969156182655336787" name="TIME_TO_LEAVE_OPT_OUT_SETTINGS_SUMMARY">"Riceverai un promemoria quando sarà ora di partire in base agli eventi di Gmail e di Calendar"</string>
+    <string msgid="5878136911262367593" name="TIME_TO_LEAVE_SETTINGS_SUMMARY">"Ricevi un promemoria quando è ora di partire in base agli eventi di Gmail e di Calendar"</string>
+    <string msgid="5802789254332120401" name="TIME_TO_LEAVE_SETTINGS_TITLE">"Al momento della partenza"</string>
+    <string msgid="279144067639888797" name="TRAFFIC_INCIDENT_CANCEL_BUTTON">"Chiudi"</string>
+    <string msgid="2556434376988861569" name="TRAFFIC_INCIDENT_CARD_ACTION_DESCRIPTION">"per mostrare l\'incidente sulla mappa"</string>
+    <string msgid="6842632577325526492" name="TRAFFIC_INCIDENT_CAUSE_LABEL">"Chiusura per"</string>
+    <string msgid="988935259303895134" name="TRAFFIC_INCIDENT_CLEARED_UP">"L\'incidente si è risolto"</string>
+    <string msgid="7567994859964694495" name="TRAFFIC_INCIDENT_GET_MORE_INFO_LINK_LABEL">"Leggi le ultime informazioni:"</string>
+    <string msgid="3198922267208778988" name="TRAFFIC_IN_YOUR_AREA_OPT_OUT_SETTINGS_SUMMARY">"Riceverai informazioni sulle condizioni del traffico in base alla tua posizione attuale"</string>
+    <string msgid="1473827289987133797" name="TRAFFIC_IN_YOUR_AREA_SETTINGS_SUMMARY">"Visualizza le condizioni del traffico in base alla tua posizione attuale"</string>
+    <string msgid="1128033297013450984" name="TRAFFIC_IN_YOUR_AREA_SETTINGS_TITLE">"Traffico nella tua zona"</string>
+    <string msgid="7311918430526640931" name="TRAFFIC_NEARBY_EVENTS_OPT_OUT_SETTINGS_SUMMARY">"Riceverai avvisi su chiusure stradali ed eventi pianificati che possono avere ripercussioni sul traffico"</string>
+    <string msgid="7229793065931553473" name="TRAFFIC_NEARBY_EVENTS_SETTINGS_SUMMARY">"Ricevi avvisi su chiusure stradali ed eventi pianificati che possono avere ripercussioni sul traffico"</string>
+    <string msgid="7458119512976033960" name="TRAFFIC_NEARBY_EVENTS_SETTINGS_TITLE">"Traffico proveniente da eventi nelle vicinanze"</string>
+    <string msgid="3736157622661020905" name="TRAFFIC_UPDATE_ETA_PROMPT_SUBTITLE">"Arrivo previsto alle ore <ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="6992797437864599238" name="TRANSIT_ENTER_VIA">"Entra da <ns1:g id="ENTRANCE">%1$s</ns1:g>"</string>
+    <string msgid="5577370445084558613" name="TRANSIT_ENTRANCE_ENTER_TITLE">"Ingresso stazione"</string>
+    <string msgid="6142195623804653271" name="TRANSIT_ENTRANCE_EXIT_TITLE">"Uscita stazione"</string>
+    <string msgid="1010084563211368398" name="TRANSIT_EXIT_VIA">"Esci da <ns1:g id="EXIT">%1$s</ns1:g>"</string>
+    <string msgid="3806065467172569991" name="TRANSIT_INFO_OPT_OUT_SETTINGS_SUMMARY">"Riceverai orari di partenza, interruzioni del trasporto pubblico e mappe delle stazioni nelle vicinanze"</string>
+    <string msgid="1534490659851000732" name="TRANSIT_INFO_SETTINGS_SUMMARY">"Visualizza orari di partenza, interruzioni del trasporto pubblico e mappe delle stazioni nelle vicinanze"</string>
+    <string msgid="4220388452166772640" name="TRANSIT_INFO_SETTINGS_TITLE">"Informazioni sul trasporto pubblico e mappe"</string>
+    <string msgid="5472231200918516614" name="TRANSIT_LINE_SEPARATOR">"o "</string>
+    <string msgid="1781544592846552935" name="TRANSIT_STEPTHROUGH_BOARD_TRANSPORTATION_AT">"Prendi <ns1:g id="TRANSPORTATION_TITLE">%1$s</ns1:g> a <ns1:g id="DEPARTURE_STATION_NAME">%2$s</ns1:g>"</string>
+    <string msgid="4852979524663289910" name="TRANSIT_STEPTHROUGH_GET_OFF_AT">"Scendi a <ns1:g id="ARRIVAL_STATION_NAME">%1$s</ns1:g>"</string>
+    <string msgid="100719016293137101" name="TRANSIT_STEPTHROUGH_TRANSFER_TRANSPORTATION_AT">"Spostati su <ns1:g id="TRANSPORTATION_TITLE">%1$s</ns1:g> a <ns1:g id="TRANSFER_STATION_NAME">%2$s</ns1:g>"</string>
+    <string msgid="4075726691937451191" name="TRANSIT_STEP_SEPARATOR">", quindi "</string>
+    <string msgid="4347114544007413130" name="TRANSIT_TRANSFER_DESCRIPTION">"<ns1:g id="LINE_NAME">%1$s</ns1:g> <ns1:g id="DESTINATION">%2$s</ns1:g>"</string>
+    <string msgid="1067501494466681470" name="TRANSIT_TRANSFER_DESCRIPTION_WITH_EXPRESS_TYPE">"<ns1:g id="LINE_NAME">%1$s</ns1:g> <ns1:g id="EXPRESS_TYPE_NAME">%2$s</ns1:g> <ns1:g id="DESTINATION">%3$s</ns1:g>"</string>
+    <string msgid="2817788206332504699" name="TRANSIT_VIA">"tramite <ns1:g id="ENTRANCE">%1$s</ns1:g>"</string>
+    <string msgid="755148195746788198" name="TRUCKS_RESTRICTED">"Limitazioni per i camion"</string>
+    <string msgid="6607947384151787482" name="TURN_CARD_THEN_INSTRUCTION">"Poi <ns1:g id="NEXT_INSTRUCTION">%1$s</ns1:g>"</string>
+    <string msgid="8308160665835594365" name="UGC_IMPACT_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Riceverai aggiornamenti su commenti e mi piace, nonché quando guadagni badge e vantaggi"</string>
+    <string msgid="5429102650839711069" name="UGC_IMPACT_NOTIFICATION_SETTINGS_SUMMARY">"Ricevi aggiornamenti su commenti e mi piace, nonché quando guadagni badge e vantaggi"</string>
+    <string msgid="2032622348248043611" name="UGC_IMPACT_NOTIFICATION_SETTINGS_TITLE">"Mi piace, traguardi e badge"</string>
+    <string msgid="7013124010125038791" name="UGC_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Riceverai domande riguardanti strade, corse e il tuo quartiere"</string>
+    <string msgid="3565867092229885716" name="UGC_NOTIFICATION_SETTINGS_SUMMARY">"Aiutaci a migliorare Maps rispondendo a domande riguardanti strade, corse e il tuo quartiere."</string>
+    <string msgid="9024065710924542964" name="UGC_NOTIFICATION_SETTINGS_TITLE">"La tua zona, strade e tragitti"</string>
+    <string msgid="1738086435281091835" name="UNABLE_TO_LOAD_DATA">"Impossibile caricare i dati"</string>
+    <string msgid="2670705425616869617" name="UNITS">"Unità di misura"</string>
+    <string msgid="4893017073865021264" name="UNITS_AUTOMATIC">"Automatica"</string>
+    <string msgid="7876257382820058712" name="UNITS_IMPERIAL">"Miglia"</string>
+    <string msgid="117093659918958729" name="UNITS_METRIC">"Chilometri"</string>
+    <string msgid="6580177403276978686" name="VEHICLE_SETTINGS_TITLE">"Impostazioni del veicolo"</string>
+    <string msgid="5710449106540223967" name="VIDEO_SETTINGS_TITLE">"Impostazioni video"</string>
+    <string msgid="8573971634735221604" name="WARNING_SEVERITY_CONTENT_DESCRIPTION">"Avviso"</string>
+    <string msgid="4161070547943419580" name="WAZE_ATTRIBUTION_DIALOG_CONTENT_ALREADY_INSTALLED">"Questi problemi sono segnalati dalla community di utenti Waze tramite l\'app di navigazione e di informazioni sul traffico Waze.\n\nInvia segnalazioni utili con Waze."</string>
+    <string msgid="6296131061336170909" name="WAZE_ATTRIBUTION_DIALOG_CONTENT_NOT_INSTALLED">"Questi problemi sono segnalati dalla community di utenti Waze tramite l\'app di navigazione e di informazioni sul traffico Waze.\n\nScarica Waze e invia segnalazioni utili."</string>
+    <string msgid="6423551936568425898" name="WAZE_ATTRIBUTION_DIALOG_DISMISS">"Chiudi"</string>
+    <string msgid="3887930200748972622" name="WAZE_ATTRIBUTION_DIALOG_GET_WAZE">"Prova Waze"</string>
+    <string msgid="1221046906467082448" name="WAZE_ATTRIBUTION_DIALOG_OPEN_WAZE">"Apri Waze"</string>
+    <string msgid="3260434220328093048" name="WAZE_ATTRIBUTION_DIALOG_TITLE">"Segnalato dagli utenti di Waze"</string>
+    <string msgid="8332911579512824593" name="WAZE_NOT_AVAILABLE">"Impossibile aprire Waze."</string>
+    <string msgid="6557028535722391556" name="WEIGHT_RESTRICTED">"Limitazioni di peso"</string>
+    <string msgid="6708487118738049074" name="WEIGHT_SHORT_TONS_ABBREVIATED">"<ns1:g id="SHORT_TONS">%s</ns1:g> tonn. americane"</string>
+    <string msgid="6017366300652518735" name="WEIGHT_SHORT_TONS_LONGFORM">"<ns1:g id="SHORT_TONS">%s</ns1:g> tonnellate"</string>
+    <string msgid="444421108406293150" name="WIFI_ONLY_TITLE">"Solo Wi-Fi"</string>
+    <string msgid="3295691316074264165" name="YOUR_BUSINESS_CATEGORY_TITLE">"La tua attività"</string>
+    <string msgid="5038513763080836030" name="YOUR_BUSINESS_OPT_OUT_SETTINGS_SUMMARY">"Riceverai promemoria e aggiornamenti sulla tua attività"</string>
+    <string msgid="7935186140284907584" name="YOUR_BUSINESS_SETTINGS_SUMMARY">"Ricevi promemoria e aggiornamenti sulla tua attività"</string>
+    <string msgid="2331921429803725767" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_OPT_OUT_SETTING_SUMMARY">"Riceverai aggiornamenti quando il tuo profilo avrà un nuovo follower o riceverà una richiesta di seguirti"</string>
+    <string msgid="6256049818965016724" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_SETTING_SUMMARY">"Ricevi aggiornamenti quando il tuo profilo ha un nuovo follower o riceve una richiesta di seguirti"</string>
+    <string msgid="5149876045450704766" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_SETTING_TITLE">"Il tuo profilo di Maps e i tuoi follower"</string>
+    <string msgid="6302976185347215423" name="YOUR_REVIEWS_CATEGORY_TITLE">"Le tue recensioni"</string>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Portami a casa"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Torna indietro"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Altre opzioni"</string>
@@ -53,6 +619,7 @@
     <string msgid="406453423630273620" name="close_drawer">"Chiudi il menu di navigazione"</string>
     <string msgid="7573152094250666567" name="close_sheet">"Chiudi il foglio"</string>
     <string msgid="5389587048670450460" name="collapsed">"Controllo compresso"</string>
+    <string msgid="6083905920877235314" name="copy">"Copia"</string>
     <string msgid="3499643850558715142" name="date_input_headline">"Data inserita"</string>
     <string msgid="8562356184193964298" name="date_input_headline_description">"Data inserita: %1$s"</string>
     <string msgid="5281836720766682161" name="date_input_invalid_for_pattern">"La data non corrisponde al pattern previsto: %1$s"</string>
@@ -90,12 +657,27 @@
     <string msgid="1890207353314751437" name="dropdown_menu">"Menu a discesa"</string>
     <string name="error_a11y_label">Errore: non valido</string>
     <string name="error_icon_content_description">Errore</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Avanzate"</string>
     <string msgid="5974471714631304645" name="expanded">"Controllo espanso"</string>
     <string name="exposed_dropdown_menu_content_description">Mostra il menu a discesa</string>
     <string name="icon_content_description">Icona della finestra di dialogo</string>
     <string msgid="6827826412747255547" name="in_progress">"In corso"</string>
     <string msgid="7933458017204019916" name="indeterminate">"Elemento parzialmente selezionato"</string>
     <string name="item_view_role_description">Scheda</string>
+    <string msgid="9210820207514660247" name="maps_API_OUTDATED_WARNING">"Quest\'app utilizza una versione di Maps obsoleta e potrebbe non funzionare correttamente."</string>
+    <string msgid="6807007598222074916" name="maps_COMPASS_ALT_TEXT">"Bussola"</string>
+    <string msgid="3371108618085690173" name="maps_DIRECTIONS_ALT_TEXT">"Indicazioni stradali"</string>
+    <string msgid="1189955191774927738" name="maps_GOOGLE_MAP">"Mappa Google"</string>
+    <string msgid="2264878565827236979" name="maps_LEVEL_ALT_TEXT">"Livello {0}"</string>
+    <string msgid="6875584096776566703" name="maps_MY_LOCATION_ALT_TEXT">"La mia posizione"</string>
+    <string msgid="7383272971595812419" name="maps_NO_GMM">"Google Maps non è installato o è disattivato"</string>
+    <string msgid="1460559660387626258" name="maps_OPEN_GMM_ALT_TEXT">"Apri in Google Maps"</string>
+    <string msgid="175515198141357876" name="maps_YOUR_LOCATION">"La tua posizione attuale"</string>
+    <string msgid="8499414555829263194" name="maps_ZOOM_IN_ALT_TEXT">"Aumenta lo zoom"</string>
+    <string msgid="8347872495490681122" name="maps_ZOOM_OUT_ALT_TEXT">"Diminuisci lo zoom"</string>
+    <string msgid="7422837848992631163" name="maps_default_user_error_message">"Spiacenti. Si è verificato un errore."</string>
+    <string msgid="2220756820707696446" name="maps_invalid_panorama_data">"Panorama non valido."</string>
+    <string msgid="2960355978460391458" name="maps_marker_default_on_select_content_description">"Indicatore"</string>
     <string name="material_clock_toggle_content_description">Seleziona AM o PM</string>
     <string name="material_hour_24h_suffix">%1$s ore</string>
     <string name="material_hour_selection">Seleziona l\'ora</string>
@@ -109,6 +691,31 @@
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Seleziona l\'ora</string>
     <string name="material_timepicker_text_input_mode_description">Passa alla modalità di immissione testo per inserire l\'ora.</string>
+    <string msgid="2939063992730535343" name="mr_button_content_description">"Trasmetti"</string>
+    <string msgid="6073720094880410356" name="mr_cast_button_connected">"Trasmetti. Connesso"</string>
+    <string msgid="6629927151350192407" name="mr_cast_button_connecting">"Trasmetti. Connessione"</string>
+    <string msgid="8071109333469380363" name="mr_cast_button_disconnected">"Trasmetti. Disconnesso"</string>
+    <string msgid="2175930138959078155" name="mr_cast_dialog_title_view_placeholder">"Nessuna informazione disponibile"</string>
+    <string msgid="6114250663023140921" name="mr_chooser_searching">"Ricerca di dispositivi"</string>
+    <string msgid="1419936397646839840" name="mr_chooser_title">"Trasmetti a"</string>
+    <string msgid="3330502667672708728" name="mr_controller_album_art">"Copertina dell\'album"</string>
+    <string msgid="9171231064758955152" name="mr_controller_casting_screen">"Trasmissione dello schermo attiva"</string>
+    <string msgid="5684434439232634509" name="mr_controller_close_description">"Chiudi"</string>
+    <string msgid="2585048604188129749" name="mr_controller_collapse_group">"Comprimi"</string>
+    <string msgid="7812275474138309497" name="mr_controller_disconnect">"Disconnetti"</string>
+    <string msgid="4521419834052044261" name="mr_controller_expand_group">"Espandi"</string>
+    <string msgid="855271725131981086" name="mr_controller_no_info_available">"Nessuna informazione disponibile"</string>
+    <string msgid="5495452265246139458" name="mr_controller_no_media_selected">"Nessun contenuto multimediale selezionato"</string>
+    <string msgid="747801650871398383" name="mr_controller_pause">"Metti in pausa"</string>
+    <string msgid="1253345086594430054" name="mr_controller_play">"Riproduci"</string>
+    <string msgid="5497722768305745508" name="mr_controller_stop">"Interrompi"</string>
+    <string msgid="804210341192624074" name="mr_controller_stop_casting">"Interrompi trasmissione"</string>
+    <string msgid="2955862765169128170" name="mr_controller_volume_slider">"Dispositivo di scorrimento del volume"</string>
+    <string msgid="4115858704575247342" name="mr_dialog_default_group_name">"Gruppo"</string>
+    <string msgid="4307018456678388936" name="mr_dialog_groupable_header">"Aggiungi un dispositivo"</string>
+    <string msgid="6068257520605505468" name="mr_dialog_transferable_header">"Riproduci su un gruppo"</string>
+    <string msgid="7449553026175453403" name="mr_system_route_name">"Sistema"</string>
+    <string msgid="4088331695424166162" name="mr_user_route_category_name">"Dispositivi"</string>
     <string name="mtrl_badge_numberless_content_description">Nuova notifica</string>
     <string name="mtrl_checkbox_state_description_checked">Selezionata</string>
     <string name="mtrl_checkbox_state_description_indeterminate">Parzialmente selezionata</string>
@@ -156,11 +763,14 @@
     <string name="mtrl_timepicker_confirm">OK</string>
     <string msgid="542007171693138492" name="navigation_menu">"Menu di navigazione"</string>
     <string msgid="6610465462668679431" name="not_selected">"Opzione non selezionata"</string>
+    <string msgid="6573031135582639649" name="not_set">"Non impostato"</string>
     <string msgid="875452955155264703" name="off">"Off"</string>
     <string msgid="8655164131929253426" name="on">"On"</string>
     <string name="password_toggle_content_description">Mostra password</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\"copiato negli appunti."</string>
     <string msgid="5941395253238309765" name="range_end">"Fine intervallo"</string>
     <string msgid="7097486360902471446" name="range_start">"Inizio intervallo"</string>
+    <string msgid="1660595293173844803" name="report_a_problem">"Segnala un problema"</string>
     <string msgid="6420018528474762666" name="search_bar_search">"Cerca"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Cerca"</string>
     <string name="searchview_clear_text_content_description">Cancella testo</string>
@@ -170,6 +780,7 @@
     <string msgid="3962933905051144957" name="snackbar_dismiss">"Chiudi"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="7189888345201419934" name="suggestions_available">"Suggerimenti sotto"</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
     <string msgid="2561197295334830845" name="switch_role">"Opzione"</string>
     <string msgid="1672349317127674378" name="tab">"Scheda"</string>
     <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> percento."</string>
@@ -187,4 +798,6 @@
     <string msgid="2232702812657998674" name="time_picker_pm">"PM"</string>
     <string msgid="2732804537909054941" name="tooltip_long_press_label">"Mostra descrizione comando"</string>
     <string msgid="8191239805703103845" name="tooltip_pane_description">"Descrizione comando"</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"OFF"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"ON"</string>
 </resources>

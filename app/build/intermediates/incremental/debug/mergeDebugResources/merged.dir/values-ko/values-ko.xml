@@ -1,9 +1,575 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="CALLOUT_ALPHABETIC_LABELS">
+        <item>"A"</item>
+        <item>"B"</item>
+        <item>"C"</item>
+        <item>"D"</item>
+        <item>"E"</item>
+        <item>"F"</item>
+        <item>"G"</item>
+        <item>"H"</item>
+    </string-array>
+    <string-array name="SHOW_SCALEBAR_ENTRIES">
+        <item>"확대/축소할 때"</item>
+        <item>"항상"</item>
+    </string-array>
+    <string-array name="maps_compass_directions">
+        <item>"북"</item>
+        <item>"북동"</item>
+        <item>"동"</item>
+        <item>"남동"</item>
+        <item>"남"</item>
+        <item>"남서"</item>
+        <item>"서"</item>
+        <item>"북서"</item>
+    </string-array>
+    <string-array name="maps_full_compass_directions">
+        <item>"북쪽"</item>
+        <item>"북동쪽"</item>
+        <item>"동쪽"</item>
+        <item>"남동쪽"</item>
+        <item>"남쪽"</item>
+        <item>"남서쪽"</item>
+        <item>"서쪽"</item>
+        <item>"북서쪽"</item>
+    </string-array>
+    <plurals formatted="false" msgid="4326673060750344846" name="BIKESHARING_BIKES_AVAILABLE">
+        <item quantity="other"> 자전거 <ns1:g id="BIKES_AVAILABLE_5">%d</ns1:g>대 이용 가능 </item>
+        <item quantity="one"> 자전거 <ns1:g id="BIKES_AVAILABLE_1">%d</ns1:g>대 이용 가능 </item>
+    </plurals>
+    <plurals formatted="false" msgid="2128912764519502183" name="BIKESHARING_DOCKS_AVAILABLE">
+        <item quantity="other"> 보관대 <ns1:g id="NUM_DOCKS_5">%d</ns1:g>개 이용 가능 </item>
+        <item quantity="one"> 보관대 <ns1:g id="NUM_DOCKS_1">%d</ns1:g>개 이용 가능 </item>
+    </plurals>
+    <plurals formatted="false" msgid="3587957769510236203" name="COMPASS_ACCESSIBILITY_BEARING">
+        <item quantity="other">지도 방향이 <ns1:g id="MAP_BEARING_5">%d</ns1:g>도입니다.</item>
+        <item quantity="one">지도 방향이 <ns1:g id="MAP_BEARING_1">%d</ns1:g>도입니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="4689781638232061047" name="DA_DAYS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g>일</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g>일</item>
+    </plurals>
+    <plurals formatted="false" msgid="6144185587501044196" name="DA_DAYS_ABBREVIATED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g>일</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g>일</item>
+    </plurals>
+    <plurals formatted="false" msgid="6393943752589702797" name="DA_DAYS_ABBREVIATED_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g>일</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g>일</item>
+    </plurals>
+    <plurals formatted="false" msgid="2798004425159140146" name="DA_DAYS_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g>일</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_1">%s</ns1:g>일</item>
+    </plurals>
+    <plurals formatted="false" msgid="4077931414703271286" name="DA_HOURS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g>시간</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_1">%s</ns1:g>시간</item>
+    </plurals>
+    <plurals formatted="false" msgid="7410132942057247478" name="DA_HOURS_ABBREVIATED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g>시간</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_1">%s</ns1:g>시간</item>
+    </plurals>
+    <plurals formatted="false" msgid="5724380721819842832" name="DA_HOURS_ABBREVIATED_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g>시간</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_1">%s</ns1:g>시간</item>
+    </plurals>
+    <plurals formatted="false" msgid="302465155895970807" name="DA_MINUTES">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g>분</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g>분</item>
+    </plurals>
+    <plurals formatted="false" msgid="6854365863287202322" name="DA_MINUTES_ABBREVIATED">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g>분</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g>분</item>
+    </plurals>
+    <plurals formatted="false" msgid="7896893686804578870" name="DA_MINUTES_ABBREVIATED_SHORT">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g>분</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g>분</item>
+    </plurals>
+    <plurals formatted="false" msgid="2581719964976016874" name="DA_MINUTES_BARE_FOLLOWING_HOURS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g></item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_1">%s</ns1:g></item>
+    </plurals>
+    <plurals formatted="false" msgid="6345729166163721080" name="DA_SECONDS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_SECONDS_5">%s</ns1:g>초</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_SECONDS_1">%s</ns1:g>초</item>
+    </plurals>
+    <plurals formatted="false" msgid="1032855961281750509" name="DA_SPEECH_CONTINUE_FOR_X_FEET">
+        <item quantity="other"><ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g>피트 직진입니다.</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_FEET_1">%1$s</ns1:g>피트 직진입니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="8557996246843277515" name="DA_SPEECH_CONTINUE_FOR_X_KILOMETERS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g>킬로미터 직진입니다.</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_KILOMETERS_1">%1$s</ns1:g>킬로미터 직진입니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="605905875424024433" name="DA_SPEECH_CONTINUE_FOR_X_METERS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g>미터 직진입니다.</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_METERS_1">%1$s</ns1:g>미터 직진입니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="5775940963454325209" name="DA_SPEECH_CONTINUE_FOR_X_MILES">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g>마일 직진입니다.</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MILES_1">%1$s</ns1:g>마일 직진입니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="4742053200406294830" name="DA_SPEECH_CONTINUE_FOR_X_YARDS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g>야드 직진입니다.</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_YARDS_1">%1$s</ns1:g>야드 직진입니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="2823664751659973629" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_FEET">
+        <item quantity="other"><ns1:g id="ROAD_NAME_10">%2$s</ns1:g>에서 <ns1:g id="NUMBER_OF_FEET_11">%1$s</ns1:g>피트 직진입니다.</item>
+        <item quantity="one"><ns1:g id="ROAD_NAME_2">%2$s</ns1:g>에서 <ns1:g id="NUMBER_OF_FEET_3">%1$s</ns1:g>피트 직진입니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="4715395619972917121" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_KILOMETERS">
+        <item quantity="other"><ns1:g id="ROAD_NAME_10">%2$s</ns1:g>에서 <ns1:g id="NUMBER_OF_KILOMETERS_11">%1$s</ns1:g>킬로미터 직진입니다.</item>
+        <item quantity="one"><ns1:g id="ROAD_NAME_2">%2$s</ns1:g>에서 <ns1:g id="NUMBER_OF_KILOMETERS_3">%1$s</ns1:g>킬로미터 직진입니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="3492075494171740042" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_METERS">
+        <item quantity="other"><ns1:g id="ROAD_NAME_10">%2$s</ns1:g>에서 <ns1:g id="NUMBER_OF_METERS_11">%1$s</ns1:g>미터 직진입니다.</item>
+        <item quantity="one"><ns1:g id="ROAD_NAME_2">%2$s</ns1:g>에서 <ns1:g id="NUMBER_OF_METERS_3">%1$s</ns1:g>미터 직진입니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="6281859705184148951" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_MILES">
+        <item quantity="other"><ns1:g id="ROAD_NAME_10">%2$s</ns1:g>에서 <ns1:g id="NUMBER_OF_MILES_11">%1$s</ns1:g>마일 직진입니다.</item>
+        <item quantity="one"><ns1:g id="ROAD_NAME_2">%2$s</ns1:g>에서 <ns1:g id="NUMBER_OF_MILES_3">%1$s</ns1:g>마일 직진입니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="1750899323638437779" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_YARDS">
+        <item quantity="other"><ns1:g id="ROAD_NAME_10">%2$s</ns1:g>에서 <ns1:g id="NUMBER_OF_YARDS_11">%1$s</ns1:g>야드 직진입니다.</item>
+        <item quantity="one"><ns1:g id="ROAD_NAME_2">%2$s</ns1:g>에서 <ns1:g id="NUMBER_OF_YARDS_3">%1$s</ns1:g>야드 직진입니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="6824002006206583196" name="DA_SPEECH_IN_X_FEET">
+        <item quantity="other"><ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g>피트 앞</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_FEET_1">%1$s</ns1:g>피트 앞</item>
+    </plurals>
+    <plurals formatted="false" msgid="3927150446141308796" name="DA_SPEECH_IN_X_KILOMETERS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g>킬로미터 앞</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_KILOMETERS_1">%1$s</ns1:g>킬로미터 앞</item>
+    </plurals>
+    <plurals formatted="false" msgid="8424550718788882600" name="DA_SPEECH_IN_X_METERS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g>미터 앞</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_METERS_1">%1$s</ns1:g>미터 앞</item>
+    </plurals>
+    <plurals formatted="false" msgid="5844894205706436077" name="DA_SPEECH_IN_X_MILES">
+        <item quantity="other"><ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g>마일 앞</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MILES_1">%1$s</ns1:g>마일 앞</item>
+    </plurals>
+    <plurals formatted="false" msgid="1857544676918506731" name="DA_SPEECH_IN_X_YARDS">
+        <item quantity="other"><ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g>야드 앞</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_YARDS_1">%1$s</ns1:g>야드 앞</item>
+    </plurals>
+    <plurals formatted="false" msgid="2339336258154180702" name="DA_SPEED_FORMAT_KILOMETERS_PER_HOUR_EXTENDED">
+        <item quantity="other">시속 <ns1:g id="NUMBER_OF_KILOMETERS_5">%s</ns1:g>킬로미터</item>
+        <item quantity="one">시속 <ns1:g id="NUMBER_OF_KILOMETERS_1">%s</ns1:g>킬로미터</item>
+    </plurals>
+    <plurals formatted="false" msgid="6140682604650140709" name="DA_SPEED_FORMAT_MILES_PER_HOUR_EXTENDED">
+        <item quantity="other">시속 <ns1:g id="NUMBER_OF_MILES_5">%s</ns1:g>마일</item>
+        <item quantity="one">시속 <ns1:g id="NUMBER_OF_MILES_1">%s</ns1:g>마일</item>
+    </plurals>
+    <plurals formatted="false" msgid="5488601092985524575" name="DA_YOUR_DESTINATION_IS_X_FEET_AHEAD">
+        <item quantity="other">목적지가 <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g>피트 앞에 있습니다.</item>
+        <item quantity="one">목적지가 <ns1:g id="NUMBER_OF_FEET_1">%1$s</ns1:g>피트 앞에 있습니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="3956464927073329258" name="DA_YOUR_DESTINATION_IS_X_KILOMETERS_AHEAD">
+        <item quantity="other">목적지가 <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g>킬로미터 앞에 있습니다.</item>
+        <item quantity="one">목적지가 <ns1:g id="NUMBER_OF_KILOMETERS_1">%1$s</ns1:g>킬로미터 앞에 있습니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="1869769789353944376" name="DA_YOUR_DESTINATION_IS_X_METERS_AHEAD">
+        <item quantity="other">목적지가 <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g>미터 앞에 있습니다.</item>
+        <item quantity="one">목적지가 <ns1:g id="NUMBER_OF_METERS_1">%1$s</ns1:g>미터 앞에 있습니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="3933752078325316030" name="DA_YOUR_DESTINATION_IS_X_MILES_AHEAD">
+        <item quantity="other">목적지가 <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g>마일 앞에 있습니다.</item>
+        <item quantity="one">목적지가 <ns1:g id="NUMBER_OF_MILES_1">%1$s</ns1:g>마일 앞에 있습니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="3730606906820969126" name="DA_YOUR_DESTINATION_IS_X_YARDS_AHEAD">
+        <item quantity="other">목적지가 <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g>야드 앞에 있습니다.</item>
+        <item quantity="one">목적지가 <ns1:g id="NUMBER_OF_YARDS_1">%1$s</ns1:g>야드 앞에 있습니다.</item>
+    </plurals>
+    <plurals formatted="false" msgid="4613320652217353645" name="TRANSIT_NUM_STOPS">
+        <item quantity="other">정류장 <ns1:g id="NUMBER_OF_STOPS_5">%d</ns1:g>개</item>
+        <item quantity="one">정류장 <ns1:g id="NUMBER_OF_STOPS_1">%d</ns1:g>개</item>
+    </plurals>
+    <plurals formatted="false" msgid="5579098508661025925" name="TRANSIT_PLUS_NUMBER_OF_ALERTS_TITLE">
+        <item quantity="other">알림 <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g>개 이상</item>
+        <item quantity="one">알림 <ns1:g id="NUMBER_OF_ALERTS_0">%d</ns1:g>개 이상</item>
+    </plurals>
+    <plurals formatted="false" msgid="7409021725106195613" name="TRANSIT_PLUS_NUMBER_OF_ALERTS_TITLE_CONTENT_DESCRIPTION">
+        <item quantity="other">외 알림 <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g>개</item>
+        <item quantity="one">외 알림 <ns1:g id="NUMBER_OF_ALERTS_0">%d</ns1:g>개</item>
+    </plurals>
+    <plurals formatted="false" msgid="8048195651219433071" name="TRANSIT_PLUS_NUMBER_OF_INFORMATION_ITEMS_TITLE">
+        <item quantity="other">기타 <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g>개</item>
+        <item quantity="one">기타 <ns1:g id="NUMBER_OF_ALERTS_0">%d</ns1:g>개</item>
+    </plurals>
+    <plurals formatted="false" msgid="3673235514357385007" name="TRANSIT_PLUS_NUMBER_OF_INFORMATION_ITEMS_TITLE_CONTENT_DESCRIPTION">
+        <item quantity="other">외 <ns1:g id="NUMBER_OF_INFORMATION_1">%d</ns1:g>개</item>
+        <item quantity="one">외 <ns1:g id="NUMBER_OF_INFORMATION_0">%d</ns1:g>개</item>
+    </plurals>
     <plurals name="mtrl_badge_content_description">
     <item quantity="one">새 알림 %d개</item>
     <item quantity="other">새 알림 %d개</item>
   </plurals>
+    <string msgid="988766512127533844" name="ABOUT">"제품 정보, 이용약관, 개인정보처리방침"</string>
+    <string msgid="4382378373633137407" name="ACCESSIBILITY_ACTIVATE_TO_CLOSE_STEP_LIST">"단계별 목록을 닫으려면 활성화하세요."</string>
+    <string msgid="8888075998205469082" name="ACCESSIBILITY_ACTIVATE_TO_OPEN_STEP_LIST">"단계별 목록을 열려면 활성화하세요."</string>
+    <string msgid="7470955658075607809" name="ACCESSIBILITY_ALTERNATE_ROUTE_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g> 경유 대체 경로 <ns1:g id="DURATION">%1$s</ns1:g> 소요"</string>
+    <string msgid="1096848458128224503" name="ACCESSIBILITY_ALTERNATE_ROUTE_FUEL_EFFICIENT_DESCRIPTION">"연비가 가장 좋은 경로"</string>
+    <string msgid="8434539979603521046" name="ACCESSIBILITY_ALTERNATE_ROUTE_HAS_TOLLS_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g>을(를) 경유하는 대체 경로 <ns1:g id="DURATION">%1$s</ns1:g>, 요금 있음"</string>
+    <string msgid="6280010901313672282" name="ACCESSIBILITY_ALTERNATE_ROUTE_HAS_TOLL_PRICE_DESCRIPTION">"대체 경로는 <ns1:g id="ROAD">%2$s</ns1:g> 경유, <ns1:g id="DURATION">%1$s</ns1:g> 소요 예정이며 요금은 <ns1:g id="COST">%3$s</ns1:g>입니다."</string>
+    <string msgid="4147878166568539021" name="ACCESSIBILITY_ALTERNATE_ROUTE_NO_TOLLS_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g>을(를) 경유하는 대체 경로 <ns1:g id="DURATION">%1$s</ns1:g>, 요금 없음"</string>
+    <string msgid="6020573412357611477" name="ACCESSIBILITY_COMPASS">"북쪽이 위에 표시되는 노스업(North up) 보기입니다."</string>
+    <string msgid="8223442679494597781" name="ACCESSIBILITY_DIRECTIONS_PROCEED_TO_METERS_WITH_STEP">"<ns1:g id="STEP_NUMBER">%1$d</ns1:g>걸음, <ns1:g id="DISTANCE">%2$s</ns1:g> 직진"</string>
+    <string msgid="7868137419995936422" name="ACCESSIBILITY_DIRECTIONS_STEP_LIST_TO">"<ns1:g id="DESTINATION">%s</ns1:g>까지 가기 위한 단계별 안내. 확장하려면 활성화하세요."</string>
+    <string msgid="5761061967444438907" name="ACCESSIBILITY_DIRECTION_STEP_PREFIX">"<ns1:g id="STEP_NUMBER">%1$d</ns1:g>걸음, <ns1:g id="STEP_DESCRIPTION">%2$s</ns1:g>"</string>
+    <string msgid="5429655055049309673" name="ACCESSIBILITY_LABEL_HAZARDOUS_GOODS_RESTRICTED">"위험물 제한"</string>
+    <string msgid="7244890995607172810" name="ACCESSIBILITY_LABEL_HEIGHT_RESTRICTED">"높이 제한"</string>
+    <string msgid="5720128131726601812" name="ACCESSIBILITY_LABEL_HEIGHT_RESTRICTED_WITH_VALUE">"높이 제한(<ns1:g id="HEIGHT">%s</ns1:g>)"</string>
+    <string msgid="2427955214381665545" name="ACCESSIBILITY_LABEL_TRUCKS_RESTRICTED">"트럭 제한"</string>
+    <string msgid="1735969374518715138" name="ACCESSIBILITY_LABEL_WEIGHT_RESTRICTED">"중량 제한"</string>
+    <string msgid="2228263168852010676" name="ACCESSIBILITY_LABEL_WEIGHT_RESTRICTED_WITH_VALUE">"중량 제한(<ns1:g id="WEIGHT">%s</ns1:g>)"</string>
+    <string msgid="3500168200113756692" name="ACCESSIBILITY_LONG_PAUSE">". "</string>
+    <string msgid="4028351416429434451" name="ACCESSIBILITY_SELECTED_ROUTE_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g> 도로를 경유하는 <ns1:g id="DURATION">%1$s</ns1:g>짜리 경로를 선택함"</string>
+    <string msgid="5435510447657254534" name="ACCESSIBILITY_SELECTED_ROUTE_HAS_TOLLS_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g> 도로를 경유하는 선택된 <ns1:g id="DURATION">%1$s</ns1:g>짜리 경로에 통행료가 있음"</string>
+    <string msgid="1753061936075193628" name="ACCESSIBILITY_SELECTED_ROUTE_HAS_TOLL_PRICE_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g> 도로를 경유하는 선택된 <ns1:g id="DURATION">%1$s</ns1:g>짜리 경로에 <ns1:g id="COST">%3$s</ns1:g> 통행료가 있음"</string>
+    <string msgid="7666497790505910181" name="ACCESSIBILITY_SELECTED_ROUTE_NO_TOLLS_DESCRIPTION">"<ns1:g id="ROAD">%2$s</ns1:g> 도로를 경유하는 선택된 <ns1:g id="DURATION">%1$s</ns1:g>짜리 경로에 통행료가 없음"</string>
+    <string msgid="9109457196557412064" name="ACCESSIBILITY_SENTENCE_DELIMITER">", "</string>
+    <string msgid="8567406792741571450" name="ACCESSIBILITY_SETTINGS_TITLE">"접근성 설정"</string>
+    <string msgid="8175283740736118872" name="ACCESSIBILITY_SHORT_PAUSE">", "</string>
+    <string msgid="8994692387102653205" name="ACCESSIBILITY_STREET_VIEW_WITH_DESTINATION">"<ns1:g id="DESTINATION">%1$s</ns1:g>의 스트리트 뷰"</string>
+    <string msgid="6051617480676658328" name="ACCESSIBILITY_STREET_VIEW_WITH_STEP">"<ns1:g id="STEP_NUMBER">%1$d</ns1:g>걸음 앞의 스트리트 뷰"</string>
+    <string msgid="2864917498473472285" name="ACCESSIBILITY_WALK_ROUTE">"도보 경로"</string>
+    <string msgid="8493757823683214418" name="ALERT_DETAILS_CARD_CLICKABLE_PROMPT">"자세히 알아보기"</string>
+    <string msgid="3989324736757060364" name="ALERT_SEVERITY_CONTENT_DESCRIPTION">"알림"</string>
+    <string msgid="7887415291228067160" name="APP_LANGUAGE_SETTINGS_TITLE">"앱 언어"</string>
+    <string msgid="18182619617560500" name="ARRIVE_AT_TIME">"도착 시간: <ns1:g id="ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="3456517746042480651" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"환경설정을 토대로 새로운 장소 및 인기 장소에 관한 소식을 받고 있습니다."</string>
+    <string msgid="8609071464979199056" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_SETTINGS_SUMMARY">"내 환경설정을 토대로 신규 및 인기 장소에 관한 최신 소식을 받아보세요."</string>
+    <string msgid="7386889502955593752" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_SETTINGS_TITLE">"신규 및 인기 장소"</string>
+    <string msgid="4073140123776083415" name="BIKESHARING_RETURN_BIKE">"자전거 반납"</string>
+    <string msgid="3764472074385554783" name="BIKESHARING_UNLOCK_BIKE">"자전거 이용"</string>
+    <string msgid="4321720802782027634" name="BIKESHARING_UNLOCK_IN_X">"<ns1:g id="APP_NAME">%s</ns1:g>에서 이용"</string>
+    <string msgid="906252415244469164" name="BUSINESS_MESSAGE_FROM_CUSTOMER_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"고객이 Google에서 내 비즈니스에 메시지를 보낼 때 알림을 받고 있습니다."</string>
+    <string msgid="2660141319896744644" name="BUSINESS_MESSAGE_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"지도에서 비즈니스에 질문한 사항에 답변이 게시될 때 알림을 받고 있습니다."</string>
+    <string msgid="6503029847043791301" name="BUSINESS_MESSAGE_NOTIFICATION_SETTINGS_SUMMARY">"Google 지도에 표시된 비즈니스에 대한 질문에 답변이 추가되면 알림 받기"</string>
+    <string msgid="717732884052571101" name="BUSINESS_MESSAGE_NOTIFICATION_SETTINGS_TITLE">"메시지"</string>
+    <string msgid="6956338141212937008" name="CANCEL_BUTTON">"취소"</string>
+    <string msgid="7385460563057493069" name="CHAT_SETTINGS_ITEM_TITLE">"채팅"</string>
+    <string msgid="3849295477853657853" name="CLIENT_SIDE_RECENT_HISTORY_ENABLED">"이 기기에 최근 검색 저장"</string>
+    <string msgid="4356531394932608249" name="COLLABORATIVE_LISTS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"내가 소유 및 수정하는 목록에 대한 소식을 받고 있습니다."</string>
+    <string msgid="8615172296793020463" name="COLLABORATIVE_LISTS_NOTIFICATION_SETTINGS_SUMMARY">"내가 소유자이거나 공동작업자인 목록에 대한 업데이트를 받으세요."</string>
+    <string msgid="6724970202733370522" name="COLLABORATIVE_LISTS_NOTIFICATION_SETTINGS_TITLE">"목록"</string>
+    <string msgid="3990714189475821790" name="COMMUTE_PROFILE_OPT_OUT_SETTINGS_SUMMARY">"통근 환경설정에 대한 정보 업데이트 알림을 받고 있습니다."</string>
+    <string msgid="2350458858231203291" name="COMMUTE_PROFILE_SETTINGS_SUMMARY">"통근 설정과 관련된 최신 정보가 있을 경우 알림을 받아보세요."</string>
+    <string msgid="7744486401672603894" name="COMMUTE_PROFILE_SETTINGS_TITLE">"통근 프로필"</string>
+    <string msgid="7369031720555343766" name="COMPASS_ACCESSIBILITY_FOLLOW">"내 방향 따르기"</string>
+    <string msgid="5236771457267031238" name="COMPASS_ACCESSIBILITY_NORTH_UP">"항상 북쪽을 위쪽으로"</string>
+    <string msgid="7676079846529082801" name="CYCLING_ELEVATION_X_DECLINE">"-<ns1:g id="DISTANCE">%s</ns1:g> 내리막길"</string>
+    <string msgid="8573003133952335858" name="CYCLING_ELEVATION_X_INCLINE">"+<ns1:g id="DISTANCE">%s</ns1:g> 오르막길"</string>
+    <string msgid="2150378996327208305" name="CYCLING_ROAD_TYPE_HIGHWAY">"고속도로"</string>
+    <string msgid="3738580863381374955" name="CYCLING_ROAD_TYPE_MAIN_ROAD">"주요 도로"</string>
+    <string msgid="784178227646746623" name="CYCLING_ROAD_TYPE_MARKED_BIKE_LANE">"표시된 자전거 도로"</string>
+    <string msgid="1244790010869914494" name="CYCLING_ROAD_TYPE_MINOR_ROAD">"작은 도로"</string>
+    <string msgid="5593259990952540902" name="CYCLING_ROAD_TYPE_PEDESTRIAN_PATH">"보도"</string>
+    <string msgid="7434121718026354602" name="CYCLING_ROAD_TYPE_SEPARATE_BIKE_LANE">"자전거 전용도로"</string>
+    <string msgid="2993992995228313773" name="CYCLING_ROAD_TYPE_SHARED_PATH">"자전거 보행자 겸용 도로"</string>
+    <string msgid="3315402422807617192" name="CYCLING_ROAD_TYPE_STAIRS">"계단"</string>
+    <string msgid="8104447113497885959" name="CYCLING_ROUTE_LABEL_BEST_ROUTE">"최적 경로"</string>
+    <string msgid="595174014278343405" name="CYCLING_ROUTE_LABEL_FASTEST">"최단 소요 시간"</string>
+    <string msgid="5308557378285449822" name="CYCLING_ROUTE_LABEL_LESS_HIGHWAYS">"고속도로가 더 적음"</string>
+    <string msgid="5788540842553685198" name="CYCLING_ROUTE_LABEL_LESS_STEEP_HILLS">"언덕이 적음"</string>
+    <string msgid="6544580293408762300" name="CYCLING_ROUTE_LABEL_LESS_TRAFFIC">"교통량이 더 적음"</string>
+    <string msgid="771749047614319020" name="CYCLING_ROUTE_LABEL_LESS_TURNS">"방향 전환 횟수가 더 적음"</string>
+    <string msgid="5514720260010380200" name="CYCLING_ROUTE_LABEL_MORE_BIKE_LANES">"자전거 전용도로가 더 많음"</string>
+    <string msgid="6799295909450023751" name="DA_AT">"<ns1:g id="STRING_0">{0}</ns1:g>에서"</string>
+    <string msgid="6204348838228824214" name="DA_DATA_CONNECTION_LOST">"데이터 연결이 끊어졌습니다..."</string>
+    <string msgid="9055920400292445132" name="DA_DISTANCE_FORMAT_FEET_ABBREVIATED">"<ns1:g id="NUMBER_OF_FEET">%s</ns1:g>피트"</string>
+    <string msgid="1596038795147620692" name="DA_DISTANCE_FORMAT_FEET_EXTENDED">"<ns1:g id="NUMBER_OF_FEET">%s</ns1:g>피트"</string>
+    <string msgid="5955263181315504888" name="DA_DISTANCE_FORMAT_KILOMETERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g>km"</string>
+    <string msgid="566231057264804657" name="DA_DISTANCE_FORMAT_KILOMETERS_EXTENDED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g>킬로미터"</string>
+    <string msgid="4017347679220015543" name="DA_DISTANCE_FORMAT_METERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_METERS">%s</ns1:g>m"</string>
+    <string msgid="1379464276280242796" name="DA_DISTANCE_FORMAT_METERS_EXTENDED">"<ns1:g id="NUMBER_OF_METERS">%s</ns1:g>미터"</string>
+    <string msgid="2515401957955350520" name="DA_DISTANCE_FORMAT_MILES_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g>마일"</string>
+    <string msgid="4237807912458051628" name="DA_DISTANCE_FORMAT_MILES_EXTENDED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g>마일"</string>
+    <string msgid="7253880469383384966" name="DA_DISTANCE_FORMAT_MODE">"metric"</string>
+    <string msgid="4169708828913710793" name="DA_DISTANCE_FORMAT_YARDS_ABBREVIATED">"<ns1:g id="NUMBER_OF_YARDS">%s</ns1:g>yd"</string>
+    <string msgid="3150387851356211916" name="DA_DISTANCE_FORMAT_YARDS_EXTENDED">"<ns1:g id="NUMBER_OF_YARDS">%s</ns1:g>야드"</string>
+    <string msgid="4944833818130154379" name="DA_DISTANCE_RELATIVE_EQUIVALENT">"비슷한<ns1:g id="WHITESPACE">%1$s</ns1:g>거리"</string>
+    <string msgid="8140845091471826735" name="DA_DISTANCE_RELATIVE_LONGER">"<ns1:g id="DISTANCE">%1$s</ns1:g><ns1:g id="WHITESPACE">%2$s</ns1:g>늘어남"</string>
+    <string msgid="4380111419025048248" name="DA_DISTANCE_RELATIVE_SHORTER">"<ns1:g id="DISTANCE">%1$s</ns1:g><ns1:g id="WHITESPACE">%2$s</ns1:g>줄어듦"</string>
+    <string msgid="3065017842969529520" name="DA_EXIT_NAME">"<ns1:g id="EXIT_NAME">{0}</ns1:g> 출구"</string>
+    <string msgid="4966940297863570499" name="DA_EXIT_NUMBER">"<ns1:g id="EXIT_NUMBER">{0}</ns1:g>번 출구"</string>
+    <string msgid="8494855683148237403" name="DA_EXPANDED_NOTIFICATION_SUBTEXT">"<ns1:g id="TIME_REMAINING">%1$s</ns1:g> · <ns1:g id="DISTANCE_REMAINING">%2$s</ns1:g> · <ns1:g id="ETA">%3$s</ns1:g>"</string>
+    <string msgid="8878104100559765265" name="DA_LOCKSCREEN_NOTIFICATION_DIRECTIONS">"<ns1:g id="DISTANCE_TO_NEXT_STEP">%1$s</ns1:g> - <ns1:g id="ROAD_NAME">%2$s</ns1:g>"</string>
+    <string msgid="8553864305083974087" name="DA_LOCKSCREEN_NOTIFICATION_SUBTEXT">"<ns1:g id="DESTINATION_NAME">%1$s</ns1:g> - <ns1:g id="ETA">%2$s</ns1:g>"</string>
+    <string msgid="698528250212661998" name="DA_MINUTES_ABBREVIATED_SHORT_UNIT">"분"</string>
+    <string msgid="7929640078602313092" name="DA_NAME_DELIMITER">" / "</string>
+    <string msgid="3380792810890405138" name="DA_NOTIFICATION_STEP_FORMAT">"<ns1:g id="STRING_0">{0}</ns1:g> - <ns1:g id="STRING_1">{1}</ns1:g>"</string>
+    <string msgid="6662097821719572140" name="DA_OFF_ROUTE">"경로를 벗어났습니다."</string>
+    <string msgid="4249562764540028107" name="DA_ONTO">"<ns1:g id="STRING_0">{0}</ns1:g>(으)로"</string>
+    <string msgid="5914998525734325362" name="DA_POINT_ON_MAP">"지도 상의 지점"</string>
+    <string msgid="1525420669081149187" name="DA_RELATIVE_EQUIVALENT">"비슷한\n소요시간"</string>
+    <string msgid="6345879111462833077" name="DA_RELATIVE_FASTER">"<ns1:g id="MINUTES">%1$s</ns1:g>\n빠름"</string>
+    <string msgid="9026835910813824786" name="DA_RELATIVE_SLOWER">"<ns1:g id="MINUTES">%1$s</ns1:g>\n느림"</string>
+    <string msgid="1136623639867405953" name="DA_REROUTING">"경로 재설정 중..."</string>
+    <string msgid="7438343460352215122" name="DA_ROUTE_PREFIXES">"북,북동,동,남동,남,남서,서,북서"</string>
+    <string msgid="5218446718068301940" name="DA_ROUTE_SUFFIXES">"북,북동,동,남동,남,남서,서,북서,로,거리,로터리,시,방향,고속도로,국도,차선,큰길,장소,도로,가,대로,길"</string>
+    <string msgid="4645745718037033230" name="DA_SPEECH_CONTINUE_FOR_A_HALF_MILE">"반 마일 직진입니다"</string>
+    <string msgid="4164172923590406078" name="DA_SPEECH_CONTINUE_FOR_A_QUARTER_MILE">"1/4마일 직진입니다"</string>
+    <string msgid="4639761855126118140" name="DA_SPEECH_CONTINUE_FOR_ONE_AND_A_HALF_KILOMETERS">"1.5킬로미터 직진입니다"</string>
+    <string msgid="7622810818891191525" name="DA_SPEECH_CONTINUE_FOR_ONE_AND_A_HALF_MILES">"1.5마일 직진입니다"</string>
+    <string msgid="805371831027414281" name="DA_SPEECH_CONTINUE_FOR_THREE_QUARTERS_OF_A_MILE">"3/4마일 직진입니다"</string>
+    <string msgid="9112904440572551597" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_A_HALF_MILE">"<ns1:g id="ROAD_NAME">%1$s</ns1:g>에서 반 마일 직진입니다"</string>
+    <string msgid="1306868173119066430" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_A_QUARTER_MILE">"<ns1:g id="ROAD_NAME">%1$s</ns1:g>에서 1/4마일 직진입니다"</string>
+    <string msgid="1481342479470867549" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_ONE_AND_A_HALF_KILOMETERS">"<ns1:g id="ROAD_NAME">%1$s</ns1:g>에서 1.5킬로미터 직진입니다"</string>
+    <string msgid="6881684665273996002" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_ONE_AND_A_HALF_MILES">"<ns1:g id="ROAD_NAME">%1$s</ns1:g>에서 1.5마일 직진입니다"</string>
+    <string msgid="7098370444643797153" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_THREE_QUARTERS_OF_A_MILE">"<ns1:g id="ROAD_NAME">%1$s</ns1:g>에서 3/4마일 직진입니다"</string>
+    <string msgid="1622868587212934709" name="DA_SPEECH_IN_A_HALF_MILE">"반 마일 앞에서"</string>
+    <string msgid="776151086427605353" name="DA_SPEECH_IN_A_QUARTER_MILE">"1/4마일 앞에서"</string>
+    <string msgid="3825333003762141464" name="DA_SPEECH_IN_ONE_AND_A_HALF_KILOMETERS">"1.5킬로미터 앞에서"</string>
+    <string msgid="6689160907320579504" name="DA_SPEECH_IN_ONE_AND_A_HALF_MILES">"1.5마일 앞에서"</string>
+    <string msgid="8298844267891398809" name="DA_SPEECH_IN_THREE_QUARTERS_OF_A_MILE">"3/4마일 앞에서"</string>
+    <string msgid="5536748116879901705" name="DA_SPEECH_LOST_GPS">"GPS 신호가 끊어졌습니다."</string>
+    <string msgid="7031013673377029795" name="DA_SPEECH_YOU_SHOULD_GET_THERE_BY">"<ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g>에 목적지에 도착 예정입니다."</string>
+    <string msgid="2864490850591934011" name="DA_SPEECH_YOU_WILL_NOW_ARRIVE_AT">"도착 예정 시간은 <ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g>입니다."</string>
+    <string msgid="626040107222949163" name="DA_SPEED_FORMAT_KILOMETERS_PER_HOUR_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g>km/h"</string>
+    <string msgid="5696017829806052324" name="DA_SPEED_FORMAT_MILES_PER_HOUR_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g>mph"</string>
+    <string msgid="8717832301235175955" name="DA_STAY_ON_ROAD_PRIMARY">"<ns1:g id="STRING_0">{0}</ns1:g>(으)로 계속 직진"</string>
+    <string msgid="1522051354942059491" name="DA_STAY_ON_ROAD_SECONDARY_MANEUVER">"<ns1:g id="STRING_1">{1}</ns1:g>까지 <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="6588954374506898552" name="DA_THEN">"다음 <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="5783008655276864364" name="DA_TIME_FORMAT_CLOCK">"<ns1:g id="HOURS">%1$d</ns1:g>:<ns1:g id="MINUTES">%2$02d</ns1:g>"</string>
+    <string msgid="7707919387811958765" name="DA_TIME_FORMAT_DAYS_AND_HOURS">"<ns1:g id="NUMBER_OF_DAYS">%1$s</ns1:g> <ns1:g id="NUMBER_OF_HOURS">%2$s</ns1:g>"</string>
+    <string msgid="6892640684881875785" name="DA_TIME_FORMAT_HOURS_AND_MINUTES">"<ns1:g id="NUMBER_OF_HOURS">%1$s</ns1:g> <ns1:g id="NUMBER_OF_MINUTES">%2$s</ns1:g>"</string>
+    <string msgid="7817998043468236136" name="DA_TOWARD">"<ns1:g id="STRING_0">{0}</ns1:g> 방면"</string>
+    <string msgid="3123596705054737201" name="DA_YOUR_DESTINATION_IS_A_HALF_MILE_AHEAD">"목적지가 반 마일 앞에 있습니다."</string>
+    <string msgid="8661505845314857886" name="DA_YOUR_DESTINATION_IS_A_QUARTER_MILE_AHEAD">"목적지가 1/4마일 앞에 있습니다."</string>
+    <string msgid="3905156493194280718" name="DA_YOUR_DESTINATION_IS_ONE_AND_A_HALF_KILOMETERS_AHEAD">"목적지가 1.5킬로미터 앞에 있습니다."</string>
+    <string msgid="4589187785814099880" name="DA_YOUR_DESTINATION_IS_ONE_AND_A_HALF_MILES_AHEAD">"목적지가 1.5마일 앞에 있습니다."</string>
+    <string msgid="4923490260885185878" name="DA_YOUR_DESTINATION_IS_THREE_QUARTERS_OF_A_MILE_AHEAD">"목적지가 3/4마일 앞에 있습니다."</string>
+    <string msgid="1064900343663975467" name="DEBUG_MAPS_FEATURES_SETTINGS_TITLE">"디버그 기능[Google 내부 테스터 전용]"</string>
+    <string msgid="5698435378918936657" name="DIRECTIONS_PROCEED_TO_METERS">"<ns1:g id="DISTANCE">%1$s</ns1:g> 직진"</string>
+    <string msgid="4176893357736379300" name="DIRECTIONS_STEP_LIST_TO">"<ns1:g id="DESTINATION">%s</ns1:g>(으)로"</string>
+    <string msgid="1814428387459568726" name="DIRECTIONS_YOUR_LOCATION">"내 위치"</string>
+    <string msgid="737968998903158015" name="DISCLAIMER">"항상 도로를 주시하고 교통법규를 준수하시기 바랍니다. 운전 중에는 애플리케이션을 사용하지 마십시오. 경로가 정확하지 않거나 불완전하거나 위험하거나 적합하지 않을 수 있으며 금지된 지역이나 여러 행정 구역을 통과할 수 있습니다. 데이터가 실시간으로 제공되지 않으므로 위치 정보가 정확하지 않을 수 있습니다."</string>
+    <string msgid="2642186254766054874" name="DISCLAIMER_TITLE">"Google 지도 내비게이션은 베타 버전이므로 주의하시기 바랍니다."</string>
+    <string msgid="2322386471590166279" name="DISTANCE_FEET_ABBREVIATED">"<ns1:g id="NUMBER_OF_FEET"/>ft"</string>
+    <string msgid="1770611150911759090" name="DISTANCE_FEET_EXTENDED">"<ns1:g id="NUMBER_OF_FEET"/>피트 "</string>
+    <string msgid="8832117946718206516" name="DISTANCE_KILOMETERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS"/>km"</string>
+    <string msgid="1712822516939066073" name="DISTANCE_KILOMETERS_EXTENDED">"<ns1:g id="NUMBER_OF_KILOMETERS"/>킬로미터 "</string>
+    <string msgid="5115749175241245588" name="DISTANCE_METERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_METERS"/>m"</string>
+    <string msgid="6786188804325739113" name="DISTANCE_METERS_EXTENDED">"<ns1:g id="NUMBER_OF_METERS"/>미터 "</string>
+    <string msgid="1663691802801530665" name="DISTANCE_MILES_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES"/>mi"</string>
+    <string msgid="7535910480336049458" name="DISTANCE_MILES_EXTENDED">"<ns1:g id="NUMBER_OF_MILES"/>마일 "</string>
+    <string msgid="3873406547898134225" name="DISTANCE_TO_TRIP_LEVEL_NOTICE">"<ns1:g id="DISTANCE">%1$s</ns1:g> 후"</string>
+    <string msgid="5782765699559481543" name="DISTANCE_YARDS_ABBREVIATED">"<ns1:g id="NUMBER_OF_YARDS"/>yd"</string>
+    <string msgid="314073790876879964" name="DISTANCE_YARDS_EXTENDED">"<ns1:g id="NUMBER_OF_YARDS"/>야드 "</string>
+    <string msgid="738884423108976541" name="DONE">"완료"</string>
+    <string msgid="2363263758654372020" name="DRIVING_MODE_NOTIFICATION_DRIVING_WITH_NO_CURRENT_ROAD">"Google 지도로 주행 중"</string>
+    <string msgid="4220331858318238031" name="DURATION_AND_DISTANCE_TO_DESTINATION">"목적지까지 <ns1:g id="DURATION">%1$s</ns1:g>(<ns1:g id="DISTANCE">%2$s</ns1:g>) 남음"</string>
+    <string msgid="6479013822372531284" name="DURATION_AND_DISTANCE_WITH_DESTINATION">"<ns1:g id="DESTINATION">%3$s</ns1:g>까지 <ns1:g id="DURATION">%1$s</ns1:g>(<ns1:g id="DISTANCE">%2$s</ns1:g>)"</string>
+    <string msgid="6003991895084447024" name="EDIT_HOME_WORK">"집/직장 주소 수정"</string>
+    <string msgid="516081725937928083" name="ENERGY_CONSUMPTION_ENGINE_TYPE_SETTINGS_TITLE">"엔진 유형"</string>
+    <string msgid="3843996814576444609" name="ESTIMATED_TIME_OF_ARRIVAL">"<ns1:g id="ARRIVAL_TIME">%1$s</ns1:g> 도착 예정"</string>
+    <string msgid="3733379082443710457" name="ESTIMATED_TIME_OF_ARRIVAL_SHORT">"예상도착시간: <ns1:g id="ESTIMATED_TIME_OF_ARRIVAL">%1$s</ns1:g>"</string>
+    <string msgid="4474776824279943996" name="ESTIMATED_TIME_OF_ARRIVAL_WITH_TIME_ZONE">"<ns1:g id="ESTIMATED_TIME_OF_ARRIVAL">%1$s</ns1:g> <ns1:g id="SHORT_TIME_ZONE">%2$s</ns1:g>"</string>
+    <string msgid="6999585662399273468" name="EVEN_ONLY_TRAVEL_RESTRICTION_CALLOUT_TEXT">"짝수 차량만"</string>
+    <string msgid="7000439285054278098" name="EV_CONNECTOR_PREFERENCES_SUMMARY">"플러그 선택"</string>
+    <string msgid="538913145063218200" name="EV_CONNECTOR_PREFERENCES_TITLE">"호환되는 플러그 및 어댑터"</string>
+    <string msgid="2967277365338415762" name="EV_PROFILE_SETTINGS_TITLE_V2">"전기자동차 설정"</string>
+    <string msgid="833120489844392943" name="EXPLORE_PREFERENCES_SETTINGS_LANDING_PAGE_ENTRY_POINT_TEXT">"환경설정 관리"</string>
+    <string msgid="1042961630059727812" name="EYES_FREE_MODE_REROUTE_NOTIFICATION">"경로를 벗어났습니다. 경로를 다시 알려드리겠습니다."</string>
+    <string msgid="2695748113301305354" name="FAILED_TO_LAUNCH_APPLICATION">"앱을 실행하지 못했습니다."</string>
+    <string msgid="6461634184436147039" name="GENERIC_DELAY_SUBTITLE">"교통정체 예상"</string>
+    <string msgid="5033029603744943710" name="GETTING_AROUND_CATEGORY_TITLE">"교통정보"</string>
+    <string msgid="5232271074030694384" name="GOOGLE_LOCATION_SETTINGS">"Google 위치 설정"</string>
+    <string msgid="5646148448362261180" name="GOOGLE_MAPS_TIMELINE_OPT_OUT_SETTINGS_SUMMARY">"내 위치 기록에 관한 소식을 받고 있습니다."</string>
+    <string msgid="2493857178325724377" name="GOOGLE_MAPS_TIMELINE_SETTINGS_SUMMARY">"위치 기록에 대한 최신 정보를 받습니다."</string>
+    <string msgid="196582671347677600" name="GOOGLE_MAPS_TIMELINE_SETTINGS_TITLE">"Google 지도 타임라인"</string>
+    <string msgid="4749894635859607507" name="GPS_SIGNAL_LOST_CALLOUT_TEXT">"GPS 검색 중..."</string>
+    <string msgid="3033976480311745440" name="HAZARDOUS_GOODS_RESTRICTED">"위험물 제한"</string>
+    <string msgid="4732345555387659208" name="HEAVY_TRAFFIC">"정체"</string>
+    <string msgid="173409722067999322" name="HEIGHT_FEET_ABBREVIATED">"<ns1:g id="FEET">%d</ns1:g>피트"</string>
+    <string msgid="8966636302039617408" name="HEIGHT_FEET_INCHES_ABBREVIATED">"<ns1:g id="FEET">%d</ns1:g>피트 <ns1:g id="INCHES">%d</ns1:g>인치"</string>
+    <string msgid="8637363475448752754" name="HEIGHT_FEET_INCHES_LONGFORM">"<ns1:g id="FEET">%d</ns1:g>피트 및 <ns1:g id="INCHES">%d</ns1:g>인치"</string>
+    <string msgid="1521089235551336608" name="HEIGHT_FEET_LONGFORM">"<ns1:g id="FEET">%d</ns1:g>피트"</string>
+    <string msgid="1887668386950703406" name="HEIGHT_RESTRICTED">"높이 제한"</string>
+    <string msgid="784251430855706294" name="HOV_AVAILABLE">"다인승 차량 이용 가능"</string>
+    <string msgid="6529821054904011518" name="IMPROVE_YOUR_LOCATION">"위치 정확도 도움말"</string>
+    <string msgid="2540976662746914375" name="INCIDENT_VOTE_COUNT_BUCKET_LONG">"<ns1:g id="VOTE_COUNT">%1$s</ns1:g>건 이상 신고됨"</string>
+    <string msgid="8281026530646827235" name="INCIDENT_VOTE_COUNT_BUCKET_SHORT">"<ns1:g id="VOTE_COUNT">%1$s</ns1:g>+"</string>
+    <string msgid="1284004591458612182" name="INCIDENT_VOTE_COUNT_LONG">"<ns1:g id="VOTE_COUNT">%1$s</ns1:g>건 신고됨"</string>
+    <string msgid="7857287556098266775" name="INFORMATION_SEVERITY_CONTENT_DESCRIPTION">"알림"</string>
+    <string msgid="6766669801183231447" name="INITIAL_NOTIFICATION_CONTENT_TITLE">"내비게이션을 시작하는 중…"</string>
+    <string msgid="3945432022630896702" name="JAMCIDENT_DELAY_TIME">"+<ns1:g id="TIME">%1$s</ns1:g>"</string>
+    <string msgid="6857277423395462126" name="LIGHT_TRAFFIC">"원활"</string>
+    <string msgid="2755809767742409326" name="LOADING">"로드 중"</string>
+    <string msgid="8072745940066400784" name="LOCAL_PREFERENCES_AREA_MANAGEMENT_ENTRY_POINT_TEXT">"내 지역 관리"</string>
+    <string msgid="5423743480617991599" name="LOCATION_AND_PROFILE_CATEGORY_TITLE">"위치 및 프로필"</string>
+    <string msgid="2086740505285691302" name="LOCATION_NOT_YET_AVAILABLE">"위치 확인 중..."</string>
+    <string msgid="8345606348711609944" name="LOCATION_SHARING_FRIENDS_OPT_OUT_SETTINGS_SUMMARY">"친구 및 친구의 공유 위치에 관한 소식을 받고 있습니다."</string>
+    <string msgid="584985529279859810" name="LOCATION_SHARING_FRIENDS_SETTINGS_SUMMARY">"친구 및 공유 위치에 대한 최신 정보를 받습니다."</string>
+    <string msgid="1787475954612106105" name="LOCATION_SHARING_FRIENDS_SETTINGS_TITLE">"Google 위치 공유(친구)"</string>
+    <string msgid="1798157651559312287" name="LOCATION_SHARING_UPDATES_SETTINGS_SUMMARY">"공유 중인 위치가 업데이트될 때 알림을 받습니다."</string>
+    <string msgid="4145708674804313912" name="LOCATION_SHARING_UPDATES_SETTINGS_TITLE">"Google 위치 공유 업데이트"</string>
+    <string msgid="6974966951431091715" name="LOCATION_SHARING_YOU_OPT_OUT_SETTINGS_SUMMARY">"내 위치 공유에 관한 소식을 받고 있습니다."</string>
+    <string msgid="2507248622422659061" name="LOCATION_SHARING_YOU_SETTINGS_SUMMARY">"위치 공유에 대한 최신 정보를 받습니다."</string>
+    <string msgid="3628122068571233362" name="LOCATION_SHARING_YOU_SETTINGS_TITLE">"Google 위치 공유(나)"</string>
+    <string msgid="5983765003219829883" name="MANILA_TRAVEL_RESTRICTION_CALLOUT_TEXT">"<ns1:g id="PLATE_1">%1$d</ns1:g>번, <ns1:g id="PLATE_2">%2$d</ns1:g>번 제한"</string>
+    <string msgid="2282765788770439491" name="MAPS_FEATURES_CATEGORY_TITLE">"지도 기능"</string>
+    <string msgid="8758525520286582553" name="MAPS_FEATURES_URGENT_SETTINGS_TITLE">"지도 기능 긴급 업데이트"</string>
+    <string msgid="2890999488170047937" name="MAPS_HISTORY">"지도 기록"</string>
+    <string msgid="7523320203882314616" name="MAP_COPYRIGHTS_FULL">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - 이미지 ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>, 지도 데이터 ©<ns1:g id="COPYRIGHT_YEAR_2">%4$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%5$s</ns1:g>"</string>
+    <string msgid="3080854072740850768" name="MAP_COPYRIGHTS_GOOGLE_ONLY">"©<ns1:g id="COPYRIGHT_YEAR">%1$s</ns1:g> Google"</string>
+    <string msgid="271754604139169484" name="MAP_COPYRIGHTS_IMAGERY_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - 이미지 ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>"</string>
+    <string msgid="6150599764044956009" name="MAP_COPYRIGHTS_MAP_DATA_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google - 지도 데이터 ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%3$s</ns1:g>"</string>
+    <string msgid="1172850333329779755" name="NAVIGATION_CATEGORY_TITLE">"내비게이션"</string>
+    <string msgid="2003321543190473980" name="NAVIGATION_SETTINGS">"내비게이션 설정"</string>
+    <string msgid="6362228591814936571" name="NAVIGATION_STEP_LIST_DISTANCE_TO_NEXT_STEP">"<ns1:g id="DISTANCE">%1$s</ns1:g> 후"</string>
+    <string msgid="8513156606874950515" name="NAVIGATION_URGENT_SETTINGS_TITLE">"내비게이션 긴급 업데이트"</string>
+    <string msgid="8746273910770749866" name="NAV_SDK_DEFAULT_COMPANY_NAME">"앱 개발자"</string>
+    <string msgid="3522779505396739599" name="NAV_SDK_DISCLAIMER">"주위 환경에 주의하고 항상 법규를 준수하세요."</string>
+    <string msgid="2337842297414069478" name="NAV_SDK_GOT_IT">"확인"</string>
+    <string msgid="6986418512565360329" name="NAV_SDK_I_AM_IN">"예, 동의합니다."</string>
+    <string msgid="2296133702373295473" name="NAV_SDK_LEGAL_TEXT">"<ns1:g id="NAV_SDK_COMPANY_NAME_2">%1$s</ns1:g> 서비스를 사용하면 Google에서 Google 지도를 개선하기 위해 사용자의 GPS 위치, 사용자가 선택한 경로 등의 내비게이션 데이터를 수집합니다. 이 데이터는 실시간 교통상황 및 교통혼잡과 같은 정보를 다른 사용자에게 표시하여 최적 경로를 찾는 데 이용될 수 있습니다.\n\n지도에서 업데이트되는 이러한 정보는 사용자의 Google 계정 또는 기기와 연결되지 않습니다. Google의 <ns1:g id="NAV_SDK_TERMS">%2$s</ns1:g> 및 <ns1:g id="NAV_SDK_PRIVACY_POLICY">%3$s</ns1:g>이(가) 적용됩니다.\n\n<ns1:g id="NAV_SDK_COMPANY_NAME_3">%4$s</ns1:g>에서도 이 데이터를 수집하고 사용할 수 있습니다. <ns1:g id="NAV_SDK_COMPANY_NAME_4">%5$s</ns1:g> 앱의 개인정보처리방침에서 자세한 내용을 확인하세요."</string>
+    <string msgid="5332923116377998043" name="NAV_SDK_LEGAL_TEXT_LEGACY">"Google에서는 Google 서비스를 제공하고 개선하기 위해 앱이 실행될 때 귀하의 위치와 운전 데이터를 수집할 수 있습니다. 이 데이터는 <ns1:g id="NAV_SDK_COMPANY_NAME">%1$s</ns1:g>의 운영 개선을 위해 해당 업체에 공유될 수도 있습니다. Google의 <ns1:g id="NAV_SDK_TERMS">%2$s</ns1:g> 및 <ns1:g id="NAV_SDK_PRIVACY_POLICY">%3$s</ns1:g>이 적용됩니다."</string>
+    <string msgid="6340328118114501085" name="NAV_SDK_PRIVACY_POLICY">"개인정보처리방침"</string>
+    <string msgid="2982362725876163352" name="NAV_SDK_PRIVACY_POLICY_CAPITALIZED">"개인정보처리방침"</string>
+    <string msgid="4531136199149528407" name="NAV_SDK_TERMS">"약관"</string>
+    <string msgid="7707795984529102497" name="NAV_SDK_TERMS_CAPITALIZED">"약관"</string>
+    <string msgid="3015266809371007473" name="NAV_SDK_TERMS_CLOSE">"앱 닫기"</string>
+    <string msgid="8901594003619146647" name="NAV_SDK_TERMS_ERROR">"내비게이션 서비스 약관 로드 중에 오류가 발생했습니다. 앱을 다시 시작해주세요."</string>
+    <string msgid="6958049100686788454" name="NAV_SDK_WELCOME_TO_GOOGLE_MAPS_NAVIGATION">"Google 지도 내비게이션에 오신 것을 환영합니다."</string>
+    <string msgid="6791023658564191335" name="NEARBY_PLACES_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY_V2">"주변 장소 및 이벤트에 대한 추천을 받고 있습니다."</string>
+    <string msgid="5467978305791925717" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_SUMMARY">"저장한 장소 또는 이벤트가 주변에 있을 때 알림을 받으세요."</string>
+    <string msgid="2899316768992820532" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_SUMMARY_V2">"주변 장소 및 이벤트에 대한 추천 받기"</string>
+    <string msgid="7613155153180186667" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_TITLE">"주변 장소 및 이벤트"</string>
+    <string msgid="2522056010363733176" name="NETWORK_UNAVAILABLE">"연결할 수 없음"</string>
+    <string msgid="5798081927324715154" name="NEW_ON_MAPS_CATEGORY_TITLE">"지도의 새 기능"</string>
+    <string msgid="1286364333769843890" name="NEW_ON_MAPS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"지도에서 할 수 있는 새로운 것에 관한 소식을 받고 있습니다."</string>
+    <string msgid="7425167408473147318" name="NEW_ON_MAPS_NOTIFICATION_SETTINGS_SUMMARY">"Google 지도에서 이용할 수 있는 새로운 기능에 대한 소식을 받아보세요."</string>
+    <string msgid="8563411120076685209" name="NORMAL_TRAFFIC">"보통"</string>
+    <string msgid="7130046223811209078" name="NOTICE_EFFECTIVE_RANGE">"<ns1:g id="DATE_OR_DATE_RANGE">%s</ns1:g>에 이용 가능"</string>
+    <string msgid="4156394438137475279" name="NOTIFICATIONS_SETTINGS_TITLE">"알림"</string>
+    <string msgid="889779361831341194" name="ODD_ONLY_TRAVEL_RESTRICTION_CALLOUT_TEXT">"홀수 차량만"</string>
+    <string msgid="5195182224903466222" name="OFFLINE_MAPS_DOWNLOAD_EMBEDDED_TITLE">"오프라인 지도 다운로드"</string>
+    <string msgid="103070061409767941" name="OFFLINE_MAPS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"휴대전화 및 태블릿에 저장된 지역에 관한 소식을 받고 있습니다."</string>
+    <string msgid="2065934284598719130" name="OFFLINE_MAPS_NOTIFICATION_SETTINGS_SUMMARY">"휴대전화 또는 태블릿에 저장한 지역에 대한 최신 정보를 받습니다."</string>
+    <string msgid="4278334889579817101" name="OFFLINE_MAPS_TITLE">"오프라인 지도"</string>
+    <string msgid="5659021817125812935" name="OFFLINE_SETTINGS">"오프라인 지도 설정"</string>
+    <string msgid="2611064167742529426" name="OTHER_NOTIFICATION_CHANNEL">"기타 알림"</string>
+    <string msgid="653910275023514690" name="PARKING_LOCATION_OPT_OUT_SETTINGS_SUMMARY">"주차 위치에 관한 소식을 받고 있습니다."</string>
+    <string msgid="8831411745546173529" name="PARKING_LOCATION_SETTINGS_SUMMARY">"주차 위치와 관련된 최신 정보를 받습니다."</string>
+    <string msgid="874143968644994017" name="PARKING_LOCATION_SETTINGS_TITLE">"주차 위치"</string>
+    <string msgid="4109028911398058028" name="PERSONAL_CONTENT_TITLE">"개인 콘텐츠"</string>
+    <string msgid="6309784419540645516" name="PHOTO_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"방문했던 장소를 토대로 사진 업로드 및 요리 태그 알림을 받고 있습니다."</string>
+    <string msgid="2017256142609753488" name="PHOTO_NOTIFICATION_SETTINGS_SUMMARY">"방문한 장소를 토대로 사진 업로드 및 요리 태그 알림 받기"</string>
+    <string msgid="7486650467383313327" name="PHOTO_NOTIFICATION_SETTINGS_TITLE">"사진 공유 및 태그"</string>
+    <string msgid="2975029997059956743" name="PICKUP_ORDERS_NOTIFICATION_OPT_OUT_SETTING_SUMMARY">"지도에서 주문 수령에 대한 최신 정보를 받고 있습니다."</string>
+    <string msgid="3374210285480569472" name="PICKUP_ORDERS_NOTIFICATION_SETTING_SUMMARY">"주문 상태에 대한 최신 정보, 도착 시간 공유 및 주차 위치 전송과 관련된 알림을 받을 수 있습니다."</string>
+    <string msgid="668310841030579677" name="PICKUP_ORDERS_NOTIFICATION_SETTING_TITLE">"주문 수령"</string>
+    <string msgid="8127880752570065607" name="PLACES_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"사람들에게 유용한 정보를 제공하기 위해 방문했던 장소에 대한 질문을 받고 있습니다."</string>
+    <string msgid="5365776433570962189" name="PLACES_NOTIFICATION_SETTINGS_SUMMARY">"사람들에게 유용한 정보를 제공할 수 있도록 방문했던 장소에 대한 질문에 답변해 주세요."</string>
+    <string msgid="3724976413506253643" name="PLACES_NOTIFICATION_SETTINGS_TITLE">"내가 방문한 장소"</string>
+    <string msgid="7471023852308791790" name="POI_PROMPT_ADD_STOP">"경유지 추가"</string>
+    <string msgid="7983858942352259551" name="POI_PROMPT_ADD_STOP_ACTION">"경로에 추가됨"</string>
+    <string msgid="8778537284281768607" name="POI_PROMPT_NAVIGATE">"탐색"</string>
+    <string msgid="472834733509383200" name="POI_PROMPT_NAVIGATE_ACTION">"경로 탐색 중"</string>
+    <string msgid="298606571303064040" name="PROMPT_CANCEL">"취소"</string>
+    <string msgid="4066051640880834866" name="PROMPT_DISMISS">"닫기"</string>
+    <string msgid="5503515646274126756" name="QA_AND_CHAT_CATEGORY_TITLE">"Q&amp;A 및 채팅"</string>
+    <string msgid="3324329907005959185" name="RECENTER_FOLLOW_MODE">"현재 위치로 이동"</string>
+    <string msgid="1486707796824890396" name="RECOMMENDATIONS_FOR_YOU_CATEGORY_TITLE">"맞춤 추천"</string>
+    <string msgid="8105228677480057073" name="REMOVE">"삭제"</string>
+    <string msgid="1550982124371473702" name="REPORTED_VIA_WAZE_APP">"Waze 앱을 통해 신고됨"</string>
+    <string msgid="2241569767697676295" name="REROUTE_CALLOUT_CURRENT">"현재 경로"</string>
+    <string msgid="520999062746509578" name="REROUTE_CALLOUT_NEW">"새 경로"</string>
+    <string msgid="3344101668786395431" name="REVIEW_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"방문했던 장소를 토대로 리뷰 작성 알림을 받고 있습니다."</string>
+    <string msgid="7888846095073550740" name="REVIEW_NOTIFICATION_SETTINGS_SUMMARY">"방문한 장소를 토대로 리뷰 작성 알림 받기"</string>
+    <string msgid="7916601440448962034" name="REVIEW_NOTIFICATION_SETTINGS_TITLE">"리뷰 작성 알림"</string>
+    <string msgid="1541842670412044840" name="RODIZIO_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Rodízio <ns1:g id="PLATE_1">%1$d</ns1:g> 및 <ns1:g id="PLATE_2">%2$d</ns1:g>"</string>
+    <string msgid="8062022808692087963" name="ROUTE_AROUND_CLOSURE_CALLOUT_CLOSED">"폐쇄됨"</string>
+    <string msgid="623689270367292384" name="ROUTE_AROUND_TRAFFIC_ACTION">"경로 재설정 중"</string>
+    <string msgid="7859812763744711003" name="ROUTE_AROUND_TRAFFIC_CALLOUT_FASTER">"빠른 경로"</string>
+    <string msgid="2611671618289658133" name="ROUTE_AROUND_TRAFFIC_DECLINE">"사용 안함"</string>
+    <string msgid="1962094888482140214" name="ROUTE_AROUND_TRAFFIC_REROUTE">"수락"</string>
+    <string msgid="5344116890552800007" name="ROUTE_AROUND_TRAFFIC_TAKE_ACTION_CUE_DEFAULT_DECLINE">"더 빠른 경로로 변경하려면 <ns1:g id="REROUTE_BUTTON">%1$s</ns1:g> 버튼을 탭하세요."</string>
+    <string msgid="9048657312424993512" name="ROUTE_AROUND_TRAFFIC_TAKE_ACTION_CUE_DEFAULT_REROUTE">"현재 경로에 머물기를 원하는 경우 <ns1:g id="DECLINE_BUTTON">%1$s</ns1:g> 버튼을 탭하세요."</string>
+    <string msgid="668738352458665249" name="SATELLITE_KEEP_ON_SETTING_SUMMARY">"데이터를 더 많이 사용합니다"</string>
+    <string msgid="5458955675293713001" name="SATELLITE_KEEP_ON_SETTING_TITLE">"위성 보기로 지도 시작하기"</string>
+    <string msgid="2513389490217803388" name="SHAKE_TO_SEND_FEEDBACK">"흔들어서 의견 보내기"</string>
+    <string msgid="7927333567450914524" name="SHOW_SCALEBAR">"지도에 축척 표시"</string>
+    <string msgid="8853862950824858965" name="SIGN_IN">"로그인"</string>
+    <string msgid="6614611063829352216" name="SPEEDOMETER_CONTENT_DESCRIPTION">"현재 속도"</string>
+    <string msgid="2485928112866408949" name="SPEEDOMETER_LABEL_MPH">"mph"</string>
+    <string msgid="714338337064997840" name="SPEED_LIMIT_CONTENT_DESCRIPTION">"제한 속도"</string>
+    <string msgid="8329935752572916663" name="SPEED_LIMIT_LABEL_KPH">"km/h"</string>
+    <string msgid="6049037484128190260" name="SPEED_LIMIT_LABEL_MPH">"MPH"</string>
+    <string msgid="6933103859272522200" name="STATUS_DATA_CONNECTION_LOST">"데이터 연결이 끊어졌습니다..."</string>
+    <string msgid="3486534637879952316" name="STATUS_LOCATION_NOT_YET_AVAILABLE">"위치 확인 중..."</string>
+    <string msgid="2640731163709778825" name="STATUS_OFF_ROUTE">"경로를 벗어남"</string>
+    <string msgid="2545735105255092828" name="STATUS_REROUTING">"경로 변경 중..."</string>
+    <string msgid="2050512013597272527" name="STEP_LIST_INTERACTION_LOCKOUT">"더 많은 단계를 미리 보려면 안전할 때 차를 세우세요."</string>
+    <string msgid="4380539129160098186" name="TBP_TIME_FORMAT_STRING">"보통 <ns1:g id="DURATION_RANGE">%1$s</ns1:g>"</string>
+    <string msgid="3969156182655336787" name="TIME_TO_LEAVE_OPT_OUT_SETTINGS_SUMMARY">"Gmail 및 캘린더의 일정을 토대로 출발 시간 알림을 받고 있습니다."</string>
+    <string msgid="5878136911262367593" name="TIME_TO_LEAVE_SETTINGS_SUMMARY">"Gmail과 캘린더의 이벤트를 토대로 출발 시간 알림을 받습니다."</string>
+    <string msgid="5802789254332120401" name="TIME_TO_LEAVE_SETTINGS_TITLE">"출발 시간 알림"</string>
+    <string msgid="279144067639888797" name="TRAFFIC_INCIDENT_CANCEL_BUTTON">"닫기"</string>
+    <string msgid="2556434376988861569" name="TRAFFIC_INCIDENT_CARD_ACTION_DESCRIPTION">"지도에 교통체증 상황 표시"</string>
+    <string msgid="6842632577325526492" name="TRAFFIC_INCIDENT_CAUSE_LABEL">"폐쇄 원인:"</string>
+    <string msgid="988935259303895134" name="TRAFFIC_INCIDENT_CLEARED_UP">"사고가 정리되었습니다."</string>
+    <string msgid="7567994859964694495" name="TRAFFIC_INCIDENT_GET_MORE_INFO_LINK_LABEL">"최신 정보를 확인하세요."</string>
+    <string msgid="3198922267208778988" name="TRAFFIC_IN_YOUR_AREA_OPT_OUT_SETTINGS_SUMMARY">"현재 위치를 토대로 교통상황 정보를 받고 있습니다."</string>
+    <string msgid="1473827289987133797" name="TRAFFIC_IN_YOUR_AREA_SETTINGS_SUMMARY">"현재 위치에 따른 교통상황을 확인합니다."</string>
+    <string msgid="1128033297013450984" name="TRAFFIC_IN_YOUR_AREA_SETTINGS_TITLE">"내 지역 교통정보"</string>
+    <string msgid="7311918430526640931" name="TRAFFIC_NEARBY_EVENTS_OPT_OUT_SETTINGS_SUMMARY">"예정된 도로 폐쇄 및 교통체증을 유발할 수 있는 이벤트에 대한 알림을 받고 있습니다."</string>
+    <string msgid="7229793065931553473" name="TRAFFIC_NEARBY_EVENTS_SETTINGS_SUMMARY">"도로 폐쇄 구간 및 교통체증을 유발할 수 있는 이벤트에 대한 알림을 받습니다."</string>
+    <string msgid="7458119512976033960" name="TRAFFIC_NEARBY_EVENTS_SETTINGS_TITLE">"주변 행사로 인한 교통체증"</string>
+    <string msgid="3736157622661020905" name="TRAFFIC_UPDATE_ETA_PROMPT_SUBTITLE">"예상 도착 시간: <ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="6992797437864599238" name="TRANSIT_ENTER_VIA">"<ns1:g id="ENTRANCE">%1$s</ns1:g> 통해 들어가기"</string>
+    <string msgid="5577370445084558613" name="TRANSIT_ENTRANCE_ENTER_TITLE">"역 입구"</string>
+    <string msgid="6142195623804653271" name="TRANSIT_ENTRANCE_EXIT_TITLE">"역 출구"</string>
+    <string msgid="1010084563211368398" name="TRANSIT_EXIT_VIA">"<ns1:g id="EXIT">%1$s</ns1:g> 통해 나가기"</string>
+    <string msgid="3806065467172569991" name="TRANSIT_INFO_OPT_OUT_SETTINGS_SUMMARY">"주변 역으로부터 출발, 지연 및 지도 정보를 받고 있습니다."</string>
+    <string msgid="1534490659851000732" name="TRANSIT_INFO_SETTINGS_SUMMARY">"주변 역의 출발, 지연 및 지도 정보 가져오기"</string>
+    <string msgid="4220388452166772640" name="TRANSIT_INFO_SETTINGS_TITLE">"대중교통 정보 및 지도"</string>
+    <string msgid="5472231200918516614" name="TRANSIT_LINE_SEPARATOR">"또는 "</string>
+    <string msgid="1781544592846552935" name="TRANSIT_STEPTHROUGH_BOARD_TRANSPORTATION_AT">"<ns1:g id="DEPARTURE_STATION_NAME">%2$s</ns1:g>에서 <ns1:g id="TRANSPORTATION_TITLE">%1$s</ns1:g> 탑승"</string>
+    <string msgid="4852979524663289910" name="TRANSIT_STEPTHROUGH_GET_OFF_AT">"<ns1:g id="ARRIVAL_STATION_NAME">%1$s</ns1:g>에서 하차"</string>
+    <string msgid="100719016293137101" name="TRANSIT_STEPTHROUGH_TRANSFER_TRANSPORTATION_AT">"<ns1:g id="TRANSFER_STATION_NAME">%2$s</ns1:g>에서 <ns1:g id="TRANSPORTATION_TITLE">%1$s</ns1:g>(으)로 환승"</string>
+    <string msgid="4075726691937451191" name="TRANSIT_STEP_SEPARATOR">"후 "</string>
+    <string msgid="4347114544007413130" name="TRANSIT_TRANSFER_DESCRIPTION">"<ns1:g id="LINE_NAME">%1$s</ns1:g> <ns1:g id="DESTINATION">%2$s</ns1:g>"</string>
+    <string msgid="1067501494466681470" name="TRANSIT_TRANSFER_DESCRIPTION_WITH_EXPRESS_TYPE">"<ns1:g id="LINE_NAME">%1$s</ns1:g> <ns1:g id="DESTINATION">%3$s</ns1:g>(<ns1:g id="EXPRESS_TYPE_NAME">%2$s</ns1:g>)"</string>
+    <string msgid="2817788206332504699" name="TRANSIT_VIA">"<ns1:g id="ENTRANCE">%1$s</ns1:g> 경유"</string>
+    <string msgid="755148195746788198" name="TRUCKS_RESTRICTED">"트럭 제한"</string>
+    <string msgid="6607947384151787482" name="TURN_CARD_THEN_INSTRUCTION">"다음 <ns1:g id="NEXT_INSTRUCTION">%1$s</ns1:g>"</string>
+    <string msgid="8308160665835594365" name="UGC_IMPACT_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"좋아요 및 댓글, 배지와 혜택을 획득하는 경우에 관한 소식을 받고 있습니다."</string>
+    <string msgid="5429102650839711069" name="UGC_IMPACT_NOTIFICATION_SETTINGS_SUMMARY">"좋아요 수 및 댓글에 관한 최신 소식을 받아 보고, 배지 및 혜택을 획득한 경우에도 최신 소식을 받아 보세요."</string>
+    <string msgid="2032622348248043611" name="UGC_IMPACT_NOTIFICATION_SETTINGS_TITLE">"좋아요, 주요 성과, 배지"</string>
+    <string msgid="7013124010125038791" name="UGC_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"거주하는 지역의 마을, 도로 및 가 볼 만한 장소에 대한 질문을 받고 있습니다."</string>
+    <string msgid="3565867092229885716" name="UGC_NOTIFICATION_SETTINGS_SUMMARY">"거주하는 지역의 마을, 도로 및 가볼 만한 장소에 대한 질문에 답변하면 Google 지도를 개선하는 데 도움이 됩니다."</string>
+    <string msgid="9024065710924542964" name="UGC_NOTIFICATION_SETTINGS_TITLE">"내 지역, 도로 및 가볼 만한 곳"</string>
+    <string msgid="1738086435281091835" name="UNABLE_TO_LOAD_DATA">"데이터를 로드할 수 없음"</string>
+    <string msgid="2670705425616869617" name="UNITS">"거리 단위"</string>
+    <string msgid="4893017073865021264" name="UNITS_AUTOMATIC">"자동"</string>
+    <string msgid="7876257382820058712" name="UNITS_IMPERIAL">"마일"</string>
+    <string msgid="117093659918958729" name="UNITS_METRIC">"킬로미터"</string>
+    <string msgid="6580177403276978686" name="VEHICLE_SETTINGS_TITLE">"차량 설정"</string>
+    <string msgid="5710449106540223967" name="VIDEO_SETTINGS_TITLE">"동영상 설정"</string>
+    <string msgid="8573971634735221604" name="WARNING_SEVERITY_CONTENT_DESCRIPTION">"경고"</string>
+    <string msgid="4161070547943419580" name="WAZE_ATTRIBUTION_DIALOG_CONTENT_ALREADY_INSTALLED">"Waze 사용자 커뮤니티에서 Waze 교통정보 및 내비게이션 앱을 사용하여 신고한 사고입니다.\n\nWaze로 유용한 정보를 보내세요."</string>
+    <string msgid="6296131061336170909" name="WAZE_ATTRIBUTION_DIALOG_CONTENT_NOT_INSTALLED">"Waze 사용자 커뮤니티에서 Waze 교통정보 및 내비게이션 앱을 사용하여 신고한 사고입니다.\n\nWaze를 다운로드하여 유용한 정보를 보내세요."</string>
+    <string msgid="6423551936568425898" name="WAZE_ATTRIBUTION_DIALOG_DISMISS">"닫기"</string>
+    <string msgid="3887930200748972622" name="WAZE_ATTRIBUTION_DIALOG_GET_WAZE">"Waze 다운로드"</string>
+    <string msgid="1221046906467082448" name="WAZE_ATTRIBUTION_DIALOG_OPEN_WAZE">"Waze 열기"</string>
+    <string msgid="3260434220328093048" name="WAZE_ATTRIBUTION_DIALOG_TITLE">"Waze 앱 사용자의 신고"</string>
+    <string msgid="8332911579512824593" name="WAZE_NOT_AVAILABLE">"Waze를 열 수 없습니다."</string>
+    <string msgid="6557028535722391556" name="WEIGHT_RESTRICTED">"중량 제한"</string>
+    <string msgid="6708487118738049074" name="WEIGHT_SHORT_TONS_ABBREVIATED">"<ns1:g id="SHORT_TONS">%s</ns1:g>톤"</string>
+    <string msgid="6017366300652518735" name="WEIGHT_SHORT_TONS_LONGFORM">"<ns1:g id="SHORT_TONS">%s</ns1:g>톤"</string>
+    <string msgid="444421108406293150" name="WIFI_ONLY_TITLE">"Wi-Fi 전용"</string>
+    <string msgid="3295691316074264165" name="YOUR_BUSINESS_CATEGORY_TITLE">"내 비즈니스"</string>
+    <string msgid="5038513763080836030" name="YOUR_BUSINESS_OPT_OUT_SETTINGS_SUMMARY">"내 비즈니스에 대한 알림 및 소식을 받고 있습니다."</string>
+    <string msgid="7935186140284907584" name="YOUR_BUSINESS_SETTINGS_SUMMARY">"내 비즈니스에 대한 알림 및 최신 정보를 받습니다."</string>
+    <string msgid="2331921429803725767" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_OPT_OUT_SETTING_SUMMARY">"내 프로필에 새 팔로어가 있거나 팔로우 요청이 수신될 때 알림을 받고 있습니다."</string>
+    <string msgid="6256049818965016724" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_SETTING_SUMMARY">"내 프로필에 신규 팔로어가 있거나 팔로우 요청이 수신되면 알림을 받습니다."</string>
+    <string msgid="5149876045450704766" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_SETTING_TITLE">"내 지도 프로필 및 팔로잉"</string>
+    <string msgid="6302976185347215423" name="YOUR_REVIEWS_CATEGORY_TITLE">"내 리뷰"</string>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"홈으로 이동"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"위로 이동"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"추가 옵션"</string>
@@ -53,6 +619,7 @@
     <string msgid="406453423630273620" name="close_drawer">"탐색 메뉴 닫기"</string>
     <string msgid="7573152094250666567" name="close_sheet">"시트 닫기"</string>
     <string msgid="5389587048670450460" name="collapsed">"접힘"</string>
+    <string msgid="6083905920877235314" name="copy">"복사"</string>
     <string msgid="3499643850558715142" name="date_input_headline">"입력한 날짜"</string>
     <string msgid="8562356184193964298" name="date_input_headline_description">"입력한 날짜: %1$s"</string>
     <string msgid="5281836720766682161" name="date_input_invalid_for_pattern">"데이터가 예상 패턴과 일치하지 않음: %1$s"</string>
@@ -90,12 +657,27 @@
     <string msgid="1890207353314751437" name="dropdown_menu">"드롭다운 메뉴"</string>
     <string name="error_a11y_label">오류: 잘못됨</string>
     <string name="error_icon_content_description">오류</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"고급"</string>
     <string msgid="5974471714631304645" name="expanded">"펼침"</string>
     <string name="exposed_dropdown_menu_content_description">드롭다운 메뉴 표시</string>
     <string name="icon_content_description">대화상자 아이콘</string>
     <string msgid="6827826412747255547" name="in_progress">"진행 중"</string>
     <string msgid="7933458017204019916" name="indeterminate">"일부 선택됨"</string>
     <string name="item_view_role_description">탭</string>
+    <string msgid="9210820207514660247" name="maps_API_OUTDATED_WARNING">"이 앱은 오래된 Google 지도 버전을 사용하고 있어 제대로 작동하지 않을 수 있습니다."</string>
+    <string msgid="6807007598222074916" name="maps_COMPASS_ALT_TEXT">"나침반"</string>
+    <string msgid="3371108618085690173" name="maps_DIRECTIONS_ALT_TEXT">"경로 찾기"</string>
+    <string msgid="1189955191774927738" name="maps_GOOGLE_MAP">"Google 지도"</string>
+    <string msgid="2264878565827236979" name="maps_LEVEL_ALT_TEXT">"레벨 {0}"</string>
+    <string msgid="6875584096776566703" name="maps_MY_LOCATION_ALT_TEXT">"내 위치"</string>
+    <string msgid="7383272971595812419" name="maps_NO_GMM">"Google 지도가 설치되어 있지 않거나 중지되었습니다."</string>
+    <string msgid="1460559660387626258" name="maps_OPEN_GMM_ALT_TEXT">"Google 지도에서 열기"</string>
+    <string msgid="175515198141357876" name="maps_YOUR_LOCATION">"현재 위치"</string>
+    <string msgid="8499414555829263194" name="maps_ZOOM_IN_ALT_TEXT">"확대"</string>
+    <string msgid="8347872495490681122" name="maps_ZOOM_OUT_ALT_TEXT">"축소"</string>
+    <string msgid="7422837848992631163" name="maps_default_user_error_message">"죄송합니다. 문제가 발생했습니다."</string>
+    <string msgid="2220756820707696446" name="maps_invalid_panorama_data">"잘못된 파노라마입니다."</string>
+    <string msgid="2960355978460391458" name="maps_marker_default_on_select_content_description">"지도 마커"</string>
     <string name="material_clock_toggle_content_description">오전 또는 오후를 선택하세요.</string>
     <string name="material_hour_24h_suffix">%1$s시간</string>
     <string name="material_hour_selection">시간 선택</string>
@@ -109,6 +691,31 @@
     <string name="material_timepicker_pm">오후</string>
     <string name="material_timepicker_select_time">시간 선택</string>
     <string name="material_timepicker_text_input_mode_description">시간 입력을 위해 텍스트 입력 모드로 전환합니다.</string>
+    <string msgid="2939063992730535343" name="mr_button_content_description">"전송"</string>
+    <string msgid="6073720094880410356" name="mr_cast_button_connected">"전송 버튼입니다. 기기가 연결되었습니다"</string>
+    <string msgid="6629927151350192407" name="mr_cast_button_connecting">"전송 버튼입니다. 기기 연결 중입니다"</string>
+    <string msgid="8071109333469380363" name="mr_cast_button_disconnected">"전송 버튼입니다. 기기가 연결 해제되었습니다"</string>
+    <string msgid="2175930138959078155" name="mr_cast_dialog_title_view_placeholder">"사용할 수 있는 정보 없음"</string>
+    <string msgid="6114250663023140921" name="mr_chooser_searching">"기기를 찾는 중"</string>
+    <string msgid="1419936397646839840" name="mr_chooser_title">"전송 대상"</string>
+    <string msgid="3330502667672708728" name="mr_controller_album_art">"앨범아트"</string>
+    <string msgid="9171231064758955152" name="mr_controller_casting_screen">"화면 전송 중"</string>
+    <string msgid="5684434439232634509" name="mr_controller_close_description">"닫기"</string>
+    <string msgid="2585048604188129749" name="mr_controller_collapse_group">"접기"</string>
+    <string msgid="7812275474138309497" name="mr_controller_disconnect">"연결 해제"</string>
+    <string msgid="4521419834052044261" name="mr_controller_expand_group">"펼치기"</string>
+    <string msgid="855271725131981086" name="mr_controller_no_info_available">"사용할 수 있는 정보 없음"</string>
+    <string msgid="5495452265246139458" name="mr_controller_no_media_selected">"선택된 미디어 없음"</string>
+    <string msgid="747801650871398383" name="mr_controller_pause">"일시중지"</string>
+    <string msgid="1253345086594430054" name="mr_controller_play">"재생"</string>
+    <string msgid="5497722768305745508" name="mr_controller_stop">"중지"</string>
+    <string msgid="804210341192624074" name="mr_controller_stop_casting">"전송 중지"</string>
+    <string msgid="2955862765169128170" name="mr_controller_volume_slider">"볼륨 슬라이더"</string>
+    <string msgid="4115858704575247342" name="mr_dialog_default_group_name">"그룹"</string>
+    <string msgid="4307018456678388936" name="mr_dialog_groupable_header">"기기 추가"</string>
+    <string msgid="6068257520605505468" name="mr_dialog_transferable_header">"그룹에서 재생"</string>
+    <string msgid="7449553026175453403" name="mr_system_route_name">"시스템"</string>
+    <string msgid="4088331695424166162" name="mr_user_route_category_name">"기기"</string>
     <string name="mtrl_badge_numberless_content_description">새 알림</string>
     <string name="mtrl_checkbox_state_description_checked">선택됨</string>
     <string name="mtrl_checkbox_state_description_indeterminate">일부 선택됨</string>
@@ -156,11 +763,14 @@
     <string name="mtrl_timepicker_confirm">확인</string>
     <string msgid="542007171693138492" name="navigation_menu">"탐색 메뉴"</string>
     <string msgid="6610465462668679431" name="not_selected">"선택되지 않음"</string>
+    <string msgid="6573031135582639649" name="not_set">"설정되지 않음"</string>
     <string msgid="875452955155264703" name="off">"꺼짐"</string>
     <string msgid="8655164131929253426" name="on">"켜짐"</string>
     <string name="password_toggle_content_description">비밀번호 표시</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\'<ns1:g id="SUMMARY">%1$s</ns1:g>\'이(가) 클립보드에 복사되었습니다."</string>
     <string msgid="5941395253238309765" name="range_end">"범위 끝"</string>
     <string msgid="7097486360902471446" name="range_start">"범위 시작"</string>
+    <string msgid="1660595293173844803" name="report_a_problem">"문제 신고"</string>
     <string msgid="6420018528474762666" name="search_bar_search">"검색"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"검색"</string>
     <string name="searchview_clear_text_content_description">텍스트 삭제</string>
@@ -170,6 +780,7 @@
     <string msgid="3962933905051144957" name="snackbar_dismiss">"닫기"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="7189888345201419934" name="suggestions_available">"아래의 추천 검색어"</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
     <string msgid="2561197295334830845" name="switch_role">"스위치"</string>
     <string msgid="1672349317127674378" name="tab">"탭"</string>
     <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g>퍼센트"</string>
@@ -187,4 +798,6 @@
     <string msgid="2232702812657998674" name="time_picker_pm">"오후"</string>
     <string msgid="2732804537909054941" name="tooltip_long_press_label">"도움말 표시"</string>
     <string msgid="8191239805703103845" name="tooltip_pane_description">"도움말"</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"사용 안함"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"사용"</string>
 </resources>

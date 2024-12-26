@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="maps_compass_directions">
+        <item>"N"</item>
+        <item>"NE"</item>
+        <item>"E"</item>
+        <item>"SE"</item>
+        <item>"S"</item>
+        <item>"SO"</item>
+        <item>"O"</item>
+        <item>"NO"</item>
+    </string-array>
+    <string-array name="maps_full_compass_directions">
+        <item>"norte"</item>
+        <item>"nordeste"</item>
+        <item>"este"</item>
+        <item>"sureste"</item>
+        <item>"sur"</item>
+        <item>"suroeste"</item>
+        <item>"oeste"</item>
+        <item>"noroeste"</item>
+    </string-array>
     <plurals name="mtrl_badge_content_description">
     <item quantity="one">%d notificación nueva</item>
     <item quantity="other">%d notificaciones nuevas</item>
@@ -53,6 +73,7 @@
     <string msgid="406453423630273620" name="close_drawer">"Cerrar el menú de navegación"</string>
     <string msgid="7573152094250666567" name="close_sheet">"Cerrar hoja"</string>
     <string msgid="5389587048670450460" name="collapsed">"Contraído"</string>
+    <string msgid="6083905920877235314" name="copy">"Copiar"</string>
     <string msgid="3499643850558715142" name="date_input_headline">"Fecha ingresada"</string>
     <string msgid="8562356184193964298" name="date_input_headline_description">"Fecha ingresada: %1$s"</string>
     <string msgid="5281836720766682161" name="date_input_invalid_for_pattern">"La fecha no coincide con el patrón esperado: %1$s"</string>
@@ -90,12 +111,27 @@
     <string msgid="1890207353314751437" name="dropdown_menu">"Menú desplegable"</string>
     <string name="error_a11y_label">Error: No válido</string>
     <string name="error_icon_content_description">Error</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Opciones avanzadas"</string>
     <string msgid="5974471714631304645" name="expanded">"Expandido"</string>
     <string name="exposed_dropdown_menu_content_description">Mostrar menú desplegable</string>
     <string name="icon_content_description">Ícono de diálogo</string>
     <string msgid="6827826412747255547" name="in_progress">"En curso"</string>
     <string msgid="7933458017204019916" name="indeterminate">"Verificado parcialmente"</string>
     <string name="item_view_role_description">Pestaña</string>
+    <string msgid="9210820207514660247" name="maps_API_OUTDATED_WARNING">"Esta app está usando una versión anterior de Maps. Por lo tanto, es posible que no funcione correctamente."</string>
+    <string msgid="6807007598222074916" name="maps_COMPASS_ALT_TEXT">"Brújula"</string>
+    <string msgid="3371108618085690173" name="maps_DIRECTIONS_ALT_TEXT">"Obtener instrucciones sobre cómo llegar"</string>
+    <string msgid="1189955191774927738" name="maps_GOOGLE_MAP">"Mapa de Google"</string>
+    <string msgid="2264878565827236979" name="maps_LEVEL_ALT_TEXT">"Nivel {0}"</string>
+    <string msgid="6875584096776566703" name="maps_MY_LOCATION_ALT_TEXT">"Mi ubicación"</string>
+    <string msgid="7383272971595812419" name="maps_NO_GMM">"Google Maps no está instalado o está inhabilitado"</string>
+    <string msgid="1460559660387626258" name="maps_OPEN_GMM_ALT_TEXT">"Abrir en Google Maps"</string>
+    <string msgid="175515198141357876" name="maps_YOUR_LOCATION">"Tu ubicación actual"</string>
+    <string msgid="8499414555829263194" name="maps_ZOOM_IN_ALT_TEXT">"Acercar"</string>
+    <string msgid="8347872495490681122" name="maps_ZOOM_OUT_ALT_TEXT">"Alejar"</string>
+    <string msgid="7422837848992631163" name="maps_default_user_error_message">"¡Uy! Se produjo un error."</string>
+    <string msgid="2220756820707696446" name="maps_invalid_panorama_data">"Panorámica no válida."</string>
+    <string msgid="2960355978460391458" name="maps_marker_default_on_select_content_description">"Marcador de mapa"</string>
     <string name="material_clock_toggle_content_description">Selecciona a.m. o p.m.</string>
     <string name="material_hour_24h_suffix">%1$s horas</string>
     <string name="material_hour_selection">Seleccione la hora.</string>
@@ -109,6 +145,31 @@
     <string name="material_timepicker_pm">p.m.</string>
     <string name="material_timepicker_select_time">Selecciona una hora</string>
     <string name="material_timepicker_text_input_mode_description">Cambia al modo de entrada de texto para ingresar la hora.</string>
+    <string msgid="2939063992730535343" name="mr_button_content_description">"Transmitir"</string>
+    <string msgid="6073720094880410356" name="mr_cast_button_connected">"Transmitir. Conectado"</string>
+    <string msgid="6629927151350192407" name="mr_cast_button_connecting">"Transmitir. Conectando"</string>
+    <string msgid="8071109333469380363" name="mr_cast_button_disconnected">"Transmitir. Desconectado"</string>
+    <string msgid="2175930138959078155" name="mr_cast_dialog_title_view_placeholder">"Sin información disponible"</string>
+    <string msgid="6114250663023140921" name="mr_chooser_searching">"Buscando dispositivos"</string>
+    <string msgid="1419936397646839840" name="mr_chooser_title">"Transmitir a"</string>
+    <string msgid="3330502667672708728" name="mr_controller_album_art">"Imagen del álbum"</string>
+    <string msgid="9171231064758955152" name="mr_controller_casting_screen">"Transmitiendo pantalla"</string>
+    <string msgid="5684434439232634509" name="mr_controller_close_description">"Cerrar"</string>
+    <string msgid="2585048604188129749" name="mr_controller_collapse_group">"Contraer"</string>
+    <string msgid="7812275474138309497" name="mr_controller_disconnect">"Desconectar"</string>
+    <string msgid="4521419834052044261" name="mr_controller_expand_group">"Expandir"</string>
+    <string msgid="855271725131981086" name="mr_controller_no_info_available">"Sin información disponible"</string>
+    <string msgid="5495452265246139458" name="mr_controller_no_media_selected">"No se seleccionó contenido multimedia"</string>
+    <string msgid="747801650871398383" name="mr_controller_pause">"Pausa"</string>
+    <string msgid="1253345086594430054" name="mr_controller_play">"Reproducir"</string>
+    <string msgid="5497722768305745508" name="mr_controller_stop">"Detener"</string>
+    <string msgid="804210341192624074" name="mr_controller_stop_casting">"Detener transmisión"</string>
+    <string msgid="2955862765169128170" name="mr_controller_volume_slider">"Control deslizante del volumen"</string>
+    <string msgid="4115858704575247342" name="mr_dialog_default_group_name">"Grupo"</string>
+    <string msgid="4307018456678388936" name="mr_dialog_groupable_header">"Agregar un dispositivo"</string>
+    <string msgid="6068257520605505468" name="mr_dialog_transferable_header">"Reproducir en un grupo"</string>
+    <string msgid="7449553026175453403" name="mr_system_route_name">"Sistema"</string>
+    <string msgid="4088331695424166162" name="mr_user_route_category_name">"Dispositivos"</string>
     <string name="mtrl_badge_numberless_content_description">Notificación nueva</string>
     <string name="mtrl_checkbox_state_description_checked">Marcada</string>
     <string name="mtrl_checkbox_state_description_indeterminate">Verificado parcialmente</string>
@@ -156,11 +217,14 @@
     <string name="mtrl_timepicker_confirm">Aceptar</string>
     <string msgid="542007171693138492" name="navigation_menu">"Menú de navegación"</string>
     <string msgid="6610465462668679431" name="not_selected">"Sin seleccionar"</string>
+    <string msgid="6573031135582639649" name="not_set">"Sin definir"</string>
     <string msgid="875452955155264703" name="off">"No"</string>
     <string msgid="8655164131929253426" name="on">"Sí"</string>
     <string name="password_toggle_content_description">Mostrar contraseña</string>
+    <string msgid="6685851473431805375" name="preference_copied">"Se copió \"<ns1:g id="SUMMARY">%1$s</ns1:g>\" en el portapapeles."</string>
     <string msgid="5941395253238309765" name="range_end">"Final de intervalo"</string>
     <string msgid="7097486360902471446" name="range_start">"Inicio de intervalo"</string>
+    <string msgid="1660595293173844803" name="report_a_problem">"Informar un problema"</string>
     <string msgid="6420018528474762666" name="search_bar_search">"Buscar"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Buscar"</string>
     <string name="searchview_clear_text_content_description">Borrar texto</string>
@@ -170,6 +234,7 @@
     <string msgid="3962933905051144957" name="snackbar_dismiss">"Descartar"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="7189888345201419934" name="suggestions_available">"Sugerencias a continuación"</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
     <string msgid="2561197295334830845" name="switch_role">"Cambiar"</string>
     <string msgid="1672349317127674378" name="tab">"Pestaña"</string>
     <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> por ciento."</string>
@@ -187,4 +252,6 @@
     <string msgid="2232702812657998674" name="time_picker_pm">"p.m."</string>
     <string msgid="2732804537909054941" name="tooltip_long_press_label">"Mostrar información"</string>
     <string msgid="8191239805703103845" name="tooltip_pane_description">"Información"</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"DESACTIVADO"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"ACTIVADO"</string>
 </resources>

@@ -1,10 +1,618 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="CALLOUT_ALPHABETIC_LABELS">
+        <item>"A"</item>
+        <item>"B"</item>
+        <item>"C"</item>
+        <item>"D"</item>
+        <item>"E"</item>
+        <item>"F"</item>
+        <item>"G"</item>
+        <item>"H"</item>
+    </string-array>
+    <string-array name="SHOW_SCALEBAR_ENTRIES">
+        <item>"Izmantojot tālummaiņu"</item>
+        <item>"Vienmēr"</item>
+    </string-array>
+    <string-array name="maps_compass_directions">
+        <item>"Z"</item>
+        <item>"ZA"</item>
+        <item>"A"</item>
+        <item>"DA"</item>
+        <item>"D"</item>
+        <item>"DR"</item>
+        <item>"R"</item>
+        <item>"ZR"</item>
+    </string-array>
+    <string-array name="maps_full_compass_directions">
+        <item>"uz ziemeļiem"</item>
+        <item>"uz ziemeļaustrumiem"</item>
+        <item>"uz austrumiem"</item>
+        <item>"uz dienvidaustrumiem"</item>
+        <item>"uz dienvidiem"</item>
+        <item>"uz dienvidrietumiem"</item>
+        <item>"uz rietumiem"</item>
+        <item>"uz ziemeļrietumiem"</item>
+    </string-array>
+    <plurals formatted="false" msgid="4326673060750344846" name="BIKESHARING_BIKES_AVAILABLE">
+        <item quantity="zero"> Pieejami <ns1:g id="BIKES_AVAILABLE_0">%d</ns1:g> velosipēdi </item>
+        <item quantity="one"> Pieejams <ns1:g id="BIKES_AVAILABLE_5">%d</ns1:g> velosipēds </item>
+        <item quantity="other"> Pieejami <ns1:g id="BIKES_AVAILABLE_5">%d</ns1:g> velosipēdi </item>
+    </plurals>
+    <plurals formatted="false" msgid="2128912764519502183" name="BIKESHARING_DOCKS_AVAILABLE">
+        <item quantity="zero"> Pieejamas <ns1:g id="NUM_DOCKS_0">%d</ns1:g> piestātnes </item>
+        <item quantity="one"> Pieejama <ns1:g id="NUM_DOCKS_5">%d</ns1:g> piestātne </item>
+        <item quantity="other"> Pieejamas <ns1:g id="NUM_DOCKS_5">%d</ns1:g> piestātnes </item>
+    </plurals>
+    <plurals formatted="false" msgid="3587957769510236203" name="COMPASS_ACCESSIBILITY_BEARING">
+        <item quantity="zero">Kartes virziens attiecībā pret ziemeļiem ir <ns1:g id="MAP_BEARING_0">%d</ns1:g> grādu.</item>
+        <item quantity="one">Kartes virziens attiecībā pret ziemeļiem ir <ns1:g id="MAP_BEARING_5">%d</ns1:g> grāds.</item>
+        <item quantity="other">Kartes virziens attiecībā pret ziemeļiem ir <ns1:g id="MAP_BEARING_5">%d</ns1:g> grādi.</item>
+    </plurals>
+    <plurals formatted="false" msgid="4689781638232061047" name="DA_DAYS">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_DAYS_0">%s</ns1:g> dienu</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> diena</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> dienas</item>
+    </plurals>
+    <plurals formatted="false" msgid="6144185587501044196" name="DA_DAYS_ABBREVIATED">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_DAYS_0">%s</ns1:g> d.</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> d.</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> d.</item>
+    </plurals>
+    <plurals formatted="false" msgid="6393943752589702797" name="DA_DAYS_ABBREVIATED_SHORT">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_DAYS_0">%s</ns1:g> d.</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> d.</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> d.</item>
+    </plurals>
+    <plurals formatted="false" msgid="2798004425159140146" name="DA_DAYS_SHORT">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_DAYS_0">%s</ns1:g> dienu</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> diena</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_DAYS_5">%s</ns1:g> dienas</item>
+    </plurals>
+    <plurals formatted="false" msgid="4077931414703271286" name="DA_HOURS">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_HOURS_0">%s</ns1:g> stundu</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g> stunda</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g> stundas</item>
+    </plurals>
+    <plurals formatted="false" msgid="7410132942057247478" name="DA_HOURS_ABBREVIATED">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_HOURS_0">%s</ns1:g> st.</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g> st.</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g> st.</item>
+    </plurals>
+    <plurals formatted="false" msgid="5724380721819842832" name="DA_HOURS_ABBREVIATED_SHORT">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_HOURS_0">%s</ns1:g> h</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g> h</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_HOURS_5">%s</ns1:g> h</item>
+    </plurals>
+    <plurals formatted="false" msgid="302465155895970807" name="DA_MINUTES">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_MINUTES_0">%s</ns1:g> minūšu</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g> minūte</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g> minūtes</item>
+    </plurals>
+    <plurals formatted="false" msgid="6854365863287202322" name="DA_MINUTES_ABBREVIATED">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_MINUTES_0">%s</ns1:g> min.</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g> min.</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g> min.</item>
+    </plurals>
+    <plurals formatted="false" msgid="7896893686804578870" name="DA_MINUTES_ABBREVIATED_SHORT">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_MINUTES_0">%s</ns1:g> min</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g> min</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g> min</item>
+    </plurals>
+    <plurals formatted="false" msgid="2581719964976016874" name="DA_MINUTES_BARE_FOLLOWING_HOURS">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_MINUTES_0">%s</ns1:g></item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g></item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_MINUTES_5">%s</ns1:g></item>
+    </plurals>
+    <plurals formatted="false" msgid="6345729166163721080" name="DA_SECONDS">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_SECONDS_0">%s</ns1:g> sekunžu</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_SECONDS_5">%s</ns1:g> sekunde</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_SECONDS_5">%s</ns1:g> sekundes</item>
+    </plurals>
+    <plurals formatted="false" msgid="1032855961281750509" name="DA_SPEECH_CONTINUE_FOR_X_FEET">
+        <item quantity="zero">Turpiniet braukt <ns1:g id="NUMBER_OF_FEET_0">%1$s</ns1:g> pēdu</item>
+        <item quantity="one">Turpiniet braukt <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> pēdu</item>
+        <item quantity="other">Turpiniet braukt <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> pēdas</item>
+    </plurals>
+    <plurals formatted="false" msgid="8557996246843277515" name="DA_SPEECH_CONTINUE_FOR_X_KILOMETERS">
+        <item quantity="zero">Turpiniet braukt <ns1:g id="NUMBER_OF_KILOMETERS_0">%1$s</ns1:g> kilometru</item>
+        <item quantity="one">Turpiniet braukt <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> kilometru</item>
+        <item quantity="other">Turpiniet braukt <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> kilometrus</item>
+    </plurals>
+    <plurals formatted="false" msgid="605905875424024433" name="DA_SPEECH_CONTINUE_FOR_X_METERS">
+        <item quantity="zero">Turpiniet braukt <ns1:g id="NUMBER_OF_METERS_0">%1$s</ns1:g> metru</item>
+        <item quantity="one">Turpiniet braukt <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> metru</item>
+        <item quantity="other">Turpiniet braukt <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> metrus</item>
+    </plurals>
+    <plurals formatted="false" msgid="5775940963454325209" name="DA_SPEECH_CONTINUE_FOR_X_MILES">
+        <item quantity="zero">Turpiniet braukt <ns1:g id="NUMBER_OF_MILES_0">%1$s</ns1:g> jūdžu</item>
+        <item quantity="one">Turpiniet braukt <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> jūdzi</item>
+        <item quantity="other">Turpiniet braukt <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> jūdzes</item>
+    </plurals>
+    <plurals formatted="false" msgid="4742053200406294830" name="DA_SPEECH_CONTINUE_FOR_X_YARDS">
+        <item quantity="zero">Turpiniet braukt <ns1:g id="NUMBER_OF_YARDS_0">%1$s</ns1:g> jardu</item>
+        <item quantity="one">Turpiniet braukt <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> jardu</item>
+        <item quantity="other">Turpiniet braukt <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> jardus</item>
+    </plurals>
+    <plurals formatted="false" msgid="2823664751659973629" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_FEET">
+        <item quantity="zero">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_0">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_FEET_1_12">%1$s</ns1:g> pēdu</item>
+        <item quantity="one">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_FEET_11">%1$s</ns1:g> pēdu</item>
+        <item quantity="other">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_FEET_11">%1$s</ns1:g> pēdas</item>
+    </plurals>
+    <plurals formatted="false" msgid="4715395619972917121" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_KILOMETERS">
+        <item quantity="zero">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_0">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_KILOMETERS_1_12">%1$s</ns1:g> kilometru</item>
+        <item quantity="one">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_KILOMETERS_11">%1$s</ns1:g> kilometru</item>
+        <item quantity="other">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_KILOMETERS_11">%1$s</ns1:g> kilometrus</item>
+    </plurals>
+    <plurals formatted="false" msgid="3492075494171740042" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_METERS">
+        <item quantity="zero">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_0">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_METERS_1_12">%1$s</ns1:g> metru</item>
+        <item quantity="one">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_METERS_11">%1$s</ns1:g> metru</item>
+        <item quantity="other">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_METERS_11">%1$s</ns1:g> metrus</item>
+    </plurals>
+    <plurals formatted="false" msgid="6281859705184148951" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_MILES">
+        <item quantity="zero">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_0">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_MILES_1_12">%1$s</ns1:g> jūdžu</item>
+        <item quantity="one">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_MILES_11">%1$s</ns1:g> jūdzi</item>
+        <item quantity="other">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_MILES_11">%1$s</ns1:g> jūdzes</item>
+    </plurals>
+    <plurals formatted="false" msgid="1750899323638437779" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_X_YARDS">
+        <item quantity="zero">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_0">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_YARDS_1_12">%1$s</ns1:g> jardu</item>
+        <item quantity="one">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_YARDS_11">%1$s</ns1:g> jardu</item>
+        <item quantity="other">Turpiniet braukt pa ceļu <ns1:g id="ROAD_NAME_10">%2$s</ns1:g> vēl <ns1:g id="NUMBER_OF_YARDS_11">%1$s</ns1:g> jardus</item>
+    </plurals>
+    <plurals formatted="false" msgid="6824002006206583196" name="DA_SPEECH_IN_X_FEET">
+        <item quantity="zero">Pēc <ns1:g id="NUMBER_OF_FEET_0">%1$s</ns1:g> pēdām</item>
+        <item quantity="one">Pēc <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> pēdas</item>
+        <item quantity="other">Pēc <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> pēdām</item>
+    </plurals>
+    <plurals formatted="false" msgid="3927150446141308796" name="DA_SPEECH_IN_X_KILOMETERS">
+        <item quantity="zero">Pēc <ns1:g id="NUMBER_OF_KILOMETERS_0">%1$s</ns1:g> kilometriem</item>
+        <item quantity="one">Pēc <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> kilometra</item>
+        <item quantity="other">Pēc <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> kilometriem</item>
+    </plurals>
+    <plurals formatted="false" msgid="8424550718788882600" name="DA_SPEECH_IN_X_METERS">
+        <item quantity="zero">Pēc <ns1:g id="NUMBER_OF_METERS_0">%1$s</ns1:g> metriem</item>
+        <item quantity="one">Pēc <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> metra</item>
+        <item quantity="other">Pēc <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> metriem</item>
+    </plurals>
+    <plurals formatted="false" msgid="5844894205706436077" name="DA_SPEECH_IN_X_MILES">
+        <item quantity="zero">Pēc <ns1:g id="NUMBER_OF_MILES_0">%1$s</ns1:g> jūdzēm</item>
+        <item quantity="one">Pēc <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> jūdzes</item>
+        <item quantity="other">Pēc <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> jūdzēm</item>
+    </plurals>
+    <plurals formatted="false" msgid="1857544676918506731" name="DA_SPEECH_IN_X_YARDS">
+        <item quantity="zero">Pēc <ns1:g id="NUMBER_OF_YARDS_0">%1$s</ns1:g> jardiem</item>
+        <item quantity="one">Pēc <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> jarda</item>
+        <item quantity="other">Pēc <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> jardiem</item>
+    </plurals>
+    <plurals formatted="false" msgid="2339336258154180702" name="DA_SPEED_FORMAT_KILOMETERS_PER_HOUR_EXTENDED">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_KILOMETERS_0">%s</ns1:g> kilometru stundā</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_KILOMETERS_5">%s</ns1:g> kilometrs stundā</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_KILOMETERS_5">%s</ns1:g> kilometri stundā</item>
+    </plurals>
+    <plurals formatted="false" msgid="6140682604650140709" name="DA_SPEED_FORMAT_MILES_PER_HOUR_EXTENDED">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_MILES_0">%s</ns1:g> jūdžu stundā</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_MILES_5">%s</ns1:g> jūdze stundā</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_MILES_5">%s</ns1:g> jūdzes stundā</item>
+    </plurals>
+    <plurals formatted="false" msgid="5488601092985524575" name="DA_YOUR_DESTINATION_IS_X_FEET_AHEAD">
+        <item quantity="zero">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_FEET_0">%1$s</ns1:g> pēdu uz priekšu</item>
+        <item quantity="one">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> pēdu uz priekšu</item>
+        <item quantity="other">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_FEET_5">%1$s</ns1:g> pēdas uz priekšu</item>
+    </plurals>
+    <plurals formatted="false" msgid="3956464927073329258" name="DA_YOUR_DESTINATION_IS_X_KILOMETERS_AHEAD">
+        <item quantity="zero">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_KILOMETERS_0">%1$s</ns1:g> kilometru uz priekšu</item>
+        <item quantity="one">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> kilometru uz priekšu</item>
+        <item quantity="other">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_KILOMETERS_5">%1$s</ns1:g> kilometrus uz priekšu</item>
+    </plurals>
+    <plurals formatted="false" msgid="1869769789353944376" name="DA_YOUR_DESTINATION_IS_X_METERS_AHEAD">
+        <item quantity="zero">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_METERS_0">%1$s</ns1:g> metru uz priekšu</item>
+        <item quantity="one">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> metru uz priekšu</item>
+        <item quantity="other">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_METERS_5">%1$s</ns1:g> metrus uz priekšu</item>
+    </plurals>
+    <plurals formatted="false" msgid="3933752078325316030" name="DA_YOUR_DESTINATION_IS_X_MILES_AHEAD">
+        <item quantity="zero">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_MILES_0">%1$s</ns1:g> jūdzes uz priekšu</item>
+        <item quantity="one">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> jūdzi uz priekšu</item>
+        <item quantity="other">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_MILES_5">%1$s</ns1:g> jūdzes uz priekšu</item>
+    </plurals>
+    <plurals formatted="false" msgid="3730606906820969126" name="DA_YOUR_DESTINATION_IS_X_YARDS_AHEAD">
+        <item quantity="zero">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_YARDS_0">%1$s</ns1:g> jardu uz priekšu</item>
+        <item quantity="one">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> jardu uz priekšu</item>
+        <item quantity="other">Jūsu galamērķis atrodas <ns1:g id="NUMBER_OF_YARDS_5">%1$s</ns1:g> jardus uz priekšu</item>
+    </plurals>
+    <plurals formatted="false" msgid="4613320652217353645" name="TRANSIT_NUM_STOPS">
+        <item quantity="zero"><ns1:g id="NUMBER_OF_STOPS_0">%d</ns1:g> pieturu</item>
+        <item quantity="one"><ns1:g id="NUMBER_OF_STOPS_5">%d</ns1:g> pietura</item>
+        <item quantity="other"><ns1:g id="NUMBER_OF_STOPS_5">%d</ns1:g> pieturas</item>
+    </plurals>
+    <plurals formatted="false" msgid="5579098508661025925" name="TRANSIT_PLUS_NUMBER_OF_ALERTS_TITLE">
+        <item quantity="zero">un vēl <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g> brīdinājumu</item>
+        <item quantity="one">un vēl <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g> brīdinājums</item>
+        <item quantity="other">un vēl <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g> brīdinājumi</item>
+    </plurals>
+    <plurals formatted="false" msgid="7409021725106195613" name="TRANSIT_PLUS_NUMBER_OF_ALERTS_TITLE_CONTENT_DESCRIPTION">
+        <item quantity="zero">un vēl <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g> brīdinājumi</item>
+        <item quantity="one">un vēl <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g> brīdinājums</item>
+        <item quantity="other">un vēl <ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g> brīdinājumi</item>
+    </plurals>
+    <plurals formatted="false" msgid="8048195651219433071" name="TRANSIT_PLUS_NUMBER_OF_INFORMATION_ITEMS_TITLE">
+        <item quantity="zero">Vēl +<ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g></item>
+        <item quantity="one">Vēl +<ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g></item>
+        <item quantity="other">Vēl +<ns1:g id="NUMBER_OF_ALERTS_1">%d</ns1:g></item>
+    </plurals>
+    <plurals formatted="false" msgid="3673235514357385007" name="TRANSIT_PLUS_NUMBER_OF_INFORMATION_ITEMS_TITLE_CONTENT_DESCRIPTION">
+        <item quantity="zero">un vēl <ns1:g id="NUMBER_OF_INFORMATION_1">%d</ns1:g></item>
+        <item quantity="one">un vēl <ns1:g id="NUMBER_OF_INFORMATION_1">%d</ns1:g></item>
+        <item quantity="other">un vēl <ns1:g id="NUMBER_OF_INFORMATION_1">%d</ns1:g></item>
+    </plurals>
     <plurals name="mtrl_badge_content_description">
     <item quantity="zero">%d jaunu paziņojumu</item>
     <item quantity="one">%d jauns paziņojums</item>
     <item quantity="other">%d jauni paziņojumi</item>
   </plurals>
+    <string msgid="988766512127533844" name="ABOUT">"Par, not. un konf."</string>
+    <string msgid="4382378373633137407" name="ACCESSIBILITY_ACTIVATE_TO_CLOSE_STEP_LIST">"Aktivizējiet, lai aizvērtu detalizētu norāžu sarakstu"</string>
+    <string msgid="8888075998205469082" name="ACCESSIBILITY_ACTIVATE_TO_OPEN_STEP_LIST">"Aktivizējiet, lai atvērtu detalizētu norāžu sarakstu"</string>
+    <string msgid="7470955658075607809" name="ACCESSIBILITY_ALTERNATE_ROUTE_DESCRIPTION">"Alternatīvs maršruts — <ns1:g id="DURATION">%1$s</ns1:g> pa šādu maršrutu: <ns1:g id="ROAD">%2$s</ns1:g>"</string>
+    <string msgid="1096848458128224503" name="ACCESSIBILITY_ALTERNATE_ROUTE_FUEL_EFFICIENT_DESCRIPTION">"Visekonomiskākais maršruts"</string>
+    <string msgid="8434539979603521046" name="ACCESSIBILITY_ALTERNATE_ROUTE_HAS_TOLLS_DESCRIPTION">"Alternatīvajā maršrutā <ns1:g id="DURATION">%1$s</ns1:g> pa <ns1:g id="ROAD">%2$s</ns1:g> ir maksas ceļi"</string>
+    <string msgid="6280010901313672282" name="ACCESSIBILITY_ALTERNATE_ROUTE_HAS_TOLL_PRICE_DESCRIPTION">"Alternatīvajā maršrutā <ns1:g id="DURATION">%1$s</ns1:g> pa <ns1:g id="ROAD">%2$s</ns1:g> ir maksas ceļi (<ns1:g id="COST">%3$s</ns1:g>)"</string>
+    <string msgid="4147878166568539021" name="ACCESSIBILITY_ALTERNATE_ROUTE_NO_TOLLS_DESCRIPTION">"Alternatīvajā maršrutā <ns1:g id="DURATION">%1$s</ns1:g> pa <ns1:g id="ROAD">%2$s</ns1:g> nav maksas ceļu"</string>
+    <string msgid="6020573412357611477" name="ACCESSIBILITY_COMPASS">"Uz ziemeļiem"</string>
+    <string msgid="8223442679494597781" name="ACCESSIBILITY_DIRECTIONS_PROCEED_TO_METERS_WITH_STEP">"<ns1:g id="STEP_NUMBER">%1$d</ns1:g>. posms, turpiniet kustību: <ns1:g id="DISTANCE">%2$s</ns1:g>"</string>
+    <string msgid="7868137419995936422" name="ACCESSIBILITY_DIRECTIONS_STEP_LIST_TO">"Norāžu saraksts līdz galamērķim <ns1:g id="DESTINATION">%s</ns1:g>. Aktivizējiet, lai izvērstu."</string>
+    <string msgid="5761061967444438907" name="ACCESSIBILITY_DIRECTION_STEP_PREFIX">"<ns1:g id="STEP_NUMBER">%1$d</ns1:g>. posms, <ns1:g id="STEP_DESCRIPTION">%2$s</ns1:g>"</string>
+    <string msgid="5429655055049309673" name="ACCESSIBILITY_LABEL_HAZARDOUS_GOODS_RESTRICTED">"Bīstamu preču ierobežojums"</string>
+    <string msgid="7244890995607172810" name="ACCESSIBILITY_LABEL_HEIGHT_RESTRICTED">"Augstuma ierobežojums"</string>
+    <string msgid="5720128131726601812" name="ACCESSIBILITY_LABEL_HEIGHT_RESTRICTED_WITH_VALUE">"Augstuma ierobežojums: <ns1:g id="HEIGHT">%s</ns1:g>"</string>
+    <string msgid="2427955214381665545" name="ACCESSIBILITY_LABEL_TRUCKS_RESTRICTED">"Kravas automašīnu ierobežojums"</string>
+    <string msgid="1735969374518715138" name="ACCESSIBILITY_LABEL_WEIGHT_RESTRICTED">"Svara ierobežojums"</string>
+    <string msgid="2228263168852010676" name="ACCESSIBILITY_LABEL_WEIGHT_RESTRICTED_WITH_VALUE">"Svara ierobežojums: <ns1:g id="WEIGHT">%s</ns1:g>"</string>
+    <string msgid="3500168200113756692" name="ACCESSIBILITY_LONG_PAUSE">". "</string>
+    <string msgid="4028351416429434451" name="ACCESSIBILITY_SELECTED_ROUTE_DESCRIPTION">"Atlasīts maršruts <ns1:g id="DURATION">%1$s</ns1:g> ceļā <ns1:g id="ROAD">%2$s</ns1:g>"</string>
+    <string msgid="5435510447657254534" name="ACCESSIBILITY_SELECTED_ROUTE_HAS_TOLLS_DESCRIPTION">"Atlasītajam maršrutam <ns1:g id="DURATION">%1$s</ns1:g> ceļā <ns1:g id="ROAD">%2$s</ns1:g> ir maksas ceļi"</string>
+    <string msgid="1753061936075193628" name="ACCESSIBILITY_SELECTED_ROUTE_HAS_TOLL_PRICE_DESCRIPTION">"Atlasītajā maršrutā <ns1:g id="DURATION">%1$s</ns1:g> ceļā <ns1:g id="ROAD">%2$s</ns1:g> ir maksas ceļi (<ns1:g id="COST">%3$s</ns1:g>)"</string>
+    <string msgid="7666497790505910181" name="ACCESSIBILITY_SELECTED_ROUTE_NO_TOLLS_DESCRIPTION">"Atlasītajam maršrutam <ns1:g id="DURATION">%1$s</ns1:g> ceļā <ns1:g id="ROAD">%2$s</ns1:g> nav maksas ceļu"</string>
+    <string msgid="9109457196557412064" name="ACCESSIBILITY_SENTENCE_DELIMITER">", "</string>
+    <string msgid="8567406792741571450" name="ACCESSIBILITY_SETTINGS_TITLE">"Pieejamības iestatījumi"</string>
+    <string msgid="8175283740736118872" name="ACCESSIBILITY_SHORT_PAUSE">", "</string>
+    <string msgid="8994692387102653205" name="ACCESSIBILITY_STREET_VIEW_WITH_DESTINATION">"Ielas attēls galamērķī <ns1:g id="DESTINATION">%1$s</ns1:g>"</string>
+    <string msgid="6051617480676658328" name="ACCESSIBILITY_STREET_VIEW_WITH_STEP">"Ielas attēls <ns1:g id="STEP_NUMBER">%1$d</ns1:g>. posmā"</string>
+    <string msgid="2864917498473472285" name="ACCESSIBILITY_WALK_ROUTE">"Iešanas maršruts"</string>
+    <string msgid="8493757823683214418" name="ALERT_DETAILS_CARD_CLICKABLE_PROMPT">"Uzzināt vairāk"</string>
+    <string msgid="3989324736757060364" name="ALERT_SEVERITY_CONTENT_DESCRIPTION">"Brīdinājums"</string>
+    <string msgid="7887415291228067160" name="APP_LANGUAGE_SETTINGS_TITLE">"Lietotnes valoda"</string>
+    <string msgid="18182619617560500" name="ARRIVE_AT_TIME">"Ierašanās: <ns1:g id="ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="3456517746042480651" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat jaunumus par jaunām un populārām vietām, pamatojoties uz jūsu preferencēm."</string>
+    <string msgid="8609071464979199056" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_SETTINGS_SUMMARY">"Saņemiet ar savām preferencēm saistītus jaunumus par populārām un jaunām vietām"</string>
+    <string msgid="7386889502955593752" name="BASE_LOCAL_DISCOVERY_NOTIFICATION_SETTINGS_TITLE">"Populāras un jaunas vietas"</string>
+    <string msgid="4073140123776083415" name="BIKESHARING_RETURN_BIKE">"Atgriezt divriteni"</string>
+    <string msgid="3764472074385554783" name="BIKESHARING_UNLOCK_BIKE">"Atbloķēt divriteni"</string>
+    <string msgid="4321720802782027634" name="BIKESHARING_UNLOCK_IN_X">"Atbloķēt šeit: <ns1:g id="APP_NAME">%s</ns1:g>"</string>
+    <string msgid="906252415244469164" name="BUSINESS_MESSAGE_FROM_CUSTOMER_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat paziņojumus, kad klienti nosūta ziņojumus jūsu uzņēmumiem Google tīklā."</string>
+    <string msgid="2660141319896744644" name="BUSINESS_MESSAGE_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat jaunumus par atbildēm uz jautājumiem, ko uzdevāt uzņēmumiem pakalpojumā Maps."</string>
+    <string msgid="6503029847043791301" name="BUSINESS_MESSAGE_NOTIFICATION_SETTINGS_SUMMARY">"Saņemt atbildes uz jautājumiem, kurus pakalpojumā Maps uzdevāt uzņēmumiem"</string>
+    <string msgid="717732884052571101" name="BUSINESS_MESSAGE_NOTIFICATION_SETTINGS_TITLE">"Ziņojumi"</string>
+    <string msgid="6956338141212937008" name="CANCEL_BUTTON">"Atcelt"</string>
+    <string msgid="7385460563057493069" name="CHAT_SETTINGS_ITEM_TITLE">"Tērzēšana"</string>
+    <string msgid="3849295477853657853" name="CLIENT_SIDE_RECENT_HISTORY_ENABLED">"Saglabāt nesenus meklēšanas vaicājumus šajā ierīcē"</string>
+    <string msgid="4356531394932608249" name="COLLABORATIVE_LISTS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat jaunumus par sarakstiem, kuri jums pieder un kurus rediģējat."</string>
+    <string msgid="8615172296793020463" name="COLLABORATIVE_LISTS_NOTIFICATION_SETTINGS_SUMMARY">"Saņemiet jaunumus par sarakstiem, kas jums pieder un ko jūs rediģējat"</string>
+    <string msgid="6724970202733370522" name="COLLABORATIVE_LISTS_NOTIFICATION_SETTINGS_TITLE">"Saraksti"</string>
+    <string msgid="3990714189475821790" name="COMMUTE_PROFILE_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat atgādinājumus atjaunināt informāciju par jūsu ikdienas braucienu preferencēm."</string>
+    <string msgid="2350458858231203291" name="COMMUTE_PROFILE_SETTINGS_SUMMARY">"Saņemiet atgādinājumus atjaunināt informāciju par savām ikdienas braucienu preferencēm"</string>
+    <string msgid="7744486401672603894" name="COMMUTE_PROFILE_SETTINGS_TITLE">"Ikdienas braucienu profils"</string>
+    <string msgid="7369031720555343766" name="COMPASS_ACCESSIBILITY_FOLLOW">"Ievērot jūsu virzienu"</string>
+    <string msgid="5236771457267031238" name="COMPASS_ACCESSIBILITY_NORTH_UP">"Iestatīt karti ar ziemeļiem uz augšu"</string>
+    <string msgid="7676079846529082801" name="CYCLING_ELEVATION_X_DECLINE">"-<ns1:g id="DISTANCE">%s</ns1:g> kritums"</string>
+    <string msgid="8573003133952335858" name="CYCLING_ELEVATION_X_INCLINE">"+<ns1:g id="DISTANCE">%s</ns1:g> kāpums"</string>
+    <string msgid="2150378996327208305" name="CYCLING_ROAD_TYPE_HIGHWAY">"Lielceļš"</string>
+    <string msgid="3738580863381374955" name="CYCLING_ROAD_TYPE_MAIN_ROAD">"Galvenais autoceļš"</string>
+    <string msgid="784178227646746623" name="CYCLING_ROAD_TYPE_MARKED_BIKE_LANE">"Iezīmēts veloceliņš"</string>
+    <string msgid="1244790010869914494" name="CYCLING_ROAD_TYPE_MINOR_ROAD">"Vietējais ceļš"</string>
+    <string msgid="5593259990952540902" name="CYCLING_ROAD_TYPE_PEDESTRIAN_PATH">"Gājēju celiņš"</string>
+    <string msgid="7434121718026354602" name="CYCLING_ROAD_TYPE_SEPARATE_BIKE_LANE">"Atsevišķs veloceliņš"</string>
+    <string msgid="2993992995228313773" name="CYCLING_ROAD_TYPE_SHARED_PATH">"Ceļš gājējiem un velosipēdiem"</string>
+    <string msgid="3315402422807617192" name="CYCLING_ROAD_TYPE_STAIRS">"Kāpnes"</string>
+    <string msgid="8104447113497885959" name="CYCLING_ROUTE_LABEL_BEST_ROUTE">"Labākais maršruts"</string>
+    <string msgid="595174014278343405" name="CYCLING_ROUTE_LABEL_FASTEST">"Visātrākais"</string>
+    <string msgid="5308557378285449822" name="CYCLING_ROUTE_LABEL_LESS_HIGHWAYS">"Mazāk automaģistrāļu"</string>
+    <string msgid="5788540842553685198" name="CYCLING_ROUTE_LABEL_LESS_STEEP_HILLS">"Mazāk pakalnu"</string>
+    <string msgid="6544580293408762300" name="CYCLING_ROUTE_LABEL_LESS_TRAFFIC">"Mazāk satiksmes"</string>
+    <string msgid="771749047614319020" name="CYCLING_ROUTE_LABEL_LESS_TURNS">"Mazāk pagriezienu"</string>
+    <string msgid="5514720260010380200" name="CYCLING_ROUTE_LABEL_MORE_BIKE_LANES">"Mazāk veloceliņu"</string>
+    <string msgid="6799295909450023751" name="DA_AT">"<ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="6204348838228824214" name="DA_DATA_CONNECTION_LOST">"Zaudēts datu savienojums..."</string>
+    <string msgid="9055920400292445132" name="DA_DISTANCE_FORMAT_FEET_ABBREVIATED">"<ns1:g id="NUMBER_OF_FEET">%s</ns1:g> pēd."</string>
+    <string msgid="1596038795147620692" name="DA_DISTANCE_FORMAT_FEET_EXTENDED">"<ns1:g id="NUMBER_OF_FEET">%s</ns1:g> pēdas"</string>
+    <string msgid="5955263181315504888" name="DA_DISTANCE_FORMAT_KILOMETERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g> km"</string>
+    <string msgid="566231057264804657" name="DA_DISTANCE_FORMAT_KILOMETERS_EXTENDED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g> kilometri"</string>
+    <string msgid="4017347679220015543" name="DA_DISTANCE_FORMAT_METERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_METERS">%s</ns1:g> m"</string>
+    <string msgid="1379464276280242796" name="DA_DISTANCE_FORMAT_METERS_EXTENDED">"<ns1:g id="NUMBER_OF_METERS">%s</ns1:g> metri"</string>
+    <string msgid="2515401957955350520" name="DA_DISTANCE_FORMAT_MILES_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g> jūdz."</string>
+    <string msgid="4237807912458051628" name="DA_DISTANCE_FORMAT_MILES_EXTENDED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g> jūdzes"</string>
+    <string msgid="7253880469383384966" name="DA_DISTANCE_FORMAT_MODE">"metric"</string>
+    <string msgid="4169708828913710793" name="DA_DISTANCE_FORMAT_YARDS_ABBREVIATED">"<ns1:g id="NUMBER_OF_YARDS">%s</ns1:g> jar."</string>
+    <string msgid="3150387851356211916" name="DA_DISTANCE_FORMAT_YARDS_EXTENDED">"<ns1:g id="NUMBER_OF_YARDS">%s</ns1:g> jardi"</string>
+    <string msgid="4944833818130154379" name="DA_DISTANCE_RELATIVE_EQUIVALENT">"Līdzīgs<ns1:g id="WHITESPACE">%1$s</ns1:g>attālums"</string>
+    <string msgid="8140845091471826735" name="DA_DISTANCE_RELATIVE_LONGER">"<ns1:g id="DISTANCE">%1$s</ns1:g><ns1:g id="WHITESPACE">%2$s</ns1:g>garāks"</string>
+    <string msgid="4380111419025048248" name="DA_DISTANCE_RELATIVE_SHORTER">"<ns1:g id="DISTANCE">%1$s</ns1:g><ns1:g id="WHITESPACE">%2$s</ns1:g>īsāks"</string>
+    <string msgid="3065017842969529520" name="DA_EXIT_NAME">"Izeja <ns1:g id="EXIT_NAME">{0}</ns1:g>"</string>
+    <string msgid="4966940297863570499" name="DA_EXIT_NUMBER">"<ns1:g id="EXIT_NUMBER">{0}</ns1:g>. izeja"</string>
+    <string msgid="8494855683148237403" name="DA_EXPANDED_NOTIFICATION_SUBTEXT">"<ns1:g id="TIME_REMAINING">%1$s</ns1:g> — <ns1:g id="DISTANCE_REMAINING">%2$s</ns1:g> — <ns1:g id="ETA">%3$s</ns1:g>"</string>
+    <string msgid="8878104100559765265" name="DA_LOCKSCREEN_NOTIFICATION_DIRECTIONS">"<ns1:g id="DISTANCE_TO_NEXT_STEP">%1$s</ns1:g> — <ns1:g id="ROAD_NAME">%2$s</ns1:g>"</string>
+    <string msgid="8553864305083974087" name="DA_LOCKSCREEN_NOTIFICATION_SUBTEXT">"<ns1:g id="DESTINATION_NAME">%1$s</ns1:g> — <ns1:g id="ETA">%2$s</ns1:g>"</string>
+    <string msgid="698528250212661998" name="DA_MINUTES_ABBREVIATED_SHORT_UNIT">"min"</string>
+    <string msgid="7929640078602313092" name="DA_NAME_DELIMITER">" / "</string>
+    <string msgid="3380792810890405138" name="DA_NOTIFICATION_STEP_FORMAT">"<ns1:g id="STRING_0">{0}</ns1:g> - <ns1:g id="STRING_1">{1}</ns1:g>"</string>
+    <string msgid="6662097821719572140" name="DA_OFF_ROUTE">"Novirze no maršruta…"</string>
+    <string msgid="4249562764540028107" name="DA_ONTO">"uz <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="5914998525734325362" name="DA_POINT_ON_MAP">"Punkts kartē"</string>
+    <string msgid="1525420669081149187" name="DA_RELATIVE_EQUIVALENT">"Līdzīgs\nilgums"</string>
+    <string msgid="6345879111462833077" name="DA_RELATIVE_FASTER">"Par <ns1:g id="MINUTES">%1$s</ns1:g>\nātrāk"</string>
+    <string msgid="9026835910813824786" name="DA_RELATIVE_SLOWER">"Par <ns1:g id="MINUTES">%1$s</ns1:g>\nilgāk"</string>
+    <string msgid="1136623639867405953" name="DA_REROUTING">"Notiek jauna maršruta izstrādāšana..."</string>
+    <string msgid="7438343460352215122" name="DA_ROUTE_PREFIXES">"Z,ZA,A,DA,D,DR,R,ZR"</string>
+    <string msgid="5218446718068301940" name="DA_ROUTE_SUFFIXES">"Z,ZA,A,DA,D,DR,R,ZR,Avēn.,Bulv.,Apvedc.,Apl.,Lauk.,Piebr.c.,Ātrgait.automaģ.,Bezm.autoc.,Automaģ.,Josl.,Aleja,Līdz.,Šos.,Iela,Automaģ.,Ceļš"</string>
+    <string msgid="4645745718037033230" name="DA_SPEECH_CONTINUE_FOR_A_HALF_MILE">"Turpiniet braukt pusjūdzi"</string>
+    <string msgid="4164172923590406078" name="DA_SPEECH_CONTINUE_FOR_A_QUARTER_MILE">"Turpiniet braukt ceturtdaļjūdzi"</string>
+    <string msgid="4639761855126118140" name="DA_SPEECH_CONTINUE_FOR_ONE_AND_A_HALF_KILOMETERS">"Turpiniet braukt pusotru kilometru"</string>
+    <string msgid="7622810818891191525" name="DA_SPEECH_CONTINUE_FOR_ONE_AND_A_HALF_MILES">"Turpiniet braukt pusotru jūdzi"</string>
+    <string msgid="805371831027414281" name="DA_SPEECH_CONTINUE_FOR_THREE_QUARTERS_OF_A_MILE">"Turpiniet braukt trīs ceturtdaļjūdzes"</string>
+    <string msgid="9112904440572551597" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_A_HALF_MILE">"Turpiniet braukt pa <ns1:g id="ROAD_NAME">%1$s</ns1:g> pusjūdzi"</string>
+    <string msgid="1306868173119066430" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_A_QUARTER_MILE">"Turpiniet braukt pa <ns1:g id="ROAD_NAME">%1$s</ns1:g> ceturtdaļjūdzi"</string>
+    <string msgid="1481342479470867549" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_ONE_AND_A_HALF_KILOMETERS">"Turpiniet braukt pa <ns1:g id="ROAD_NAME">%1$s</ns1:g> pusotru kilometru"</string>
+    <string msgid="6881684665273996002" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_ONE_AND_A_HALF_MILES">"Turpiniet braukt pa <ns1:g id="ROAD_NAME">%1$s</ns1:g> pusotru jūdzi"</string>
+    <string msgid="7098370444643797153" name="DA_SPEECH_CONTINUE_ON_ROAD_FOR_THREE_QUARTERS_OF_A_MILE">"Turpiniet braukt pa <ns1:g id="ROAD_NAME">%1$s</ns1:g> trīs ceturtdaļjūdzes"</string>
+    <string msgid="1622868587212934709" name="DA_SPEECH_IN_A_HALF_MILE">"Pēc pusjūdzes"</string>
+    <string msgid="776151086427605353" name="DA_SPEECH_IN_A_QUARTER_MILE">"Pēc ceturtdaļjūdzes"</string>
+    <string msgid="3825333003762141464" name="DA_SPEECH_IN_ONE_AND_A_HALF_KILOMETERS">"Pēc viena kilometra un 500 metriem"</string>
+    <string msgid="6689160907320579504" name="DA_SPEECH_IN_ONE_AND_A_HALF_MILES">"Pēc pusotras jūdzes"</string>
+    <string msgid="8298844267891398809" name="DA_SPEECH_IN_THREE_QUARTERS_OF_A_MILE">"Pēc trīs ceturtdaļām jūdzes"</string>
+    <string msgid="5536748116879901705" name="DA_SPEECH_LOST_GPS">"Zaudēts GPS signāls"</string>
+    <string msgid="7031013673377029795" name="DA_SPEECH_YOU_SHOULD_GET_THERE_BY">"Jūs nokļūsiet galamērķī līdz <ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g>."</string>
+    <string msgid="2864490850591934011" name="DA_SPEECH_YOU_WILL_NOW_ARRIVE_AT">"Tagad jūs ieradīsities pulksten <ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="626040107222949163" name="DA_SPEED_FORMAT_KILOMETERS_PER_HOUR_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS">%s</ns1:g> km/h"</string>
+    <string msgid="5696017829806052324" name="DA_SPEED_FORMAT_MILES_PER_HOUR_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES">%s</ns1:g> jūdzes/h"</string>
+    <string msgid="8717832301235175955" name="DA_STAY_ON_ROAD_PRIMARY">"Turpiniet kustību pa <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="1522051354942059491" name="DA_STAY_ON_ROAD_SECONDARY_MANEUVER">"<ns1:g id="STRING_0">{0}</ns1:g> līdz <ns1:g id="STRING_1">{1}</ns1:g>"</string>
+    <string msgid="6588954374506898552" name="DA_THEN">"Pēc tam <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="5783008655276864364" name="DA_TIME_FORMAT_CLOCK">"<ns1:g id="HOURS">%1$d</ns1:g>:<ns1:g id="MINUTES">%2$02d</ns1:g>"</string>
+    <string msgid="7707919387811958765" name="DA_TIME_FORMAT_DAYS_AND_HOURS">"<ns1:g id="NUMBER_OF_DAYS">%1$s</ns1:g> <ns1:g id="NUMBER_OF_HOURS">%2$s</ns1:g>"</string>
+    <string msgid="6892640684881875785" name="DA_TIME_FORMAT_HOURS_AND_MINUTES">"<ns1:g id="NUMBER_OF_HOURS">%1$s</ns1:g> <ns1:g id="NUMBER_OF_MINUTES">%2$s</ns1:g>"</string>
+    <string msgid="7817998043468236136" name="DA_TOWARD">"virzienā <ns1:g id="STRING_0">{0}</ns1:g>"</string>
+    <string msgid="3123596705054737201" name="DA_YOUR_DESTINATION_IS_A_HALF_MILE_AHEAD">"Jūsu galamērķis atrodas pusjūdzi uz priekšu"</string>
+    <string msgid="8661505845314857886" name="DA_YOUR_DESTINATION_IS_A_QUARTER_MILE_AHEAD">"Jūsu galamērķis atrodas ceturtdaļjūdzi uz priekšu"</string>
+    <string msgid="3905156493194280718" name="DA_YOUR_DESTINATION_IS_ONE_AND_A_HALF_KILOMETERS_AHEAD">"Jūsu galamērķis atrodas pusotru kilometru uz priekšu"</string>
+    <string msgid="4589187785814099880" name="DA_YOUR_DESTINATION_IS_ONE_AND_A_HALF_MILES_AHEAD">"Jūsu galamērķis atrodas pusotru jūdzi uz priekšu"</string>
+    <string msgid="4923490260885185878" name="DA_YOUR_DESTINATION_IS_THREE_QUARTERS_OF_A_MILE_AHEAD">"Jūsu galamērķis atrodas trīs ceturtdaļjūdzes uz priekšu"</string>
+    <string msgid="1064900343663975467" name="DEBUG_MAPS_FEATURES_SETTINGS_TITLE">"Funkciju atkļūdošana [tikai izstrādes versijā]"</string>
+    <string msgid="5698435378918936657" name="DIRECTIONS_PROCEED_TO_METERS">"Turpiniet kustību: <ns1:g id="DISTANCE">%1$s</ns1:g>"</string>
+    <string msgid="4176893357736379300" name="DIRECTIONS_STEP_LIST_TO">"Uz: <ns1:g id="DESTINATION">%s</ns1:g>"</string>
+    <string msgid="1814428387459568726" name="DIRECTIONS_YOUR_LOCATION">"Jūsu atrašanās vieta"</string>
+    <string msgid="737968998903158015" name="DISCLAIMER">"Skatieties uz ceļu un ievērojiet spēkā esošos likumus. Nerīkojieties ar šo lietotni, vadot transportlīdzekli. Norādes var būt neprecīzas, nepilnīgas, bīstamas, nepiemērotas, pretrunā ar likumu vai var ietvert administratīvo teritoriju robežu šķērsošanu. Šie nav reāllaika dati, un atrašanās vietas precizitāte netiek garantēta."</string>
+    <string msgid="2642186254766054874" name="DISCLAIMER_TITLE">"Šī ir Google Maps navigācijas beta versija. Lietojiet uzmanīgi!"</string>
+    <string msgid="2322386471590166279" name="DISTANCE_FEET_ABBREVIATED">"<ns1:g id="NUMBER_OF_FEET"/> pēd."</string>
+    <string msgid="1770611150911759090" name="DISTANCE_FEET_EXTENDED">"<ns1:g id="NUMBER_OF_FEET"/> pēdas"</string>
+    <string msgid="8832117946718206516" name="DISTANCE_KILOMETERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_KILOMETERS"/> km"</string>
+    <string msgid="1712822516939066073" name="DISTANCE_KILOMETERS_EXTENDED">"<ns1:g id="NUMBER_OF_KILOMETERS"/> kilometri"</string>
+    <string msgid="5115749175241245588" name="DISTANCE_METERS_ABBREVIATED">"<ns1:g id="NUMBER_OF_METERS"/> m"</string>
+    <string msgid="6786188804325739113" name="DISTANCE_METERS_EXTENDED">"<ns1:g id="NUMBER_OF_METERS"/> metri"</string>
+    <string msgid="1663691802801530665" name="DISTANCE_MILES_ABBREVIATED">"<ns1:g id="NUMBER_OF_MILES"/> jūdz."</string>
+    <string msgid="7535910480336049458" name="DISTANCE_MILES_EXTENDED">"<ns1:g id="NUMBER_OF_MILES"/> jūdze(-s)"</string>
+    <string msgid="3873406547898134225" name="DISTANCE_TO_TRIP_LEVEL_NOTICE">"Pēc <ns1:g id="DISTANCE">%1$s</ns1:g>"</string>
+    <string msgid="5782765699559481543" name="DISTANCE_YARDS_ABBREVIATED">"<ns1:g id="NUMBER_OF_YARDS"/> jar."</string>
+    <string msgid="314073790876879964" name="DISTANCE_YARDS_EXTENDED">"<ns1:g id="NUMBER_OF_YARDS"/> jardi"</string>
+    <string msgid="738884423108976541" name="DONE">"Gatavs"</string>
+    <string msgid="2363263758654372020" name="DRIVING_MODE_NOTIFICATION_DRIVING_WITH_NO_CURRENT_ROAD">"Braukšanas režīms pakalpojumā Google Maps"</string>
+    <string msgid="4220331858318238031" name="DURATION_AND_DISTANCE_TO_DESTINATION">"<ns1:g id="DURATION">%1$s</ns1:g> (<ns1:g id="DISTANCE">%2$s</ns1:g>) līdz galamērķis"</string>
+    <string msgid="6479013822372531284" name="DURATION_AND_DISTANCE_WITH_DESTINATION">"<ns1:g id="DURATION">%1$s</ns1:g> (<ns1:g id="DISTANCE">%2$s</ns1:g>) līdz: <ns1:g id="DESTINATION">%3$s</ns1:g>"</string>
+    <string msgid="6003991895084447024" name="EDIT_HOME_WORK">"Mājas/darba adrese"</string>
+    <string msgid="516081725937928083" name="ENERGY_CONSUMPTION_ENGINE_TYPE_SETTINGS_TITLE">"Motora veids"</string>
+    <string msgid="3843996814576444609" name="ESTIMATED_TIME_OF_ARRIVAL">"Aprēķinātā ierašanās <ns1:g id="ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="3733379082443710457" name="ESTIMATED_TIME_OF_ARRIVAL_SHORT">"Pienāk <ns1:g id="ESTIMATED_TIME_OF_ARRIVAL">%1$s</ns1:g>"</string>
+    <string msgid="4474776824279943996" name="ESTIMATED_TIME_OF_ARRIVAL_WITH_TIME_ZONE">"<ns1:g id="ESTIMATED_TIME_OF_ARRIVAL">%1$s</ns1:g> (<ns1:g id="SHORT_TIME_ZONE">%2$s</ns1:g>)"</string>
+    <string msgid="6999585662399273468" name="EVEN_ONLY_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Tikai pāra"</string>
+    <string msgid="7000439285054278098" name="EV_CONNECTOR_PREFERENCES_SUMMARY">"Kontaktdakšu atlase"</string>
+    <string msgid="538913145063218200" name="EV_CONNECTOR_PREFERENCES_TITLE">"Saderīgie spraudņi un adapteri"</string>
+    <string msgid="2967277365338415762" name="EV_PROFILE_SETTINGS_TITLE_V2">"ET iestatījumi"</string>
+    <string msgid="833120489844392943" name="EXPLORE_PREFERENCES_SETTINGS_LANDING_PAGE_ENTRY_POINT_TEXT">"Preferenču pārvaldība"</string>
+    <string msgid="1042961630059727812" name="EYES_FREE_MODE_REROUTE_NOTIFICATION">"Šķiet, ka esat novirzījies no maršruta, tāpēc es to pārrēķināšu."</string>
+    <string msgid="2695748113301305354" name="FAILED_TO_LAUNCH_APPLICATION">"Neizdevās palaist lietotni."</string>
+    <string msgid="6461634184436147039" name="GENERIC_DELAY_SUBTITLE">"Paredzamā aizkavēšanās"</string>
+    <string msgid="5033029603744943710" name="GETTING_AROUND_CATEGORY_TITLE">"Pārvietošanās"</string>
+    <string msgid="5232271074030694384" name="GOOGLE_LOCATION_SETTINGS">"Google vietas iest."</string>
+    <string msgid="5646148448362261180" name="GOOGLE_MAPS_TIMELINE_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat jaunumus par atrašanās vietu vēsturi."</string>
+    <string msgid="2493857178325724377" name="GOOGLE_MAPS_TIMELINE_SETTINGS_SUMMARY">"Saņemiet atjauninājumus par savu atrašanās vietu vēsturi"</string>
+    <string msgid="196582671347677600" name="GOOGLE_MAPS_TIMELINE_SETTINGS_TITLE">"Google Maps laika skala"</string>
+    <string msgid="4749894635859607507" name="GPS_SIGNAL_LOST_CALLOUT_TEXT">"Notiek GPS signāla meklēšana..."</string>
+    <string msgid="3033976480311745440" name="HAZARDOUS_GOODS_RESTRICTED">"Bīstamu preču ierobežojums"</string>
+    <string msgid="4732345555387659208" name="HEAVY_TRAFFIC">"Intensīva satiksme"</string>
+    <string msgid="173409722067999322" name="HEIGHT_FEET_ABBREVIATED">"<ns1:g id="FEET">%d</ns1:g> pēda(-s)"</string>
+    <string msgid="8966636302039617408" name="HEIGHT_FEET_INCHES_ABBREVIATED">"<ns1:g id="FEET">%d</ns1:g> pēdas <ns1:g id="INCHES">%d</ns1:g> collas"</string>
+    <string msgid="8637363475448752754" name="HEIGHT_FEET_INCHES_LONGFORM">"<ns1:g id="FEET">%d</ns1:g> pēda(-s) <ns1:g id="INCHES">%d</ns1:g> colla(-s)"</string>
+    <string msgid="1521089235551336608" name="HEIGHT_FEET_LONGFORM">"<ns1:g id="FEET">%d</ns1:g> pēda(-s)"</string>
+    <string msgid="1887668386950703406" name="HEIGHT_RESTRICTED">"Augstuma ierobežojums"</string>
+    <string msgid="784251430855706294" name="HOV_AVAILABLE">"Pieejams pasažieru pārvadātājiem"</string>
+    <string msgid="6529821054904011518" name="IMPROVE_YOUR_LOCATION">"Atrašanās vietas precizitātes padomi"</string>
+    <string msgid="2540976662746914375" name="INCIDENT_VOTE_COUNT_BUCKET_LONG">"Reģistrētais skaits: <ns1:g id="VOTE_COUNT">%1$s</ns1:g>+"</string>
+    <string msgid="8281026530646827235" name="INCIDENT_VOTE_COUNT_BUCKET_SHORT">"<ns1:g id="VOTE_COUNT">%1$s</ns1:g>+"</string>
+    <string msgid="1284004591458612182" name="INCIDENT_VOTE_COUNT_LONG">"Reģistrētais skaits: <ns1:g id="VOTE_COUNT">%1$s</ns1:g>"</string>
+    <string msgid="7857287556098266775" name="INFORMATION_SEVERITY_CONTENT_DESCRIPTION">"Paziņojums"</string>
+    <string msgid="6766669801183231447" name="INITIAL_NOTIFICATION_CONTENT_TITLE">"Tiek sākta navigācija…"</string>
+    <string msgid="3945432022630896702" name="JAMCIDENT_DELAY_TIME">"+<ns1:g id="TIME">%1$s</ns1:g>"</string>
+    <string msgid="6857277423395462126" name="LIGHT_TRAFFIC">"Brīva satiksme"</string>
+    <string msgid="2755809767742409326" name="LOADING">"Notiek ielāde"</string>
+    <string msgid="8072745940066400784" name="LOCAL_PREFERENCES_AREA_MANAGEMENT_ENTRY_POINT_TEXT">"Pārvaldiet savus apgabalus"</string>
+    <string msgid="5423743480617991599" name="LOCATION_AND_PROFILE_CATEGORY_TITLE">"Atrašanās vieta un profils"</string>
+    <string msgid="2086740505285691302" name="LOCATION_NOT_YET_AVAILABLE">"Tiek noteikta atrašanās vieta..."</string>
+    <string msgid="8345606348711609944" name="LOCATION_SHARING_FRIENDS_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat jaunumus par draugiem un viņu kopīgoto atrašanās vietu."</string>
+    <string msgid="584985529279859810" name="LOCATION_SHARING_FRIENDS_SETTINGS_SUMMARY">"Saņemiet atjauninājumus par saviem draugiem un viņu kopīgoto atrašanās vietu"</string>
+    <string msgid="1787475954612106105" name="LOCATION_SHARING_FRIENDS_SETTINGS_TITLE">"Google atrašanās vietas kopīgošana (draugi)"</string>
+    <string msgid="1798157651559312287" name="LOCATION_SHARING_UPDATES_SETTINGS_SUMMARY">"Uzziniet, kad tiek atjaunināta jūsu kopīgota atrašanās vieta"</string>
+    <string msgid="4145708674804313912" name="LOCATION_SHARING_UPDATES_SETTINGS_TITLE">"Google atrašanās vietas kopīgošanas atjauninājumi"</string>
+    <string msgid="6974966951431091715" name="LOCATION_SHARING_YOU_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat jaunumus par atrašanās vietas kopīgošanu."</string>
+    <string msgid="2507248622422659061" name="LOCATION_SHARING_YOU_SETTINGS_SUMMARY">"Saņemiet atjauninājumus par savas atrašanās vietas kopīgošanu"</string>
+    <string msgid="3628122068571233362" name="LOCATION_SHARING_YOU_SETTINGS_TITLE">"Google atrašanās vietas kopīgošana (jūs)"</string>
+    <string msgid="5983765003219829883" name="MANILA_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Ierobež. <ns1:g id="PLATE_1">%1$d</ns1:g> un <ns1:g id="PLATE_2">%2$d</ns1:g>"</string>
+    <string msgid="2282765788770439491" name="MAPS_FEATURES_CATEGORY_TITLE">"Karšu funkcijas"</string>
+    <string msgid="8758525520286582553" name="MAPS_FEATURES_URGENT_SETTINGS_TITLE">"Karšu funkciju steidzami atjauninājumi"</string>
+    <string msgid="2890999488170047937" name="MAPS_HISTORY">"Maps vēsture"</string>
+    <string msgid="7523320203882314616" name="MAP_COPYRIGHTS_FULL">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google − Attēli ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>, Karšu dati ©<ns1:g id="COPYRIGHT_YEAR_2">%4$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%5$s</ns1:g>"</string>
+    <string msgid="3080854072740850768" name="MAP_COPYRIGHTS_GOOGLE_ONLY">"©<ns1:g id="COPYRIGHT_YEAR">%1$s</ns1:g> Google"</string>
+    <string msgid="271754604139169484" name="MAP_COPYRIGHTS_IMAGERY_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google − Attēlii ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="IMAGERY_PROVIDER_NAMES">%3$s</ns1:g>"</string>
+    <string msgid="6150599764044956009" name="MAP_COPYRIGHTS_MAP_DATA_ONLY">"©<ns1:g id="COPYRIGHT_YEAR_0">%1$s</ns1:g> Google − Karšu dati ©<ns1:g id="COPYRIGHT_YEAR_1">%2$s</ns1:g> <ns1:g id="MAP_DATA_PROVIDER">%3$s</ns1:g>"</string>
+    <string msgid="1172850333329779755" name="NAVIGATION_CATEGORY_TITLE">"Navigācija"</string>
+    <string msgid="2003321543190473980" name="NAVIGATION_SETTINGS">"Navigācijas iestatījumi"</string>
+    <string msgid="6362228591814936571" name="NAVIGATION_STEP_LIST_DISTANCE_TO_NEXT_STEP">"Pēc <ns1:g id="DISTANCE">%1$s</ns1:g>"</string>
+    <string msgid="8513156606874950515" name="NAVIGATION_URGENT_SETTINGS_TITLE">"Steidzami navigācijas atjauninājumi"</string>
+    <string msgid="8746273910770749866" name="NAV_SDK_DEFAULT_COMPANY_NAME">"lietotnes izstrādātājs"</string>
+    <string msgid="3522779505396739599" name="NAV_SDK_DISCLAIMER">"Vienmēr pievērsiet uzmanību apkārt notiekošajam un ievērojiet likumus."</string>
+    <string msgid="2337842297414069478" name="NAV_SDK_GOT_IT">"Labi"</string>
+    <string msgid="6986418512565360329" name="NAV_SDK_I_AM_IN">"Jā, piekrītu"</string>
+    <string msgid="2296133702373295473" name="NAV_SDK_LEGAL_TEXT">"Kad izmantojat pakalpojumu sniedzēju <ns1:g id="NAV_SDK_COMPANY_NAME_2">%1$s</ns1:g>, Google vāc navigācijas datus, piemēram, GPS atrašanās vietu un attiecīgo maršrutu, lai uzlabotu Google Maps visiem lietotājiem. Šie dati var tikt izmantoti, lai tādu informāciju kā reāllaika satiksmes apstākļi un traucējumi padarītu redzamu citiem lietotājiem un palīdzētu viņiem atrast labāko maršrutu.\n\nŠie kartes atjauninājumi netiks saistīti ar jūsu Google kontu vai ierīci. Ir spēkā Google <ns1:g id="NAV_SDK_TERMS">%2$s</ns1:g> un <ns1:g id="NAV_SDK_PRIVACY_POLICY">%3$s</ns1:g>.\n\nPakalpojumu sniedzējs <ns1:g id="NAV_SDK_COMPANY_NAME_3">%4$s</ns1:g> arī var vākt un izmantot šos datus. Lai iegūtu plašāku informāciju, skatiet pakalpojumu sniedzēja <ns1:g id="NAV_SDK_COMPANY_NAME_4">%5$s</ns1:g> lietotnes konfidencialitātes politiku."</string>
+    <string msgid="5332923116377998043" name="NAV_SDK_LEGAL_TEXT_LEGACY">"Ja lietotne darbojas, Google var vākt jūsu atrašanās vietas un braukšanas datus, lai sniegtu pakalpojumus un uzlabotu tos. Ir iespējama arī šo datu kopīgošana ar uzņēmumu <ns1:g id="NAV_SDK_COMPANY_NAME">%1$s</ns1:g>, lai uzlabotu tā darbību. Tiek piemēroti šādi noteikumi: Google <ns1:g id="NAV_SDK_TERMS">%2$s</ns1:g> un <ns1:g id="NAV_SDK_PRIVACY_POLICY">%3$s</ns1:g>."</string>
+    <string msgid="6340328118114501085" name="NAV_SDK_PRIVACY_POLICY">"konfidencialitātes politika"</string>
+    <string msgid="2982362725876163352" name="NAV_SDK_PRIVACY_POLICY_CAPITALIZED">"Konfidencialitātes politika"</string>
+    <string msgid="4531136199149528407" name="NAV_SDK_TERMS">"noteikumi"</string>
+    <string msgid="7707795984529102497" name="NAV_SDK_TERMS_CAPITALIZED">"Noteikumi"</string>
+    <string msgid="3015266809371007473" name="NAV_SDK_TERMS_CLOSE">"Aizvērt lietotni"</string>
+    <string msgid="8901594003619146647" name="NAV_SDK_TERMS_ERROR">"Navigācijas pakalpojumu sniegšanas noteikumu ielādes laikā radās kļūda. Lūdzu, restartējiet lietotni."</string>
+    <string msgid="6958049100686788454" name="NAV_SDK_WELCOME_TO_GOOGLE_MAPS_NAVIGATION">"Laipni lūdzam Google Maps navigācijā!"</string>
+    <string msgid="6791023658564191335" name="NEARBY_PLACES_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY_V2">"Jūs saņemat ieteikumus par vietām un pasākumiem tuvumā."</string>
+    <string msgid="5467978305791925717" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_SUMMARY">"Saņemiet paziņojumus, kad atrodaties kādas saglabātās vietas vai pasākuma norises vietas tuvumā"</string>
+    <string msgid="2899316768992820532" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_SUMMARY_V2">"Saņemiet ieteikumus par vietām un pasākumiem tuvumā"</string>
+    <string msgid="7613155153180186667" name="NEARBY_PLACES_NOTIFICATION_SETTINGS_TITLE">"Tuvumā esošās vietas un notiekošie pasākumi"</string>
+    <string msgid="2522056010363733176" name="NETWORK_UNAVAILABLE">"Nevar izveidot savienojumu"</string>
+    <string msgid="5798081927324715154" name="NEW_ON_MAPS_CATEGORY_TITLE">"Jaunumi pakalpojumā Maps"</string>
+    <string msgid="1286364333769843890" name="NEW_ON_MAPS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat jaunumus par iespējām pakalpojumā Maps."</string>
+    <string msgid="7425167408473147318" name="NEW_ON_MAPS_NOTIFICATION_SETTINGS_SUMMARY">"Laiku pa laikam saņemt paziņojumus par jaunām Maps funkcijām"</string>
+    <string msgid="8563411120076685209" name="NORMAL_TRAFFIC">"Normāla satiksme"</string>
+    <string msgid="7130046223811209078" name="NOTICE_EFFECTIVE_RANGE">"Aktuāls: <ns1:g id="DATE_OR_DATE_RANGE">%s</ns1:g>"</string>
+    <string msgid="4156394438137475279" name="NOTIFICATIONS_SETTINGS_TITLE">"Paziņojumi"</string>
+    <string msgid="889779361831341194" name="ODD_ONLY_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Tikai nepāra"</string>
+    <string msgid="5195182224903466222" name="OFFLINE_MAPS_DOWNLOAD_EMBEDDED_TITLE">"Bezsaistes karšu lejupielāde"</string>
+    <string msgid="103070061409767941" name="OFFLINE_MAPS_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat jaunumus par zonām, kas saglabātas jūsu tālrunī vai planšetdatorā."</string>
+    <string msgid="2065934284598719130" name="OFFLINE_MAPS_NOTIFICATION_SETTINGS_SUMMARY">"Saņemiet atjauninājumus par savā tālrunī vai planšetdatorā saglabātajiem apgabaliem"</string>
+    <string msgid="4278334889579817101" name="OFFLINE_MAPS_TITLE">"Bezsaistes kartes"</string>
+    <string msgid="5659021817125812935" name="OFFLINE_SETTINGS">"Bezsaistes karšu iestatījumi"</string>
+    <string msgid="2611064167742529426" name="OTHER_NOTIFICATION_CHANNEL">"Citi paziņojumi"</string>
+    <string msgid="653910275023514690" name="PARKING_LOCATION_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat jaunumus par jūsu autostāvvietas atrašanās vietu."</string>
+    <string msgid="8831411745546173529" name="PARKING_LOCATION_SETTINGS_SUMMARY">"Saņemiet atjauninājumus par autostāvvietas atrašanās vietu"</string>
+    <string msgid="874143968644994017" name="PARKING_LOCATION_SETTINGS_TITLE">"Autostāvvietas atrašanās vieta"</string>
+    <string msgid="4109028911398058028" name="PERSONAL_CONTENT_TITLE">"Personisks saturs"</string>
+    <string msgid="6309784419540645516" name="PHOTO_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat atgādinājumus augšupielādēt attēlus un pievienot atzīmes ēdieniem, pamatojoties uz apmeklētajām vietām."</string>
+    <string msgid="2017256142609753488" name="PHOTO_NOTIFICATION_SETTINGS_SUMMARY">"Saņemiet atgādinājumus, lai augšupielādētu fotoattēlus un pievienotu atzīmes ēdieniem, pamatojoties uz apmeklētajām vietām"</string>
+    <string msgid="7486650467383313327" name="PHOTO_NOTIFICATION_SETTINGS_TITLE">"Fotoattēlu kopīgošana un atzīmēšana"</string>
+    <string msgid="2975029997059956743" name="PICKUP_ORDERS_NOTIFICATION_OPT_OUT_SETTING_SUMMARY">"Jūs saņemat jaunumus par pasūtījumu saņemšanu pakalpojumā Maps"</string>
+    <string msgid="3374210285480569472" name="PICKUP_ORDERS_NOTIFICATION_SETTING_SUMMARY">"Saņemiet jaunumus par pasūtījuma statusu un atgādinājumus reģistrēties un kopīgot ierašanās laiku"</string>
+    <string msgid="668310841030579677" name="PICKUP_ORDERS_NOTIFICATION_SETTING_TITLE">"Pasūtījuma saņemšana"</string>
+    <string msgid="8127880752570065607" name="PLACES_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat jautājumus par apmeklētajām vietām, lai citi zinātu, ko sagaidīt."</string>
+    <string msgid="5365776433570962189" name="PLACES_NOTIFICATION_SETTINGS_SUMMARY">"Atbildiet uz jautājumiem par apmeklētajām vietām, lai citi zinātu, ko sagaidīt"</string>
+    <string msgid="3724976413506253643" name="PLACES_NOTIFICATION_SETTINGS_TITLE">"Apmeklētās vietas"</string>
+    <string msgid="7471023852308791790" name="POI_PROMPT_ADD_STOP">"Pievienot"</string>
+    <string msgid="7983858942352259551" name="POI_PROMPT_ADD_STOP_ACTION">"Pievienota maršrutam"</string>
+    <string msgid="8778537284281768607" name="POI_PROMPT_NAVIGATE">"Naviģēt"</string>
+    <string msgid="472834733509383200" name="POI_PROMPT_NAVIGATE_ACTION">"Notiek navigācija"</string>
+    <string msgid="298606571303064040" name="PROMPT_CANCEL">"Atcelt"</string>
+    <string msgid="4066051640880834866" name="PROMPT_DISMISS">"Nerādīt"</string>
+    <string msgid="5503515646274126756" name="QA_AND_CHAT_CATEGORY_TITLE">"Jautājumi un atbildes un tērzētava"</string>
+    <string msgid="3324329907005959185" name="RECENTER_FOLLOW_MODE">"Centrēt"</string>
+    <string msgid="1486707796824890396" name="RECOMMENDATIONS_FOR_YOU_CATEGORY_TITLE">"Ieteikumi jums"</string>
+    <string msgid="8105228677480057073" name="REMOVE">"Noņemt"</string>
+    <string msgid="1550982124371473702" name="REPORTED_VIA_WAZE_APP">"Ziņojumi no Waze aplikācijas"</string>
+    <string msgid="2241569767697676295" name="REROUTE_CALLOUT_CURRENT">"Pašreizējie"</string>
+    <string msgid="520999062746509578" name="REROUTE_CALLOUT_NEW">"Jauni"</string>
+    <string msgid="3344101668786395431" name="REVIEW_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat atgādinājumus rakstīt atsauksmes, pamatojoties uz apmeklētajām vietām."</string>
+    <string msgid="7888846095073550740" name="REVIEW_NOTIFICATION_SETTINGS_SUMMARY">"Saņemiet atgādinājumus, lai rakstītu atsauksmes, pamatojoties uz apmeklētajām vietām"</string>
+    <string msgid="7916601440448962034" name="REVIEW_NOTIFICATION_SETTINGS_TITLE">"Ieteikumi atsauksmju rakstīšanai"</string>
+    <string msgid="1541842670412044840" name="RODIZIO_TRAVEL_RESTRICTION_CALLOUT_TEXT">"Rodízio: <ns1:g id="PLATE_1">%1$d</ns1:g> un <ns1:g id="PLATE_2">%2$d</ns1:g>"</string>
+    <string msgid="8062022808692087963" name="ROUTE_AROUND_CLOSURE_CALLOUT_CLOSED">"Slēgts"</string>
+    <string msgid="623689270367292384" name="ROUTE_AROUND_TRAFFIC_ACTION">"Notiek jauna maršruta izstrāde"</string>
+    <string msgid="7859812763744711003" name="ROUTE_AROUND_TRAFFIC_CALLOUT_FASTER">"Ātrāk"</string>
+    <string msgid="2611671618289658133" name="ROUTE_AROUND_TRAFFIC_DECLINE">"Nē, paldies"</string>
+    <string msgid="1962094888482140214" name="ROUTE_AROUND_TRAFFIC_REROUTE">"Apstiprināt"</string>
+    <string msgid="5344116890552800007" name="ROUTE_AROUND_TRAFFIC_TAKE_ACTION_CUE_DEFAULT_DECLINE">"Ja vēlaties izmantot ātrāko maršrutu, pieskarieties pie <ns1:g id="REROUTE_BUTTON">%1$s</ns1:g>."</string>
+    <string msgid="9048657312424993512" name="ROUTE_AROUND_TRAFFIC_TAKE_ACTION_CUE_DEFAULT_REROUTE">"Ja vēlaties turpināt pašreizējo maršrutu, pieskarieties pie <ns1:g id="DECLINE_BUTTON">%1$s</ns1:g>."</string>
+    <string msgid="668738352458665249" name="SATELLITE_KEEP_ON_SETTING_SUMMARY">"Tādējādi tiks izmantots vairāk datu"</string>
+    <string msgid="5458955675293713001" name="SATELLITE_KEEP_ON_SETTING_TITLE">"Rādīt Maps satelīta attēlu"</string>
+    <string msgid="2513389490217803388" name="SHAKE_TO_SEND_FEEDBACK">"Atsauksmju sūtīšana sakratot"</string>
+    <string msgid="7927333567450914524" name="SHOW_SCALEBAR">"Rādīt mērogu kartē"</string>
+    <string msgid="8853862950824858965" name="SIGN_IN">"Pierakstīties"</string>
+    <string msgid="6614611063829352216" name="SPEEDOMETER_CONTENT_DESCRIPTION">"Pašreizējais ātrums"</string>
+    <string msgid="2485928112866408949" name="SPEEDOMETER_LABEL_MPH">"mph"</string>
+    <string msgid="714338337064997840" name="SPEED_LIMIT_CONTENT_DESCRIPTION">"Ātruma ierobežojums"</string>
+    <string msgid="8329935752572916663" name="SPEED_LIMIT_LABEL_KPH">"km/h"</string>
+    <string msgid="6049037484128190260" name="SPEED_LIMIT_LABEL_MPH">"mi/h"</string>
+    <string msgid="6933103859272522200" name="STATUS_DATA_CONNECTION_LOST">"Zaudēts datu savienojums…"</string>
+    <string msgid="3486534637879952316" name="STATUS_LOCATION_NOT_YET_AVAILABLE">"Tiek noteikta atrašanās vieta…"</string>
+    <string msgid="2640731163709778825" name="STATUS_OFF_ROUTE">"Novirze no maršruta…"</string>
+    <string msgid="2545735105255092828" name="STATUS_REROUTING">"Notiek jauna maršruta izstr.…"</string>
+    <string msgid="2050512013597272527" name="STEP_LIST_INTERACTION_LOCKOUT">"Lai skatītu vairāk norāžu, apstādiniet transportlīdzekli drošā vietā"</string>
+    <string msgid="4380539129160098186" name="TBP_TIME_FORMAT_STRING">"Parasti: <ns1:g id="DURATION_RANGE">%1$s</ns1:g>"</string>
+    <string msgid="3969156182655336787" name="TIME_TO_LEAVE_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat atgādinājumus, kad ir laiks doties, pamatojoties uz jūsu Gmail un Kalendārā iekļautajiem pasākumiem."</string>
+    <string msgid="5878136911262367593" name="TIME_TO_LEAVE_SETTINGS_SUMMARY">"Saņemiet atgādinājumus, kad ir laiks doties, pamatojoties uz saviem Gmail un Kalendārā iekļautajiem pasākumiem"</string>
+    <string msgid="5802789254332120401" name="TIME_TO_LEAVE_SETTINGS_TITLE">"Laiks doties ceļā"</string>
+    <string msgid="279144067639888797" name="TRAFFIC_INCIDENT_CANCEL_BUTTON">"Aizvērt"</string>
+    <string msgid="2556434376988861569" name="TRAFFIC_INCIDENT_CARD_ACTION_DESCRIPTION">"rādītu satiksmes negadījuma vietu kartē"</string>
+    <string msgid="6842632577325526492" name="TRAFFIC_INCIDENT_CAUSE_LABEL">"Slēgts šāda iemesla dēļ:"</string>
+    <string msgid="988935259303895134" name="TRAFFIC_INCIDENT_CLEARED_UP">"Negadījums novērsts"</string>
+    <string msgid="7567994859964694495" name="TRAFFIC_INCIDENT_GET_MORE_INFO_LINK_LABEL">"Jaunākā informācija ir pieejama šeit:"</string>
+    <string msgid="3198922267208778988" name="TRAFFIC_IN_YOUR_AREA_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat informāciju par satiksme apstākļiem, pamatojoties uz jūsu pašreizējo atrašanās vietu."</string>
+    <string msgid="1473827289987133797" name="TRAFFIC_IN_YOUR_AREA_SETTINGS_SUMMARY">"Uzziniet satiksmes apstākļus, pamatojoties uz esošo atrašanās vietu"</string>
+    <string msgid="1128033297013450984" name="TRAFFIC_IN_YOUR_AREA_SETTINGS_TITLE">"Satiksme jūsu apgabalā"</string>
+    <string msgid="7311918430526640931" name="TRAFFIC_NEARBY_EVENTS_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat brīdinājumus par plānotiem ceļu slēgšanas gadījumiem un pasākumiem, kas var ietekmēt satiksmes plūsmu."</string>
+    <string msgid="7229793065931553473" name="TRAFFIC_NEARBY_EVENTS_SETTINGS_SUMMARY">"Saņemiet brīdinājumus par plānotiem ceļu slēgšanas gadījumiem un pasākumiem, kas var ietekmēt satiksmes plūsmu"</string>
+    <string msgid="7458119512976033960" name="TRAFFIC_NEARBY_EVENTS_SETTINGS_TITLE">"Izmaiņas satiksmē tuvumā notiekošu pasākumu dēļ"</string>
+    <string msgid="3736157622661020905" name="TRAFFIC_UPDATE_ETA_PROMPT_SUBTITLE">"Aprēķinātais ierašanās laiks pulksten <ns1:g id="ESTIMATED_ARRIVAL_TIME">%1$s</ns1:g>"</string>
+    <string msgid="6992797437864599238" name="TRANSIT_ENTER_VIA">"Ieeja: <ns1:g id="ENTRANCE">%1$s</ns1:g>"</string>
+    <string msgid="5577370445084558613" name="TRANSIT_ENTRANCE_ENTER_TITLE">"Ieejiet stacijā"</string>
+    <string msgid="6142195623804653271" name="TRANSIT_ENTRANCE_EXIT_TITLE">"Izejiet no stacijas"</string>
+    <string msgid="1010084563211368398" name="TRANSIT_EXIT_VIA">"Izeja: <ns1:g id="EXIT">%1$s</ns1:g>"</string>
+    <string msgid="3806065467172569991" name="TRANSIT_INFO_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat informāciju par atiešanas laiku, satiksmes traucējumiem, kā arī kartes no stacijām tuvumā."</string>
+    <string msgid="1534490659851000732" name="TRANSIT_INFO_SETTINGS_SUMMARY">"Iegūstiet informāciju par atiešanas laiku, satiksmes traucējumiem un kartes no stacijām tuvumā"</string>
+    <string msgid="4220388452166772640" name="TRANSIT_INFO_SETTINGS_TITLE">"Sabiedriskais transports un kartes"</string>
+    <string msgid="5472231200918516614" name="TRANSIT_LINE_SEPARATOR">"vai "</string>
+    <string msgid="1781544592846552935" name="TRANSIT_STEPTHROUGH_BOARD_TRANSPORTATION_AT">"Pieturā <ns1:g id="DEPARTURE_STATION_NAME">%2$s</ns1:g> iekāpiet <ns1:g id="TRANSPORTATION_TITLE">%1$s</ns1:g>"</string>
+    <string msgid="4852979524663289910" name="TRANSIT_STEPTHROUGH_GET_OFF_AT">"Izkāpiet pieturā <ns1:g id="ARRIVAL_STATION_NAME">%1$s</ns1:g>"</string>
+    <string msgid="100719016293137101" name="TRANSIT_STEPTHROUGH_TRANSFER_TRANSPORTATION_AT">"Pieturā <ns1:g id="TRANSFER_STATION_NAME">%2$s</ns1:g> pārejiet uz <ns1:g id="TRANSPORTATION_TITLE">%1$s</ns1:g>"</string>
+    <string msgid="4075726691937451191" name="TRANSIT_STEP_SEPARATOR">", pēc tam "</string>
+    <string msgid="4347114544007413130" name="TRANSIT_TRANSFER_DESCRIPTION">"<ns1:g id="LINE_NAME">%1$s</ns1:g> <ns1:g id="DESTINATION">%2$s</ns1:g>"</string>
+    <string msgid="1067501494466681470" name="TRANSIT_TRANSFER_DESCRIPTION_WITH_EXPRESS_TYPE">"<ns1:g id="LINE_NAME">%1$s</ns1:g> (<ns1:g id="EXPRESS_TYPE_NAME">%2$s</ns1:g>) <ns1:g id="DESTINATION">%3$s</ns1:g>"</string>
+    <string msgid="2817788206332504699" name="TRANSIT_VIA">"caur: <ns1:g id="ENTRANCE">%1$s</ns1:g>"</string>
+    <string msgid="755148195746788198" name="TRUCKS_RESTRICTED">"Kravas auto ierobežojums"</string>
+    <string msgid="6607947384151787482" name="TURN_CARD_THEN_INSTRUCTION">"Pēc tam <ns1:g id="NEXT_INSTRUCTION">%1$s</ns1:g>"</string>
+    <string msgid="8308160665835594365" name="UGC_IMPACT_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat jaunumus par atzīmēm “Patīk” un komentāriem, kā arī par nopelnītajām emblēmām un privilēģijām."</string>
+    <string msgid="5429102650839711069" name="UGC_IMPACT_NOTIFICATION_SETTINGS_SUMMARY">"Saņemiet jaunāko informāciju par atzīmēm Patīk un komentāriem, kā arī nopelnītajām emblēmām un privilēģijām"</string>
+    <string msgid="2032622348248043611" name="UGC_IMPACT_NOTIFICATION_SETTINGS_TITLE">"Atzīmes “Patīk”, nozīmīgi notikumi un emblēmas"</string>
+    <string msgid="7013124010125038791" name="UGC_NOTIFICATION_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat jautājumus par savu apkaimi, vietējiem ceļiem un braucieniem."</string>
+    <string msgid="3565867092229885716" name="UGC_NOTIFICATION_SETTINGS_SUMMARY">"Palīdziet uzlabot pakalpojumu Maps, atbildot uz jautājumiem par savu apkaimi, vietējiem ceļiem un braucieniem"</string>
+    <string msgid="9024065710924542964" name="UGC_NOTIFICATION_SETTINGS_TITLE">"Jūsu apgabals, ceļi un braucieni"</string>
+    <string msgid="1738086435281091835" name="UNABLE_TO_LOAD_DATA">"Nevar ielādēt datus."</string>
+    <string msgid="2670705425616869617" name="UNITS">"Attāluma mērvienības"</string>
+    <string msgid="4893017073865021264" name="UNITS_AUTOMATIC">"Automātiski"</string>
+    <string msgid="7876257382820058712" name="UNITS_IMPERIAL">"Jūdzes"</string>
+    <string msgid="117093659918958729" name="UNITS_METRIC">"Kilometri"</string>
+    <string msgid="6580177403276978686" name="VEHICLE_SETTINGS_TITLE">"Transportlīdzekļa iestatījumi"</string>
+    <string msgid="5710449106540223967" name="VIDEO_SETTINGS_TITLE">"Video iestatījumi"</string>
+    <string msgid="8573971634735221604" name="WARNING_SEVERITY_CONTENT_DESCRIPTION">"Brīdinājums"</string>
+    <string msgid="4161070547943419580" name="WAZE_ATTRIBUTION_DIALOG_CONTENT_ALREADY_INSTALLED">"Par šiem incidentiem ziņoja lietotnes Waze lietotāju kopiena, izmantojot Waze satiksmes un navigācijas lietotni.\n\nIesniedziet savus noderīgos ziņojumus, izmantojot Waze."</string>
+    <string msgid="6296131061336170909" name="WAZE_ATTRIBUTION_DIALOG_CONTENT_NOT_INSTALLED">"Par šiem incidentiem ziņoja Waze lietotāju kopiena, izmantojot Waze satiksmes un navigācijas lietotni.\n\nLejupielādējiet lietotni Waze un sūtiet savus noderīgos ziņojumus."</string>
+    <string msgid="6423551936568425898" name="WAZE_ATTRIBUTION_DIALOG_DISMISS">"Nerādīt"</string>
+    <string msgid="3887930200748972622" name="WAZE_ATTRIBUTION_DIALOG_GET_WAZE">"Iegūt Waze"</string>
+    <string msgid="1221046906467082448" name="WAZE_ATTRIBUTION_DIALOG_OPEN_WAZE">"Atvērt Waze"</string>
+    <string msgid="3260434220328093048" name="WAZE_ATTRIBUTION_DIALOG_TITLE">"Waze lietotāju ziņojumi"</string>
+    <string msgid="8332911579512824593" name="WAZE_NOT_AVAILABLE">"Nevar atvērt Waze."</string>
+    <string msgid="6557028535722391556" name="WEIGHT_RESTRICTED">"Svara ierobežojums"</string>
+    <string msgid="6708487118738049074" name="WEIGHT_SHORT_TONS_ABBREVIATED">"<ns1:g id="SHORT_TONS">%s</ns1:g> t"</string>
+    <string msgid="6017366300652518735" name="WEIGHT_SHORT_TONS_LONGFORM">"<ns1:g id="SHORT_TONS">%s</ns1:g> tonnas"</string>
+    <string msgid="444421108406293150" name="WIFI_ONLY_TITLE">"Tikai Wi-Fi"</string>
+    <string msgid="3295691316074264165" name="YOUR_BUSINESS_CATEGORY_TITLE">"Jūsu uzņēmums"</string>
+    <string msgid="5038513763080836030" name="YOUR_BUSINESS_OPT_OUT_SETTINGS_SUMMARY">"Jūs saņemat atgādinājumus un jaunumus par savu uzņēmumu."</string>
+    <string msgid="7935186140284907584" name="YOUR_BUSINESS_SETTINGS_SUMMARY">"Saņemiet atgādinājumus un atjauninājumus par savu uzņēmumu"</string>
+    <string msgid="2331921429803725767" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_OPT_OUT_SETTING_SUMMARY">"Jūs saņemat jaunumus, kad jūsu profilam ir jauns sekotājs vai saņemat sekošanas pieprasījumu."</string>
+    <string msgid="6256049818965016724" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_SETTING_SUMMARY">"Saņemiet atjauninājumus, ja jūsu profilam ir jauns sekotājs vai ja saņemat sekošanas pieprasījumu"</string>
+    <string msgid="5149876045450704766" name="YOUR_PROFILE_AND_FOLLOWING_NOTIFICATION_SETTING_TITLE">"Jūsu Maps profils un sekošana"</string>
+    <string msgid="6302976185347215423" name="YOUR_REVIEWS_CATEGORY_TITLE">"Jūsu atsauksmes"</string>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Pārvietoties uz sākuma ekrānu"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Pārvietoties uz augšu"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Citas opcijas"</string>
@@ -54,6 +662,7 @@
     <string msgid="406453423630273620" name="close_drawer">"Aizvērt navigācijas izvēlni"</string>
     <string msgid="7573152094250666567" name="close_sheet">"Aizvērt izklājlapu"</string>
     <string msgid="5389587048670450460" name="collapsed">"Sakļauts"</string>
+    <string msgid="6083905920877235314" name="copy">"Kopēt"</string>
     <string msgid="3499643850558715142" name="date_input_headline">"Ievadītais datums"</string>
     <string msgid="8562356184193964298" name="date_input_headline_description">"Ievadītais datums: %1$s"</string>
     <string msgid="5281836720766682161" name="date_input_invalid_for_pattern">"Datums neatbilst paredzētajam formātam: %1$s"</string>
@@ -91,12 +700,27 @@
     <string msgid="1890207353314751437" name="dropdown_menu">"Nolaižamā izvēlne"</string>
     <string name="error_a11y_label">Kļūda: nederīga</string>
     <string name="error_icon_content_description">Kļūda</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Papildu iestatījumi"</string>
     <string msgid="5974471714631304645" name="expanded">"Izvērsts"</string>
     <string name="exposed_dropdown_menu_content_description">Rādīt nolaižamo izvēlni</string>
     <string name="icon_content_description">Dialoglodziņa ikona</string>
     <string msgid="6827826412747255547" name="in_progress">"Notiek apstrāde"</string>
     <string msgid="7933458017204019916" name="indeterminate">"Daļēji atzīmēta"</string>
     <string name="item_view_role_description">Cilne</string>
+    <string msgid="9210820207514660247" name="maps_API_OUTDATED_WARNING">"Šī lietotne izmanto novecojušu Maps versiju. Tā var nedarboties pareizi."</string>
+    <string msgid="6807007598222074916" name="maps_COMPASS_ALT_TEXT">"Kompass"</string>
+    <string msgid="3371108618085690173" name="maps_DIRECTIONS_ALT_TEXT">"Saņemt norādes"</string>
+    <string msgid="1189955191774927738" name="maps_GOOGLE_MAP">"Google karte"</string>
+    <string msgid="2264878565827236979" name="maps_LEVEL_ALT_TEXT">"{0}. līmenis"</string>
+    <string msgid="6875584096776566703" name="maps_MY_LOCATION_ALT_TEXT">"Mana atrašanās vieta"</string>
+    <string msgid="7383272971595812419" name="maps_NO_GMM">"Pakalpojums Google Maps nav instalēts vai ir atspējots"</string>
+    <string msgid="1460559660387626258" name="maps_OPEN_GMM_ALT_TEXT">"Atvērt pakalpojumā Google Maps"</string>
+    <string msgid="175515198141357876" name="maps_YOUR_LOCATION">"Jūsu pašreizējā atrašanās vieta"</string>
+    <string msgid="8499414555829263194" name="maps_ZOOM_IN_ALT_TEXT">"Tuvināt"</string>
+    <string msgid="8347872495490681122" name="maps_ZOOM_OUT_ALT_TEXT">"Tālināt"</string>
+    <string msgid="7422837848992631163" name="maps_default_user_error_message">"Diemžēl radās kļūda."</string>
+    <string msgid="2220756820707696446" name="maps_invalid_panorama_data">"Nederīga panorāma."</string>
+    <string msgid="2960355978460391458" name="maps_marker_default_on_select_content_description">"Kartes atzīme"</string>
     <string name="material_clock_toggle_content_description">Atlasiet “AM” (priekšpusdienā) vai “PM” (pēcpusdienā).</string>
     <string name="material_hour_24h_suffix">%1$s stundas</string>
     <string name="material_hour_selection">Atlasiet stundu</string>
@@ -110,6 +734,31 @@
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Laika atlasīšana</string>
     <string name="material_timepicker_text_input_mode_description">Lai ievadītu laiku, ieslēdziet teksta ievades režīmu.</string>
+    <string msgid="2939063992730535343" name="mr_button_content_description">"Apraidīt"</string>
+    <string msgid="6073720094880410356" name="mr_cast_button_connected">"Apraidīt: izveidots savienojums"</string>
+    <string msgid="6629927151350192407" name="mr_cast_button_connecting">"Apraidīt: notiek savienojuma izveide"</string>
+    <string msgid="8071109333469380363" name="mr_cast_button_disconnected">"Apraidīt: savienojums pārtraukts"</string>
+    <string msgid="2175930138959078155" name="mr_cast_dialog_title_view_placeholder">"Nav informācijas"</string>
+    <string msgid="6114250663023140921" name="mr_chooser_searching">"Notiek ierīču meklēšana"</string>
+    <string msgid="1419936397646839840" name="mr_chooser_title">"Apraidīt uz"</string>
+    <string msgid="3330502667672708728" name="mr_controller_album_art">"Albuma noformējums"</string>
+    <string msgid="9171231064758955152" name="mr_controller_casting_screen">"Notiek ekrāna apraide"</string>
+    <string msgid="5684434439232634509" name="mr_controller_close_description">"Aizvērt"</string>
+    <string msgid="2585048604188129749" name="mr_controller_collapse_group">"Sakļaut"</string>
+    <string msgid="7812275474138309497" name="mr_controller_disconnect">"Atvienot"</string>
+    <string msgid="4521419834052044261" name="mr_controller_expand_group">"Izvērst"</string>
+    <string msgid="855271725131981086" name="mr_controller_no_info_available">"Nav informācijas"</string>
+    <string msgid="5495452265246139458" name="mr_controller_no_media_selected">"Nav atlasīts multivides saturs"</string>
+    <string msgid="747801650871398383" name="mr_controller_pause">"Pauzēt"</string>
+    <string msgid="1253345086594430054" name="mr_controller_play">"Atskaņot"</string>
+    <string msgid="5497722768305745508" name="mr_controller_stop">"Apturēt"</string>
+    <string msgid="804210341192624074" name="mr_controller_stop_casting">"Pārtraukt apraidi"</string>
+    <string msgid="2955862765169128170" name="mr_controller_volume_slider">"Skaļuma slīdnis"</string>
+    <string msgid="4115858704575247342" name="mr_dialog_default_group_name">"Grupa"</string>
+    <string msgid="4307018456678388936" name="mr_dialog_groupable_header">"Pievienot ierīci"</string>
+    <string msgid="6068257520605505468" name="mr_dialog_transferable_header">"Atskaņošana grupā"</string>
+    <string msgid="7449553026175453403" name="mr_system_route_name">"Sistēma"</string>
+    <string msgid="4088331695424166162" name="mr_user_route_category_name">"Ierīces"</string>
     <string name="mtrl_badge_numberless_content_description">Jauns paziņojums</string>
     <string name="mtrl_checkbox_state_description_checked">Atzīmēta</string>
     <string name="mtrl_checkbox_state_description_indeterminate">Daļēji atzīmēta</string>
@@ -157,11 +806,14 @@
     <string name="mtrl_timepicker_confirm">Labi</string>
     <string msgid="542007171693138492" name="navigation_menu">"Navigācijas izvēlne"</string>
     <string msgid="6610465462668679431" name="not_selected">"Nav atlasīts"</string>
+    <string msgid="6573031135582639649" name="not_set">"Nav iestatīts"</string>
     <string msgid="875452955155264703" name="off">"Izslēgts"</string>
     <string msgid="8655164131929253426" name="on">"Ieslēgts"</string>
     <string name="password_toggle_content_description">Rādīt paroli</string>
+    <string msgid="6685851473431805375" name="preference_copied">"Preference “<ns1:g id="SUMMARY">%1$s</ns1:g>” ir kopēta starpliktuvē."</string>
     <string msgid="5941395253238309765" name="range_end">"Diapazona beigas"</string>
     <string msgid="7097486360902471446" name="range_start">"Diapazona sākums"</string>
+    <string msgid="1660595293173844803" name="report_a_problem">"Ziņot par problēmu"</string>
     <string msgid="6420018528474762666" name="search_bar_search">"Meklēšana"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Meklēt"</string>
     <string name="searchview_clear_text_content_description">Notīrīt tekstu</string>
@@ -171,6 +823,7 @@
     <string msgid="3962933905051144957" name="snackbar_dismiss">"Noraidīt"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="7189888345201419934" name="suggestions_available">"Tālāk ir sniegti ieteikumi"</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
     <string msgid="2561197295334830845" name="switch_role">"Slēdzis"</string>
     <string msgid="1672349317127674378" name="tab">"Cilne"</string>
     <string msgid="5946805113151406391" name="template_percent">"Procenti: <ns1:g id="PERCENTAGE">%1$d</ns1:g>."</string>
@@ -188,4 +841,6 @@
     <string msgid="2232702812657998674" name="time_picker_pm">"PM"</string>
     <string msgid="2732804537909054941" name="tooltip_long_press_label">"Rādīt rīka padomu"</string>
     <string msgid="8191239805703103845" name="tooltip_pane_description">"Rīka padoms"</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"IZSLĒGTS"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"IESLĒGTS"</string>
 </resources>

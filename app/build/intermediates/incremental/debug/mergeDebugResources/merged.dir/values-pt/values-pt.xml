@@ -41,6 +41,7 @@
     <string msgid="406453423630273620" name="close_drawer">"Fechar menu de navegação"</string>
     <string msgid="7573152094250666567" name="close_sheet">"Fechar planilha"</string>
     <string msgid="5389587048670450460" name="collapsed">"Fechado"</string>
+    <string msgid="6083905920877235314" name="copy">"Copiar"</string>
     <string msgid="3499643850558715142" name="date_input_headline">"Data inserida"</string>
     <string msgid="8562356184193964298" name="date_input_headline_description">"Data inserida: %1$s"</string>
     <string msgid="5281836720766682161" name="date_input_invalid_for_pattern">"A data não está no padrão esperado: %1$s"</string>
@@ -76,13 +77,41 @@
     <string msgid="6312721426453364202" name="default_popup_window_title">"Janela pop-up"</string>
     <string msgid="4057925834421392736" name="dialog">"Caixa de diálogo"</string>
     <string msgid="1890207353314751437" name="dropdown_menu">"Menu suspenso"</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Avançado"</string>
     <string msgid="5974471714631304645" name="expanded">"Aberto"</string>
     <string msgid="6827826412747255547" name="in_progress">"Em andamento"</string>
     <string msgid="7933458017204019916" name="indeterminate">"Parcialmente selecionada"</string>
+    <string msgid="2939063992730535343" name="mr_button_content_description">"Transmitir"</string>
+    <string msgid="6073720094880410356" name="mr_cast_button_connected">"Transmitir. Conectado"</string>
+    <string msgid="6629927151350192407" name="mr_cast_button_connecting">"Transmitir. Conectando"</string>
+    <string msgid="8071109333469380363" name="mr_cast_button_disconnected">"Transmitir. Desconectado"</string>
+    <string msgid="2175930138959078155" name="mr_cast_dialog_title_view_placeholder">"Nenhuma informação disponível"</string>
+    <string msgid="6114250663023140921" name="mr_chooser_searching">"Localizando dispositivos"</string>
+    <string msgid="1419936397646839840" name="mr_chooser_title">"Transmitir para"</string>
+    <string msgid="3330502667672708728" name="mr_controller_album_art">"Arte do álbum"</string>
+    <string msgid="9171231064758955152" name="mr_controller_casting_screen">"Transmitindo tela"</string>
+    <string msgid="5684434439232634509" name="mr_controller_close_description">"Fechar"</string>
+    <string msgid="2585048604188129749" name="mr_controller_collapse_group">"Recolher"</string>
+    <string msgid="7812275474138309497" name="mr_controller_disconnect">"Desconectar"</string>
+    <string msgid="4521419834052044261" name="mr_controller_expand_group">"Abrir"</string>
+    <string msgid="855271725131981086" name="mr_controller_no_info_available">"Nenhuma informação disponível"</string>
+    <string msgid="5495452265246139458" name="mr_controller_no_media_selected">"Nenhuma mídia selecionada"</string>
+    <string msgid="747801650871398383" name="mr_controller_pause">"Pausar"</string>
+    <string msgid="1253345086594430054" name="mr_controller_play">"Reproduzir"</string>
+    <string msgid="5497722768305745508" name="mr_controller_stop">"Parar"</string>
+    <string msgid="804210341192624074" name="mr_controller_stop_casting">"Parar transmissão"</string>
+    <string msgid="2955862765169128170" name="mr_controller_volume_slider">"Controle deslizante de volume"</string>
+    <string msgid="4115858704575247342" name="mr_dialog_default_group_name">"Grupo"</string>
+    <string msgid="4307018456678388936" name="mr_dialog_groupable_header">"Adicionar um dispositivo"</string>
+    <string msgid="6068257520605505468" name="mr_dialog_transferable_header">"Reproduzir em um grupo"</string>
+    <string msgid="7449553026175453403" name="mr_system_route_name">"Sistema"</string>
+    <string msgid="4088331695424166162" name="mr_user_route_category_name">"Dispositivos"</string>
     <string msgid="542007171693138492" name="navigation_menu">"Menu de navegação"</string>
     <string msgid="6610465462668679431" name="not_selected">"Não selecionado"</string>
+    <string msgid="6573031135582639649" name="not_set">"Não definido"</string>
     <string msgid="875452955155264703" name="off">"Desativado"</string>
     <string msgid="8655164131929253426" name="on">"Ativado"</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" copiado para a área de transferência."</string>
     <string msgid="5941395253238309765" name="range_end">"Fim do intervalo"</string>
     <string msgid="7097486360902471446" name="range_start">"Início do intervalo"</string>
     <string msgid="6420018528474762666" name="search_bar_search">"Pesquisa"</string>
@@ -91,6 +120,7 @@
     <string msgid="3962933905051144957" name="snackbar_dismiss">"Dispensar"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="7189888345201419934" name="suggestions_available">"Sugestões abaixo"</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
     <string msgid="2561197295334830845" name="switch_role">"Chave"</string>
     <string msgid="1672349317127674378" name="tab">"Guia"</string>
     <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g>%%"</string>
@@ -108,4 +138,6 @@
     <string msgid="2232702812657998674" name="time_picker_pm">"PM"</string>
     <string msgid="2732804537909054941" name="tooltip_long_press_label">"Mostrar dica"</string>
     <string msgid="8191239805703103845" name="tooltip_pane_description">"Dica"</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"DESATIVADO"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"ATIVADO"</string>
 </resources>
