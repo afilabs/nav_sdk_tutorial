@@ -26,11 +26,49 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.navsdkcodelab.ui.theme.NavSDKCodelabTheme
+import android.content.res.Configuration
+import com.google.android.libraries.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var navView: NavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
+        navView = findViewById(R.id.navigation_view)
+        navView.onCreate(savedInstanceState)
+
     }
+
+    override fun onStart() {
+        super.onStart()
+        navView.onStart()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        navView.onResume()
+    }
+
+    override fun onPause() {
+        navView.onPause()
+        super.onPause()
+    }
+
+    override fun onConfigurationChanged(configuration: Configuration) {
+        super.onConfigurationChanged(configuration)
+        navView.onConfigurationChanged(configuration)
+    }
+
+    override fun onStop() {
+        navView.onStop()
+        super.onStop()
+    }
+
+    override fun onDestroy() {
+        navView.onDestroy()
+        super.onDestroy()
+    }
+
 }
