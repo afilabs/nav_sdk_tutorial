@@ -28,6 +28,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.navsdkcodelab.ui.theme.NavSDKCodelabTheme
 import android.content.res.Configuration
 import com.google.android.libraries.navigation.NavigationView
+import android.view.WindowManager
 
 class MainActivity : AppCompatActivity() {
     private lateinit var navView: NavigationView
@@ -38,6 +39,8 @@ class MainActivity : AppCompatActivity() {
 
         navView = findViewById(R.id.navigation_view)
         navView.onCreate(savedInstanceState)
+
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 
     }
 
