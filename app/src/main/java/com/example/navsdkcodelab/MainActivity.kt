@@ -29,13 +29,24 @@ import com.example.navsdkcodelab.ui.theme.NavSDKCodelabTheme
 import android.content.res.Configuration
 import com.google.android.libraries.navigation.NavigationView
 import android.view.WindowManager
+import android.Manifest
+import android.content.pm.PackageManager
+import android.os.Build
+import android.os.Looper
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
+    companion object {
+        const val SPLASH_SCREEN_DELAY_MILLIS = 1000L
+    }
+
     private lateinit var navView: NavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        requestAccessPermissions()
 
         navView = findViewById(R.id.navigation_view)
         navView.onCreate(savedInstanceState)
@@ -73,5 +84,44 @@ class MainActivity : AppCompatActivity() {
         navView.onDestroy()
         super.onDestroy()
     }
+
+    private fun requestAccessPermissions() {
+        val permissions =
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                arrayOf(
+                    Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.POST_NOTIFICATIONS
+                )
+            } else {
+                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION)
+            }
+        if (permissions.any { !checkPermissionGranted(it) }) {
+            if (permissions.any { shouldShowRequestPermissionRationale(it) }) {
+                // Display a dialogue explaining the required permissions.
+            }
+            val permissionsLauncher =
+                registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
+                        permissionResults ->
+                    if (
+                        permissionResults.getOrDefault(Manifest.permission.ACCESS_FINE_LOCATION, false)
+                    ) {
+                        onLocationPermissionGranted()
+                    } else {
+                        finish()
+                    }
+                }
+            permissionsLauncher.launch(permissions)
+        } else {
+            android.os
+                .Handler(Looper.getMainLooper())
+                .postDelayed({ onLocationPermissionGranted() }, SPLASH_SCREEN_DELAY_MILLIS)
+        }
+    }
+
+    private fun checkPermissionGranted(permissionToCheck: String): Boolean =
+        ContextCompat.checkSelfPermission(this, permissionToCheck) == PackageManager.PERMISSION_GRANTED
+
+    private fun onLocationPermissionGranted() {}
+
 
 }
