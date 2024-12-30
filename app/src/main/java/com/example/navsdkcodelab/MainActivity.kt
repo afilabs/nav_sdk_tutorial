@@ -47,6 +47,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var navView: NavigationView
     private var mNavigator: Navigator? = null
+    private var arrivalListener: Navigator.ArrivalListener? = null
+    private var routeChangedListener: Navigator.RouteChangedListener? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -136,6 +138,7 @@ class MainActivity : AppCompatActivity() {
             object : NavigationApi.NavigatorListener {
                 override fun onNavigatorReady(navigator: Navigator) {
                     mNavigator = navigator
+                    registerNavigationListeners()
                 }
 
                 override fun onError(@NavigationApi.ErrorCode errorCode: Int) {
@@ -160,6 +163,20 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         NavigationApi.getNavigator(this, listener)
+    }
+
+    private fun registerNavigationListeners() {
+        arrivalListener =
+            Navigator.ArrivalListener { // Show an onscreen message
+                showToast("User has arrived at the destination!")
+                mNavigator?.clearDestinations()
+            }
+        mNavigator?.addArrivalListener(arrivalListener)
+        routeChangedListener =
+            Navigator.RouteChangedListener { // Show an onscreen message when the route changes
+                showToast("onRouteChanged: the driver's route changed")
+            }
+        mNavigator?.addRouteChangedListener(routeChangedListener)
     }
 
     private fun showToast(errorMessage: String) {
