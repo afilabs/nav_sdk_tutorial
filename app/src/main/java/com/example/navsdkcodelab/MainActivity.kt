@@ -139,6 +139,7 @@ class MainActivity : AppCompatActivity() {
                 override fun onNavigatorReady(navigator: Navigator) {
                     mNavigator = navigator
                     registerNavigationListeners()
+                    navigator.setTaskRemovedBehavior(Navigator.TaskRemovedBehavior.QUIT_SERVICE)
                 }
 
                 override fun onError(@NavigationApi.ErrorCode errorCode: Int) {
