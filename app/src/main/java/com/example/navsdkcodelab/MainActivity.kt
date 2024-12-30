@@ -39,6 +39,7 @@ import com.google.android.libraries.navigation.NavigationApi
 import com.google.android.libraries.navigation.Navigator
 import android.widget.Toast
 import android.annotation.SuppressLint
+import com.google.android.gms.maps.GoogleMap
 
 class MainActivity : AppCompatActivity() {
     companion object {
@@ -140,6 +141,7 @@ class MainActivity : AppCompatActivity() {
                     mNavigator = navigator
                     registerNavigationListeners()
                     navigator.setTaskRemovedBehavior(Navigator.TaskRemovedBehavior.QUIT_SERVICE)
+                    setupCameraFollowMyLocation()
                 }
 
                 override fun onError(@NavigationApi.ErrorCode errorCode: Int) {
@@ -178,6 +180,13 @@ class MainActivity : AppCompatActivity() {
                 showToast("onRouteChanged: the driver's route changed")
             }
         mNavigator?.addRouteChangedListener(routeChangedListener)
+    }
+
+    @SuppressLint("MissingPermission")
+    private fun setupCameraFollowMyLocation() {
+        navView.getMapAsync { googleMap ->
+            googleMap.followMyLocation(GoogleMap.CameraPerspective.TILTED)
+        }
     }
 
     private fun showToast(errorMessage: String) {
