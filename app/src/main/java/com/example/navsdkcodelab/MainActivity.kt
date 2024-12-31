@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         requestAccessPermissions()
 
+        setContentView(R.layout.activity_main)
         navView = findViewById(R.id.navigation_view)
         navView.onCreate(savedInstanceState)
 
