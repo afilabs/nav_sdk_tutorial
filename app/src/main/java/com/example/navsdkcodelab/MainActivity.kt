@@ -40,16 +40,19 @@ import com.google.android.libraries.navigation.Navigator
 import android.widget.Toast
 import android.annotation.SuppressLint
 import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.model.LatLng
 
 class MainActivity : AppCompatActivity() {
     companion object {
         const val SPLASH_SCREEN_DELAY_MILLIS = 1000L
+        val startLocation = LatLng(49.2847001, -123.1145098)
     }
 
     private lateinit var navView: NavigationView
     private var mNavigator: Navigator? = null
     private var arrivalListener: Navigator.ArrivalListener? = null
     private var routeChangedListener: Navigator.RouteChangedListener? = null
+    private val isSimulationMode get() = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -142,6 +145,10 @@ class MainActivity : AppCompatActivity() {
                     registerNavigationListeners()
                     navigator.setTaskRemovedBehavior(Navigator.TaskRemovedBehavior.QUIT_SERVICE)
                     setupCameraFollowMyLocation()
+
+                    if (isSimulationMode) {
+                        mNavigator?.simulator?.setUserLocation(startLocation)
+                    }
                 }
 
                 override fun onError(@NavigationApi.ErrorCode errorCode: Int) {
