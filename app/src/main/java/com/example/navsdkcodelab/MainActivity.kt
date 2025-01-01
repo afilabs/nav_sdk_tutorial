@@ -41,11 +41,13 @@ import android.widget.Toast
 import android.annotation.SuppressLint
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.libraries.navigation.Waypoint
 
 class MainActivity : AppCompatActivity() {
     companion object {
         const val SPLASH_SCREEN_DELAY_MILLIS = 1000L
         val startLocation = LatLng(49.2847001, -123.1145098)
+        const val STANLEY_PARK = "ChIJH-tBOc4EdkgRJ8aJ8P1CUxo"
     }
 
     private lateinit var navView: NavigationView
@@ -150,6 +152,7 @@ class MainActivity : AppCompatActivity() {
                     if (isSimulationMode) {
                         mNavigator?.simulator?.setUserLocation(startLocation)
                     }
+                    navigateToPlace(STANLEY_PARK)
                 }
 
                 override fun onError(@NavigationApi.ErrorCode errorCode: Int) {
@@ -175,6 +178,27 @@ class MainActivity : AppCompatActivity() {
             }
         NavigationApi.getNavigator(this, listener)
     }
+
+    private fun navigateToPlace(placeId: String) {
+        val waypoint: Waypoint? =
+            try {
+                Waypoint.builder().setPlaceIdString(placeId).build()
+            } catch (e: Waypoint.UnsupportedPlaceIdException) {
+                showToast("Place ID was unsupported.")
+                return
+            }
+        val pendingRoute = mNavigator?.setDestination(waypoint)
+        pendingRoute?.setOnResultListener { code ->
+            when (code) {
+                Navigator.RouteStatus.OK -> {}
+                Navigator.RouteStatus.ROUTE_CANCELED -> showToast("Route guidance canceled.")
+                Navigator.RouteStatus.NO_ROUTE_FOUND,
+                Navigator.RouteStatus.NETWORK_ERROR -> showToast("Error starting guidance: $code")
+                else -> showToast("Error starting guidance: $code")
+            }
+        }
+    }
+
 
     private fun registerNavigationListeners() {
         arrivalListener =
