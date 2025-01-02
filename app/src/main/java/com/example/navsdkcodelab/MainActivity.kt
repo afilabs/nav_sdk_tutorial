@@ -42,6 +42,7 @@ import android.annotation.SuppressLint
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.libraries.navigation.Waypoint
+import com.google.android.libraries.navigation.SimulationOptions
 
 class MainActivity : AppCompatActivity() {
     companion object {
@@ -194,6 +195,13 @@ class MainActivity : AppCompatActivity() {
                     supportActionBar?.hide()
                     mNavigator?.setAudioGuidance(Navigator.AudioGuidance.VOICE_ALERTS_AND_GUIDANCE)
                     mNavigator?.startGuidance()
+
+=                   if (isSimulationMode) {
+                        mNavigator
+                            ?.simulator
+                            ?.simulateLocationsAlongExistingRoute(SimulationOptions().speedMultiplier(5f))
+                    }
+
                 }
                 Navigator.RouteStatus.ROUTE_CANCELED -> showToast("Route guidance canceled.")
                 Navigator.RouteStatus.NO_ROUTE_FOUND,
