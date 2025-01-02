@@ -4,7 +4,7 @@
 
 Taken from:
 - Google Navigation SDK standalone (part 1 of 8)
-- Getting started with the Google Navigation SDK (part 2 of 8)
+- [Getting started with the Google Navigation SDK (part 2 of 8)](https://afi.io/blog/getting-started-with-the-google-navigation-sdk/)
 - Adding a Place Autocomplete text box to your Android app (part 3 of 8)
 - Creating a custom route on Google Maps for Android (part 4 of 8)
 - Styling the Navigation SDK with custom UI and branding (part 5 of 8)
