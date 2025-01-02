@@ -192,6 +192,8 @@ class MainActivity : AppCompatActivity() {
             when (code) {
                 Navigator.RouteStatus.OK -> {
                     supportActionBar?.hide()
+                    mNavigator?.setAudioGuidance(Navigator.AudioGuidance.VOICE_ALERTS_AND_GUIDANCE)
+                    mNavigator?.startGuidance()
                 }
                 Navigator.RouteStatus.ROUTE_CANCELED -> showToast("Route guidance canceled.")
                 Navigator.RouteStatus.NO_ROUTE_FOUND,
