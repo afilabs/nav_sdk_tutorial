@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
     companion object {
         const val SPLASH_SCREEN_DELAY_MILLIS = 1000L
         val startLocation = LatLng(49.2847001, -123.1145098)
-        const val STANLEY_PARK = "ChIJH-tBOc4EdkgRJ8aJ8P1CUxo"
+        const val WEST_POINT_GREY = "ChIJS09_Ne5yhlQRK1JX6bCnfn0"
     }
 
     private lateinit var navView: NavigationView
@@ -166,7 +166,8 @@ class MainActivity : AppCompatActivity() {
                     if (isSimulationMode) {
                         mNavigator?.simulator?.setUserLocation(startLocation)
                     }
-                    navigateToPlace(STANLEY_PARK)
+
+                    navigateToPlace(WEST_POINT_GREY)
                 }
 
                 override fun onError(@NavigationApi.ErrorCode errorCode: Int) {
