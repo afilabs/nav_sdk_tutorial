@@ -97,6 +97,19 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         navView.onDestroy()
+
+        mNavigator?.also { navigator ->
+            if (arrivalListener != null) {
+                navigator.removeArrivalListener(arrivalListener)
+            }
+            if (routeChangedListener != null) {
+                navigator.removeRouteChangedListener(routeChangedListener)
+            }
+            navigator.simulator?.unsetUserLocation()
+            navigator.cleanup()
+        }
+        mNavigator = null
+
         super.onDestroy()
     }
 
@@ -196,7 +209,7 @@ class MainActivity : AppCompatActivity() {
                     mNavigator?.setAudioGuidance(Navigator.AudioGuidance.VOICE_ALERTS_AND_GUIDANCE)
                     mNavigator?.startGuidance()
 
-=                   if (isSimulationMode) {
+                   if (isSimulationMode) {
                         mNavigator
                             ?.simulator
                             ?.simulateLocationsAlongExistingRoute(SimulationOptions().speedMultiplier(5f))
