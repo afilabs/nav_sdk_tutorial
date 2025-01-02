@@ -190,7 +190,9 @@ class MainActivity : AppCompatActivity() {
         val pendingRoute = mNavigator?.setDestination(waypoint)
         pendingRoute?.setOnResultListener { code ->
             when (code) {
-                Navigator.RouteStatus.OK -> {}
+                Navigator.RouteStatus.OK -> {
+                    supportActionBar?.hide()
+                }
                 Navigator.RouteStatus.ROUTE_CANCELED -> showToast("Route guidance canceled.")
                 Navigator.RouteStatus.NO_ROUTE_FOUND,
                 Navigator.RouteStatus.NETWORK_ERROR -> showToast("Error starting guidance: $code")
